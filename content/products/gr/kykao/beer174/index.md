@@ -1,0 +1,24 @@
+---
+name : "ΚΥΚΑΩ SPICY SAISON VINTAGE 2018 0.33lt"
+id : "beer174"
+price : "3.04"
+url : ""
+image : "κυκαω-spicy-saison-vintage-2018-033lt.jpg"
+price : "3.04"
+language : "gr"
+alchohol : "7%"
+product_types : "bottle"
+brewery : "Kykao"
+
+promotion : ""
+beer_types : "ALE BLONDE/BROWN"
+retail_price : "3.2"
+discount : "5%"
+description_short : "SPICY SESSION"
+url: "name"/"brewery"
+aliases: "name"
+slug: "id"
+---
+
+Spicy Saison full of ginger, earthy and citrusy goodness! A taste that transforms with age. 
+Taste some fresh, age the rest for at least 6 months!

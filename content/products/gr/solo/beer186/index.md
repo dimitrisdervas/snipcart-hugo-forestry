@@ -1,0 +1,27 @@
+---
+name : "ΣΟΛΟ ΣΚΟΤΙΔΙ IMPERIAL STOUT 0.33lt"
+id : "beer186"
+price : "3.1"
+url : ""
+image : "σολο-σκοτιδι-imperial-stout-033lt.jpg"
+price : "3.1"
+language : "gr"
+alchohol : ""
+product_types : ""
+brewery : "Solo"
+
+promotion : ""
+beer_types : "ΜΑΥΡΕΣ"
+retail_price : ""
+discount : ""
+description_short : ""
+url: "name"/"brewery"
+aliases: "name"
+slug: "id"
+---
+
+Κατάμαυρη, πλούσια, καβουρδισμένη, παχιά και κυρίαρχη. Αυτή είναι η προσωπικότητα της Imperial Stout μας. Τι καλύτερο για μία κρύα χειμωνιάτικη νύχτα? Συνοδέψτε τη μ’ ένα κομμάτι σοκολάτας.
+
+Συστατικά: Νερό, βύνη κριθαριού, βυνη σιταριού, βρώμη, κριθάρι, λυκίσκος και μαγιά
+
+9% Alc | Vol 25 IBU, 14°P

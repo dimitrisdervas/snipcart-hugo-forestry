@@ -1,0 +1,32 @@
+---
+name : "5+1 Δώρο CORFU DARK ALE 0.33lt"
+id : "beer005"
+price : "9.5"
+url : ""
+image : "51-δώρο-corfu-dark-ale-033lt.jpg"
+price : "9.5"
+language : "gr"
+alchohol : ""
+product_types : "box"
+brewery : "Corfu"
+
+promotion : "5plus1"
+beer_types : "ΜΑΥΡΕΣ"
+retail_price : "11.4"
+discount : "1.9"
+description_short : ""
+url: "name"/"brewery"
+aliases: "name"
+slug: "id"
+---
+
+Προτεινόμενη κατανάλωση πρίν τις: 19 02 2021
+
+Χαρακτηριστικά
+
+Χρώμα
+Μαύρη
+Συσκευασία
+Μπουκάλι
+Περιεκτικότητα Σε Αλκοόλ
+5%

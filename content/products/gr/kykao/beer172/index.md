@@ -1,0 +1,24 @@
+---
+name : "ΚΥΚΑΩ SMOOTH SESSION IPA 0.33lt"
+id : "beer172"
+price : "3.23"
+url : ""
+image : "κυκαω-smooth-session-ipa-033lt.jpg"
+price : "3.23"
+language : "gr"
+alchohol : "4.20%"
+product_types : "bottle"
+brewery : "Kykao"
+
+promotion : ""
+beer_types : "I.P.A."
+retail_price : "3.4"
+discount : "5%"
+description_short : "SESSION IPA"
+url: "name"/"brewery"
+aliases: "name"
+slug: "id"
+---
+
+Session IPA is a low ABV brew with an incredible level
+of depth. Exploding with citrusy, fruity and complex hop aroma, we will never hold back on dry hops!
