@@ -1,0 +1,15 @@
+{% if city == "Θεσσαλονίκη" %}
+---
+title: {{title}}
+schools: ["{{schools| replace(',', '","' ) | safe  }}"]
+subcategory: ["{{subcategory| replace(',', '","' ) | safe  }}"]
+slugCategory: {{slug}}
+slugSubcategory: ["{{slugsubcategory| replace(',', '","' ) | safe  }}"]
+countschools: {{countschools}}
+city: {{thesscity}}
+schools: {{thesscity}}
+schoolscount: {{thesscity}}
+---
+
+{{description}}
+{% endif %}

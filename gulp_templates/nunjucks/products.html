@@ -1,0 +1,29 @@
+---
+title: "{{schools}}"
+
+facebook: "{{school_facebook}}"
+
+website: "{{school_website}}"
+organisation: "{{organisation}}"
+facebookorg: "{{org_facebook}}"
+websiteorg: "{{org_website}}"
+UID: "{{schooluid}}"
+cities: ["{{city| replace(',', '","' ) | safe  }}"]
+perioxi: "{{perioxi}}"
+address: "{{address}}"
+
+places: ["{{place| replace(',', '","' ) | safe  }}"]
+categories: ["{{categorynoslug| replace(',', '","' ) | safe  }}"]
+subcategories: ["{{subcategoriesnoslug| replace(',', '","' ) | safe  }}"]
+categoryNoSLug: ["{{category| replace(',', '","' ) | safe  }}"]
+subcategoriesNoSLug: ["{{subcategory| replace(',', '","' ) | safe  }}"]
+
+orgUID: "{{organisation_uid}}"
+
+url: "{{schoolTranslit}}/{{cityTranslit}}"
+slug: "{{schoolTranslit}}"
+aliases:
+    - /{{schooluid}}
+---
+
+{{description}}

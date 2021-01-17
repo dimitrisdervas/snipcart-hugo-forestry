@@ -1,0 +1,27 @@
+---
+title: |
+   {{school}}
+city: ["{{city}}"]
+perioxi: ["{{perioxi}}"]
+categories: ["{{slugCategories}}"]
+subcategories: ["{% if  slugSubcategories == "#REF!" %} {% else %} {{ slugSubcategories | replace(',', '","' ) | safe  }} {% endif %}"]
+address: "{{address}}"
+logoimg: "{{logo}}"
+website: "{{website | replace("http://", "") | replace("https://", "") }}"
+facebook: "{{facebook | replace("https://", "") | replace("http://", "") }}"
+phone: "{{phone}}"
+email: "{{email}}"
+courses: "{{courses}}"
+places: ["{{place}}"]
+rensponsibles: "{{rensponsible}}"
+zipcode: ["{{zipcode}}"]
+UID: "{{UID}}"
+latitude: "{{latitude}}"
+longitude: "{{longitude}}"
+slug: "{{UID}}/{{cityTranslit}}/{{schoolTranslit}}"
+aliases:
+    - /{{UID}}
+    - /{{UID}}#{{schoolTranslit}}
+---
+
+{{description}}
