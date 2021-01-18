@@ -1,3 +1,9 @@
 baseURL = "http://66832007dd14.ngrok.io/"
-languageCode = "en-us"
-title = "CheeseCity"
+languageCode = "gr-el"
+title = "BeerCityGreece"
+
+
+[taxonomies]
+    product_type = "product_types"
+    brewery = "breweries"
+    beer_type = "beer_types"
