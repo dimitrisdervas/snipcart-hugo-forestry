@@ -3,8 +3,8 @@
 
   <img class="product__image" src="/uploads/beers/{{ .image }}" alt="" />
 
-  {{ range .Params.breweries}}
-  <div class="flex">{{.Params.breweries}}</div>
+  {{ range .breweries}}
+  <div class="flex"><a href="/breweries/{{ . | urlize }}">{{.}}</a></div>
   {{ end }}
   <p class="product__description">{{ .description }}</p>
   <div class="product__button-container">
