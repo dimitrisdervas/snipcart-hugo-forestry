@@ -3,7 +3,7 @@ name : "BLAME THE SUN HULA DOLL 0.33lt"
 id : "beer026"
 price : "3.7"
 url : ""
-image : "blame-the-sun-hula-doll-033lt.jpg"
+image : "beer026.jpg"
 price : "3.7"
 language : "gr"
 alchohol : "5%"
@@ -15,9 +15,10 @@ beer_types : "PALE ALE"
 retail_price : ""
 discount : ""
 description_short : "Pale Ale"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "blame-the-sun-hula-doll-0-33lt/blame-the-sun"
+aliases: 
+    - "blame-the-sun-hula-doll-0-33lt"
+slug: "beer026"
 ---
 
 Συνδυάστε την με spicy ρούμι

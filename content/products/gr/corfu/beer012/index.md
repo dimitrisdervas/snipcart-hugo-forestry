@@ -3,7 +3,7 @@ name : "5+1 Δώρο CORFU Red Ale Special 0.50lt"
 id : "beer012"
 price : "14"
 url : ""
-image : "κιβ-51-δώρο-corfu-red-ale-special-050lt.jpg"
+image : "beer012.jpg"
 price : "14"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
 retail_price : "16.8"
 discount : "2.8"
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "5-1-doro-corfu-red-ale-special-0-50lt/corfu"
+aliases: 
+    - "5-1-doro-corfu-red-ale-special-0-50lt"
+slug: "beer012"
 ---
 
 Χαρακτηριστικά

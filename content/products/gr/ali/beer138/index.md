@@ -3,7 +3,7 @@ name : "ΑΛΗ RED ALE 0.33lt"
 id : "beer138"
 price : "2"
 url : ""
-image : "αλη-red-ale-033lt.jpg"
+image : "beer138.jpg"
 price : "2"
 language : "gr"
 alchohol : "5%"
@@ -15,9 +15,10 @@ beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "ali-red-ale-0-33lt/ali"
+aliases: 
+    - "ali-red-ale-0-33lt"
+slug: "beer138"
 ---
 
 Red Ale είναι ένας τύπος μπύρας με κύριο γνώρισμα το κοκκινωπό της χρώμα.

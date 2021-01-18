@@ -3,7 +3,7 @@ name : "KAISER 0.50lt"
 id : "beer065"
 price : "1.58"
 url : ""
-image : "kaiser-050lt.jpg"
+image : "beer065.jpg"
 price : "1.58"
 language : "gr"
 alchohol : "5%"
@@ -15,9 +15,10 @@ beer_types : "LAGER"
 retail_price : "1.8"
 discount : "12%"
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "kaiser-0-50lt/"
+aliases: 
+    - "kaiser-0-50lt"
+slug: "beer065"
 ---
 
 Pilsner μπύρα που διαφέρει χάρη στην εξαιρετική γεύση και ποιότητά της. Η μπύρα Kaiser παρασκευάζεται από εκλεκτές ποικιλίες κριθαριού και λυκίσκου που ζυμώνονται και ωριμάζουν αργά, για να της δώσουν τη γεμάτη και μεστή γεύση της πραγματικής μπύρας Pils, όπως τη θέλει η γερμανική φιλοσοφία και παράδοση. 

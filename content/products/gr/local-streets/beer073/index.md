@@ -3,21 +3,22 @@ name : "LOCAL STREETS PALE ALE 0.33lt"
 id : "beer073"
 price : "2"
 url : ""
-image : "local-streets-pale-ale-033lt.jpg"
+image : "beer073.jpg"
 price : "2"
 language : "gr"
 alchohol : ""
 product_types : ""
-brewery : "Local streets"
+brewery : "Local-streets"
 
 promotion : ""
 beer_types : "PALE ALE"
 retail_price : ""
 discount : ""
 description_short : "PALE ALE απαστερίωτη, αφιλτράριστη"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "local-streets-pale-ale-0-33lt/local-streets"
+aliases: 
+    - "local-streets-pale-ale-0-33lt"
+slug: "beer073"
 ---
 
 Χαρακτηριστικά

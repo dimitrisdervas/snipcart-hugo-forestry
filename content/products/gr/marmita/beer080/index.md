@@ -3,7 +3,7 @@ name : "MARMITA STOUT 0.33lt"
 id : "beer080"
 price : "2.7"
 url : ""
-image : "marmita-stout-033lt.jpg"
+image : "beer080.jpg"
 price : "2.7"
 language : "gr"
 alchohol : "6.40%"
@@ -15,9 +15,10 @@ beer_types : "ΜΑΥΡΕΣ"
 retail_price : ""
 discount : ""
 description_short : "STOUT"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "marmita-stout-0-33lt/marmita"
+aliases: 
+    - "marmita-stout-0-33lt"
+slug: "beer080"
 ---
 
 Φρέσκια χειροποίητη μπύρα, μαύρου χρώματος, τύπου American Stout, ήπιας πικράδας, με πλούσιο αφρό και νότες κακάο, σοκολάτας, καραμέλας. Απολαύστε υπεύθυνα!

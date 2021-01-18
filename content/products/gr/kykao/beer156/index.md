@@ -3,7 +3,7 @@ name : "ΚΥΚΑΩ HAZY NEW ENGLAND IPA 0.33lt"
 id : "beer156"
 price : "3.33"
 url : ""
-image : "κυκαω-hazy-new-england-ipa-033lt.jpg"
+image : "beer156.jpg"
 price : "3.33"
 language : "gr"
 alchohol : "5.20%"
@@ -15,9 +15,10 @@ beer_types : "I.P.A."
 retail_price : "3.5"
 discount : "5%"
 description_short : "HOPPY NEW ENGLAND IPA"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "kykao-hazy-new-england-ipa-0-33lt/kykao"
+aliases: 
+    - "kykao-hazy-new-england-ipa-0-33lt"
+slug: "beer156"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 09 01 2022

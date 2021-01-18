@@ -3,7 +3,7 @@ name : "SEPTEM WET HOP 0.33lt"
 id : "beer110"
 price : "2.69"
 url : ""
-image : "septem-wet-hop-033lt.jpg"
+image : "beer110.jpg"
 price : "2.69"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "PALE ALE"
 retail_price : "2.99"
 discount : "10%"
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "septem-wet-hop-0-33lt/septem"
+aliases: 
+    - "septem-wet-hop-0-33lt"
+slug: "beer110"
 ---
 
 Hobby Hoopy Series. Σερβίρεται στους 12°C.

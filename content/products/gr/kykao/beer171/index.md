@@ -3,7 +3,7 @@ name : "ΚΥΚΑΩ SMOKED ESPRESSO PORTER 0.33lt"
 id : "beer171"
 price : "4.94"
 url : ""
-image : "κυκαω-smoked-espresso-porter-033lt.jpg"
+image : "beer171.jpg"
 price : "4.94"
 language : "gr"
 alchohol : "9%"
@@ -15,9 +15,10 @@ beer_types : "ΜΑΥΡΕΣ"
 retail_price : "5.2"
 discount : "5%"
 description_short : "SMOKED PORTER"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "kykao-smoked-espresso-porter-0-33lt/kykao"
+aliases: 
+    - "kykao-smoked-espresso-porter-0-33lt"
+slug: "beer171"
 ---
 
 extremely stimulating brew!

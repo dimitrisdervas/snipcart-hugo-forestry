@@ -3,7 +3,7 @@ name : "ΣΟΛΟ ΧΩΡΙΑΤΙΚΗ 0.33lt"
 id : "beer188"
 price : "2.7"
 url : ""
-image : "σολο-χωριατικη-033lt.jpg"
+image : "beer188.jpg"
 price : "2.7"
 language : "gr"
 alchohol : "6.50%"
@@ -15,9 +15,10 @@ beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "solo-xoriatiki-0-33lt/solo"
+aliases: 
+    - "solo-xoriatiki-0-33lt"
+slug: "beer188"
 ---
 
 Η Saison είναι μία κλασική Βέλγικη μπίρα, εξαιρετικά φρουτώδης, πολύπλοκη και ξεδιψαστική. Είναι μία μπίρα που πολύ ευχάριστα μπορείτε να συνοδέψετε με θαλασσινά ή να απολαύσετε μόνη της μια ζεστή ηλιόλουστη μέρα …

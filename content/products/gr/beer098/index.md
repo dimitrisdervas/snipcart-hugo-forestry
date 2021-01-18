@@ -3,7 +3,7 @@ name : "ODYSSEY WHITE RHAPSODY 0.33lt"
 id : "beer098"
 price : "2.3"
 url : ""
-image : "odyssey-white-rhapsody-033lt.jpg"
+image : "beer098.jpg"
 price : "2.3"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "WEISS"
 retail_price : ""
 discount : ""
 description_short : "5% alc. με κόλιανδρο και πικρό πορτοκάλι"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "odyssey-white-rhapsody-0-33lt/"
+aliases: 
+    - "odyssey-white-rhapsody-0-33lt"
+slug: "beer098"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 12 06 2021

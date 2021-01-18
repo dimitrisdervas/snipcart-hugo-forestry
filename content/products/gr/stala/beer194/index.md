@@ -3,7 +3,7 @@ name : "ΣΤΑΛΑ PALE ALE 0.33lt"
 id : "beer194"
 price : "2.5"
 url : ""
-image : "σταλα-pale-ale-033lt.jpg"
+image : "beer194.jpg"
 price : "2.5"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "PALE ALE"
 retail_price : ""
 discount : ""
 description_short : "Pale ale 5.7% alc"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "stala-pale-ale-0-33lt/stala"
+aliases: 
+    - "stala-pale-ale-0-33lt"
+slug: "beer194"
 ---
 
 Προτιμάμε να κρατάμε την καρδιά και την ψυχή της μπίρας μας μέσα στο μπουκάλι.

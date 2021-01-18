@@ -3,7 +3,7 @@ name : "CORFU RADLER 0.33lt"
 id : "beer044"
 price : "1.69"
 url : ""
-image : "corfu-radler-033lt.jpg"
+image : "beer044.jpg"
 price : "1.69"
 language : "gr"
 alchohol : "2%"
@@ -15,9 +15,10 @@ beer_types : "LAGER"
 retail_price : "1.8"
 discount : "6%"
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "corfu-radler-0-33lt/corfu"
+aliases: 
+    - "corfu-radler-0-33lt"
+slug: "beer044"
 ---
 
 Αναζητούμε την τελειότητα σε κάθε μας δημιουργία και για αυτό μεταφέρουμε το πάθος, την αγάπη και τις γεύσεις της πατρίδας μας μέσα στο ποτήρι σας χρησιμοποιώντας κορυφαία φυσικά συστατικά.

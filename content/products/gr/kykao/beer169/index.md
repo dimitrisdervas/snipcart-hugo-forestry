@@ -3,7 +3,7 @@ name : "ΚΥΚΑΩ SAISON THYME 0.33lt"
 id : "beer169"
 price : "3.42"
 url : ""
-image : "κυκαω-saison-thyme-033lt (2).jpg"
+image : "beer169.jpg"
 price : "3.42"
 language : "gr"
 alchohol : "5.50%"
@@ -15,9 +15,10 @@ beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
 retail_price : "3.6"
 discount : "5%"
 description_short : "Belgian Saison"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "kykao-saison-thyme-0-33lt/kykao"
+aliases: 
+    - "kykao-saison-thyme-0-33lt"
+slug: "beer169"
 ---
 
 A Belgian wild Saison with Thyme,

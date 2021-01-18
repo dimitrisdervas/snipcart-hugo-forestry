@@ -3,7 +3,7 @@ name : "ΙΚΑΡΙΩΤΙΣΣΑ RED ALE 0.33lt"
 id : "beer143"
 price : "2.9"
 url : ""
-image : "ικαριωτισσα-red-ale-033lt.jpg"
+image : "beer143.jpg"
 price : "2.9"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "ikariotissa-red-ale-0-33lt/ikariotissa"
+aliases: 
+    - "ikariotissa-red-ale-0-33lt"
+slug: "beer143"
 ---
 
 ΑΠΑΣΤΕΡΙΩΤΗ ΧΩΡΙΣ ΣΥΝΤΗΡΗΤΙΚΑ

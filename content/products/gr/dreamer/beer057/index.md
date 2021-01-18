@@ -3,7 +3,7 @@ name : "DREAMER / SUI GENERIS HYPERSPACE 0.33lt"
 id : "beer057"
 price : "3.6"
 url : ""
-image : "dreamer-sui-generis-hyperspace-033lt.jpg"
+image : "beer057.jpg"
 price : "3.6"
 language : "gr"
 alchohol : "7.60%"
@@ -15,9 +15,10 @@ beer_types : "I.P.A."
 retail_price : ""
 discount : ""
 description_short : "DOUBLE IPA"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "dreamer-sui-generis-hyperspace-0-33lt/dreamer"
+aliases: 
+    - "dreamer-sui-generis-hyperspace-0-33lt"
+slug: "beer057"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 31 08 2021

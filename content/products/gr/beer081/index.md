@@ -3,7 +3,7 @@ name : "MARY ROSE RED 0.33lt"
 id : "beer081"
 price : "2.4"
 url : ""
-image : "mary-rose-red.jpg"
+image : "beer081.jpg"
 price : "2.4"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "mary-rose-red-0-33lt/"
+aliases: 
+    - "mary-rose-red-0-33lt"
+slug: "beer081"
 ---
 
 Η μπύρα Mary Rose βασίζεται σε μια αγγλική συνταγή εμπνευσμένη από το θρυλικό πλοίο του βασιλικού στόλου της Αγγλίας, ο οποίος δημιουργήθηκε από τον Ερρίκο Ζ΄ Τυδώρ και κυρίως από τον γιο του, τον περίφημο Ερρίκο Η΄.

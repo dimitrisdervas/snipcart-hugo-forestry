@@ -3,7 +3,7 @@ name : "SALONIKIA HONEY PILSNER 0.50lt"
 id : "beer101"
 price : "2.1"
 url : ""
-image : "salonikia-honey-pilsner-050lt.jpg"
+image : "beer101.jpg"
 price : "2.1"
 language : "gr"
 alchohol : "5,5%"
@@ -15,9 +15,10 @@ beer_types : "LAGER"
 retail_price : ""
 discount : ""
 description_short : "Η Θεσσαλονίκη κλεισμένη σε μπουκάλι!"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "salonikia-honey-pilsner-0-50lt/sknipa"
+aliases: 
+    - "salonikia-honey-pilsner-0-50lt"
+slug: "beer101"
 ---
 
 Η Salonikia honey pilsner παντρεύει την χαρακτηριστική πικράδα και το άρωμα της pilsner, με την γλυκιά γεύση και τα αρώματα του μελιού

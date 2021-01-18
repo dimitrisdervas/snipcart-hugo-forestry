@@ -3,7 +3,7 @@ name : "ΚΥΚΑΩ AMERICAN STRONG ALE 0.33lt"
 id : "beer151"
 price : "3.71"
 url : ""
-image : "κυκαω-american-strong-ale-033lt.jpg"
+image : "beer151.jpg"
 price : "3.71"
 language : "gr"
 alchohol : "7.50%"
@@ -15,9 +15,10 @@ beer_types : "ALE BLONDE/BROWN"
 retail_price : "3.9"
 discount : "5%"
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "kykao-american-strong-ale-0-33lt/kykao"
+aliases: 
+    - "kykao-american-strong-ale-0-33lt"
+slug: "beer151"
 ---
 
 We brewed an aggressive American Strong Ale. Arrogant and impressive, showcasing a complex malt base, framed by piny bitterness using American hops (Chinook, Ahtanum).

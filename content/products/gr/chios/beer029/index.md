@@ -3,7 +3,7 @@ name : "CHIOS BBQ - ΦΡΕΣΚΙΑ ΚΑΠΝΙΣΤΗ ΜΠΥΡΑ ΧΙΟΥ 0.33lt"
 id : "beer029"
 price : "2.2"
 url : ""
-image : "chios-bbq-φρεσκια-καπνιστη-μπυρα-χιου-033lt.jpg"
+image : "beer029.jpg"
 price : "2.2"
 language : "gr"
 alchohol : "5,5%"
@@ -15,9 +15,10 @@ beer_types : "ΚΑΠΝΙΣΤΕΣ"
 retail_price : "2.6"
 discount : "0.4"
 description_short : "Φρέσκια καπνιστή μπύρα"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "chios-bbq-freskia-kapnisti-mpyra-xioy-0-33lt/chios"
+aliases: 
+    - "chios-bbq-freskia-kapnisti-mpyra-xioy-0-33lt"
+slug: "beer029"
 ---
 
 Μια καπνιστή μπύρα με διακριτική πικράδα και έντονα αρώματα ξύλου, από βύνη καβουρδισμένη με παραδοσιακή μέθοδο, φυσικά καπνισμένη με ξύλο οξιάς, που χαρίζει ξεχωριστή απόλαυση συνοδεύοντας φαγητά με έντονες γεύσεις.

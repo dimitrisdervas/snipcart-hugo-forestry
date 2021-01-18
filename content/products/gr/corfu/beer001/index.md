@@ -3,7 +3,7 @@ name : "5 CORFU RADLER +1 Ποτήρι Δώρο 0.33lt"
 id : "beer001"
 price : "9"
 url : ""
-image : "5-corfu-radler-1-ποτήρι-δώρο-033lt.jpg"
+image : "beer001.jpg"
 price : "9"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "LAGER"
 retail_price : "16.8"
 discount : "7.8"
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "5-corfu-radler-1-potiri-doro-0-33lt/corfu"
+aliases: 
+    - "5-corfu-radler-1-potiri-doro-0-33lt"
+slug: "beer001"
 ---
 
 Αναζητούμε την τελειότητα σε κάθε μας δημιουργία και για αυτό μεταφέρουμε το πάθος, την αγάπη και τις γεύσεις της πατρίδας μας μέσα στο ποτήρι σας χρησιμοποιώντας κορυφαία φυσικά συστατικά.

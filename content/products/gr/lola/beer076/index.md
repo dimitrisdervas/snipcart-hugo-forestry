@@ -3,7 +3,7 @@ name : "LOLA BELGIAN ALE 0.33lt"
 id : "beer076"
 price : "2.2"
 url : ""
-image : "lola-belgian-ale-033lt.jpg"
+image : "beer076.jpg"
 price : "2.2"
 language : "gr"
 alchohol : "5.50%"
@@ -15,9 +15,10 @@ beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
 retail_price : ""
 discount : ""
 description_short : "BELGIAN ALE"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "lola-belgian-ale-0-33lt/lola"
+aliases: 
+    - "lola-belgian-ale-0-33lt"
+slug: "beer076"
 ---
 
 Χάλκινο χρώμα, πλούσιος και πυκνός αφρός, αρώματα και γεύσεις ψωμιού και μπισκότου, καθώς και η πικάντικη επίγευση, είναι τα κύρια χαρακτηριστικά της με αλκοόλ 5,5%. Μια τυπική και ευκολόπιοτη Βέλγικη ale που θα συνοδεύσει άριστα το φαγητό, αλλά δεν θα πει και όχι αν καταναλωθεί μόνη της, σαν ποτό.

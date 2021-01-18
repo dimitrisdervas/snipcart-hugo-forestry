@@ -3,7 +3,7 @@ name : "ΙΚΑΡΙΩΤΙΣΣΑ ALE 0.33lt"
 id : "beer141"
 price : "2.7"
 url : ""
-image : "ικαριωτισσα-ale-033lt.jpg"
+image : "beer141.jpg"
 price : "2.7"
 language : "gr"
 alchohol : "5%"
@@ -15,9 +15,10 @@ beer_types : "ALE BLONDE/BROWN"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "ikariotissa-ale-0-33lt/ikariotissa"
+aliases: 
+    - "ikariotissa-ale-0-33lt"
+slug: "beer141"
 ---
 
 ΑΠΑΣΤΕΡΙΩΤΗ ΧΩΡΙΣ ΣΥΝΤΗΡΗΤΙΚΑ

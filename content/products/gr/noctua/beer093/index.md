@@ -3,7 +3,7 @@ name : "NOCTUA HEAD TWISTER PALE ALE 0.50lt"
 id : "beer093"
 price : "2.7"
 url : ""
-image : "noctua-head-twister-pale-ale-050lt.jpg"
+image : "beer093.jpg"
 price : "2.7"
 language : "gr"
 alchohol : "5,2%"
@@ -15,9 +15,10 @@ beer_types : "PALE ALE"
 retail_price : ""
 discount : ""
 description_short : "Χρυσή Pale Ale"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "noctua-head-twister-pale-ale-0-50lt/noctua"
+aliases: 
+    - "noctua-head-twister-pale-ale-0-50lt"
+slug: "beer093"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 10 02 2021

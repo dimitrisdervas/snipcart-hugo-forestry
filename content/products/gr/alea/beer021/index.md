@@ -3,7 +3,7 @@ name : "ALEA WIT 0.33lt (ΚΟΥΤΙ)"
 id : "beer021"
 price : "2.61"
 url : ""
-image : "alea-wit-033lt-κουτι.jpg"
+image : "beer021.jpg"
 price : "2.61"
 language : "gr"
 alchohol : "5%"
@@ -15,9 +15,10 @@ beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
 retail_price : "2.9"
 discount : "10%"
 description_short : "BELGIAN WIT"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "alea-wit-0-33lt-koyti/alea"
+aliases: 
+    - "alea-wit-0-33lt-koyti"
+slug: "beer021"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 31 01 2021

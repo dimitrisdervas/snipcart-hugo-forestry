@@ -3,7 +3,7 @@ name : "DANOS AMMOUSA IPA 0.33lt"
 id : "beer051"
 price : "2.99"
 url : ""
-image : "danos-ammousa-ipa-033lt.jpg"
+image : "beer051.jpg"
 price : "2.99"
 language : "gr"
 alchohol : "5.50%"
@@ -15,9 +15,10 @@ beer_types : "I.P.A."
 retail_price : ""
 discount : ""
 description_short : "English IPA"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "danos-ammousa-ipa-0-33lt/amousa"
+aliases: 
+    - "danos-ammousa-ipa-0-33lt"
+slug: "beer051"
 ---
 
 Μπύρα DANOS

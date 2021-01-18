@@ -3,7 +3,7 @@ name : "MIDNIGHT CIRCUS / ΚΟΥΡΑΦΕΛΚΥΘΡΑ ΨΥΧΗ ΤΟΥ ΠΑΡΤΙ 
 id : "beer083"
 price : "3.2"
 url : ""
-image : "midnight-circus-κουραφελκυθρα-ψυχη-του-παρτι-033lt.jpg"
+image : "beer083.jpg"
 price : "3.2"
 language : "gr"
 alchohol : "4.10%"
@@ -15,9 +15,10 @@ beer_types : "I.P.A."
 retail_price : ""
 discount : ""
 description_short : "Session IPA"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "midnight-circus-koyrafelkythra-psyxi-toy-parti-0-33lt/midnight"
+aliases: 
+    - "midnight-circus-koyrafelkythra-psyxi-toy-parti-0-33lt"
+slug: "beer083"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 03 07 2021

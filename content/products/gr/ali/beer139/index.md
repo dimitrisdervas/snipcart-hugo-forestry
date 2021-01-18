@@ -3,7 +3,7 @@ name : "ΑΛΗ STOUT ΧΕΙΜΩΝΙΑΤΙΚΗ 0.33lt"
 id : "beer139"
 price : "2.1"
 url : ""
-image : "αλη-stout-χειμωνιατικη-033lt.jpg"
+image : "beer139.jpg"
 price : "2.1"
 language : "gr"
 alchohol : "5.30%"
@@ -15,9 +15,10 @@ beer_types : "ΜΑΥΡΕΣ"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "ali-stout-xeimoniatiki-0-33lt/ali"
+aliases: 
+    - "ali-stout-xeimoniatiki-0-33lt"
+slug: "beer139"
 ---
 
 Η ιστορία της Porter και της μετεξέλιξής της Stout, ξεκινάει τον 18ο αιώνα στο Λονδίνο. Ήταν η αγαπημένη μπύρα των εμπόρων, των εργατών αλλά και των αχθοφόρων – από τους οποίους πήρε και το όνομα-, μιας και ήταν φθηνή και θρεπτική.

@@ -3,7 +3,7 @@ name : "MONACHUS HOPPY SEAL PILSNER 0.33lt"
 id : "beer086"
 price : "2.9"
 url : ""
-image : "monachus-hoppy-seal-pilsner-050lt.jpg"
+image : "beer086.jpg"
 price : "2.9"
 language : "gr"
 alchohol : "5%"
@@ -15,9 +15,10 @@ beer_types : "LAGER"
 retail_price : ""
 discount : ""
 description_short : "Pilsner"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "monachus-hoppy-seal-pilsner-0-33lt/monachus"
+aliases: 
+    - "monachus-hoppy-seal-pilsner-0-33lt"
+slug: "beer086"
 ---
 
 Χαρακτηριστικά

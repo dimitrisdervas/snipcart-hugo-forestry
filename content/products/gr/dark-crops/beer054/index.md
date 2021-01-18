@@ -3,7 +3,7 @@ name : "DARK CROPS IPA 0.33lt"
 id : "beer054"
 price : "3.4"
 url : ""
-image : "dark-crops-ipa-033lt.jpg"
+image : "beer054.jpg"
 price : "3.4"
 language : "gr"
 alchohol : "5%"
@@ -15,9 +15,10 @@ beer_types : "I.P.A."
 retail_price : ""
 discount : ""
 description_short : "IPA"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "dark-crops-ipa-0-33lt/dark-crops"
+aliases: 
+    - "dark-crops-ipa-0-33lt"
+slug: "beer054"
 ---
 
 Χαρακτηριστικά

@@ -3,7 +3,7 @@ name : "CLEPSYDRA FLORIDA RASPBERRY WEISSE 0.33lt"
 id : "beer033"
 price : "2.8"
 url : ""
-image : "clepsydra-florida-raspberry-weisse-033lt.jpg"
+image : "beer033.jpg"
 price : "2.8"
 language : "gr"
 alchohol : "3.80%"
@@ -15,9 +15,10 @@ beer_types : "SOUR"
 retail_price : ""
 discount : ""
 description_short : "RASPBERRY SOUR WEISS"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "clepsydra-florida-raspberry-weisse-0-33lt/clepsydra"
+aliases: 
+    - "clepsydra-florida-raspberry-weisse-0-33lt"
+slug: "beer033"
 ---
 
 Χαρακτηριστικά

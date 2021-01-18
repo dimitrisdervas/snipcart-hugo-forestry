@@ -3,7 +3,7 @@ name : "ΝΗΣΟΣ PILS 0.50lt"
 id : "beer183"
 price : "2.49"
 url : ""
-image : "νησος-pils-050lt.jpg"
+image : "beer183.jpg"
 price : "2.49"
 language : "gr"
 alchohol : "5%"
@@ -15,9 +15,10 @@ beer_types : "LAGER"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "nisos-pils-0-50lt/nisos"
+aliases: 
+    - "nisos-pils-0-50lt"
+slug: "beer183"
 ---
 
 Μπύρα με χαρακτήρα, δημιουργήθηκε για να είναι σε πλήρη αρμονία με την Κυκλαδίτικη γαστρονομία και για να προσφέρει ευχαρίστηση σε ένα μεγάλο εύρος ουρανίσκων. Συνοδεύει ιδανικά, ψάρι, θαλασσινά, ψητά σχάρας, κοτόπουλο.

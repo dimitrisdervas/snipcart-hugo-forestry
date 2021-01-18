@@ -3,7 +3,7 @@ name : "5+1 Δώρο CORFU Ionian Epos 0.33lt"
 id : "beer007"
 price : "15"
 url : ""
-image : "κιβ-51-δώρο-corfu-ionian-epos-033lt.jpg"
+image : "beer007.jpg"
 price : "15"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
 retail_price : "18"
 discount : "3"
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "5-1-doro-corfu-ionian-epos-0-33lt/corfu"
+aliases: 
+    - "5-1-doro-corfu-ionian-epos-0-33lt"
+slug: "beer007"
 ---
 
 Χαρακτηριστικά

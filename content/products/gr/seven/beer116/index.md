@@ -3,7 +3,7 @@ name : "SEVEN ISLAND PBJ CONCOCTION 0.44lt (ΚΟΥΤΙ)"
 id : "beer116"
 price : "10.2"
 url : ""
-image : "seven-pbj-concoction-044lt-κουτι.jpg"
+image : "beer116.jpg"
 price : "10.2"
 language : "gr"
 alchohol : "12%"
@@ -15,9 +15,10 @@ beer_types : "ΜΑΥΡΕΣ"
 retail_price : ""
 discount : ""
 description_short : "Imperial pastry Stout με φυστικοβούτυρο, άγρια φράουλα, βανίλια ταϊτής &amp; σοκολάτα"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "seven-island-pbj-concoction-0-44lt-koyti/seven"
+aliases: 
+    - "seven-island-pbj-concoction-0-44lt-koyti"
+slug: "beer116"
 ---
 
 Περιέχει λακτόζη

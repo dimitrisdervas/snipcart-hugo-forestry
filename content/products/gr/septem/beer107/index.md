@@ -3,7 +3,7 @@ name : "SEPTEM LAVA 0.50lt"
 id : "beer107"
 price : "4.4"
 url : ""
-image : "septem-lava-050lt.jpg"
+image : "beer107.jpg"
 price : "4.4"
 language : "gr"
 alchohol : "9%"
@@ -15,9 +15,10 @@ beer_types : "I.P.A."
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "septem-lava-0-50lt/septem"
+aliases: 
+    - "septem-lava-0-50lt"
+slug: "beer107"
 ---
 
 Hobby Hoopy Series. Σερβίρεται στους 12°C.

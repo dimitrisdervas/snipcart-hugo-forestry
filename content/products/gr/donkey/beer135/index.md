@@ -3,7 +3,7 @@ name : "Yellow Donkey 0.33lt"
 id : "beer135"
 price : "3.3"
 url : ""
-image : "yellow-donkey-033lt.jpg"
+image : "beer135.jpg"
 price : "3.3"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ALE BLONDE/BROWN"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "yellow-donkey-0-33lt/donkey"
+aliases: 
+    - "yellow-donkey-0-33lt"
+slug: "beer135"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 10 06 2021

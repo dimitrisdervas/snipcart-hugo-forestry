@@ -3,7 +3,7 @@ name : "STRANGE BREW DR HAZE DIPA 0.33lt"
 id : "beer124"
 price : "3.4"
 url : ""
-image : "strange-brew-dr-haze-dipa-033lt.jpg"
+image : "beer124.jpg"
 price : "3.4"
 language : "gr"
 alchohol : "8%"
@@ -15,9 +15,10 @@ beer_types : "I.P.A."
 retail_price : ""
 discount : ""
 description_short : "DOUBLE IPA"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "strange-brew-dr-haze-dipa-0-33lt/strange"
+aliases: 
+    - "strange-brew-dr-haze-dipa-0-33lt"
+slug: "beer124"
 ---
 
 Χαμένος στις ψυχεδελικές παραισθήσεις που προκαλούν οι μεθυστικές αναθυμιάσεις τεράστιων ποσοτήτων από τους πιο αρωματικούς λυκίσκους της πιάτσας, για πολύ καιρό εμφανιζόταν και χανόταν ξανά, ψελλίζοντας στίχους από τραγούδια άλλων εποχών, συχνά μπερδεύοντας τις μέρες με τα χρόνια.

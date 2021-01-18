@@ -3,7 +3,7 @@ name : "ODYSSEY DARK CALYPSO&#39;S DESIRE 0.33lt"
 id : "beer096"
 price : "2.6"
 url : ""
-image : "odyssey-dark-calypso-s-desire-033lt.jpg"
+image : "beer096.jpg"
 price : "2.6"
 language : "gr"
 alchohol : "5%"
@@ -15,9 +15,10 @@ beer_types : "ΜΑΥΡΕΣ"
 retail_price : ""
 discount : ""
 description_short : "Σκούρη καστανή"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "odyssey-dark-calypso-s-desire-0-33lt/"
+aliases: 
+    - "odyssey-dark-calypso-s-desire-0-33lt"
+slug: "beer096"
 ---
 
 Η Odyssey Dark Rhapsody είναι μία βελούδινη μπίρα που ξυπνάει όλες τις αισθήσεις, με σκούρο καστανό χρώμα και μοναδικά αρώματα που μπορούν να βάλουν κάποιον σε πειρασμό. Πλούσιος κρεμώδης αφρός και τόσο φρουτώδης γεύση που δύσκολα μπορεί κανείς να της αντισταθεί. Παράγεται από υψηλής ποιότητας πρώτες ύλες, μέσα από μια εξειδικευμένη διαδικασία παραγωγής που την κάνουν να ξεχωρίζει και να διατηρεί αναλλοίωτη τη γεύση της. Αποτελεί μία διαφορετική πρόταση που παρασύρει κάθε λάτρη του είδους.

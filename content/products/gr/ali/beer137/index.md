@@ -3,7 +3,7 @@ name : "ΑΛΗ INDIA PALE ALE 0.33lt"
 id : "beer137"
 price : "1.98"
 url : ""
-image : "αλη-india-pale-ale-033lt.jpg"
+image : "beer137.jpg"
 price : "1.98"
 language : "gr"
 alchohol : "5%"
@@ -15,9 +15,10 @@ beer_types : "I.P.A."
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "ali-india-pale-ale-0-33lt/ali"
+aliases: 
+    - "ali-india-pale-ale-0-33lt"
+slug: "beer137"
 ---
 
 Τύπος: I.P.A. (India Pale Ale)

@@ -3,7 +3,7 @@ name : "FLAROS IPA 0.33lt"
 id : "beer060"
 price : "3.29"
 url : ""
-image : "flaros-ipa-033lt.jpg"
+image : "beer060.jpg"
 price : "3.29"
 language : "gr"
 alchohol : "5.70%"
@@ -15,9 +15,10 @@ beer_types : "I.P.A."
 retail_price : ""
 discount : ""
 description_short : "IPA"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "flaros-ipa-0-33lt/flaros"
+aliases: 
+    - "flaros-ipa-0-33lt"
+slug: "beer060"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 28 09 2021

@@ -3,7 +3,7 @@ name : "SEVEN ISLAND FOGGY ISLAND 0.44lt"
 id : "beer113"
 price : "6.8"
 url : ""
-image : "seven-island-foggy-island-044lt.jpg"
+image : "beer113.jpg"
 price : "6.8"
 language : "gr"
 alchohol : "8%"
@@ -15,9 +15,10 @@ beer_types : "I.P.A."
 retail_price : ""
 discount : ""
 description_short : "Double Dry Hopped New England Double IPA"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "seven-island-foggy-island-0-44lt/seven"
+aliases: 
+    - "seven-island-foggy-island-0-44lt"
+slug: "beer113"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 08,09,2021

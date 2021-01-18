@@ -3,7 +3,7 @@ name : "ΚΥΚΑΩ SMOKED BALTIC PORTER 0.33lt"
 id : "beer170"
 price : "4.37"
 url : ""
-image : "κυκαω-smoked-baltic-porter-033lt.jpg"
+image : "beer170.jpg"
 price : "4.37"
 language : "gr"
 alchohol : "9%"
@@ -15,9 +15,10 @@ beer_types : "ΜΑΥΡΕΣ"
 retail_price : "4.6"
 discount : "5%"
 description_short : "SMOKED BALTIC PORTER"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "kykao-smoked-baltic-porter-0-33lt/kykao"
+aliases: 
+    - "kykao-smoked-baltic-porter-0-33lt"
+slug: "beer170"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 12 06 2022

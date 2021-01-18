@@ -3,7 +3,7 @@ name : "SEPTEM THURSDAY&#39;S RED ALE 0.33lt"
 id : "beer109"
 price : "2.3"
 url : ""
-image : "septem-thursday-s-red-ale-.jpg"
+image : "beer109.jpg"
 price : "2.3"
 language : "gr"
 alchohol : "4.50%"
@@ -15,9 +15,10 @@ beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "septem-thursday-s-red-ale-0-33lt/septem"
+aliases: 
+    - "septem-thursday-s-red-ale-0-33lt"
+slug: "beer109"
 ---
 
 Βύνη: Marris Otter Pale Malt, Melanoidin Malt, Crystal Malt

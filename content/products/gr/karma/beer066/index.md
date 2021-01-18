@@ -3,7 +3,7 @@ name : "KARMA HOPPY LAGER 0.33lt"
 id : "beer066"
 price : "1.87"
 url : ""
-image : "karma-ipl-033lt.jpg"
+image : "beer066.jpg"
 price : "1.87"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "LAGER"
 retail_price : "2.1"
 discount : "11%"
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "karma-hoppy-lager-0-33lt/karma"
+aliases: 
+    - "karma-hoppy-lager-0-33lt"
+slug: "beer066"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 31 03 2021

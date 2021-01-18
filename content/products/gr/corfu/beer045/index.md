@@ -3,7 +3,7 @@ name : "CORFU Red Ale Special 0.33lt"
 id : "beer045"
 price : "2.1"
 url : ""
-image : "corfu-red-ale-special-033lt.jpg"
+image : "beer045.jpg"
 price : "2.1"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "corfu-red-ale-special-0-33lt/corfu"
+aliases: 
+    - "corfu-red-ale-special-0-33lt"
+slug: "beer045"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 30 01 2021

@@ -3,7 +3,7 @@ name : "DARK CROPS APA II 0.33lt"
 id : "beer052"
 price : "2.7"
 url : ""
-image : "dark-crops-apa-ii-033lt.jpg"
+image : "beer052.jpg"
 price : "2.7"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "PALE ALE"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "dark-crops-apa-ii-0-33lt/dark-crops"
+aliases: 
+    - "dark-crops-apa-ii-0-33lt"
+slug: "beer052"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 30 06 2021

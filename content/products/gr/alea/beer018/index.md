@@ -3,7 +3,7 @@ name : "ALEA CALIFORNIA COMMON 0.33lt (ΚΟΥΤΙ)"
 id : "beer018"
 price : "2.99"
 url : ""
-image : "alea-california-common-033lt-κουτι.jpg"
+image : "beer018.jpg"
 price : "2.99"
 language : "gr"
 alchohol : "5.50%"
@@ -15,9 +15,10 @@ beer_types : "ALE BLONDE/BROWN"
 retail_price : ""
 discount : ""
 description_short : "ALE"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "alea-california-common-0-33lt-koyti/alea"
+aliases: 
+    - "alea-california-common-0-33lt-koyti"
+slug: "beer018"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 31 07 2021

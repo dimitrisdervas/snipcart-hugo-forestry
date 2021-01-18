@@ -3,7 +3,7 @@ name : "ΣΟΛΟ ΨΑΚΙ IPA 0.33lt"
 id : "beer189"
 price : "2.8"
 url : ""
-image : "σολο-ψακι-ipa-033lt.jpg"
+image : "beer189.jpg"
 price : "2.8"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "I.P.A."
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "solo-psaki-ipa-0-33lt/solo"
+aliases: 
+    - "solo-psaki-ipa-0-33lt"
+slug: "beer189"
 ---
 
 Η India Pale Ale δεν είναι μία μπίρα για “δειλούς”. Είναι για όσους απολαμβάνουν τις “μεγάλες” μπίρες με έντονη πικράδα και ακόμα εντονότερη γεύση. Τα αρώματα των λυκίσκων σ’ αυτήν τη μπίρα δεν σταματάνε να δίνουν τις χάρες τους. Δεν είναι τυχαίο πως μεταξύ όλων των ειδών μπίρας, η IPA είναι μία από τις δημοφιλέστερες στον πλανήτη!

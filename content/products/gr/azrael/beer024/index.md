@@ -3,7 +3,7 @@ name : "AZRAEL SINNER 0.33lt"
 id : "beer024"
 price : "2.3"
 url : ""
-image : "azrael-sinner-033lt.jpg"
+image : "beer024.jpg"
 price : "2.3"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
 retail_price : ""
 discount : ""
 description_short : "BELGIAN PALE ALE"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "azrael-sinner-0-33lt/azrael"
+aliases: 
+    - "azrael-sinner-0-33lt"
+slug: "beer024"
 ---
 
 Χάλκινο χρώμα, πλούσιος και πυκνός αφρός, αρώματα και γεύσεις ψωμιού και μπισκότου, καθώς και η πικάντικη επίγευση, είναι τα κύρια χαρακτηριστικά της με αλκοόλ 5,5%. Μια τυπική και ευκολόπιοτη Βέλγικη ale που θα συνοδεύσει άριστα το φαγητό, αλλά δεν θα πει και όχι αν καταναλωθεί μόνη της, σαν ποτό.

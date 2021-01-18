@@ -3,7 +3,7 @@ name : "CORFU DARK ALE 0.33lt"
 id : "beer037"
 price : "1.9"
 url : ""
-image : "corfu-dark-ale-033lt-ηλ-20420.jpg"
+image : "beer037.jpg"
 price : "1.9"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ΜΑΥΡΕΣ"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "corfu-dark-ale-0-33lt/corfu"
+aliases: 
+    - "corfu-dark-ale-0-33lt"
+slug: "beer037"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 19 02 2021

@@ -3,7 +3,7 @@ name : "ΚΥΚΑΩ BELGIAN QUADRUPEL 0.33lt"
 id : "beer152"
 price : "5.8"
 url : ""
-image : "κυκαω-belgian-quadrupel-033lt.jpg"
+image : "beer152.jpg"
 price : "5.8"
 language : "gr"
 alchohol : "12%"
@@ -15,9 +15,10 @@ beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
 retail_price : "6.1"
 discount : "5%"
 description_short : "BELGIAN ALE OAK AGED"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "kykao-belgian-quadrupel-0-33lt/kykao"
+aliases: 
+    - "kykao-belgian-quadrupel-0-33lt"
+slug: "beer152"
 ---
 
 A seasonal brew celebrating a Pagan custom, tracing back to Dionysus!

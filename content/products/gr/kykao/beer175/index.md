@@ -3,7 +3,7 @@ name : "ΚΥΚΑΩ SPRING BRUT IPA 0.33lt"
 id : "beer175"
 price : "3.61"
 url : ""
-image : "κυκαω-spring-brut-ipa-033lt.jpg"
+image : "beer175.jpg"
 price : "3.61"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "I.P.A."
 retail_price : "3.8"
 discount : "5%"
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "kykao-spring-brut-ipa-0-33lt/kykao"
+aliases: 
+    - "kykao-spring-brut-ipa-0-33lt"
+slug: "beer175"
 ---
 
 Ένα καινούργιο στυλ IPA!

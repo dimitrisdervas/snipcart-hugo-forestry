@@ -3,7 +3,7 @@ name : "ΣΟΥΡΔΟΣ HOUSE ALE 0.33lt"
 id : "beer190"
 price : "2.4"
 url : ""
-image : "σουρδος-house-ale-033lt.jpg"
+image : "beer190.jpg"
 price : "2.4"
 language : "gr"
 alchohol : "5.50%"
@@ -15,9 +15,10 @@ beer_types : "ALE BLONDE/BROWN"
 retail_price : ""
 discount : ""
 description_short : "House Ale"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "soyrdos-house-ale-0-33lt/sourdos"
+aliases: 
+    - "soyrdos-house-ale-0-33lt"
+slug: "beer190"
 ---
 
 Χαρακτηριστικά

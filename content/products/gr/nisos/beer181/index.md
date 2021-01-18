@@ -3,7 +3,7 @@ name : "ΝΗΣΟΣ 7 ΜΠΟΦΟΡ 0.33lt"
 id : "beer181"
 price : "2.5"
 url : ""
-image : "νησος-7-μποφορ-033lt.jpg"
+image : "beer181.jpg"
 price : "2.5"
 language : "gr"
 alchohol : "7.50%"
@@ -15,9 +15,10 @@ beer_types : "ΜΑΥΡΕΣ"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "nisos-7-mpofor-0-33lt/nisos"
+aliases: 
+    - "nisos-7-mpofor-0-33lt"
+slug: "beer181"
 ---
 
 Η πρώτη και μοναδική «Μαύρη Pilsner» στην Ελλάδα.

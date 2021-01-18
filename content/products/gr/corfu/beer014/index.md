@@ -3,7 +3,7 @@ name : "5+1 Δώρο CORFU Royal Ionian Pilsner 0.50lt"
 id : "beer014"
 price : "10.5"
 url : ""
-image : "κιβ-51-δώρο-corfu-royal-ionian-pilsner-050lt.jpg"
+image : "beer014.jpg"
 price : "10.5"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "LAGER"
 retail_price : "12.6"
 discount : "2.1"
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "5-1-doro-corfu-royal-ionian-pilsner-0-50lt/corfu"
+aliases: 
+    - "5-1-doro-corfu-royal-ionian-pilsner-0-50lt"
+slug: "beer014"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 07 03 2021

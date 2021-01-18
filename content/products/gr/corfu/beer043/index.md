@@ -3,7 +3,7 @@ name : "CORFU PINK GRAPEFRUIT &amp; BERGAMOT 0.33lt"
 id : "beer043"
 price : "1.4"
 url : ""
-image : "corfu-pink-grapefruit-bergamot-033lt.jpg"
+image : "beer043.jpg"
 price : "1.4"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ΧΩΡΙΣ ΑΛΚΟΟΛ"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "corfu-pink-grapefruit-and-bergamot-0-33lt/corfu"
+aliases: 
+    - "corfu-pink-grapefruit-and-bergamot-0-33lt"
+slug: "beer043"
 ---
 
 Χαρακτηριστικά

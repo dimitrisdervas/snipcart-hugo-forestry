@@ -3,7 +3,7 @@ name : "ΑΛΗ WEISS 0.33lt"
 id : "beer140"
 price : "1.9"
 url : ""
-image : "αλη-weiss-033lt.jpg"
+image : "beer140.jpg"
 price : "1.9"
 language : "gr"
 alchohol : "5%"
@@ -15,9 +15,10 @@ beer_types : "WEISS"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "ali-weiss-0-33lt/ali"
+aliases: 
+    - "ali-weiss-0-33lt"
+slug: "beer140"
 ---
 
 Weiss, είναι ο τύπος της μπύρας που παράγεται με συνδυασμό βύνης κριθαριού και βύνης σιταριού. Η βύνη σιταριού χρησιμοποιείται σε μεγάλο ποσοστό το οποίο μπορεί να φθάσει το 50% της συνολικής βύνης, με αποτέλεσμα η μπύρα να επηρεάζεται σε πολλά χαρακτηριστικά της από τις ιδιότητες της βύνης σιταριού.

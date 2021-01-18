@@ -3,7 +3,7 @@ name : "NOCTUA / SATYR GRAND FINALE 0.33lt"
 id : "beer089"
 price : "3.1"
 url : ""
-image : "noctua-satyr-grand-finale-033lt.jpg"
+image : "beer089.jpg"
 price : "3.1"
 language : "gr"
 alchohol : "7.77%"
@@ -15,9 +15,10 @@ beer_types : "I.P.A."
 retail_price : ""
 discount : ""
 description_short : "DOUBLE WEST COAST IPA"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "noctua-satyr-grand-finale-0-33lt/noctua"
+aliases: 
+    - "noctua-satyr-grand-finale-0-33lt"
+slug: "beer089"
 ---
 
 Satyr -levels Ηoppy Double West Coast IPA στο σατανικο 7.77% alc

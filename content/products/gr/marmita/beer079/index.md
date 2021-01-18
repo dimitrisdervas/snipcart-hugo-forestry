@@ -3,7 +3,7 @@ name : "MARMITA RED ALE 0.33lt"
 id : "beer079"
 price : "2.6"
 url : ""
-image : "marmita-red-ale-033lt.jpg"
+image : "beer079.jpg"
 price : "2.6"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
 retail_price : ""
 discount : ""
 description_short : "RED ALE"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "marmita-red-ale-0-33lt/marmita"
+aliases: 
+    - "marmita-red-ale-0-33lt"
+slug: "beer079"
 ---
 
 Η Marmita εμφιαλώνεται απαστερίωτη και καταναλώνεται φρέσκια, προσφέροντάς σας απλόχερα όλα τα αρώματα και τις γεύσεις της! 

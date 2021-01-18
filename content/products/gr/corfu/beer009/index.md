@@ -3,7 +3,7 @@ name : "5+1 Δώρο CORFU Ionian Orange Ginger Ale 0.33lt"
 id : "beer009"
 price : "7.5"
 url : ""
-image : "κιβ-51-δώρο-corfu-ionian-orange-ginger-ale-033lt.jpg"
+image : "beer009.jpg"
 price : "7.5"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ΧΩΡΙΣ ΑΛΚΟΟΛ"
 retail_price : "9"
 discount : "1.5"
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "5-1-doro-corfu-ionian-orange-ginger-ale-0-33lt/corfu"
+aliases: 
+    - "5-1-doro-corfu-ionian-orange-ginger-ale-0-33lt"
+slug: "beer009"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 26 05 2021

@@ -3,7 +3,7 @@ name : "ΚΥΚΑΩ / ΣΟΛΟ PLETHORA PENTADRUPEL 0.33lt"
 id : "beer147"
 price : "7.41"
 url : ""
-image : "κυκαω-σολο-plethora-pentadrupel-033lt.jpg"
+image : "beer147.jpg"
 price : "7.41"
 language : "gr"
 alchohol : "16%"
@@ -15,9 +15,10 @@ beer_types : "ΜΑΥΡΕΣ"
 retail_price : "7.8"
 discount : "5%"
 description_short : "ΒELGIAN DARK STRONG ALE"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "kykao-solo-plethora-pentadrupel-0-33lt/kykao"
+aliases: 
+    - "kykao-solo-plethora-pentadrupel-0-33lt"
+slug: "beer147"
 ---
 
 Μια συνεργασία μεταξύ του καθιερωμένου και του πρωτοεμφανιζόμενου, της παράδοσης και της τάσης, της ΣΟΛΟ και της ΚΥΚΑΩ. 

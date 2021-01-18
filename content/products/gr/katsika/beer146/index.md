@@ -3,7 +3,7 @@ name : "ΚΑΤΣΙΚΑ PILSNER 0.33lt"
 id : "beer146"
 price : "2.7"
 url : ""
-image : "κατσικα-pilsner-033lt (1).jpg"
+image : "beer146.jpg"
 price : "2.7"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "LAGER"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "katsika-pilsner-0-33lt/katsika"
+aliases: 
+    - "katsika-pilsner-0-33lt"
+slug: "beer146"
 ---
 
 Διατηρεί σαν γνήσια κατσίκα, όλες τις γεύσεις και τα αρώματά της, ανοιχτόχρωμη ξανθιά και φυσικά θολή, ελαφρώς πικρή και ευχάριστη.

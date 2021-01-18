@@ -3,21 +3,22 @@ name : "56 ISLES AEGEAN WIT 0.33lt"
 id : "beer015"
 price : "2.3"
 url : ""
-image : "paros-56-pilsner-033lt.jpg"
+image : "beer015.jpg"
 price : "2.3"
 language : "gr"
 alchohol : "4.70%"
 product_types : "bottle"
-brewery : "56 isles"
+brewery : "56-isles"
 
 promotion : ""
 beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
 retail_price : ""
 discount : ""
 description_short : "WIT"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "56-isles-aegean-wit-0-33lt/56-isles"
+aliases: 
+    - "56-isles-aegean-wit-0-33lt"
+slug: "beer015"
 ---
 
 Παράγεται στο νησί της Πάρου, την καρδιά των «56 Isles» των Κυκλάδων.

@@ -3,7 +3,7 @@ name : "ΣΤΑΛΑ PAGURU 0.33lt"
 id : "beer193"
 price : "2.5"
 url : ""
-image : "σταλα-paguru-033lt.jpg"
+image : "beer193.jpg"
 price : "2.5"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ALE BLONDE/BROWN"
 retail_price : ""
 discount : ""
 description_short : "5%alc"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "stala-paguru-0-33lt/stala"
+aliases: 
+    - "stala-paguru-0-33lt"
+slug: "beer193"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 21 05 2021

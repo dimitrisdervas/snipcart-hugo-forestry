@@ -3,7 +3,7 @@ name : "STRANGE BREW MANDY BLACK 0.33lt"
 id : "beer127"
 price : "3.1"
 url : ""
-image : "strange-brew-mandy-black-033lt.jpg"
+image : "beer127.jpg"
 price : "3.1"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ΜΑΥΡΕΣ"
 retail_price : ""
 discount : ""
 description_short : "STOUT"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "strange-brew-mandy-black-0-33lt/strange"
+aliases: 
+    - "strange-brew-mandy-black-0-33lt"
+slug: "beer127"
 ---
 
 Πρόκειται για μια χορταστική Export Stout 7% Αbv με έντονες νότες καφέ και σοκολάτας, διακριτικά κόκκινα φρούτα και ιδανικό σώμα για να πιεις πολλές παραπάνω από μία!

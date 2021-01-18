@@ -3,7 +3,7 @@ name : "CHIOS SMOKED ROBUST PORTER - ΦΡΕΣΚΙΑ ΚΑΠΝΙΣΤΗ ΜΠΥΡΑ 
 id : "beer031"
 price : "2.2"
 url : ""
-image : "chios-smoked-robust-porter-φρεσκια-καπνιστη-μπυρα-χιου-033lt.jpg"
+image : "beer031.jpg"
 price : "2.2"
 language : "gr"
 alchohol : "4.90%"
@@ -15,9 +15,10 @@ beer_types : "ΜΑΥΡΕΣ"
 retail_price : "2.6"
 discount : "0.4"
 description_short : "Φρέσκια Porter"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "chios-smoked-robust-porter-freskia-kapnisti-mpyra-xioy-0-33lt/chios"
+aliases: 
+    - "chios-smoked-robust-porter-freskia-kapnisti-mpyra-xioy-0-33lt"
+slug: "beer031"
 ---
 
 Η Smoked Robust Porter μας είναι μια αφροζύμωτη μπύρα, μαύρη και καπνιστή που παράγεται πάντα σε μικρές ποσότητες, κάνοντας κάθε παρτίδα μοναδική.

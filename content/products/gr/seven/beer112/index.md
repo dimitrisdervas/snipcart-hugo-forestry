@@ -3,7 +3,7 @@ name : "SEVEN ISLAND COCOXOCOMISU 0.44lt ΚΟΥΤΙ"
 id : "beer112"
 price : "9.99"
 url : ""
-image : "seven-island-cocoxocomisu-044lt-κουτι.jpg"
+image : "beer112.jpg"
 price : "9.99"
 language : "gr"
 alchohol : "12%"
@@ -15,9 +15,10 @@ beer_types : "ΜΑΥΡΕΣ"
 retail_price : ""
 discount : ""
 description_short : "IMPERIAL STOUT DOUBLE PASTRY"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "seven-island-cocoxocomisu-0-44lt-koyti/seven"
+aliases: 
+    - "seven-island-cocoxocomisu-0-44lt-koyti"
+slug: "beer112"
 ---
 
 Imperial τιραμισού pastry stout με ψημένη καρύδα , καφέ από την Ονδούρα, Βανίλια Ταϊτής, σοκολάτα και λακτόζη

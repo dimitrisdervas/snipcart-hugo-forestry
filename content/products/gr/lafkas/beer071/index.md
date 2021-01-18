@@ -3,7 +3,7 @@ name : "LAFKAS / ΧΑΟΣ BREWS MILKY WAY 0.33lt"
 id : "beer071"
 price : "4.2"
 url : ""
-image : "lafkas-χαος-brews-milky-way-033lt.jpg"
+image : "beer071.jpg"
 price : "4.2"
 language : "gr"
 alchohol : "5.70%"
@@ -15,9 +15,10 @@ beer_types : "I.P.A."
 retail_price : ""
 discount : ""
 description_short : "IPA"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "lafkas-xaos-brews-milky-way-0-33lt/lafkas"
+aliases: 
+    - "lafkas-xaos-brews-milky-way-0-33lt"
+slug: "beer071"
 ---
 
 Μια IPA με υπέροχη μύτη, σώμα και χρώμα που θα σας ταξιδέψει σε άλλο &quot;γαλαξία&quot;.

@@ -3,7 +3,7 @@ name : "ALEA PALE ALE 0.33lt (ΚΟΥΤΙ)"
 id : "beer020"
 price : "2.9"
 url : ""
-image : "alea-pale-ale-033lt-κουτι.jpg"
+image : "beer020.jpg"
 price : "2.9"
 language : "gr"
 alchohol : "5%"
@@ -15,9 +15,10 @@ beer_types : "PALE ALE"
 retail_price : ""
 discount : ""
 description_short : "PALE ALE"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "alea-pale-ale-0-33lt-koyti/alea"
+aliases: 
+    - "alea-pale-ale-0-33lt-koyti"
+slug: "beer020"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 31 07 2021

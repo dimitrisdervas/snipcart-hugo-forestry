@@ -3,7 +3,7 @@ name : "CORFU Ionian Ginger Lemon Ale 0.33lt"
 id : "beer040"
 price : "1.5"
 url : ""
-image : "corfu-ionian-ginger-ale-033lt.jpg"
+image : "beer040.jpg"
 price : "1.5"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ΧΩΡΙΣ ΑΛΚΟΟΛ"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "corfu-ionian-ginger-lemon-ale-0-33lt/corfu"
+aliases: 
+    - "corfu-ionian-ginger-lemon-ale-0-33lt"
+slug: "beer040"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 28 06 2021

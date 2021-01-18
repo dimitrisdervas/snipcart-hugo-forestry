@@ -3,7 +3,7 @@ name : "SAMOS BEER VALSAMO 0.33lt"
 id : "beer104"
 price : "2.6"
 url : ""
-image : "samos-beer-valsamo-033lt.jpg"
+image : "beer104.jpg"
 price : "2.6"
 language : "gr"
 alchohol : "5.50%"
@@ -15,9 +15,10 @@ beer_types : "ALE BLONDE/BROWN"
 retail_price : ""
 discount : ""
 description_short : "HONEY ALE"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "samos-beer-valsamo-0-33lt/samos"
+aliases: 
+    - "samos-beer-valsamo-0-33lt"
+slug: "beer104"
 ---
 
 Μια μπύρα τύπου Ale, φτιαγμένη με ποιοτικές βύνες, παραδοσιακούς λυκίσκους, Σαμιώτικο μέλι, σπόρους κόριανδρου και μια από τις πιο κατάλληλες μαγιές που υπάρχουν!

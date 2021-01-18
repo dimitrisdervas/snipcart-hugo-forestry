@@ -3,7 +3,7 @@ name : "FONIAS PALE ALE 330ml"
 id : "beer064"
 price : "3"
 url : ""
-image : "fonias-pale-ale-330ml.jpg"
+image : "beer064.jpg"
 price : "3"
 language : "gr"
 alchohol : "6.20%"
@@ -15,9 +15,10 @@ beer_types : "PALE ALE"
 retail_price : ""
 discount : ""
 description_short : "Pale Ale"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "fonias-pale-ale-330ml/fonias"
+aliases: 
+    - "fonias-pale-ale-330ml"
+slug: "beer064"
 ---
 
 Στη Θράκη και συγκεκριμένα στο νησί της Σαμοθράκης έλαβε χώρα η πρώτη παραγωγή μπύρας στην Ελλάδα:

@@ -3,7 +3,7 @@ name : "CORFU Royal Ionian Pilsner 0.50lt"
 id : "beer048"
 price : "2.1"
 url : ""
-image : "corfu-royal-ionian-pilsner-050lt.jpg"
+image : "beer048.jpg"
 price : "2.1"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "LAGER"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "corfu-royal-ionian-pilsner-0-50lt/corfu"
+aliases: 
+    - "corfu-royal-ionian-pilsner-0-50lt"
+slug: "beer048"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 30 04 2021

@@ -3,7 +3,7 @@ name : "ΚΑΤΣΙΚΑ PALE ALE 0.33lt"
 id : "beer145"
 price : "2.79"
 url : ""
-image : "κατσικα-pilsner-033lt.jpg"
+image : "beer145.jpg"
 price : "2.79"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "PALE ALE"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "katsika-pale-ale-0-33lt/katsika"
+aliases: 
+    - "katsika-pale-ale-0-33lt"
+slug: "beer145"
 ---
 
 Διατηρεί σαν γνήσια κατσίκα, όλες τις γεύσεις και τα αρώματά της, ανοιχτόχρωμη ξανθιά και φυσικά θολή, ελαφρώς πικρή και ευχάριστη.

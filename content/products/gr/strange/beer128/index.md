@@ -3,7 +3,7 @@ name : "STRANGE BREW THE WIZARD 0.33lt"
 id : "beer128"
 price : "4"
 url : ""
-image : "strange-brew-the-wizard-033lt.jpg"
+image : "beer128.jpg"
 price : "4"
 language : "gr"
 alchohol : "9.20%"
@@ -15,9 +15,10 @@ beer_types : "ΜΑΥΡΕΣ"
 retail_price : ""
 discount : ""
 description_short : "IMPERIAL STOUT"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "strange-brew-the-wizard-0-33lt/strange"
+aliases: 
+    - "strange-brew-the-wizard-0-33lt"
+slug: "beer128"
 ---
 
 Την Παρασκευή 13/2/1970, η αγία τετράδα από το Birmingham, Ozzy Osbourne, Tony Iommi, Geezer Butler και Bill Ward aka Black Sabbath, κυκλοφόρησε το δίσκο που έγινε η απαρχή ενός νέου μουσικού στυλ που, στις διάφορες εκφάνσεις του, αγάπησαν εκατομμύρια οπαδοί σε ολόκληρο τον πλανήτη τα επόμενα χρόνια.

@@ -3,7 +3,7 @@ name : "5+1 Δώρο CORFU Dark Ale Bitter 0.50lt"
 id : "beer006"
 price : "13"
 url : ""
-image : "κιβ-51-δώρο-corfu-dark-ale-bitter-050lt.jpg"
+image : "beer006.jpg"
 price : "13"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ΜΑΥΡΕΣ"
 retail_price : "15.6"
 discount : "2.6"
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "5-1-doro-corfu-dark-ale-bitter-0-50lt/corfu"
+aliases: 
+    - "5-1-doro-corfu-dark-ale-bitter-0-50lt"
+slug: "beer006"
 ---
 
 Χαρακτηριστικά

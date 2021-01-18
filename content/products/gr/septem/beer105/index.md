@@ -3,7 +3,7 @@ name : "SEPTEM INDIA PALE ALE 8η ΜΕΡΑ 0.33lt"
 id : "beer105"
 price : "2.89"
 url : ""
-image : "septem-india-pale-ale-8η-μερα-033lt.jpg"
+image : "beer105.jpg"
 price : "2.89"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ALE BLONDE/BROWN"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "septem-india-pale-ale-8i-mera-0-33lt/septem"
+aliases: 
+    - "septem-india-pale-ale-8i-mera-0-33lt"
+slug: "beer105"
 ---
 
 Βύνη: Marris Otter Pale Malt, Munich Malt, Amber Malt &amp; Aromatic Malt

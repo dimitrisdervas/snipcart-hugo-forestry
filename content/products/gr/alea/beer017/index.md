@@ -3,7 +3,7 @@ name : "ALEA / STRANGE BREW CHLOE 0.50lt (ΚΟΥΤΙ)"
 id : "beer017"
 price : "3.2"
 url : ""
-image : "alea-strange-brew-chloe-050lt-κουτι.jpg"
+image : "beer017.jpg"
 price : "3.2"
 language : "gr"
 alchohol : "6%"
@@ -15,9 +15,10 @@ beer_types : "LAGER"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "alea-strange-brew-chloe-0-50lt-koyti/alea"
+aliases: 
+    - "alea-strange-brew-chloe-0-50lt-koyti"
+slug: "beer017"
 ---
 
 &quot; Η μαύρη γάτα για κάποιους είναι σημάδι γρουσουζιάς και κακοτυχίας. Άλλοι αντίθετα τη θεωρούν οιωνό ευμάρειας και υγείας. Για εμάς η Χλόη, η σπιτική αλητόγατα του ζυθοποιείου, είναι το απόλυτο παράδειγμα στοργής και ανεξαρτησίας. Από τη στιγμή που τη βρήκαμε, σχεδόν νεογέννητη στην αυλή, μέχρι και σήμερα, είναι ξεκάθαρο ότι συμπαθεί τους πάντες, αλλά δεν ανήκει σε κανέναν.

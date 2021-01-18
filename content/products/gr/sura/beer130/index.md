@@ -3,7 +3,7 @@ name : "SURA BLONDE ALE 0.33lt"
 id : "beer130"
 price : "2.8"
 url : ""
-image : "sura-blonde-ale.jpg"
+image : "beer130.jpg"
 price : "2.8"
 language : "gr"
 alchohol : "4.60%"
@@ -15,9 +15,10 @@ beer_types : "ALE BLONDE/BROWN"
 retail_price : ""
 discount : ""
 description_short : "BLONDE ALE"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "sura-blonde-ale-0-33lt/sura"
+aliases: 
+    - "sura-blonde-ale-0-33lt"
+slug: "beer130"
 ---
 
 Χαρακτηριστικά

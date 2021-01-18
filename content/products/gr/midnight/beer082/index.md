@@ -3,7 +3,7 @@ name : "MIDNIGHT CIRCUS ONE-EYED JACK PILS 0.33lt"
 id : "beer082"
 price : "2.9"
 url : ""
-image : "midnight-circus-one-eyed-jack-pils-033lt.jpg"
+image : "beer082.jpg"
 price : "2.9"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "LAGER"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "midnight-circus-one-eyed-jack-pils-0-33lt/midnight"
+aliases: 
+    - "midnight-circus-one-eyed-jack-pils-0-33lt"
+slug: "beer082"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 11 05 2021

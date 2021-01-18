@@ -3,21 +3,22 @@ name : "LOCAL STREETS WEISS 0.50lt"
 id : "beer075"
 price : "2.3"
 url : ""
-image : "local-streets-weiss-050lt.jpg"
+image : "beer075.jpg"
 price : "2.3"
 language : "gr"
 alchohol : ""
 product_types : ""
-brewery : "Local streets"
+brewery : "Local-streets"
 
 promotion : ""
 beer_types : "WEISS"
 retail_price : ""
 discount : ""
 description_short : "WEISS απαστερίωτη, αφιλτράριστη"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "local-streets-weiss-0-50lt/local-streets"
+aliases: 
+    - "local-streets-weiss-0-50lt"
+slug: "beer075"
 ---
 
 Χαρακτηριστικά

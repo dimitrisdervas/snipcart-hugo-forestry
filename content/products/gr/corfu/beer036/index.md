@@ -3,7 +3,7 @@ name : "CORFU Contessa IPA 0.33lt"
 id : "beer036"
 price : "2.6"
 url : ""
-image : "corfu-contessa-ipa-033lt.jpg"
+image : "beer036.jpg"
 price : "2.6"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "I.P.A."
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "corfu-contessa-ipa-0-33lt/corfu"
+aliases: 
+    - "corfu-contessa-ipa-0-33lt"
+slug: "beer036"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 18 02 2021

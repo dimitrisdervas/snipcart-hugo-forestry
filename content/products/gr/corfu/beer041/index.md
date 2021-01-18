@@ -3,7 +3,7 @@ name : "CORFU Ionian Orange Ginger Ale 0.33lt"
 id : "beer041"
 price : "1.5"
 url : ""
-image : "corfu-ionian-orange-ginger-ale-033lt.jpg"
+image : "beer041.jpg"
 price : "1.5"
 language : "gr"
 alchohol : ""
@@ -15,9 +15,10 @@ beer_types : "ΧΩΡΙΣ ΑΛΚΟΟΛ"
 retail_price : ""
 discount : ""
 description_short : ""
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "corfu-ionian-orange-ginger-ale-0-33lt/corfu"
+aliases: 
+    - "corfu-ionian-orange-ginger-ale-0-33lt"
+slug: "beer041"
 ---
 
 Προτεινόμενη κατανάλωση πρίν τις: 26 05 2021

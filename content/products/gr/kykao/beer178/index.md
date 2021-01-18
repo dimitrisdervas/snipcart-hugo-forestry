@@ -3,7 +3,7 @@ name : "ΚΥΚΑΩ TANGERINE EXPORT STOUT 0.33lt"
 id : "beer178"
 price : "4.18"
 url : ""
-image : "κυκαω-tangerine-export-stout-033lt.jpg"
+image : "beer178.jpg"
 price : "4.18"
 language : "gr"
 alchohol : "8%"
@@ -15,9 +15,10 @@ beer_types : "ΜΑΥΡΕΣ"
 retail_price : "4.4"
 discount : "5%"
 description_short : "STOUT"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "kykao-tangerine-export-stout-0-33lt/kykao"
+aliases: 
+    - "kykao-tangerine-export-stout-0-33lt"
+slug: "beer178"
 ---
 
 An English Export Stout with a Greek twist in it!

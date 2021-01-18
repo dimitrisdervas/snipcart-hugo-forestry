@@ -3,7 +3,7 @@ name : "CHIOS FRESH - ΦΡΕΣΚΙΑ ΜΠΥΡΑ ΧΙΟΥ 0.33lt"
 id : "beer030"
 price : "2.2"
 url : ""
-image : "chios-fresh-φρεσκια-μπυρα-χιου-033lt.jpg"
+image : "beer030.jpg"
 price : "2.2"
 language : "gr"
 alchohol : "4.90%"
@@ -15,9 +15,10 @@ beer_types : "ALE BLONDE/BROWN"
 retail_price : "2.6"
 discount : "0.4"
 description_short : "Φρέσκια House Ale"
-url: "name"/"brewery"
-aliases: "name"
-slug: "id"
+url: "chios-fresh-freskia-mpyra-xioy-0-33lt/chios"
+aliases: 
+    - "chios-fresh-freskia-mpyra-xioy-0-33lt"
+slug: "beer030"
 ---
 
 Η Φρέσκια Μπύρα Χίου – House Ale ανήκει στις αφροζυμωτές (ALES) μπύρες , παράγεται στον Κάμπο της Χίου από εκλεκτές ποικιλίες βύνης και ολόκληρο λυκίσκο. Εμφιαλώνεται πάντα χωρίς παστερίωση και φιλτράρισμα διατηρώντας αναλλοίωτη τη γεύση και τα υπόλοιπα οργανοληπτικά χαρακτηριστικά της.
