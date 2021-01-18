@@ -9,7 +9,19 @@
 <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.css" />
 
   <link rel='shortcut icon' type='image/x-icon' href='/images/icons/favicon.ico' />
-  {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+<!-- https://thoughtexpo.com/setup-hugo-with-tailwindcss-for-netlify/ -->
+<!-- https://praveenjuge.com/blog/install-tailwind-on-hugo/
+ -->
+  {{ $styles := resources.Get "css/main.css" }}
+  {{ $styles = $styles | resources.PostCSS (dict "inlineImports" true) }}
+
+  {{ if hugo.IsProduction }}
+    {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
+  {{ end }}
+
+  <link href="{{ $styles.Permalink }}" rel="stylesheet" />
+
+  <!-- {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }} -->
   <link rel="stylesheet" href="{{ $style.Permalink }}">
   <title>CheeseCity</title>
 </head>
