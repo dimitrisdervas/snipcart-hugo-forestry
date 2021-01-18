@@ -74,7 +74,8 @@
 
                 {{ range .Site.Taxonomies.breweries }}
                     <li class="rounded-sm px-3 py-1 bg-gray-100">
-                        <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}
+                        <a href="{{ .Page.Permalink }}"><img src="/uploads/breweries/{{ .Page.Params.brand | urlize }}.jpg" alt="{{ .Page.Params.brand}} -  brewery">
+                           {{ .Page.Params.brand }}</a>
                     </li>
                 {{ end }}
 

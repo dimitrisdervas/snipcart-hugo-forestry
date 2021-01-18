@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+{{ .Title }}
+
+<ul>
+    {{ range .Pages }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+            <img class="product__image" src="/uploads/beers/{{ .Params.image }}" alt="" />
+        </li>
+    {{ end }}
+</ul>
+
+
+{{ end }}

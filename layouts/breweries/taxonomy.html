@@ -1,15 +1,28 @@
 {{ define "main" }}
 
-<h1>{{.Title}}</h1>
+{{ .Title }}
+<img src="/uploads/breweries/{{.Params.brand | urlize }}.jpg" alt="{{.Params.brand}} -  brewery">
+{{.Params.brand}}
+    <div class="flex">{{.Params.brand}}</div>
+    <div class="flex">{{.Params.titlegrlarge}}</div>
+    <div class="flex">{{.Params.titleenlarge}}</div>
+    <div class="flex"><a href="{{.Params.website}}">website</a></div>
+    <div class="flex"><a href="{{.Params.facebook}}">facebook</a></div>
+    <div class="flex">{{.Params.city}}</div>
+    <div class="flex">{{.Params.brewery}}</div>
+    <div class="flex">{{.Params.beers}}</div>
+    <div class="flex">{{.Params.year}}</div>
+    <div class="flex">{{.Params.address}}</div>
+    <div class="flex">{{.Params.phone}}</div>
 
-{{ .Params.phone}}
+<p class="product__description">{{ .Content }}</p>
+
 <ul>
     {{ range .Pages }}
         <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-            {{ .Params.phone }}
+            <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+            <img class="product__image" src="/uploads/beers/{{ .Params.image }}" alt="" />
         </li>
     {{ end }}
 </ul>
-
 {{ end }}

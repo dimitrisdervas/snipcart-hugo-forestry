@@ -8,7 +8,7 @@
     <h2>Cheese</h2>
     <p>An exclusive <strong>collection of handcrafted cheese</strong> for the hardcore cheese enthusiasts.</p>
   </div>
-  {{ range where .Site.RegularPages "Section" "products"}}
+  {{ range where .Site.RegularPages "Section" "beers"}}
     {{ partial "product.html" .Params }}
   {{ end }}
 </main>
