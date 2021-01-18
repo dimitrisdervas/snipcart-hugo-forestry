@@ -7,10 +7,10 @@ image : "beer149.jpg"
 price : "3.33"
 language : "gr"
 alchohol : "6%"
-product_types : "bottle"
-breweries : "Kykao"
+product_types :  ["bottle"]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "PALE ALE"
+beer_types :  ["PALE ALE"]
 retail_price : "3.5"
 discount : "5%"
 description_short : "HOPPY AMERICAN PALE ALE"

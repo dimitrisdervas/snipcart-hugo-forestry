@@ -7,10 +7,10 @@ image : "beer193.jpg"
 price : "2.5"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Stala"
+product_types :  [""]
+breweries :  ["Stala"]
 promotion : ""
-beer_types : "ALE BLONDE/BROWN"
+beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""
 description_short : "5%alc"

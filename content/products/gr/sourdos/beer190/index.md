@@ -7,10 +7,10 @@ image : "beer190.jpg"
 price : "2.4"
 language : "gr"
 alchohol : "5.50%"
-product_types : ""
-breweries : "Sourdos"
+product_types :  [""]
+breweries :  ["Sourdos"]
 promotion : ""
-beer_types : "ALE BLONDE/BROWN"
+beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""
 description_short : "House Ale"

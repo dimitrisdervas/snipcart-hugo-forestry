@@ -7,10 +7,10 @@ image : "beer127.jpg"
 price : "3.1"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Strange"
+product_types :  [""]
+breweries :  ["Strange"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "STOUT"

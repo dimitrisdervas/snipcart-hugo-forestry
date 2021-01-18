@@ -7,10 +7,10 @@ image : "beer140.jpg"
 price : "1.9"
 language : "gr"
 alchohol : "5%"
-product_types : "bottle"
-breweries : "Ali"
+product_types :  ["bottle"]
+breweries :  ["Ali"]
 promotion : ""
-beer_types : "WEISS"
+beer_types :  ["WEISS"]
 retail_price : ""
 discount : ""
 description_short : ""

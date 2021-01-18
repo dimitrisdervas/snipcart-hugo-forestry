@@ -7,10 +7,10 @@ image : "beer135.jpg"
 price : "3.3"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Donkey"
+product_types :  [""]
+breweries :  ["Donkey"]
 promotion : ""
-beer_types : "ALE BLONDE/BROWN"
+beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""
 description_short : ""

@@ -7,10 +7,10 @@ image : "beer073.jpg"
 price : "2"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Local-streets"
+product_types :  [""]
+breweries :  ["Local-streets"]
 promotion : ""
-beer_types : "PALE ALE"
+beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""
 description_short : "PALE ALE απαστερίωτη, αφιλτράριστη"

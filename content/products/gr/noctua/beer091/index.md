@@ -7,10 +7,10 @@ image : "beer091.jpg"
 price : "2.8"
 language : "gr"
 alchohol : "5.60%"
-product_types : "bottle"
-breweries : "Noctua"
+product_types :  ["bottle"]
+breweries :  ["Noctua"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "NEW ENGLAND IPA"

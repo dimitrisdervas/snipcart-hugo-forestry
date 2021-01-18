@@ -7,10 +7,10 @@ image : "beer137.jpg"
 price : "1.98"
 language : "gr"
 alchohol : "5%"
-product_types : "bottle"
-breweries : "Ali"
+product_types :  ["bottle"]
+breweries :  ["Ali"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : ""

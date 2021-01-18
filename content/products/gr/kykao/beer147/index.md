@@ -7,10 +7,10 @@ image : "beer147.jpg"
 price : "7.41"
 language : "gr"
 alchohol : "16%"
-product_types : "bottle"
-breweries : "Kykao"
+product_types :  ["bottle"]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : "7.8"
 discount : "5%"
 description_short : "ΒELGIAN DARK STRONG ALE"

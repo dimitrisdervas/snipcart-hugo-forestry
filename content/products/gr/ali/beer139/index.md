@@ -7,10 +7,10 @@ image : "beer139.jpg"
 price : "2.1"
 language : "gr"
 alchohol : "5.30%"
-product_types : "bottle"
-breweries : "Ali"
+product_types :  ["bottle"]
+breweries :  ["Ali"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""
 description_short : ""

@@ -7,10 +7,10 @@ image : "beer110.jpg"
 price : "2.69"
 language : "gr"
 alchohol : ""
-product_types : "bottle"
-breweries : "Septem"
+product_types :  ["bottle"]
+breweries :  ["Septem"]
 promotion : ""
-beer_types : "PALE ALE"
+beer_types :  ["PALE ALE"]
 retail_price : "2.99"
 discount : "10%"
 description_short : ""

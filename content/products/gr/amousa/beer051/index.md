@@ -7,10 +7,10 @@ image : "beer051.jpg"
 price : "2.99"
 language : "gr"
 alchohol : "5.50%"
-product_types : ""
-breweries : "Amousa"
+product_types :  [""]
+breweries :  ["Amousa"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "English IPA"

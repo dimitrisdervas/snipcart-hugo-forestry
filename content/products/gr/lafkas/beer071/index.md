@@ -7,10 +7,10 @@ image : "beer071.jpg"
 price : "4.2"
 language : "gr"
 alchohol : "5.70%"
-product_types : "bottle"
-breweries : "Lafkas"
+product_types :  ["bottle"]
+breweries :  ["Lafkas"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "IPA"

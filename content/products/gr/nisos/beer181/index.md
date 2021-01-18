@@ -7,10 +7,10 @@ image : "beer181.jpg"
 price : "2.5"
 language : "gr"
 alchohol : "7.50%"
-product_types : "bottle"
-breweries : "Nisos"
+product_types :  ["bottle"]
+breweries :  ["Nisos"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""
 description_short : ""

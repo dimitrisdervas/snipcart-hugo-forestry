@@ -7,10 +7,10 @@ image : "beer106.jpg"
 price : "5.4"
 language : "gr"
 alchohol : "10.30%"
-product_types : "bottle"
-breweries : "Septem"
+product_types :  ["bottle"]
+breweries :  ["Septem"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "Imperial Stout"

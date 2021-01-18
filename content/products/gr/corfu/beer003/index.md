@@ -7,10 +7,10 @@ image : "beer003.jpg"
 price : "14.5"
 language : "gr"
 alchohol : ""
-product_types : "box"
-breweries : "Corfu"
+product_types :  ["box"]
+breweries :  ["Corfu"]
 promotion : "5plus1"
-beer_types : "WEISS"
+beer_types :  ["WEISS"]
 retail_price : "17.4"
 discount : "2.9"
 description_short : ""

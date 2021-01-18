@@ -7,10 +7,10 @@ image : "beer179.jpg"
 price : "6.27"
 language : "gr"
 alchohol : "10%"
-product_types : ""
-breweries : "Kykao"
+product_types :  [""]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : "6.6"
 discount : "5%"
 description_short : "IMPERIAL IPA"

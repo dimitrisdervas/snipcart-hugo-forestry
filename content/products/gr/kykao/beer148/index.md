@@ -7,10 +7,10 @@ image : "beer148.jpg"
 price : "2.66"
 language : "gr"
 alchohol : "5%"
-product_types : ""
-breweries : "Kykao"
+product_types :  [""]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : "2.8"
 discount : "5%"
 description_short : "LAGER"

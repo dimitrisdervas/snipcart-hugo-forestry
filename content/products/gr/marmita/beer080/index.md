@@ -7,10 +7,10 @@ image : "beer080.jpg"
 price : "2.7"
 language : "gr"
 alchohol : "6.40%"
-product_types : "bottle"
-breweries : "Marmita"
+product_types :  ["bottle"]
+breweries :  ["Marmita"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "STOUT"

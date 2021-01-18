@@ -7,10 +7,10 @@ image : "beer168.jpg"
 price : "3.71"
 language : "gr"
 alchohol : "7%"
-product_types : ""
-breweries : "Kykao"
+product_types :  [""]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
+beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : "3.9"
 discount : "5%"
 description_short : "Saison με τριαντάφυλλο"

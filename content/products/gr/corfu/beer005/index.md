@@ -7,10 +7,10 @@ image : "beer005.jpg"
 price : "9.5"
 language : "gr"
 alchohol : ""
-product_types : "box"
-breweries : "Corfu"
+product_types :  ["box"]
+breweries :  ["Corfu"]
 promotion : "5plus1"
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : "11.4"
 discount : "1.9"
 description_short : ""

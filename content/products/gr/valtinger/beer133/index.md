@@ -7,10 +7,10 @@ image : "beer133.jpg"
 price : "2.8"
 language : "gr"
 alchohol : "6.50%"
-product_types : "bottle"
-breweries : "Valtinger"
+product_types :  ["bottle"]
+breweries :  ["Valtinger"]
 promotion : ""
-beer_types : "ALE BLONDE/BROWN"
+beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""
 description_short : ""

@@ -7,10 +7,10 @@ image : "beer076.jpg"
 price : "2.2"
 language : "gr"
 alchohol : "5.50%"
-product_types : "bottle"
-breweries : "lola"
+product_types :  ["bottle"]
+breweries :  ["lola"]
 promotion : ""
-beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
+beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "BELGIAN ALE"

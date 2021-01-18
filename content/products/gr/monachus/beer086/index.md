@@ -7,10 +7,10 @@ image : "beer086.jpg"
 price : "2.9"
 language : "gr"
 alchohol : "5%"
-product_types : ""
-breweries : "Monachus"
+product_types :  [""]
+breweries :  ["Monachus"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""
 description_short : "Pilsner"

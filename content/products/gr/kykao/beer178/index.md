@@ -7,10 +7,10 @@ image : "beer178.jpg"
 price : "4.18"
 language : "gr"
 alchohol : "8%"
-product_types : "bottle"
-breweries : "Kykao"
+product_types :  ["bottle"]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : "4.4"
 discount : "5%"
 description_short : "STOUT"

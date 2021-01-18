@@ -7,10 +7,10 @@ image : "beer118.jpg"
 price : "7.1"
 language : "gr"
 alchohol : "6.50%"
-product_types : "can"
-breweries : "Seven"
+product_types :  ["can"]
+breweries :  ["Seven"]
 promotion : ""
-beer_types : "ALE BLONDE/BROWN"
+beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""
 description_short : "PASTRY ALE"

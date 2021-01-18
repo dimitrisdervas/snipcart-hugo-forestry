@@ -7,10 +7,10 @@ image : "beer153.jpg"
 price : "3.52"
 language : "gr"
 alchohol : "6.50%"
-product_types : "bottle"
-breweries : "Kykao"
+product_types :  ["bottle"]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : "3.7"
 discount : "5%"
 description_short : "PILSNER Τσέχικου τύπου"

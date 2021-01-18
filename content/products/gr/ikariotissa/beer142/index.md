@@ -7,10 +7,10 @@ image : "beer142.jpg"
 price : "3.8"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Ikariotissa"
+product_types :  [""]
+breweries :  ["Ikariotissa"]
 promotion : ""
-beer_types : "ALE BLONDE/BROWN"
+beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""
 description_short : ""

@@ -7,10 +7,10 @@ image : "beer165.jpg"
 price : "3.61"
 language : "gr"
 alchohol : "7%"
-product_types : ""
-breweries : "Kykao"
+product_types :  [""]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : "3.8"
 discount : "5%"
 description_short : "PORTER"

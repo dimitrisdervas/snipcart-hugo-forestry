@@ -7,10 +7,10 @@ image : "beer093.jpg"
 price : "2.7"
 language : "gr"
 alchohol : "5,2%"
-product_types : ""
-breweries : "Noctua"
+product_types :  [""]
+breweries :  ["Noctua"]
 promotion : ""
-beer_types : "PALE ALE"
+beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""
 description_short : "Χρυσή Pale Ale"

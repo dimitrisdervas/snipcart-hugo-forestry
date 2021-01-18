@@ -7,10 +7,10 @@ image : "beer134.jpg"
 price : "3.29"
 language : "gr"
 alchohol : ". 5.4-5.5% vol."
-product_types : ""
-breweries : "Donkey"
+product_types :  [""]
+breweries :  ["Donkey"]
 promotion : ""
-beer_types : "WEISS"
+beer_types :  ["WEISS"]
 retail_price : ""
 discount : ""
 description_short : "Weiss"

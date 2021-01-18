@@ -7,10 +7,10 @@ image : "beer058.jpg"
 price : "2.6"
 language : "gr"
 alchohol : "4.7%."
-product_types : ""
-breweries : "Dreamer"
+product_types :  [""]
+breweries :  ["Dreamer"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""
 description_short : "LAGER με νυφάδες καλαμποκιού"

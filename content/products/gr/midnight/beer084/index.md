@@ -7,10 +7,10 @@ image : "beer084.jpg"
 price : "3.1"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Midnight"
+product_types :  [""]
+breweries :  ["Midnight"]
 promotion : ""
-beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
+beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
 retail_price : ""
 discount : ""
 description_short : ""

@@ -7,10 +7,10 @@ image : "beer174.jpg"
 price : "3.04"
 language : "gr"
 alchohol : "7%"
-product_types : "bottle"
-breweries : "Kykao"
+product_types :  ["bottle"]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "ALE BLONDE/BROWN"
+beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : "3.2"
 discount : "5%"
 description_short : "SPICY SESSION"

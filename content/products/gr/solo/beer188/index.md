@@ -7,10 +7,10 @@ image : "beer188.jpg"
 price : "2.7"
 language : "gr"
 alchohol : "6.50%"
-product_types : "bottle"
-breweries : "Solo"
+product_types :  ["bottle"]
+breweries :  ["Solo"]
 promotion : ""
-beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
+beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : ""
 discount : ""
 description_short : ""

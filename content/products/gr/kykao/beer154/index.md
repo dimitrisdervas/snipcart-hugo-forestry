@@ -7,10 +7,10 @@ image : "beer154.jpg"
 price : "11.31"
 language : "gr"
 alchohol : "12%"
-product_types : "bottle"
-breweries : "Kykao"
+product_types :  ["bottle"]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : "11.9"
 discount : "5%"
 description_short : "ENGLISH BARLEY WINE AGED IN MAVRODAPHNE BARRELS"

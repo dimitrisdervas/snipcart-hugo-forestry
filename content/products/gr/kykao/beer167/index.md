@@ -7,10 +7,10 @@ image : "beer167.jpg"
 price : "7.22"
 language : "gr"
 alchohol : "13%"
-product_types : ""
-breweries : "Kykao"
+product_types :  [""]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "ALE BLONDE/BROWN"
+beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : "7.6"
 discount : "5%"
 description_short : "ALE"

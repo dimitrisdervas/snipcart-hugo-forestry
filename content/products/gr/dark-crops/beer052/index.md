@@ -7,10 +7,10 @@ image : "beer052.jpg"
 price : "2.7"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Dark crops"
+product_types :  [""]
+breweries :  ["Dark crops"]
 promotion : ""
-beer_types : "PALE ALE"
+beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""
 description_short : ""

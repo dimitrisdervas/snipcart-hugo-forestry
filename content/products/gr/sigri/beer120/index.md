@@ -7,10 +7,10 @@ image : "beer120.jpg"
 price : "3.2"
 language : "gr"
 alchohol : "5%"
-product_types : "bottle"
-breweries : "Sigri"
+product_types :  ["bottle"]
+breweries :  ["Sigri"]
 promotion : ""
-beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
+beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
 retail_price : ""
 discount : ""
 description_short : "RED ALE"

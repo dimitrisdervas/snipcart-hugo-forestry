@@ -7,10 +7,10 @@ image : "beer171.jpg"
 price : "4.94"
 language : "gr"
 alchohol : "9%"
-product_types : "bottle"
-breweries : "Kykao"
+product_types :  ["bottle"]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : "5.2"
 discount : "5%"
 description_short : "SMOKED PORTER"

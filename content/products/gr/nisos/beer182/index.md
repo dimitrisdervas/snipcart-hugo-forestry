@@ -7,10 +7,10 @@ image : "beer182.jpg"
 price : "3"
 language : "gr"
 alchohol : "6.50%"
-product_types : "bottle"
-breweries : "Nisos"
+product_types :  ["bottle"]
+breweries :  ["Nisos"]
 promotion : ""
-beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
+beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
 retail_price : ""
 discount : ""
 description_short : "Μοναστηριακή Κόκκινη (Abbey red)"

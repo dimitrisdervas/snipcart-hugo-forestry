@@ -7,10 +7,10 @@ image : "beer155.jpg"
 price : "10.64"
 language : "gr"
 alchohol : "7%"
-product_types : ""
-breweries : "Kykao"
+product_types :  [""]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
+beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
 retail_price : "11.2"
 discount : "5%"
 description_short : "Παλαιωμένη σε βαρέλια κρασιού για δύο χρόνια RED ALE"

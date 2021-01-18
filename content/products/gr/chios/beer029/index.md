@@ -7,10 +7,10 @@ image : "beer029.jpg"
 price : "2.2"
 language : "gr"
 alchohol : "5,5%"
-product_types : "bottle"
-breweries : "Chios"
+product_types :  ["bottle"]
+breweries :  ["Chios"]
 promotion : ""
-beer_types : "ΚΑΠΝΙΣΤΕΣ"
+beer_types :  ["ΚΑΠΝΙΣΤΕΣ"]
 retail_price : "2.6"
 discount : "0.4"
 description_short : "Φρέσκια καπνιστή μπύρα"

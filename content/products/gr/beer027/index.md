@@ -7,10 +7,10 @@ image : "beer027.jpg"
 price : "1.6"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : ""
+product_types :  [""]
+breweries :  [""]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""
 description_short : ""

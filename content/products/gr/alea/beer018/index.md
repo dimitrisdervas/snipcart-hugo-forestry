@@ -7,10 +7,10 @@ image : "beer018.jpg"
 price : "2.99"
 language : "gr"
 alchohol : "5.50%"
-product_types : ""
-breweries : "Alea"
+product_types :  [""]
+breweries :  ["Alea"]
 promotion : ""
-beer_types : "ALE BLONDE/BROWN"
+beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""
 description_short : "ALE"

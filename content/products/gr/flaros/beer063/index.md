@@ -7,10 +7,10 @@ image : "beer063.jpg"
 price : "2.8"
 language : "gr"
 alchohol : "4.40%"
-product_types : "bottle"
-breweries : "Flaros "
+product_types :  ["bottle"]
+breweries :  ["Flaros "]
 promotion : ""
-beer_types : "ALE BLONDE/BROWN"
+beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""
 description_short : "Τύπος:American Wheat Ale"

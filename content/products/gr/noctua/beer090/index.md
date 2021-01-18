@@ -7,10 +7,10 @@ image : "beer090.jpg"
 price : "2.4"
 language : "gr"
 alchohol : "6%"
-product_types : ""
-breweries : "Noctua"
+product_types :  [""]
+breweries :  ["Noctua"]
 promotion : ""
-beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
+beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
 retail_price : "2.7"
 discount : "11%"
 description_short : "AMBER ALE"

@@ -7,10 +7,10 @@ image : "beer116.jpg"
 price : "10.2"
 language : "gr"
 alchohol : "12%"
-product_types : "bottle"
-breweries : "Seven"
+product_types :  ["bottle"]
+breweries :  ["Seven"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "Imperial pastry Stout με φυστικοβούτυρο, άγρια φράουλα, βανίλια ταϊτής &amp; σοκολάτα"

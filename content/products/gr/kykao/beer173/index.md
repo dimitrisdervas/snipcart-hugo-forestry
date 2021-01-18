@@ -7,10 +7,10 @@ image : "beer173.jpg"
 price : "3.79"
 language : "gr"
 alchohol : "8%"
-product_types : "bottle"
-breweries : "Kykao"
+product_types :  ["bottle"]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : "3.99"
 discount : "5%"
 description_short : "SOUR IPA"

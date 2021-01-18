@@ -7,10 +7,10 @@ image : "beer180.jpg"
 price : "1.6"
 language : "gr"
 alchohol : "5%"
-product_types : "bottle"
-breweries : ""
+product_types :  ["bottle"]
+breweries :  [""]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : "1.9"
 discount : "16%"
 description_short : "To ασίγαστο πάθος και το άπαυστο μεράκι μου εζυμώθηκαν μαζί με τα υψηλής ποιότητος αγνά υλικά και δημιούργησαν τον &quot;ελληνικό υγρό άρτο&quot;, για να τον απολαμβάνουν καθημερινά οι ζυθοπότες και να ευφραίνουν τις καρδιές τους!"

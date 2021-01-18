@@ -7,10 +7,10 @@ image : "beer078.jpg"
 price : "2.7"
 language : "gr"
 alchohol : "5.10%"
-product_types : "bottle"
-breweries : "Marmita"
+product_types :  ["bottle"]
+breweries :  ["Marmita"]
 promotion : ""
-beer_types : "PALE ALE"
+beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""
 description_short : "AMERICAN PALE ALE"

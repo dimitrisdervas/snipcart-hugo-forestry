@@ -7,10 +7,10 @@ image : "beer145.jpg"
 price : "2.79"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Katsika"
+product_types :  [""]
+breweries :  ["Katsika"]
 promotion : ""
-beer_types : "PALE ALE"
+beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""
 description_short : ""

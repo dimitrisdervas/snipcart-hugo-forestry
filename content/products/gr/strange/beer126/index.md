@@ -7,10 +7,10 @@ image : "beer126.jpg"
 price : "2.99"
 language : "gr"
 alchohol : "5.50%"
-product_types : "bottle"
-breweries : "Strange"
+product_types :  ["bottle"]
+breweries :  ["Strange"]
 promotion : ""
-beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
+beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "ALE"

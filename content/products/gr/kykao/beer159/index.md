@@ -7,10 +7,10 @@ image : "beer159.jpg"
 price : "6.74"
 language : "gr"
 alchohol : "10%"
-product_types : ""
-breweries : "Kykao"
+product_types :  [""]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : "7.1"
 discount : "5%"
 description_short : "IMPERIAL STOUT"

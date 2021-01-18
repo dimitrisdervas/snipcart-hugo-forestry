@@ -7,10 +7,10 @@ image : "beer184.jpg"
 price : "2.6"
 language : "gr"
 alchohol : "6%"
-product_types : "bottle"
-breweries : "Solo"
+product_types :  ["bottle"]
+breweries :  ["Solo"]
 promotion : ""
-beer_types : "PALE ALE"
+beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""
 description_short : ""

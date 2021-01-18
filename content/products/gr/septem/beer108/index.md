@@ -7,10 +7,10 @@ image : "beer108.jpg"
 price : "3.2"
 language : "gr"
 alchohol : "5.90%"
-product_types : "bottle"
-breweries : "Septem"
+product_types :  ["bottle"]
+breweries :  ["Septem"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "New England IPA"

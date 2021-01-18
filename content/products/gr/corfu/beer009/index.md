@@ -7,10 +7,10 @@ image : "beer009.jpg"
 price : "7.5"
 language : "gr"
 alchohol : ""
-product_types : "box"
-breweries : "Corfu"
+product_types :  ["box"]
+breweries :  ["Corfu"]
 promotion : "5plus1"
-beer_types : "ΧΩΡΙΣ ΑΛΚΟΟΛ"
+beer_types :  ["ΧΩΡΙΣ ΑΛΚΟΟΛ"]
 retail_price : "9"
 discount : "1.5"
 description_short : ""

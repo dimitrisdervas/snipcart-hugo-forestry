@@ -7,10 +7,10 @@ image : "beer013.jpg"
 price : "8.5"
 language : "gr"
 alchohol : ""
-product_types : "box"
-breweries : "Corfu"
+product_types :  ["box"]
+breweries :  ["Corfu"]
 promotion : "5plus1"
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : "10.2"
 discount : "1.7"
 description_short : ""

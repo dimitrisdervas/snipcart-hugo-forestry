@@ -7,10 +7,10 @@ image : "beer089.jpg"
 price : "3.1"
 language : "gr"
 alchohol : "7.77%"
-product_types : "bottle"
-breweries : "Noctua"
+product_types :  ["bottle"]
+breweries :  ["Noctua"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "DOUBLE WEST COAST IPA"

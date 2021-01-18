@@ -7,10 +7,10 @@ image : "beer060.jpg"
 price : "3.29"
 language : "gr"
 alchohol : "5.70%"
-product_types : ""
-breweries : "Flaros "
+product_types :  [""]
+breweries :  ["Flaros "]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "IPA"

@@ -7,10 +7,10 @@ image : "beer150.jpg"
 price : "3.79"
 language : "gr"
 alchohol : "7.50%"
-product_types : "bottle"
-breweries : "Kykao"
+product_types :  ["bottle"]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : "3.99"
 discount : "5%"
 description_short : "AMERICAN PILSNER"

@@ -7,10 +7,10 @@ image : "beer022.jpg"
 price : "2.8"
 language : "gr"
 alchohol : "6%"
-product_types : "bottle"
-breweries : ""
+product_types :  ["bottle"]
+breweries :  [""]
 promotion : ""
-beer_types : "ALE BLONDE/BROWN"
+beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""
 description_short : ""

@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+
+    <h2 class="product__name">{{ .Title }}</h2>
+  
+
+
+    {{.Params.brand}}
+    {{.Params.titlegrlarge}}
+    {{.Params.titleenlarge}}
+    {{.Params.website}}
+    {{.Params.facebook}}
+    {{.Params.city}}
+    {{.Params.brewery}}
+    {{.Params.beers}}
+    {{.Params.year}}
+    {{.Params.address}}
+    {{.Params.phone}}
+
+    <p class="product__description">{{ .Content }}</p>
+
+
+
+
+  {{ end }}

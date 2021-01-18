@@ -7,10 +7,10 @@ image : "beer104.jpg"
 price : "2.6"
 language : "gr"
 alchohol : "5.50%"
-product_types : ""
-breweries : "Samos"
+product_types :  [""]
+breweries :  ["Samos"]
 promotion : ""
-beer_types : "ALE BLONDE/BROWN"
+beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""
 description_short : "HONEY ALE"

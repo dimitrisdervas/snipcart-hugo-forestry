@@ -7,10 +7,10 @@ image : "beer040.jpg"
 price : "1.5"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Corfu"
+product_types :  [""]
+breweries :  ["Corfu"]
 promotion : ""
-beer_types : "ΧΩΡΙΣ ΑΛΚΟΟΛ"
+beer_types :  ["ΧΩΡΙΣ ΑΛΚΟΟΛ"]
 retail_price : ""
 discount : ""
 description_short : ""

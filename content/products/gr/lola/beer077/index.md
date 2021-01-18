@@ -7,10 +7,10 @@ image : "beer077.jpg"
 price : "2.1"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "lola"
+product_types :  [""]
+breweries :  ["lola"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""
 description_short : "Pilsner"

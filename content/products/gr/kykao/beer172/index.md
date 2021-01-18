@@ -7,10 +7,10 @@ image : "beer172.jpg"
 price : "3.23"
 language : "gr"
 alchohol : "4.20%"
-product_types : "bottle"
-breweries : "Kykao"
+product_types :  ["bottle"]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : "3.4"
 discount : "5%"
 description_short : "SESSION IPA"

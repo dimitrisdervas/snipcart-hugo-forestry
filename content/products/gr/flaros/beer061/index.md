@@ -7,10 +7,10 @@ image : "beer061.jpg"
 price : "3.4"
 language : "gr"
 alchohol : "6.50%"
-product_types : ""
-breweries : "Flaros "
+product_types :  [""]
+breweries :  ["Flaros "]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "PORTER"

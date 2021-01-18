@@ -7,10 +7,10 @@ image : "beer026.jpg"
 price : "3.7"
 language : "gr"
 alchohol : "5%"
-product_types : ""
-breweries : "Blame the sun"
+product_types :  [""]
+breweries :  ["Blame the sun"]
 promotion : ""
-beer_types : "PALE ALE"
+beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""
 description_short : "Pale Ale"

@@ -7,10 +7,10 @@ image : "beer121.jpg"
 price : "2.6"
 language : "gr"
 alchohol : "5%"
-product_types : "bottle"
-breweries : "Sknipa"
+product_types :  ["bottle"]
+breweries :  ["Sknipa"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "Αρωματική Red Session IPA"

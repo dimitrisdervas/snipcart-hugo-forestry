@@ -7,10 +7,10 @@ image : "beer017.jpg"
 price : "3.2"
 language : "gr"
 alchohol : "6%"
-product_types : "can"
-breweries : "Alea"
+product_types :  ["can"]
+breweries :  ["Alea"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""
 description_short : ""

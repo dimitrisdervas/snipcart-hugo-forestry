@@ -7,10 +7,10 @@ image : "beer100.jpg"
 price : "1.49"
 language : "gr"
 alchohol : "5,5%"
-product_types : ""
-breweries : "Sknipa"
+product_types :  [""]
+breweries :  ["Sknipa"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""
 description_short : "Η Θεσσαλονίκη κλεισμένη σε μπουκάλι!"

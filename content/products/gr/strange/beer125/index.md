@@ -7,10 +7,10 @@ image : "beer125.jpg"
 price : "2.99"
 language : "gr"
 alchohol : "6.20%"
-product_types : ""
-breweries : "Strange"
+product_types :  [""]
+breweries :  ["Strange"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "IPA"

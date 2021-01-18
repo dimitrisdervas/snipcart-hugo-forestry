@@ -7,10 +7,10 @@ image : "beer019.jpg"
 price : "2.8"
 language : "gr"
 alchohol : "6%"
-product_types : ""
-breweries : "Alea"
+product_types :  [""]
+breweries :  ["Alea"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "STOUT"

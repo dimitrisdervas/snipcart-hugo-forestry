@@ -7,10 +7,10 @@ image : "beer107.jpg"
 price : "4.4"
 language : "gr"
 alchohol : "9%"
-product_types : "bottle"
-breweries : "Septem"
+product_types :  ["bottle"]
+breweries :  ["Septem"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : ""

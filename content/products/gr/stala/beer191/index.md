@@ -7,10 +7,10 @@ image : "beer191.jpg"
 price : "2.7"
 language : "gr"
 alchohol : "6%"
-product_types : "bottle"
-breweries : "Stala"
+product_types :  ["bottle"]
+breweries :  ["Stala"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "IPA 6% alc"

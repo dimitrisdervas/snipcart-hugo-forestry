@@ -7,10 +7,10 @@ image : "beer144.jpg"
 price : "2.79"
 language : "gr"
 alchohol : "7,0%"
-product_types : "bottle"
-breweries : "Katsika"
+product_types :  ["bottle"]
+breweries :  ["Katsika"]
 promotion : ""
-beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
+beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "Ξανθιά Ale Μοναστηριακού τύπου"

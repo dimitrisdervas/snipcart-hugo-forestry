@@ -7,10 +7,10 @@ image : "beer146.jpg"
 price : "2.7"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Katsika"
+product_types :  [""]
+breweries :  ["Katsika"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""
 description_short : ""

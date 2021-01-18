@@ -7,10 +7,10 @@ image : "beer138.jpg"
 price : "2"
 language : "gr"
 alchohol : "5%"
-product_types : "bottle"
-breweries : "Ali"
+product_types :  ["bottle"]
+breweries :  ["Ali"]
 promotion : ""
-beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
+beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
 retail_price : ""
 discount : ""
 description_short : ""

@@ -7,10 +7,10 @@ image : "beer056.jpg"
 price : "3.4"
 language : "gr"
 alchohol : "7%"
-product_types : ""
-breweries : "Dark crops"
+product_types :  [""]
+breweries :  ["Dark crops"]
 promotion : ""
-beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
+beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "BELGIAN DARK ALE"

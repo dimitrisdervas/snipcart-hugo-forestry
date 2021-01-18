@@ -7,10 +7,10 @@ image : "beer128.jpg"
 price : "4"
 language : "gr"
 alchohol : "9.20%"
-product_types : ""
-breweries : "Strange"
+product_types :  [""]
+breweries :  ["Strange"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "IMPERIAL STOUT"

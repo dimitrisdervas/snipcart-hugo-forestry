@@ -7,10 +7,10 @@ image : "beer183.jpg"
 price : "2.49"
 language : "gr"
 alchohol : "5%"
-product_types : "bottle"
-breweries : "Nisos"
+product_types :  ["bottle"]
+breweries :  ["Nisos"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""
 description_short : ""

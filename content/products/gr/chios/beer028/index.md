@@ -7,10 +7,10 @@ image : "beer028.jpg"
 price : "2.2"
 language : "gr"
 alchohol : "6.30%"
-product_types : ""
-breweries : "Chios"
+product_types :  [""]
+breweries :  ["Chios"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : "2.6"
 discount : "0.4"
 description_short : "iPA"

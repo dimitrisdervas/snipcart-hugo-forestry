@@ -7,10 +7,10 @@ image : "beer096.jpg"
 price : "2.6"
 language : "gr"
 alchohol : "5%"
-product_types : "bottle"
-breweries : ""
+product_types :  ["bottle"]
+breweries :  [""]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "Σκούρη καστανή"

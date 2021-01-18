@@ -7,10 +7,10 @@ image : "beer050.jpg"
 price : "1.9"
 language : "gr"
 alchohol : "5%."
-product_types : "bottle"
-breweries : "Cretankings"
+product_types :  ["bottle"]
+breweries :  ["Cretankings"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""
 description_short : "Pale Lager"

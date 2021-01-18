@@ -7,10 +7,10 @@ image : "beer143.jpg"
 price : "2.9"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Ikariotissa"
+product_types :  [""]
+breweries :  ["Ikariotissa"]
 promotion : ""
-beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
+beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
 retail_price : ""
 discount : ""
 description_short : ""

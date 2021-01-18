@@ -7,10 +7,10 @@ image : "beer082.jpg"
 price : "2.9"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Midnight"
+product_types :  [""]
+breweries :  ["Midnight"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""
 description_short : ""

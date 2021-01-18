@@ -7,10 +7,10 @@ image : "beer055.jpg"
 price : "7.4"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Dark crops"
+product_types :  [""]
+breweries :  ["Dark crops"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "Imperial Stout"

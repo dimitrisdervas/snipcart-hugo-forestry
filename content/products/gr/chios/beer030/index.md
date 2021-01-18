@@ -7,10 +7,10 @@ image : "beer030.jpg"
 price : "2.2"
 language : "gr"
 alchohol : "4.90%"
-product_types : "bottle"
-breweries : "Chios"
+product_types :  ["bottle"]
+breweries :  ["Chios"]
 promotion : ""
-beer_types : "ALE BLONDE/BROWN"
+beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : "2.6"
 discount : "0.4"
 description_short : "Φρέσκια House Ale"

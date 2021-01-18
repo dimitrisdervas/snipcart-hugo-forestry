@@ -7,10 +7,10 @@ image : "beer081.jpg"
 price : "2.4"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : ""
+product_types :  [""]
+breweries :  [""]
 promotion : ""
-beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
+beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
 retail_price : ""
 discount : ""
 description_short : ""

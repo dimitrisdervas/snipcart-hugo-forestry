@@ -7,10 +7,10 @@ image : "beer036.jpg"
 price : "2.6"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Corfu"
+product_types :  [""]
+breweries :  ["Corfu"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : ""

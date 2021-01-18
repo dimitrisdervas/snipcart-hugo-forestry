@@ -7,10 +7,10 @@ image : "beer158.jpg"
 price : "4.09"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Kykao"
+product_types :  [""]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : "4.3"
 discount : "5%"
 description_short : ""

@@ -7,10 +7,10 @@ image : "beer152.jpg"
 price : "5.8"
 language : "gr"
 alchohol : "12%"
-product_types : "bottle"
-breweries : "Kykao"
+product_types :  ["bottle"]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
+beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : "6.1"
 discount : "5%"
 description_short : "BELGIAN ALE OAK AGED"

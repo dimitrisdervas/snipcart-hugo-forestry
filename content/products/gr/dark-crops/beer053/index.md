@@ -7,10 +7,10 @@ image : "beer053.jpg"
 price : "3.8"
 language : "gr"
 alchohol : "10%"
-product_types : ""
-breweries : "Dark crops"
+product_types :  [""]
+breweries :  ["Dark crops"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "HIGH GRAVITY STOUT"

@@ -1,11 +1,24 @@
 {{ define "main" }}
 
 
-<div class="product">
+<div class="product ">
     <h2 class="product__name">{{ .Params.name }}</h2>
   
-    <img class="product__image" src="/uploads/{{ .Params.image }}" alt="" />
+    <img class="product__image" src="/uploads/beers/{{ .Params.image }}" alt="" />
+
+    <ul id="tags">
+        {{ range $title := .Params.breweries }}
+        <li class="rounded-sm px-3 py-1 bg-gray-100">
+            <a href="/breweries/{{ . | urlize }}">{{ $title }}</a>
+        </li>
+    {{ end }}
+
+      </ul>
+
+
     <p class="product__description">{{ .Content }}</p>
+
+
     <div class="product__button-container">
       <div class="product__price">€{{ .Params.price }}</div>
       <button
@@ -29,6 +42,7 @@
         Add to cart
       </button>
     </div>
+
   </div>
 
   {{ end }}

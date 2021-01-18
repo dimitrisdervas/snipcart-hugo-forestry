@@ -7,10 +7,10 @@ image : "beer021.jpg"
 price : "2.61"
 language : "gr"
 alchohol : "5%"
-product_types : ""
-breweries : "Alea"
+product_types :  [""]
+breweries :  ["Alea"]
 promotion : ""
-beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
+beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : "2.9"
 discount : "10%"
 description_short : "BELGIAN WIT"

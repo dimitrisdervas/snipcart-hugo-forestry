@@ -7,10 +7,10 @@ image : "beer129.jpg"
 price : "4.8"
 language : "gr"
 alchohol : "8.50%"
-product_types : "bottle"
-breweries : "Strange"
+product_types :  ["bottle"]
+breweries :  ["Strange"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "SOUR IPA"

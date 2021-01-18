@@ -7,10 +7,10 @@ image : "beer067.jpg"
 price : "3.3"
 language : "gr"
 alchohol : "5.50%"
-product_types : "bottle"
-breweries : "Kasta"
+product_types :  ["bottle"]
+breweries :  ["Kasta"]
 promotion : ""
-beer_types : "PALE ALE"
+beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""
 description_short : "American Pale Ale"

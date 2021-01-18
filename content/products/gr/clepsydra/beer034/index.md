@@ -7,10 +7,10 @@ image : "beer034.jpg"
 price : "3.7"
 language : "gr"
 alchohol : "7%"
-product_types : "bottle"
-breweries : "Clepsydra"
+product_types :  ["bottle"]
+breweries :  ["Clepsydra"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "New England IPA"

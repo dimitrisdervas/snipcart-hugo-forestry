@@ -7,10 +7,10 @@ image : "beer111.jpg"
 price : "3.3"
 language : "gr"
 alchohol : "6.50%"
-product_types : "bottle"
-breweries : "Seven"
+product_types :  ["bottle"]
+breweries :  ["Seven"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "NEW ENGLAND IPA"

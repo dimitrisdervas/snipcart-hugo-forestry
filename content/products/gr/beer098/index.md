@@ -7,10 +7,10 @@ image : "beer098.jpg"
 price : "2.3"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : ""
+product_types :  [""]
+breweries :  [""]
 promotion : ""
-beer_types : "WEISS"
+beer_types :  ["WEISS"]
 retail_price : ""
 discount : ""
 description_short : "5% alc. με κόλιανδρο και πικρό πορτοκάλι"

@@ -7,10 +7,10 @@ image : "beer185.jpg"
 price : "2.7"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Solo"
+product_types :  [""]
+breweries :  ["Solo"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""
 description_short : ""

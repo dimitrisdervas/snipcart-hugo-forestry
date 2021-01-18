@@ -7,10 +7,10 @@ image : "beer102.jpg"
 price : "1.9"
 language : "gr"
 alchohol : "5.50%"
-product_types : ""
-breweries : "Sknipa"
+product_types :  [""]
+breweries :  ["Sknipa"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "Oatmeal Stout"

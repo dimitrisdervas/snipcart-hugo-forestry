@@ -7,10 +7,10 @@ image : "beer016.jpg"
 price : "2.21"
 language : "gr"
 alchohol : "5.20%"
-product_types : "bottle"
-breweries : "56-isles"
+product_types :  ["bottle"]
+breweries :  ["56-isles"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""
 description_short : ""

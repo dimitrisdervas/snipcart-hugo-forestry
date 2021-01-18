@@ -7,10 +7,10 @@ image : "beer079.jpg"
 price : "2.6"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Marmita"
+product_types :  [""]
+breweries :  ["Marmita"]
 promotion : ""
-beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
+beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
 retail_price : ""
 discount : ""
 description_short : "RED ALE"

@@ -7,10 +7,10 @@ image : "beer113.jpg"
 price : "6.8"
 language : "gr"
 alchohol : "8%"
-product_types : ""
-breweries : "Seven"
+product_types :  [""]
+breweries :  ["Seven"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "Double Dry Hopped New England Double IPA"

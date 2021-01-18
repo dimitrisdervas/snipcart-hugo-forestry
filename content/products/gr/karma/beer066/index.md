@@ -7,10 +7,10 @@ image : "beer066.jpg"
 price : "1.87"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Karma"
+product_types :  [""]
+breweries :  ["Karma"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : "2.1"
 discount : "11%"
 description_short : ""

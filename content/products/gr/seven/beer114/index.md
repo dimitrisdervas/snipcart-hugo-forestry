@@ -7,10 +7,10 @@ image : "beer114.jpg"
 price : "6.9"
 language : "gr"
 alchohol : "8.50%"
-product_types : ""
-breweries : "Seven"
+product_types :  [""]
+breweries :  ["Seven"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "New England double IPA, Double Dry Hopped με λυκίσκο Galaxy &amp; Enigma"

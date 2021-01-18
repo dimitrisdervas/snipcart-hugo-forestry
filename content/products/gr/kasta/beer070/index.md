@@ -7,10 +7,10 @@ image : "beer070.jpg"
 price : "3.3"
 language : "gr"
 alchohol : "4.80%"
-product_types : ""
-breweries : "Kasta"
+product_types :  [""]
+breweries :  ["Kasta"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "Oatmeal Stout"

@@ -7,10 +7,10 @@ image : "beer074.jpg"
 price : "2.2"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Local-streets"
+product_types :  [""]
+breweries :  ["Local-streets"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""
 description_short : "PILS"

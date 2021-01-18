@@ -7,10 +7,10 @@ image : "beer020.jpg"
 price : "2.9"
 language : "gr"
 alchohol : "5%"
-product_types : ""
-breweries : "Alea"
+product_types :  [""]
+breweries :  ["Alea"]
 promotion : ""
-beer_types : "PALE ALE"
+beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""
 description_short : "PALE ALE"

@@ -7,10 +7,10 @@ image : "beer015.jpg"
 price : "2.3"
 language : "gr"
 alchohol : "4.70%"
-product_types : "bottle"
-breweries : "56-isles"
+product_types :  ["bottle"]
+breweries :  ["56-isles"]
 promotion : ""
-beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
+beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "WIT"

@@ -7,10 +7,10 @@ image : "beer023.jpg"
 price : "2.3"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Azrael"
+product_types :  [""]
+breweries :  ["Azrael"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""
 description_short : "Bohemian Pilsner"

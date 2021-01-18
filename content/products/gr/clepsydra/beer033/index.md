@@ -7,10 +7,10 @@ image : "beer033.jpg"
 price : "2.8"
 language : "gr"
 alchohol : "3.80%"
-product_types : ""
-breweries : "Clepsydra"
+product_types :  [""]
+breweries :  ["Clepsydra"]
 promotion : ""
-beer_types : "SOUR"
+beer_types :  ["SOUR"]
 retail_price : ""
 discount : ""
 description_short : "RASPBERRY SOUR WEISS"

@@ -7,10 +7,10 @@ image : "beer088.jpg"
 price : "3.31"
 language : "gr"
 alchohol : "4.50%"
-product_types : "bottle"
-breweries : "Mustaki"
+product_types :  ["bottle"]
+breweries :  ["Mustaki"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : "3.6"
 discount : "8%"
 description_short : "SESSION IPA"

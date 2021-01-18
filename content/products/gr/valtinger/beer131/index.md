@@ -7,10 +7,10 @@ image : "beer131.jpg"
 price : "2.7"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Valtinger"
+product_types :  [""]
+breweries :  ["Valtinger"]
 promotion : ""
-beer_types : "LAGER"
+beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""
 description_short : ""

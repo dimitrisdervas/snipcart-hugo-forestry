@@ -7,10 +7,10 @@ image : "beer054.jpg"
 price : "3.4"
 language : "gr"
 alchohol : "5%"
-product_types : ""
-breweries : "Dark crops"
+product_types :  [""]
+breweries :  ["Dark crops"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "IPA"

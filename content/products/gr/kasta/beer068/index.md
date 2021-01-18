@@ -7,10 +7,10 @@ image : "beer068.jpg"
 price : "3.3"
 language : "gr"
 alchohol : "5.40%"
-product_types : "bottle"
-breweries : "Kasta"
+product_types :  ["bottle"]
+breweries :  ["Kasta"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "IPA"

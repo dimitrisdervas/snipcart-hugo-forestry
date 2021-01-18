@@ -7,10 +7,10 @@ image : "beer025.jpg"
 price : "2.8"
 language : "gr"
 alchohol : "5%"
-product_types : ""
-breweries : "Blame the sun"
+product_types :  [""]
+breweries :  ["Blame the sun"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : "2.98"
 discount : "6%"
 description_short : "Tropic Ale"

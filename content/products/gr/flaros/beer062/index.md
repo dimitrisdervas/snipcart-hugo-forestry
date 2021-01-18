@@ -7,10 +7,10 @@ image : "beer062.jpg"
 price : "3.1"
 language : "gr"
 alchohol : "4.70%"
-product_types : ""
-breweries : "Flaros "
+product_types :  [""]
+breweries :  ["Flaros "]
 promotion : ""
-beer_types : "PALE ALE"
+beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""
 description_short : "Pale Ale"

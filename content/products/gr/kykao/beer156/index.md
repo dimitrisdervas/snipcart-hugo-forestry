@@ -7,10 +7,10 @@ image : "beer156.jpg"
 price : "3.33"
 language : "gr"
 alchohol : "5.20%"
-product_types : ""
-breweries : "Kykao"
+product_types :  [""]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : "3.5"
 discount : "5%"
 description_short : "HOPPY NEW ENGLAND IPA"

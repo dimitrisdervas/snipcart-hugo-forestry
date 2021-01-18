@@ -7,10 +7,10 @@ image : "beer031.jpg"
 price : "2.2"
 language : "gr"
 alchohol : "4.90%"
-product_types : "bottle"
-breweries : "Chios"
+product_types :  ["bottle"]
+breweries :  ["Chios"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : "2.6"
 discount : "0.4"
 description_short : "Φρέσκια Porter"

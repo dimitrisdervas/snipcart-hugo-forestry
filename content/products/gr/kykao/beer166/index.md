@@ -7,10 +7,10 @@ image : "beer166.jpg"
 price : "7.51"
 language : "gr"
 alchohol : "13%"
-product_types : ""
-breweries : "Kykao"
+product_types :  [""]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "SOUR"
+beer_types :  ["SOUR"]
 retail_price : "7.9"
 discount : "5%"
 description_short : "SOUR ALE"

@@ -7,10 +7,10 @@ image : "beer024.jpg"
 price : "2.3"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Azrael"
+product_types :  [""]
+breweries :  ["Azrael"]
 promotion : ""
-beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
+beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "BELGIAN PALE ALE"

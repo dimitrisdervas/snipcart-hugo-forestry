@@ -7,10 +7,10 @@ image : "beer105.jpg"
 price : "2.89"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Septem"
+product_types :  [""]
+breweries :  ["Septem"]
 promotion : ""
-beer_types : "ALE BLONDE/BROWN"
+beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""
 description_short : ""

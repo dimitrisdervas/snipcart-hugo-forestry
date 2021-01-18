@@ -7,10 +7,10 @@ image : "beer169.jpg"
 price : "3.42"
 language : "gr"
 alchohol : "5.50%"
-product_types : "bottle"
-breweries : "Kykao"
+product_types :  ["bottle"]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
+beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : "3.6"
 discount : "5%"
 description_short : "Belgian Saison"

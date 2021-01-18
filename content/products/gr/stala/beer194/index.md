@@ -7,10 +7,10 @@ image : "beer194.jpg"
 price : "2.5"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Stala"
+product_types :  [""]
+breweries :  ["Stala"]
 promotion : ""
-beer_types : "PALE ALE"
+beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""
 description_short : "Pale ale 5.7% alc"

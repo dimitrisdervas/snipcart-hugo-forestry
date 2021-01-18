@@ -7,10 +7,10 @@ image : "beer189.jpg"
 price : "2.8"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Solo"
+product_types :  [""]
+breweries :  ["Solo"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : ""

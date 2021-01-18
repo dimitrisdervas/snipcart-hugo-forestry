@@ -7,10 +7,10 @@ image : "beer162.jpg"
 price : "3.99"
 language : "gr"
 alchohol : "8%"
-product_types : ""
-breweries : "Kykao"
+product_types :  [""]
+breweries :  ["Kykao"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : "4.2"
 discount : "5%"
 description_short : "NEW ENGLAND IPA"

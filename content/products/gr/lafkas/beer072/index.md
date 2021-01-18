@@ -7,10 +7,10 @@ image : "beer072.jpg"
 price : "2.59"
 language : "gr"
 alchohol : ""
-product_types : ""
-breweries : "Lafkas"
+product_types :  [""]
+breweries :  ["Lafkas"]
 promotion : ""
-beer_types : "PALE ALE"
+beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""
 description_short : "Triple Hop Pale Ale"

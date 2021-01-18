@@ -7,10 +7,10 @@ image : "beer122.jpg"
 price : "2.1"
 language : "gr"
 alchohol : "5.50%"
-product_types : "bottle"
-breweries : "Sknipa"
+product_types :  ["bottle"]
+breweries :  ["Sknipa"]
 promotion : ""
-beer_types : "ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"
+beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "Ξανθιά Saison Wit, 5.5%"

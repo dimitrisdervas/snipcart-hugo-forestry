@@ -7,10 +7,10 @@ image : "beer103.jpg"
 price : "1.8"
 language : "gr"
 alchohol : "5.50%"
-product_types : ""
-breweries : "Sknipa"
+product_types :  [""]
+breweries :  ["Sknipa"]
 promotion : ""
-beer_types : "PALE ALE"
+beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""
 description_short : "PALE ALE με μέλι"

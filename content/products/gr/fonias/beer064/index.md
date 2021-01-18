@@ -7,10 +7,10 @@ image : "beer064.jpg"
 price : "3"
 language : "gr"
 alchohol : "6.20%"
-product_types : ""
-breweries : "Fonias"
+product_types :  [""]
+breweries :  ["Fonias"]
 promotion : ""
-beer_types : "PALE ALE"
+beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""
 description_short : "Pale Ale"

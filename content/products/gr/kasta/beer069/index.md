@@ -7,10 +7,10 @@ image : "beer069.jpg"
 price : "3.3"
 language : "gr"
 alchohol : "5.90%"
-product_types : ""
-breweries : "Kasta"
+product_types :  [""]
+breweries :  ["Kasta"]
 promotion : ""
-beer_types : "ΚΟΚΚΙΝΕΣ LAGER/ALE"
+beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
 retail_price : ""
 discount : ""
 description_short : "AMBER ALE"

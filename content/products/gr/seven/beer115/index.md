@@ -7,10 +7,10 @@ image : "beer115.jpg"
 price : "10.3"
 language : "gr"
 alchohol : "12%"
-product_types : "can"
-breweries : "Seven"
+product_types :  ["can"]
+breweries :  ["Seven"]
 promotion : ""
-beer_types : "ΜΑΥΡΕΣ"
+beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""
 description_short : "IMPERIAL STOUT"

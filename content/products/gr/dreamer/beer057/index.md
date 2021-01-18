@@ -7,10 +7,10 @@ image : "beer057.jpg"
 price : "3.6"
 language : "gr"
 alchohol : "7.60%"
-product_types : ""
-breweries : "Dreamer"
+product_types :  [""]
+breweries :  ["Dreamer"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "DOUBLE IPA"

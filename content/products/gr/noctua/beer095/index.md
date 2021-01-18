@@ -7,10 +7,10 @@ image : "beer095.jpg"
 price : "3.1"
 language : "gr"
 alchohol : "7,2%"
-product_types : ""
-breweries : "Noctua"
+product_types :  [""]
+breweries :  ["Noctua"]
 promotion : ""
-beer_types : "I.P.A."
+beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""
 description_short : "Μαύρη IPA"

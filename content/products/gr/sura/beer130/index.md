@@ -7,10 +7,10 @@ image : "beer130.jpg"
 price : "2.8"
 language : "gr"
 alchohol : "4.60%"
-product_types : ""
-breweries : "Sura"
+product_types :  [""]
+breweries :  ["Sura"]
 promotion : ""
-beer_types : "ALE BLONDE/BROWN"
+beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""
 description_short : "BLONDE ALE"
