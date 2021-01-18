@@ -1,23 +1,8 @@
-<!DOCTYPE html>
-<html lang="el">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="preconnect" href="https://app.snipcart.com">
-<link rel="preconnect" href="https://cdn.snipcart.com">
-<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.css" />
 
-  <link rel='shortcut icon' type='image/x-icon' href='/images/icons/favicon.ico' />
-  {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
-  <title>CheeseCity</title>
-</head>
-<body>
   <header class="header">
     <a class="header__branding" href="/">
       <img class="header__logo" src="/images/icons/cheese.svg" alt="cheese logo"> 
-      <h1 class="header__title">CheeseCity</h1>
+      <h1 class="header__title">{{ .Site.Title}}</h1>
     </a>
     <div class="header__cart">
       <a href="#" class="snipcart-checkout" style="text-decoration: none;">
@@ -28,3 +13,5 @@
       </a>
     </div>
   </header>
+
+  {{ partial "breadcrumb.html" . }}

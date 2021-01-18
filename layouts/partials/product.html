@@ -1,5 +1,5 @@
 <div class="product">
-  <h2 class="product__name">{{ .name }}</h2>
+  <h2 class="product__name"><a href="{{ .url }}">{{ .name }}</a></h2>
 
   <img class="product__image" src="/uploads/{{ .image }}" alt="" />
   <p class="product__description">{{ .description }}</p>

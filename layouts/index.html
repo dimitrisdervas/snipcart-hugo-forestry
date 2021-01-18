@@ -1,4 +1,22 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
+
+<section>
+    <ul>
+        {{ range .Site.Taxonomies.breweries }}
+            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+        {{ end }}
+    </ul>
+</section>
+<section>
+    <ul>
+        {{ range .Site.Taxonomies.beer_types }}
+            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+        {{ end }}
+    </ul>
+</section>
+
+
+
 
 <!-- {{ $products := getJSON "/data/products.json" }} -->
 <main class="products">
@@ -13,4 +31,4 @@
   {{ end }}
 </main>
 
-{{ partial "footer.html" . }}
+{{end}}
