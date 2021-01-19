@@ -8,7 +8,7 @@ price : "2"
 language : "gr"
 alchohol : ""
 product_types :  [""]
-breweries :  ["Local-streets"]
+breweries :  ["Local streets"]
 promotion : ""
 beer_types :  ["PALE ALE"]
 retail_price : ""

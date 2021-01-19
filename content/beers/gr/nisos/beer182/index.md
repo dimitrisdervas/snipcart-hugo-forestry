@@ -10,7 +10,7 @@ alchohol : "6.50%"
 product_types :  ["bottle"]
 breweries :  ["Nisos"]
 promotion : ""
-beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
+beer_types :  ["Red Ale"]
 retail_price : ""
 discount : ""
 description_short : "Μοναστηριακή Κόκκινη (Abbey red)"

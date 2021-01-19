@@ -8,30 +8,13 @@
             <div class="text-xs uppercase text-gray-400 font-medium mb-6">
                 Getting Started
             </div>
-
-            <!-- Links -->
+            {{ with .Site.GetPage "/staticpages/gr/chreoseis-methodoi-pliromis.md" }}            
             <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Installation
+                {{ .Title }}
+               
             </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Release Notes
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Upgrade Guide
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Using with Preprocessors
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Optimizing for Production
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Browser Support
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                IntelliSense
-            </a>
-        </div>
+            {{ end }}
+       </div>
 
         <!-- Col-2 -->
         <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">

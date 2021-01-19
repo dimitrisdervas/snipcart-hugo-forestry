@@ -6,8 +6,8 @@ url : ""
 image : "beer134.jpg"
 price : "3.29"
 language : "gr"
-alchohol : ". 5.4-5.5% vol."
-product_types :  [""]
+alchohol : "5.50%"
+product_types :  ["bottle"]
 breweries :  ["Donkey"]
 promotion : ""
 beer_types :  ["WEISS"]

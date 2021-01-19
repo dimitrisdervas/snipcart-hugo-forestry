@@ -8,7 +8,7 @@ price : "2.3"
 language : "gr"
 alchohol : ""
 product_types :  [""]
-breweries :  ["Local-streets"]
+breweries :  ["Local streets"]
 promotion : ""
 beer_types :  ["WEISS"]
 retail_price : ""

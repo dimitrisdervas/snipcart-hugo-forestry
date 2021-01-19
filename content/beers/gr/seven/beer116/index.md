@@ -7,7 +7,7 @@ image : "beer116.jpg"
 price : "10.2"
 language : "gr"
 alchohol : "12%"
-product_types :  ["bottle"]
+product_types :  ["can"]
 breweries :  ["Seven"]
 promotion : ""
 beer_types :  ["ΜΑΥΡΕΣ"]

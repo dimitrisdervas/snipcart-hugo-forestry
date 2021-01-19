@@ -10,7 +10,7 @@ alchohol : ""
 product_types :  ["box"]
 breweries :  ["Corfu"]
 promotion : "5plus1"
-beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
+beer_types :  ["Red Ale"]
 retail_price : "18"
 discount : "3"
 description_short : ""

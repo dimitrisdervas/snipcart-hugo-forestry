@@ -1,0 +1,27 @@
+{{ define "main" }}
+term template
+{{ .Title }}
+<img src="/uploads/breweries/{{.Params.brand | urlize }}.jpg" alt="{{.Params.brand}} -  brewery">
+{{.Params.brand}}
+    <div class="flex">{{.Params.brand}}</div>
+    <div class="flex">{{.Params.titlegrlarge}}</div>
+    <div class="flex">{{.Params.titleenlarge}}</div>
+    <div class="flex"><a href="{{.Params.website}}">website</a></div>
+    <div class="flex"><a href="{{.Params.facebook}}">facebook</a></div>
+    <div class="flex">Πόλη: {{.Params.city}}</div>
+    <div class="flex">Είδος: {{.Params.brewery}}</div>  
+    <div class="flex">Ιδρύθηκε: {{.Params.year}}</div>
+    <div class="flex">Διεύθυνση{{.Params.address}}</div>
+    <div class="flex">Τηλ.:{{.Params.phone}}</div>
+
+<p class="product__description">{{ .Content }}</p>
+
+<ul class="flex justify-between">
+    {{ range .Pages }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+            <img class="product__image" src="/uploads/beers/{{ .Params.image }}" alt="" />
+        </li>
+    {{ end }}
+</ul>
+{{ end }}

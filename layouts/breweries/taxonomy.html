@@ -1,28 +1,27 @@
 {{ define "main" }}
 
-{{ .Title }}
-<img src="/uploads/breweries/{{.Params.brand | urlize }}.jpg" alt="{{.Params.brand}} -  brewery">
-{{.Params.brand}}
-    <div class="flex">{{.Params.brand}}</div>
-    <div class="flex">{{.Params.titlegrlarge}}</div>
-    <div class="flex">{{.Params.titleenlarge}}</div>
-    <div class="flex"><a href="{{.Params.website}}">website</a></div>
-    <div class="flex"><a href="{{.Params.facebook}}">facebook</a></div>
-    <div class="flex">{{.Params.city}}</div>
-    <div class="flex">{{.Params.brewery}}</div>
-    <div class="flex">{{.Params.beers}}</div>
-    <div class="flex">{{.Params.year}}</div>
-    <div class="flex">{{.Params.address}}</div>
-    <div class="flex">{{.Params.phone}}</div>
+<div class="flex flex-wrap ">
+    
+{{ range .Data.Pages }}
+<div class="flex flex-col justify-center items-center max-w-sm mx-auto my-8">
+    <div style="background-image: url(/uploads/breweries/{{.Params.brand | urlize }}.jpg"
+         class="bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-center"></div>
+    <div class="w-56 md:w-64 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
+      <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">{{.Params.brand}}</div>
+      <div class="flex items-center justify-between py-2 px-3 bg-gray-400">
+        <h1 class="text-gray-800 font-bold flex justify-between ">
+            <a class="px-2" href="{{.Params.website}}" _target="blank" >W</a>
+            <a class="px-2" href="{{.Params.facebook}}" _target="blank">F</a>
+        </h1>
+        <a class=" bg-gray-800 text-xs text-white px-2 py-1 font-semibold rounded uppercase hover:bg-gray-700" href="/breweries/{{.Params.brand | urlize }}">see more</a>
+      </div>
+    </div>
+  </div>
 
-<p class="product__description">{{ .Content }}</p>
 
-<ul>
-    {{ range .Pages }}
-        <li>
-            <a href="{{ .Permalink }}">{{ .Params.name }}</a>
-            <img class="product__image" src="/uploads/beers/{{ .Params.image }}" alt="" />
-        </li>
-    {{ end }}
-</ul>
+
+{{ end }}
+</div>
+
+
 {{ end }}

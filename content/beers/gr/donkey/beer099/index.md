@@ -6,14 +6,14 @@ url : ""
 image : "beer099.jpg"
 price : "3.4"
 language : "gr"
-alchohol : ""
-product_types :  [""]
+alchohol : "5.50%"
+product_types :  ["bottle"]
 breweries :  ["Donkey"]
 promotion : ""
-beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
+beer_types :  ["Red Ale"]
 retail_price : ""
 discount : ""
-description_short : ""
+description_short : "Lagered ale"
 url: "red-donkey-0-33lt/donkey"
 aliases: 
     - "red-donkey-0-33lt"

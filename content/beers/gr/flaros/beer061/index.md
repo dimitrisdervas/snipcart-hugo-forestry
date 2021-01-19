@@ -8,7 +8,7 @@ price : "3.4"
 language : "gr"
 alchohol : "6.50%"
 product_types :  [""]
-breweries :  ["Flaros "]
+breweries :  ["Flaros"]
 promotion : ""
 beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""

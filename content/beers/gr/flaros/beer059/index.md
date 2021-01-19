@@ -8,9 +8,9 @@ price : "2.99"
 language : "gr"
 alchohol : "5.20%"
 product_types :  ["bottle"]
-breweries :  ["Flaros "]
+breweries :  ["Flaros"]
 promotion : ""
-beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
+beer_types :  ["Red Ale"]
 retail_price : ""
 discount : ""
 description_short : "Τύπος:Amber ale"

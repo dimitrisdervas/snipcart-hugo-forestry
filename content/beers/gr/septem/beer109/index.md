@@ -10,7 +10,7 @@ alchohol : "4.50%"
 product_types :  [""]
 breweries :  ["Septem"]
 promotion : ""
-beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
+beer_types :  ["Red Ale"]
 retail_price : ""
 discount : ""
 description_short : ""

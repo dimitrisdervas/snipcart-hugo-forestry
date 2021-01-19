@@ -7,7 +7,7 @@ image : "beer114.jpg"
 price : "6.9"
 language : "gr"
 alchohol : "8.50%"
-product_types :  [""]
+product_types :  ["can"]
 breweries :  ["Seven"]
 promotion : ""
 beer_types :  ["I.P.A."]

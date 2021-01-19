@@ -10,7 +10,7 @@ alchohol : "5.90%"
 product_types :  [""]
 breweries :  ["Kasta"]
 promotion : ""
-beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
+beer_types :  ["Red Ale"]
 retail_price : ""
 discount : ""
 description_short : "AMBER ALE"

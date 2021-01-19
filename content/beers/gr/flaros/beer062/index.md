@@ -8,7 +8,7 @@ price : "3.1"
 language : "gr"
 alchohol : "4.70%"
 product_types :  [""]
-breweries :  ["Flaros "]
+breweries :  ["Flaros"]
 promotion : ""
 beer_types :  ["PALE ALE"]
 retail_price : ""

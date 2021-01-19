@@ -10,7 +10,7 @@ alchohol : "5%"
 product_types :  ["bottle"]
 breweries :  ["Ali"]
 promotion : ""
-beer_types :  ["ΚΟΚΚΙΝΕΣ LAGER/ALE"]
+beer_types :  ["Red Ale"]
 retail_price : ""
 discount : ""
 description_short : ""
