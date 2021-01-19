@@ -1,0 +1,17 @@
+<div class="product">
+  <h2 class="product__name"><a href="{{ .url }}">{{ .name }}</a></h2>
+
+  <img class="product__image" src="/uploads/beers/{{ .image }}" alt="" />
+
+  {{ range .breweries}}
+  <div class="flex"><a href="/breweries/{{ . | urlize }}">{{.}}</a></div>
+  {{ end }}
+
+  <p class="product__description">{{ .description }}</p>
+  <div class="product__button-container">
+    <div class="product__price">€{{ .price }}</div>
+
+{{ partial "snipcart_button.html" . }}
+
+  </div>
+</div>
