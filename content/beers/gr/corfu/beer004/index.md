@@ -9,7 +9,7 @@ language : "gr"
 alchohol : ""
 product_types :  ["box"]
 breweries :  ["Corfu"]
-promotion : "5plus1"
+promotions : ["5plus1"]
 beer_types :  ["I.P.A."]
 retail_price : "15.6"
 discount : "2.6"

@@ -9,7 +9,7 @@ language : "gr"
 alchohol : ""
 product_types :  ["box"]
 breweries :  ["Corfu"]
-promotion : "5plus1"
+promotions : ["5plus1"]
 beer_types :  ["LAGER"]
 retail_price : "12.6"
 discount : "2.1"
