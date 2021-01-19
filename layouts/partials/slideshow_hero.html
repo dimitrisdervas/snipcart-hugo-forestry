@@ -1,5 +1,5 @@
   <!-- Swiper -->
-  <div class="swiper-container">
+  <div class="swiper-container heroslideshow" styles="width: 100%;  height: 100%;">
     <div class="swiper-wrapper">
     {{ with .Site.GetPage "/slideshow/slideshow_hero.md" }}
         {{ range .Params.images}}
@@ -13,3 +13,4 @@
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div>
+
