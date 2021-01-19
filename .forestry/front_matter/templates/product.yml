@@ -17,6 +17,14 @@ fields:
   name: price
   config:
     required: true
+- type: number
+  label: Retail price
+  name: retail_price
+- type : select
+  label: language
+  name: language
+  config: 
+    required: true
 - type: textarea
   name: description
   label: description
@@ -25,9 +33,64 @@ fields:
     schema:
       format: markdown
     required: true
+- type: number
+  name: alchohol
+  label: alchohol
+- type: select
+  name: product_types
+  label: Product Types
+    source:
+      type: custom
+    options:
+        - "Μπουκάλι"
+        - "Κουτί"
+        - "Κιβώτιο"
+- type: select
+  name: breweries
+  label: breweries
+  config:
+    source:
+      type: pages
+      section: breweries
+- type: tag_list
+  name: promotions
+  label: promotions
+- type: select
+  name: beer_types
+  label: Beer Types
+  default:
+    - ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ
+    - LAGER
+    - ALE BLONDE/BROWN
+    - ΜΑΥΡΕΣ
+    - PALE ALE
+    - I.P.A.
+    - Red Ale
+    - WEISS
+    - ΚΑΠΝΙΣΤΕΣ
+    - SOUR
+    - ΧΩΡΙΣ ΑΛΚΟΟΛ
 - type: file
   name: image
   label: image
+- type: field_group
+  name: options
+  label: Options
+  description: New Product Option
+  hidden: false
+  fields:
+  - type: text
+    name: Custom_field_name_1
+    label: 
+    config:
+      required: true
+  - type: textarea
+    name: bio
+    label: "Author's Bio"
+      config:
+      required: true
+  config:
+    labelField: name
 - type: text
   name: product_url
   label: url
