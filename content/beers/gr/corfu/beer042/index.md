@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "4.60%"
 product_types :  ["bottle"]
 breweries :  ["Corfu"]
-promotion : ""
+promotions : [""]
 beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""

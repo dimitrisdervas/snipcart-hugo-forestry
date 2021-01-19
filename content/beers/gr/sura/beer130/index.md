@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "4.60%"
 product_types :  [""]
 breweries :  ["Sura"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""

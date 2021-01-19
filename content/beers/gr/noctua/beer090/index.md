@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "6%"
 product_types :  [""]
 breweries :  ["Noctua"]
-promotion : ""
+promotions : [""]
 beer_types :  ["Red Ale"]
 retail_price : "2.7"
 discount : "11%"

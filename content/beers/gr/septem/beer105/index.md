@@ -9,7 +9,7 @@ language : "gr"
 alchohol : ""
 product_types :  [""]
 breweries :  ["Septem"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""

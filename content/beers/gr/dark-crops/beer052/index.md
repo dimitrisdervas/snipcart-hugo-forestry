@@ -9,7 +9,7 @@ language : "gr"
 alchohol : ""
 product_types :  [""]
 breweries :  ["Dark crops"]
-promotion : ""
+promotions : [""]
 beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""

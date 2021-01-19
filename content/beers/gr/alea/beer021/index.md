@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5%"
 product_types :  [""]
 breweries :  ["Alea"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : "2.9"
 discount : "10%"

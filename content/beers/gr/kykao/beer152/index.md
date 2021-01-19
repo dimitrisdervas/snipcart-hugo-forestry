@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "12%"
 product_types :  ["bottle"]
 breweries :  ["Kykao"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : "6.1"
 discount : "5%"

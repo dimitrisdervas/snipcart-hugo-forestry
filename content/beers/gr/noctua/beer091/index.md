@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5.60%"
 product_types :  ["bottle"]
 breweries :  ["Noctua"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""

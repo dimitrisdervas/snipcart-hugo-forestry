@@ -9,7 +9,7 @@ language : "gr"
 alchohol : ""
 product_types :  [""]
 breweries :  ["Marmita"]
-promotion : ""
+promotions : [""]
 beer_types :  ["Red Ale"]
 retail_price : ""
 discount : ""

@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "10%"
 product_types :  [""]
 breweries :  ["Dark crops"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""

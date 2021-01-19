@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "6%"
 product_types :  [""]
 breweries :  ["Alea"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""

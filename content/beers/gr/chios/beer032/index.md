@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "4.90%"
 product_types :  ["bottle"]
 breweries :  ["Chios"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : "2.6"
 discount : "0.4"

@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "4.7%."
 product_types :  [""]
 breweries :  ["Dreamer"]
-promotion : ""
+promotions : [""]
 beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""

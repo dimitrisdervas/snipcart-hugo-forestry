@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "4.10%"
 product_types :  [""]
 breweries :  ["Midnight"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""

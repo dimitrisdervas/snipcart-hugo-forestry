@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5%"
 product_types :  [""]
 breweries :  ["Blame the sun"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : "2.98"
 discount : "6%"

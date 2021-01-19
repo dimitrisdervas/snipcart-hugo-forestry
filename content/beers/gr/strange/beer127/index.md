@@ -9,7 +9,7 @@ language : "gr"
 alchohol : ""
 product_types :  [""]
 breweries :  ["Strange"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""

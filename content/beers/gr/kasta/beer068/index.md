@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5.40%"
 product_types :  ["bottle"]
 breweries :  ["Kasta"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""

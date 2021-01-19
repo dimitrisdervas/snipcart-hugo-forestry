@@ -9,7 +9,7 @@ language : "gr"
 alchohol : ""
 product_types :  [""]
 breweries :  ["Ikariotissa"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""

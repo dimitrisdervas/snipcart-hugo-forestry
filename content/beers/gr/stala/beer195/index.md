@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5.50%"
 product_types :  ["bottle"]
 breweries :  ["Stala"]
-promotion : ""
+promotions : [""]
 beer_types :  ["Red Ale"]
 retail_price : ""
 discount : ""

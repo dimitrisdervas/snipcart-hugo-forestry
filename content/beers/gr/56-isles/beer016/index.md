@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5.20%"
 product_types :  ["bottle"]
 breweries :  ["56-isles"]
-promotion : ""
+promotions : [""]
 beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""

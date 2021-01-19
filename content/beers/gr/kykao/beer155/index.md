@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "7%"
 product_types :  [""]
 breweries :  ["Kykao"]
-promotion : ""
+promotions : [""]
 beer_types :  ["Red Ale"]
 retail_price : "11.2"
 discount : "5%"

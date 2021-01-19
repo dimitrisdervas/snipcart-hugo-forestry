@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "7%"
 product_types :  ["bottle"]
 breweries :  ["Clepsydra"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""

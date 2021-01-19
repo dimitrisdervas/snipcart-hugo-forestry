@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "4.50%"
 product_types :  ["bottle"]
 breweries :  ["Mustaki"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : "3.6"
 discount : "8%"

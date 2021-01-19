@@ -9,7 +9,7 @@ language : "gr"
 alchohol : ""
 product_types :  [""]
 breweries :  ["Azrael"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : ""
 discount : ""

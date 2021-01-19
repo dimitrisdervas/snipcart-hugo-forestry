@@ -9,7 +9,7 @@ language : "gr"
 alchohol : ""
 product_types :  [""]
 breweries :  ["Karma"]
-promotion : ""
+promotions : [""]
 beer_types :  ["LAGER"]
 retail_price : "2.1"
 discount : "11%"

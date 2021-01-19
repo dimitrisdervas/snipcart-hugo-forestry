@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "9%"
 product_types :  ["bottle"]
 breweries :  ["Kykao"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : "5.2"
 discount : "5%"

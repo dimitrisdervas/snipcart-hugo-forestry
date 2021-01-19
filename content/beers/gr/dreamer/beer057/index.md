@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "7.60%"
 product_types :  [""]
 breweries :  ["Dreamer"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""

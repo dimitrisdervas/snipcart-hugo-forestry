@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5.70%"
 product_types :  [""]
 breweries :  ["Flaros"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""

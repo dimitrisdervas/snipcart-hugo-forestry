@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "13%"
 product_types :  [""]
 breweries :  ["Kykao"]
-promotion : ""
+promotions : [""]
 beer_types :  ["SOUR"]
 retail_price : "7.9"
 discount : "5%"

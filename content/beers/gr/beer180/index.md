@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5%"
 product_types :  ["bottle"]
 breweries :  [""]
-promotion : ""
+promotions : [""]
 beer_types :  ["LAGER"]
 retail_price : "1.9"
 discount : "16%"

@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "4.40%"
 product_types :  ["bottle"]
 breweries :  ["Flaros"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""

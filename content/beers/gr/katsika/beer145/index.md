@@ -9,7 +9,7 @@ language : "gr"
 alchohol : ""
 product_types :  [""]
 breweries :  ["Katsika"]
-promotion : ""
+promotions : [""]
 beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""

@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5.50%"
 product_types :  [""]
 breweries :  ["Sknipa"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""

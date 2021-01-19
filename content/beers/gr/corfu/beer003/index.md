@@ -9,7 +9,7 @@ language : "gr"
 alchohol : ""
 product_types :  ["box"]
 breweries :  ["Corfu"]
-promotions : ["5plus1"]
+promotions : ["fiveplusone"]
 beer_types :  ["WEISS"]
 retail_price : "17.4"
 discount : "2.9"

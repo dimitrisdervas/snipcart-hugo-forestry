@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "8.50%"
 product_types :  ["bottle"]
 breweries :  ["Strange"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""

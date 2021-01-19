@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "12%"
 product_types :  ["can"]
 breweries :  ["Seven"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""

@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "6.50%"
 product_types :  ["can"]
 breweries :  ["Seven"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""

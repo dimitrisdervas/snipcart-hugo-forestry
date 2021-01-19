@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "4.80%"
 product_types :  [""]
 breweries :  ["Kasta"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""

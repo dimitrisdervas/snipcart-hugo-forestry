@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "7%"
 product_types :  [""]
 breweries :  ["Dark crops"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : ""
 discount : ""

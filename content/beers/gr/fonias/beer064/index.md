@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "6.20%"
 product_types :  [""]
 breweries :  ["Fonias"]
-promotion : ""
+promotions : [""]
 beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""

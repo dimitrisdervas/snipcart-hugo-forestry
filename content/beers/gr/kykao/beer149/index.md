@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "6%"
 product_types :  ["bottle"]
 breweries :  ["Kykao"]
-promotion : ""
+promotions : [""]
 beer_types :  ["PALE ALE"]
 retail_price : "3.5"
 discount : "5%"

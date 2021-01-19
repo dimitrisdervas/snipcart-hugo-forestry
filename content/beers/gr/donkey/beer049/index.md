@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "6.50%"
 product_types :  ["bottle"]
 breweries :  ["Donkey"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""

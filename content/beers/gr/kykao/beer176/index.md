@@ -9,7 +9,7 @@ language : "gr"
 alchohol : ""
 product_types :  ["bottle"]
 breweries :  ["Kykao"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : "3.7"
 discount : "5%"

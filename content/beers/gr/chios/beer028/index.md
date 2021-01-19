@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "6.30%"
 product_types :  [""]
 breweries :  ["Chios"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : "2.6"
 discount : "0.4"

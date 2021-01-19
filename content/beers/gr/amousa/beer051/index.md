@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5.50%"
 product_types :  [""]
 breweries :  ["Amousa"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""

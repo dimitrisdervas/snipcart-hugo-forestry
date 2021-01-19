@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "6.40%"
 product_types :  ["bottle"]
 breweries :  ["Marmita"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""

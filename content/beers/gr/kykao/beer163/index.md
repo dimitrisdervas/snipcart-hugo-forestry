@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "12%"
 product_types :  [""]
 breweries :  ["Kykao"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : "6.8"
 discount : "5%"

@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "6%"
 product_types :  ["bottle"]
 breweries :  ["Solo"]
-promotion : ""
+promotions : [""]
 beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""

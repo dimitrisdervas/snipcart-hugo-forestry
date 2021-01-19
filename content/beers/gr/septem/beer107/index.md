@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "9%"
 product_types :  ["bottle"]
 breweries :  ["Septem"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""

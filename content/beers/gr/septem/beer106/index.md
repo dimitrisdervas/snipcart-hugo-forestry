@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "10.30%"
 product_types :  ["bottle"]
 breweries :  ["Septem"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""

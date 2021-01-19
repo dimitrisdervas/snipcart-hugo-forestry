@@ -9,7 +9,7 @@ language : "gr"
 alchohol : ""
 product_types :  ["bottle"]
 breweries :  ["Septem"]
-promotion : ""
+promotions : [""]
 beer_types :  ["PALE ALE"]
 retail_price : "2.99"
 discount : "10%"

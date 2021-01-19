@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "4.70%"
 product_types :  ["bottle"]
 breweries :  ["56isles"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : ""
 discount : ""

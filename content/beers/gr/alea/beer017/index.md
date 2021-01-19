@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "6%"
 product_types :  ["can"]
 breweries :  ["Alea"]
-promotion : ""
+promotions : [""]
 beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""

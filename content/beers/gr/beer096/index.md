@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5%"
 product_types :  ["bottle"]
 breweries :  [""]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""

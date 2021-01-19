@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5,5%"
 product_types :  ["bottle"]
 breweries :  ["Chios"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΚΑΠΝΙΣΤΕΣ"]
 retail_price : "2.6"
 discount : "0.4"

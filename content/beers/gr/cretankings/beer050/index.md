@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5%."
 product_types :  ["bottle"]
 breweries :  ["Cretankings"]
-promotion : ""
+promotions : [""]
 beer_types :  ["LAGER"]
 retail_price : ""
 discount : ""

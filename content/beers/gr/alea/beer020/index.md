@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5%"
 product_types :  [""]
 breweries :  ["Alea"]
-promotion : ""
+promotions : [""]
 beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""

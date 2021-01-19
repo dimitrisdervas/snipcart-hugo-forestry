@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5.70%"
 product_types :  ["bottle"]
 breweries :  ["Lafkas"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""

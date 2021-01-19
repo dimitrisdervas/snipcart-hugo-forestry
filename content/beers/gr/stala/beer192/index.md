@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5.80%"
 product_types :  [""]
 breweries :  ["Stala"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""

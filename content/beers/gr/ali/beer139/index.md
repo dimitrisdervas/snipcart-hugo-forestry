@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5.30%"
 product_types :  ["bottle"]
 breweries :  ["Ali"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""

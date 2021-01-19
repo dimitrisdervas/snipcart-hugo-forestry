@@ -9,7 +9,7 @@ language : "gr"
 alchohol : ""
 product_types :  ["box"]
 breweries :  ["Corfu"]
-promotions : ["5plus1"]
+promotions : ["fiveplusone"]
 beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : "11.4"
 discount : "1.9"

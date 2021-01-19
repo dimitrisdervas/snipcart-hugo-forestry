@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5.20%"
 product_types :  ["bottle"]
 breweries :  ["Flaros"]
-promotion : ""
+promotions : [""]
 beer_types :  ["Red Ale"]
 retail_price : ""
 discount : ""

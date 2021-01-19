@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "9.20%"
 product_types :  [""]
 breweries :  ["Strange"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""

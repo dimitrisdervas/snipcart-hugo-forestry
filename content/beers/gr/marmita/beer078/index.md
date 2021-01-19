@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5.10%"
 product_types :  ["bottle"]
 breweries :  ["Marmita"]
-promotion : ""
+promotions : [""]
 beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""

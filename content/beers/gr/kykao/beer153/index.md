@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "6.50%"
 product_types :  ["bottle"]
 breweries :  ["Kykao"]
-promotion : ""
+promotions : [""]
 beer_types :  ["LAGER"]
 retail_price : "3.7"
 discount : "5%"

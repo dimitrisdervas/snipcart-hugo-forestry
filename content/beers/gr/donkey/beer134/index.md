@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5.50%"
 product_types :  ["bottle"]
 breweries :  ["Donkey"]
-promotion : ""
+promotions : [""]
 beer_types :  ["WEISS"]
 retail_price : ""
 discount : ""

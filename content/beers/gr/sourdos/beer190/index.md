@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5.50%"
 product_types :  [""]
 breweries :  ["Sourdos"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ALE BLONDE/BROWN"]
 retail_price : ""
 discount : ""

@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "7.50%"
 product_types :  ["bottle"]
 breweries :  ["Nisos"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΜΑΥΡΕΣ"]
 retail_price : ""
 discount : ""

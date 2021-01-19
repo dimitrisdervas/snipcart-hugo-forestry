@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5.50%"
 product_types :  [""]
 breweries :  ["Sknipa"]
-promotion : ""
+promotions : [""]
 beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""

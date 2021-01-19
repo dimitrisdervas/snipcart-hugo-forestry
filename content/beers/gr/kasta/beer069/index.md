@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5.90%"
 product_types :  [""]
 breweries :  ["Kasta"]
-promotion : ""
+promotions : [""]
 beer_types :  ["Red Ale"]
 retail_price : ""
 discount : ""

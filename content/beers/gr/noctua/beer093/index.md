@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "5,2%"
 product_types :  [""]
 breweries :  ["Noctua"]
-promotion : ""
+promotions : [""]
 beer_types :  ["PALE ALE"]
 retail_price : ""
 discount : ""

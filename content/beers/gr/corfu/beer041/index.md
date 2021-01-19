@@ -9,7 +9,7 @@ language : "gr"
 alchohol : ""
 product_types :  [""]
 breweries :  ["Corfu"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΧΩΡΙΣ ΑΛΚΟΟΛ"]
 retail_price : ""
 discount : ""

@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "3.80%"
 product_types :  [""]
 breweries :  ["Clepsydra"]
-promotion : ""
+promotions : [""]
 beer_types :  ["SOUR"]
 retail_price : ""
 discount : ""

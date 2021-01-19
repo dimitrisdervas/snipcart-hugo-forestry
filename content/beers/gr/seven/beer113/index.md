@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "8%"
 product_types :  ["can"]
 breweries :  ["Seven"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""

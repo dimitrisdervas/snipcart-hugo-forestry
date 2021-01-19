@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "7,0%"
 product_types :  ["bottle"]
 breweries :  ["Katsika"]
-promotion : ""
+promotions : [""]
 beer_types :  ["ΒΕΛΓΙΚΕΣ/ΜΟΝΑΣΤΗΡΙΑΚΕΣ"]
 retail_price : ""
 discount : ""

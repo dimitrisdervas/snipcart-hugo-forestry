@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "6%"
 product_types :  ["bottle"]
 breweries :  ["Stala"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""

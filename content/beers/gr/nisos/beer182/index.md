@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "6.50%"
 product_types :  ["bottle"]
 breweries :  ["Nisos"]
-promotion : ""
+promotions : [""]
 beer_types :  ["Red Ale"]
 retail_price : ""
 discount : ""

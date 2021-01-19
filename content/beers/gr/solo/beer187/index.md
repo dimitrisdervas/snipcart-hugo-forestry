@@ -9,7 +9,7 @@ language : "gr"
 alchohol : "10%"
 product_types :  ["bottle"]
 breweries :  ["Solo"]
-promotion : ""
+promotions : [""]
 beer_types :  ["I.P.A."]
 retail_price : ""
 discount : ""

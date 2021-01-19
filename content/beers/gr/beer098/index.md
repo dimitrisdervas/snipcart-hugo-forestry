@@ -9,7 +9,7 @@ language : "gr"
 alchohol : ""
 product_types :  [""]
 breweries :  [""]
-promotion : ""
+promotions : [""]
 beer_types :  ["WEISS"]
 retail_price : ""
 discount : ""
