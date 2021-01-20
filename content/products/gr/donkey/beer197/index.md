@@ -2,7 +2,7 @@
 name : "Crazy Donkey IPA 0.75lt"
 id : "beer197"
 price : "10.5"
-url : ""
+
 image : "beer197.jpg"
 price : "10.5"
 language : "gr"

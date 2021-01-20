@@ -1,8 +1,8 @@
 ---
+title: "Crazy Donkey"
 name : "Crazy Donkey IPA 0.33lt"
-id : "beer049"
+id : "donkeybeer049"
 price : "3.8"
-url : ""
 image : "beer049.jpg"
 price : "3.8"
 language : "gr"

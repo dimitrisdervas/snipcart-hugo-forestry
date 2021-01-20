@@ -2,7 +2,7 @@
 name : "Yellow Donkey 0.33lt"
 id : "beer135"
 price : "3.3"
-url : ""
+
 image : "beer135.jpg"
 price : "3.3"
 language : "gr"

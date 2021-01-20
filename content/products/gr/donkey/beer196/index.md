@@ -2,7 +2,7 @@
 name : "Red Donkey Beer 0.75L"
 id : "beer196"
 price : "8.3"
-url : ""
+
 image : "beer196.jpg"
 price : "8.3"
 language : "gr"

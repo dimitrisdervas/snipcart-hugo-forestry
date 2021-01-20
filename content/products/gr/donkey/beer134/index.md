@@ -2,7 +2,7 @@
 name : "White Donkey Weiss 0.33lt"
 id : "beer134"
 price : "3.29"
-url : ""
+
 image : "beer134.jpg"
 price : "3.29"
 language : "gr"
