@@ -74,24 +74,6 @@ fields:
 - type: file
   name: image
   label: image
-- type: field_group
-  name: options
-  label: Options
-  description: New Product Option
-  hidden: false
-  fields:
-  - type: text
-    name: Custom_field_name_1
-    label: 
-    config:
-      required: true
-  - type: textarea
-    name: bio
-    label: "Author's Bio"
-      config:
-      required: true
-  config:
-    labelField: name
 - type: text
   name: product_url
   label: url
