@@ -1,4 +1,5 @@
 ---
+products_related: "Red Donkey"
 name : "Red Donkey 0.33lt"
 id : "beer099"
 price : "3.4"

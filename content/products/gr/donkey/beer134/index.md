@@ -1,4 +1,5 @@
 ---
+products_related: "White Donkey"
 name : "White Donkey Weiss 0.33lt"
 id : "beer134"
 price : "3.29"

@@ -1,4 +1,5 @@
 ---
+products: "Yellow Donkey"
 name : "Yellow Donkey 0.33lt"
 id : "beer135"
 price : "3.3"
