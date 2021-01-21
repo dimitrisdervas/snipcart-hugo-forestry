@@ -4,8 +4,10 @@ title = "BeerCityGreece"
 
 
 [taxonomies]
-    product_type = "product_types"
+    material = "materials"
+    size = "sizes"
     brewery = "breweries"
     beer_type = "beer_types"
     promotion = "promotions"
     product_related = "products_related"
+    product = "products"

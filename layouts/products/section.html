@@ -1,0 +1,83 @@
+{{ define "main" }}
+
+{{ .Title }}
+SECTION
+<div class="flex container" x-data="{ 
+
+    {{ range first 1 .Pages }}  
+    title: '{{.Params.name}}',
+    url: '{{.Params.url}}',
+    id: '{{.Params.id }}',
+    price: '{{.Params.price}}',
+    beer_types: '{{.Params.beer_types}}',
+    image: '/uploads/beers/{{.Params.image}}',
+    description: '{{.Params.description}}',
+    boximage: [],
+    quantity: '1',
+    box6: '12',
+    box12: '24',
+    box24: '48'
+    {{ end }}
+    }">
+
+<div class="w-1/2 images">
+    {{ range .Pages }}
+        <h2 class="text-3xl font-bold" x-show="id === '{{.Params.id}}'">{{ .Params.name }}</h2>
+        <div class="flex flex-col" x-show="id === '{{.Params.id}}'">
+            <img class="w-40" src="/uploads/beers/{{ .Params.image }}" alt="" />
+        </div>
+    {{ end }}
+</div>
+
+{{/*  OPTIONS  */}}
+<div class="flex flex-col">
+    <div class="selection">
+        <div class="flex justify-around">
+        {{ range .Pages  }}   
+            <button 
+            class="border-2 border-gray-800 px-4 py-2 mx-2"
+            type="radio" 
+            x-on:click="
+            id = '{{.Params.id}}',
+            url = '{{.Params.url}}'
+            price = '{{.Params.price}}',
+            title= '{{ .Params.name }}'"  
+            name="syskeyasia" 
+            value="{{.Params.name}}">
+            {{.Params.name}}
+            </button>
+        {{ end }}
+        </div>
+
+       
+    </div>
+
+
+
+{{/*  PRICE  */}}
+    <div x-text="price" class="text-3xl font-bold" >€</div>
+
+
+
+
+{{/*  Snipcart button  */}}
+<button
+class="snipcart-add-item buy-button"
+x-bind:data-item-url="url"
+x-bind:data-item-name="title"
+x-bind:data-item-id="id"
+x-bind:data-item-quantity = "quantity"
+x-bind:data-item-image="image"
+x-bind:data-item-price="price"
+x-bind:data-item-description="description"
+x-bind:data-item-price-box6="12"
+x-bind:data-item-price-box12="24"
+x-bind:data-item-price-box24="48"
+>
+Add to cart
+</button>
+
+</div>
+{{/*  end details block  */}}
+</div>
+{{ end }}

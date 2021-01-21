@@ -1,3 +1,7 @@
 {{ define "main"}}
-test default
+taxonomy template
+{{ range .Data.Pages}}
+{{.Title}}
+{{ .Content}}
+{{ end }}
 {{ end}}
