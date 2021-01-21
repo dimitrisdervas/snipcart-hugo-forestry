@@ -1,9 +1,17 @@
 ---
+products_related: "Crazy Donkey"
 name : "Crazy Donkey IPA 0.75lt"
 id : "beer197"
 price : "10.5"
-
+syskevasia: "0.75lt"
 image : "beer197.jpg"
+box: 
+    - name: "6"
+      price: 24
+    - name: "12"
+      price: 48
+    - name: "24"
+      price: 86
 price : "10.5"
 language : "gr"
 alchohol : "6.50%"
