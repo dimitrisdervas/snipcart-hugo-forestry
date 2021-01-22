@@ -1,0 +1,103 @@
+{{ define "main"}}
+<h1>{{ .Title }}</h1>
+<div class="container w-full">
+<div class=" flex flex-wrap justify-around">
+    {{ range .Site.Pages }}
+    <div class="flex-1 border px-2 m-2">
+        {{.Kind}}
+<div class="page-variables"> AlternativeOutputFormats : {{.AlternativeOutputFormats }}</div>
+<div class="page-variables"> Aliases : {{.Aliases }}</div>
+<div class="page-variables"> Content : {{.Content }}</div>
+<div class="page-variables"> Data : {{.Data }}</div>
+<div class="page-variables"> Date : {{.Date }}</div>
+<div class="page-variables"> Description : {{.Description }}</div>
+<div class="page-variables"> Dir : {{.Dir }}</div>
+<div class="page-variables"> Draft : {{.Draft }}</div>
+<div class="page-variables"> ExpiryDate : {{.ExpiryDate }}</div>
+<div class="page-variables"> File : {{.File }}</div>
+<div class="page-variables"> FuzzyWordCount : {{.FuzzyWordCount }}</div>
+<div class="page-variables"> Hugo : {{.Hugo }}</div>
+<div class="page-variables"> IsHome : {{.IsHome }}</div>
+<div class="page-variables"> IsNode : {{.IsNode }}</div>
+<div class="page-variables"> IsPage : {{.IsPage }}</div>
+<div class="page-variables"> IsSection : {{.IsSection }}</div>
+<div class="page-variables"> IsTranslated : {{.IsTranslated }}</div>
+<div class="page-variables"> Keywords : {{.Keywords }}</div>
+<div class="page-variables"> Kind : {{.Kind }}</div>
+<div class="page-variables"> Language : {{.Language }}</div>
+<div class="page-variables"> Lastmod : {{.Lastmod }}</div>
+<div class="page-variables"> LinkTitle : {{.LinkTitle }}</div>
+<div class="page-variables"> Next : {{.Next }}</div>
+<div class="page-variables"> OutputFormats : {{.OutputFormats }}</div>
+<div class="page-variables"> Pages : {{.Pages }}</div>
+<div class="page-variables"> Permalink : {{.Permalink }}</div>
+<div class="page-variables"> Plain : {{.Plain }}</div>
+<div class="page-variables"> PlainWords : {{.PlainWords }}</div>
+<div class="page-variables"> Prev : {{.Prev }}</div>
+<div class="page-variables"> PrevInSection : {{.PrevInSection }}</div>
+<div class="page-variables"> PublishDate : {{.PublishDate }}</div>
+<div class="page-variables"> RSSLink : {{.RSSLink }}</div>
+<div class="page-variables"> RawContent : {{.RawContent }}</div>
+<div class="page-variables"> ReadingTime : {{.ReadingTime }}</div>
+<div class="page-variables"> Resources : {{.Resources }}</div>
+ {{/*  <div class="page-variables"> Ref : Ref </div>    */}}
+<div class="page-variables"> RelPermalink : {{.RelPermalink }}</div>
+ {{/*  <div class="page-variables"> RelRef : RelRef </div>    */}}
+<div class="page-variables"> Site : {{.Site }}</div>
+<div class="page-variables"> Sites : {{.Sites }}</div>
+<div class="page-variables"> Sites: {{.Sites}}</div>
+{{/*  <div class="page-variables"> First : First </div>  */}}
+<div class="page-variables"> Summary : {{.Summary }}</div>
+<div class="page-variables"> TableOfContents : {{.TableOfContents }}</div>
+<div class="page-variables"> Title : {{.Title }}</div>
+<div class="page-variables"> Translations : {{.Translations }}</div>
+<div class="page-variables"> TranslationKey : {{.TranslationKey }}</div>
+<div class="page-variables"> Truncated : {{.Truncated }}</div>
+<div class="page-variables"> Type : {{.Type }}</div>
+<div class="page-variables"> Weight : {{.Weight }}</div>
+<div class="page-variables"> WordCount: {{.WordCount}}</div>
+
+
+{{ if eq .Kind "term"}}
+<h2>Term Variables</h2>
+<div class="term variables"> Data.Singular: {{.Data.Singular}}</div>
+
+<div class="term variables"> Data.Plural: {{.Data.Plural}}</div>
+
+<div class="term variables"> Data.Pages: {{.Data.Pages}}</div>
+
+<div class="term variables"> Data.Terms: {{.Data.Terms}}</div>
+
+<div class="term variables"> Data.Terms.Alphabetical: {{.Data.Terms.Alphabetical}}</div>
+
+<div class="term variables"> Data.Terms.ByCount: {{.Data.Terms.ByCount}}</div>
+{{else }}
+{{end }}
+    <h2><a href="{{ .Permalink }} ">{{ .Title }} {{ .Params.name }} {{ .Params.brand }}</a> </h2>
+    <h3>permalink: {{ .Permalink }} </h3>
+
+<h2>FIle Variables</h2>
+<div class="file-variables">{{.File.Path}}</div>
+
+<div class="file-variables">{{.File.LogicalName}}</div>
+
+<div class="file-variables">{{.File.TranslationBaseName}}</div>
+
+<div class="file-variables">{{.File.ContentBaseName}}</div>
+
+<div class="file-variables">{{.File.BaseFileName}}</div>
+
+<div class="file-variables">{{.File.Ext}}</div>
+
+<div class="file-variables">{{.File.Lang}}</div>
+
+<div class="file-variables">{{.File.Dir}}</div>
+
+<div class="file-variables">{{.File.UniqueID}}</div>
+
+    {{ .Params }}
+</div>
+    {{ end}}
+</div>
+</div>
+{{ end }}

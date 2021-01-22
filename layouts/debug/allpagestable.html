@@ -1,0 +1,179 @@
+{{ define "main"}}
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#example').DataTable();
+    } );
+</script>
+<h1>{{ .Title }}</h1>
+
+
+<table id="example" class="display" style="width:100%"> 
+<thead>
+<th>KInd</th>
+<th>AlternativeOutputFormats :</th>
+<th>Aliases :</th>
+<th>Content :</th>
+<th>Data :</th>
+<th>Date :</th>
+<th>Description :</th>
+<th>Dir :</th>
+<th>Draft :</th>
+<th>ExpiryDate :</th>
+<th>File :</th>
+<th>FuzzyWordCount :</th>
+<th>Hugo :</th>
+<th>IsHome :</th>
+<th>IsNode :</th>
+<th>IsPage :</th>
+<th>IsSection :</th>
+<th>IsTranslated :</th>
+<th>Keywords :</th>
+<th>Kind :</th>
+<th>Language :</th>
+<th>Lastmod :</th>
+<th>LinkTitle :</th>
+<th>Next :</th>
+<th>OutputFormats :</th>
+<th>Pages :</th>
+<th>Permalink :</th>
+<th>Plain :</th>
+<th>PlainWords :</th>
+<th>Prev :</th>
+<th>PrevInSection :</th>
+<th>PublishDate :</th>
+<th>RSSLink :</th>
+<th>RawContent :</th>
+<th>ReadingTime :</th>
+<th>Resources :</th>
+<th>RelPermalink :</th>
+<th>Site :</th>
+<th>Sites :</th>
+<th>Summary :</th>
+<th>TableOfContents :</th>
+<th>Title :</th>
+<th>Translations :</th>
+<th>TranslationKey :</th>
+<th>Truncated :</th>
+<th>Type :</th>
+<th>Weight :</th>
+<th>WordCount:</th>
+{{/*  DATA  */}}
+<th>Data.Singular :</th>
+<th>Data.Plural :</th>
+<th>Data.Pages :</th>
+<th>Data.Terms :</th>
+<th>Data.Terms.Alphabetical :</th>
+<th>Data.Terms.ByCount :</th>
+{{/*  FILE  */}}
+<th>File.Path :</th>
+<th>File.LogicalName :</th>
+<th>File.TranslationBaseName :</th>
+<th>File.ContentBaseName :</th>
+<th>File.BaseFileName :</th>
+<th>File.Ext :</th>
+<th>File.Lang :</th>
+<th>File.Dir :</th>
+<th>File.UniqueID :</th>
+</thead>
+<tbody>
+{{ range .Site.Pages }}
+<tr>
+ <td>{{.Kind}}</td>
+ <td>{{.AlternativeOutputFormats }}</td>
+ <td>{{.Aliases }}</td>
+ <td>{{.Content }}</td>
+ <td>{{.Data }}</td>
+ <td>{{.Date }}</td>
+ <td>{{.Description }}</td>
+ <td>{{.Dir }}</td>
+ <td>{{.Draft }}</td>
+ <td>{{.ExpiryDate }}</td>
+ <td>{{.File }}</td>
+ <td>{{.FuzzyWordCount }}</td>
+ <td>{{.Hugo }}</td>
+ <td>{{.IsHome }}</td>
+ <td>{{.IsNode }}</td>
+ <td>{{.IsPage }}</td>
+ <td>{{.IsSection }}</td>
+ <td>{{.IsTranslated }}</td>
+ <td>{{.Keywords }}</td>
+ <td>{{.Kind }}</td>
+ <td>{{.Language }}</td>
+ <td>{{.Lastmod }}</td>
+ <td>{{.LinkTitle }}</td>
+ <td>{{.Next }}</td>
+ <td>{{.OutputFormats }}</td>
+ <td>{{.Pages }}</td>
+ <td>{{.Permalink }}</td>
+ <td>{{.Plain }}</td>
+ <td>{{.PlainWords }}</td>
+ <td>{{.Prev }}</td>
+ <td>{{.PrevInSection }}</td>
+ <td>{{.PublishDate }}</td>
+ <td>{{.RSSLink }}</td>
+ <td>{{.RawContent }}</td>
+ <td>{{.ReadingTime }}</td>
+ <td>{{.Resources }}</td>
+ <td>{{.RelPermalink }}</td>
+ <td>{{.Site }}</td>
+ <td>{{.Sites }}</td>
+ <td>{{.Summary }}</td>
+ <td>{{.TableOfContents }}</td>
+ <td>{{.Title }}</td>
+ <td>{{.Translations }}</td>
+ <td>{{.TranslationKey }}</td>
+ <td>{{.Truncated }}</td>
+ <td>{{.Type }}</td>
+ <td>{{.Weight }}</td>
+<td> {{.WordCount}}</td>
+
+
+{{ if eq .Kind "term"}}
+
+ <td>{{.Data.Singular}}</td>
+
+ <td>{{.Data.Plural}}</td>
+
+ <td>{{.Data.Pages}}</td>
+
+ <td>{{.Data.Terms}}</td>
+
+ <td>{{.Data.Terms.Alphabetical}}</td>
+
+ <td>{{.Data.Terms.ByCount}}</td>
+{{else }}
+<td>not term</td>
+<td>not term</td>
+<td>not term</td>
+<td>not term</td>
+<td>not term</td>
+<td>not term</td>
+{{end }}
+<td>{{.File.Path}}</td>
+<td>{{.File.LogicalName}}</td>
+<td>{{.File.TranslationBaseName}}</td>
+<td>{{.File.ContentBaseName}}</td>
+<td>{{.File.BaseFileName}}</td>
+<td>{{.File.Ext}}</td>
+<td>{{.File.Lang}}</td>
+<td>{{.File.Dir}}</td>
+<td>{{.File.UniqueID}}</td>    
+</tr>
+{{ end }}
+</tbody>
+</table>
+
+
+    
+
+
+
+
+
+
+
+
+{{ end }}
