@@ -1,16 +1,6 @@
 {{ define "main" }}
-{{/*  Term template  */}}
-Term
+{{/*  Beers Template  */}}
 
-{{ .Title }}
-{{ range .Data.Pages }}
-{{.Params }}
-    {{ range .Pages }}
-        {{ .Params.name }}
-    {{ end }}
-{{ end }}
-
-{{/*  http://localhost:1313/products/gr/donkey/crazy_donkey/  */}}
 <div class="flex container" x-data="{ 
 
     {{ range first 1 .Data.Pages }}  
@@ -27,7 +17,8 @@ Term
     stock: '{{ .Params.stock }}',
     box6: '12',
     box12: '24',
-    box24: '48'
+    box24: '48',
+    tab: 'content'
     {{ end }}
     }">
 
@@ -124,9 +115,22 @@ Add to cart
 
 {{/*  third 1/3  */}}
 <div class="w-1/3 px-4">
+<div>
+    <button class="bg-gray-200 px-3 py-4" @click="tab = 'content'">Περιγραφή</button>
+    <button class="bg-gray-200 px-3 py-4" @click="tab = 'details'">Χαρακτηριστικά</button>
+<div class="content py-4"  x-show=" tab ==='content' ">
+    <div class="leading-relaxed">{{.Content}}</div>
+</div>
+<div class="igredients py-4" x-show="tab === 'details' ">
 
-{{.Content}}
-{{ .Params}}
+  <div class="p">{{ .Params.alchohol}}</div>
+  <div class="p">{{ .Params.ibu}}</div>
+  <div class="p">{{ delimit .Params.breweries ","}}</div>
+  <div class="p">{{ delimit .Params.beer_types ","}}</div>  
+</div>
+</div>
+
+
 </div>
 {{/*  end third 1/3  */}}
 </div>

@@ -1,0 +1,12 @@
+
+{{ define "main" }}
+test terms template
+
+{{ range .Data.Pages }}
+
+{{ range .Pages }}
+    {{ .Params }}
+{{ end }}
+{{ end }}
+
+{{ end }}

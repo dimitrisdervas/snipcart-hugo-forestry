@@ -1,6 +1,6 @@
 ---
-products: "Crazy Donkey"
-name : "Crazy Donkey IPA 0.33lt - 12 pack"
+products: "crazy-donkey"
+name : "crazy-donkey IPA 0.33lt - 12 pack"
 id : "donkeybeer04"
 price : "48"
 sizes: "12 pack"
