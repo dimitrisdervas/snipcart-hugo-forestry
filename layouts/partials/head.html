@@ -3,13 +3,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://app.snipcart.com">
-  <link rel="preconnect" href="https://cdn.snipcart.com">
-  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.css" />
-  
+    <link rel="preconnect" href="https://cdn.snipcart.com">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.css" />  
     <link rel='shortcut icon' type='image/x-icon' href='/images/icons/favicon.ico' />
   <!-- https://thoughtexpo.com/setup-hugo-with-tailwindcss-for-netlify/ -->
-  <!-- https://praveenjuge.com/blog/install-tailwind-on-hugo/
-   -->
+  <!-- https://praveenjuge.com/blog/install-tailwind-on-hugo/  -->
+
+  
    {{ $styles := resources.Get "css/main.css" }} 
    {{ $styles = $styles | resources.PostCSS (dict "inlineImports" true) }} 
    
@@ -17,15 +17,20 @@
      {{ $styles = $styles | minify }} 
    {{ end }}
 
-   <link href="{{ $styles.Permalink }}" rel="stylesheet" />
+   <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
     
    
   
-  
+  <!-- OLD STYLE  -->
     {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
-    <title>CheeseCity</title>
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  <!-- OLD STYLE  -->
+
+
+    <title>{{.Site.Title}}</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
 <style>
     .swiper-container {
         width: 100%;
