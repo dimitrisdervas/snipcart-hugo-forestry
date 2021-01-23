@@ -13,7 +13,10 @@
 
   
   {{ range .Site.Taxonomies.products }}
+
+
   {{ range .Pages }}
+  
         <div class="product">
             
             <h2 class="product__name"><a href="{{ .Params.url }}">{{ .Params.name }}</a></h2>
