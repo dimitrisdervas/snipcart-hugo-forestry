@@ -9,6 +9,6 @@ title = "BeerCityGreece"
     brewery = "breweries"
     beer_type = "beer_types"
     promotion = "promotions"
-    product_related = "products_related"
+    collection = "collections"
     product = "products"
 
