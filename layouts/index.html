@@ -37,6 +37,16 @@
     </ul>
 </section>
 
+SECTIONS
+
+{{ range $section, $taxonomy := .Site.Sections }}
+<h4>{{ $taxonomy.Title }}</h4>
+    <ul>
+        {{ range $taxonomy.Pages }}
+        <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
+        {{ end }}
+    </ul>
+{{ end }}
 
   {{ range .Site.Taxonomies.products }}
 

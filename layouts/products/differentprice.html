@@ -2,32 +2,31 @@
 {{/*  Different price Template  */}}
 
 <div class="flex w-full flex-wrap" x-data="{ 
-
     {{ range first 1 .Data.Pages }}  
-    'title': '{{.Params.name}}',
-    'url': '{{.Params.url}}',
-    'uniqueid': '{{.Params.id }}',
-    'retail': '{{.Params.retail}}',
-    'price': '{{.Params.price}}',
-    'beer_types': '{{.Params.beer_types}}',
-    'imagemain': '/uploads/beers/{{.Params.image}}',
-    'description': '{{.Params.description}}',
-    'boximage': [],
-    'quantity': '1',
-    'stock': '{{ .Params.stock }}',
-    'box6': '12',
-    'box12': '24',
-    'box24': '48',
-    {{ with .Params.gallery }}
-    gallery: {
-    {{ range $index , $images := . }}
-        {{ $loop := len $images }}
-        {{ $index }} :  { 'image': '/uploads/beers/{{$images.image}}'}{{ if eq $index $loop }}{{else}},{{ end }}
-    {{ end }}
-    },
-    {{ end }}
-    galleryCurrentImg: '',
-    tab: 'content'
+        'title': '{{.Params.name}}',
+        'url': '{{.Params.url}}',
+        'uniqueid': '{{.Params.id }}',
+        'retail': '{{.Params.retail}}',
+        'price': '{{.Params.price}}',
+        'beer_types': '{{.Params.beer_types}}',
+        'imagemain': '/uploads/beers/{{.Params.image}}',
+        'description': '{{.Params.description}}',
+        'boximage': [],
+        'quantity': '1',
+        'stock': '{{ .Params.stock }}',
+        'box6': '12',
+        'box12': '24',
+        'box24': '48',
+        'gallery': {
+        {{ with .Params.gallery }}        
+        {{ range $index , $images := . }}
+            {{ $loop := len $images }}
+            {{ $index }} :  { 'image': '/uploads/beers/{{$images.image}}'}{{ if eq $index $loop }}{{else}},{{ end }}
+        {{ end }}        
+        {{ end }}
+        },
+        galleryCurrentImg: '',
+        tab: 'content'
     {{ end }}
     }">
 
@@ -70,11 +69,15 @@
             url = '{{.Params.url}}'
             price = '{{.Params.price}}',
             title= '{{ .Params.name }}',
-            imagemain= '/uploads/beers/{{.Params.image}}',
+            {{ with .Params.image }}
+            imagemain= '/uploads/beers/{{ . }}',
+            {{ else }}
+            imagemain= 0,
+            {{end}}
             value='{{.Params.name}}',
             stock='{{.Params.stock}}' 
             ">
-            {{ .Params.name }}
+            {{ .Params.volume }}
             </button>
         {{ end }}
         </div>
@@ -84,10 +87,17 @@
 
 {{/*  Snipcart button  */}}
 
+<!-- OUT oF STOCK -->
     <div x-text="stock" 
     x-show="stock === 'out of stock' " 
-    class="border-2 border-gray-300 text-gray-300 w-full py-2 uppercase text-md text-center">
+    class="border-2 border-gray-300 text-gray-300 w-full py-2 uppercase text-md text-center mb-4">
     </div>
+<!-- NEWSLETETR FORM -->
+<div class="flex " x-show="stock === 'out of stock' ">
+    <input class="border p-2 m-2" placeholder="your email" type="text" >
+    <button class="bg-black text-white flex-1">Send</button>
+</div>
+
 
     <button x-show="stock != 'out of stock' "
     class="snipcart-add-item border-2 border-black w-full py-2 uppercase text-md"
@@ -106,13 +116,20 @@
     </button>
 
 </div>
+
+
 <!-- GALLERY  thumbs -->
     <div class="flex justify-around">
-        <template x-for="id in Object.keys(gallery)" :key="id">
+        <template x-if="gallery != null" x-for="id in Object.keys(gallery)" :key="id">
         <img class="w-32" :src="gallery[id].image"x-init="galleryCurrentImg = gallery[0].image" @click="galleryCurrentImg = gallery[id].image">
         </template>
     </div>
+
+
+
 </div>
+
+
 {{/*  end first 1/4 */}}
 
 
@@ -120,15 +137,20 @@
 {{/*  second 2/4  */}}
 <div class="w-full md:w-2/4 px-4">
 {{/*  Image block  */}}
-{{ with .Params.image }}
+
+
+
+<template x-if="imagemain === 0" x-for="id in Object.keys(gallery)" :key="id">
     <div class="flex justify-center w-full items-center h-full ">
         <img x-bind:src="galleryCurrentImg" x-bind:alt="title" />
     </div>
-{{ end }}
-<div>
-    <img  x-bind:src="galleryCurrentImg" alt="" >
-</div>
+</template>
 
+<template x-if="imagemain != 0 ">
+<div>
+    <img  x-bind:src="imagemain" x-bind:alt="title" >
+</div>
+</template>
 
 {{/*  end Image block  */}}
 </div>

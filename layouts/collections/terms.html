@@ -1,0 +1,9 @@
+
+{{ define "main" }}
+test terms template collections
+{{.}}
+{{ range .Data.Pages }}
+     <a href="{{.Permalink}}"> {{ .Title}}</a>
+{{ end }}
+
+{{ end }}

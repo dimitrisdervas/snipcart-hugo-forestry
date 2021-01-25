@@ -1,15 +1,14 @@
-
 {{ define "main" }}
 test terms template collections
 {{.}}
-{{ range .Data.Pages }}
-        {{ range where .Pages "Params.products_list" "true" }}
+{{ range .Pages }}
+        
         <div>
             <div>{{ .Params.name }}</div>
             <div>{{ .Params.price }}</div>
             <div><img src="/uploads/beers/{{.Params.image}}" alt=""></div>
         </div>
-        {{ end }}
+
 {{ end }}
 
 {{ end }}

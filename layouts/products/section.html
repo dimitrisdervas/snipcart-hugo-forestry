@@ -1,0 +1,11 @@
+{{ define "main" }}
+Section template
+
+{{ range .Pages }}
+<div>
+    <div>{{ .Params.name }}</div>
+    <div>{{ .Params.price }}</div>
+    <div><img src="/uploads/beers/{{.Params.image}}" alt=""></div>
+</div>
+{{ end }}
+{{ end }}
