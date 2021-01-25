@@ -1,5 +1,5 @@
 ---
-products: "crazy-donkey"
+products : "crazy-donkey"
 name : "Crazy Donkey IPA 0.33lt"
 id : "donkeybeer061"
 volume: "0.33lt"

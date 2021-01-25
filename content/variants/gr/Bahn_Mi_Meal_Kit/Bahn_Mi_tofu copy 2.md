@@ -1,5 +1,5 @@
 ---
-products: "bahn-mi-meal-kit"
+products : "bahn-mi-meal-kit"
 name : "Chicken"
 id : "deli-bahn01"
 price : "12"
