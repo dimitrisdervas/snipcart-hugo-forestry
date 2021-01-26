@@ -1,4 +1,4 @@
-baseURL: 'http://66832007dd14.ngrok.io/'
+baseURL: 'https://beersdemo.netlify.app'
 languageCode: gr-el
 title: BeerCityGreece
 DefaultContentLanguage: gr
