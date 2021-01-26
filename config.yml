@@ -24,3 +24,14 @@ languages:
 
 # https://phrase.com/blog/posts/i18n-tutorial-how-to-go-multilingual-with-hugo/#Configure_the_Locales
 
+outputFormats:
+  netlifycms_debug:
+    baseName: config
+    isPlainText: true
+    mediatype: text/html
+    notAlternative: false
+  netlifycms_config:
+    baseName: config
+    isPlainText: true
+    mediatype: application/yaml
+    notAlternative: false
