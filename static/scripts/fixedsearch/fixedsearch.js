@@ -183,11 +183,9 @@ fixedsearch = function(){
 						keys: [
 							'permalink',
 							'title',
-							'date',
-							'summary',
-							'section',
-							'categories',
-							'tags'
+                            'name',
+                            'collections',
+                            'products'
 							]
 					};
 
@@ -218,11 +216,9 @@ fixedsearch = function(){
 			for (let item in results.slice(0,5)) { // only show first 5 results
 				search_items = search_items + '<li><a href="' + results[item].item.permalink + '" tabindex="0">' +
 					'<span class="title">' + results[item].item.title + '</span>' +
-					'<span class="date">' + results[item].item.date + '</span>' +
-					'<span class="summary">' + results[item].item.summary + '</span>' +
-					'<span class="section">'+ results[item].item.section +'</span>' +
-					'<span class="categories">'+ results[item].item.categories.join(', ') +'</span>' +
-					'<span class="tags">'+ results[item].item.tags.join(', ') +'</span>' +
+					'<span class="name">' + results[item].item.name + '</span>' +
+					'<span class="products">' + results[item].item.products + '</span>' +
+					'<span class="colelctions">'+ results[item].item.colelctions +'</span>' +
 				'</a></li>';
 			}
 			results_available = true;
