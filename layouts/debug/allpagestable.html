@@ -84,7 +84,7 @@
  <td>{{.Kind}}</td>
  <td>{{.AlternativeOutputFormats }}</td>
  <td>{{.Aliases }}</td>
- <td>{{.Content }}</td>
+ <td>{{.Content | truncate 5 }}</td>
  <td>{{.Data }}</td>
  <td>{{.Date }}</td>
  <td>{{.Description }}</td>
@@ -108,19 +108,19 @@
  <td>{{.OutputFormats }}</td>
  <td>{{.Pages }}</td>
  <td>{{.Permalink }}</td>
- <td>{{.Plain }}</td>
- <td>{{.PlainWords }}</td>
+ <td>{{.Plain | truncate 5 }}</td>
+ <td>{{ .PlainWords | first  5}}</td>
  <td>{{.Prev }}</td>
  <td>{{.PrevInSection }}</td>
  <td>{{.PublishDate }}</td>
  <td>{{.RSSLink }}</td>
- <td>{{.RawContent }}</td>
+ <td>{{.RawContent | truncate 5 }}</td>
  <td>{{.ReadingTime }}</td>
  <td>{{.Resources }}</td>
  <td>{{.RelPermalink }}</td>
  <td>{{.Site }}</td>
  <td>{{.Sites }}</td>
- <td>{{.Summary }}</td>
+ <td>{{.Summary | truncate 5 }}</td>
  <td>{{.TableOfContents }}</td>
  <td>{{.Title }}</td>
  <td>{{.Translations }}</td>

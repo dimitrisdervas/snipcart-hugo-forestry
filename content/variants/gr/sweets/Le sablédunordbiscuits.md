@@ -5,6 +5,7 @@ id : "sable-bahn01"
 price : "9.95"
 retail: "13.56"
 promotions : [""]
+products_list: "true"
 collections: "chocolates"
 gallery: 
     - image: "sable-biscuits-01_590x.jpg"

@@ -2,8 +2,22 @@
 {{ define "main" }}
 test terms template collections
 {{.}}
-{{ range .Data.Pages }}
-     <a href="{{.Permalink}}"> {{ .Title}}</a>
+<div class="flex flex-wrap justify-start">
+{{ range .Data.Pages}}
+{{ .Params.name}}
 {{ end }}
 
+
+{{ range .Pages }}
+
+     <a class="w-full md:w-1/3 p-4  flex flex-wrap" href="{{.Permalink}}"> 
+        <img class="w-full" src="/uploads/beers/{{.Params.image}}" alt="">
+        <div class="w-full text-center py-4">{{ .Title}}        
+
+        </div> 
+        
+     </a>
+
+{{ end }}
+</div>
 {{ end }}
