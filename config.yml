@@ -1,0 +1,26 @@
+baseURL: 'http://66832007dd14.ngrok.io/'
+languageCode: gr-el
+title: BeerCityGreece
+DefaultContentLanguage: gr
+defaultContentLanguageInSubdir: true
+taxonomies:
+    material: materials
+    size: sizes
+    brewery: breweries
+    beer_type: beer_types
+    promotion: promotions
+    collection: collections
+    product: products
+languages:
+    gr:
+        title: Παντοπωλείο
+        languageName: Greek
+        weight: 1
+    en:
+        title: Deli Shop
+        languageName: English
+        weight: 2
+
+
+# https://phrase.com/blog/posts/i18n-tutorial-how-to-go-multilingual-with-hugo/#Configure_the_Locales
+

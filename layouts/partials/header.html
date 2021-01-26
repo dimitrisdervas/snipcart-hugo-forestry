@@ -87,7 +87,7 @@
         <button
           class="outline-none focus:outline-none  px-3 py-1 bg-gray-100 rounded-sm flex items-center min-w-32"
         >
-          <span class="pr-1  flex-1">Collections</span>
+          <span class="pr-1  flex-1">{{ i18n "collections"}}</span>
           <span>
             <svg
               class="fill-current h-4 w-4 transform group-hover:-rotate-180
@@ -137,7 +137,13 @@
         .min-w-32 { min-width: 8rem }
       </style>
     </div>
-
+    <div>
+        <ul class="language-list">
+            {{ range $.Site.Home.AllTranslations }}
+            <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
     <div class="header__cart">
       <a href="#" class="snipcart-checkout" style="text-decoration: none;">
         <div class="snipcart-summary">

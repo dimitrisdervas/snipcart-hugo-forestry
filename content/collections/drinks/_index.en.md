@@ -1,4 +1,4 @@
 ---
-title: "Ποτά"
+title: "Drinksenglish"
 image: "drinks.webp"
 ---
