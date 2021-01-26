@@ -35,3 +35,11 @@ outputFormats:
     isPlainText: true
     mediatype: application/yaml
     notAlternative: false
+
+outputs:
+  home:
+    - html
+    - rss
+    - json
+  page:
+    - html
