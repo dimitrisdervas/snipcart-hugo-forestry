@@ -1,0 +1,7 @@
+{{- $index := slice -}}
+{{ range .Data.Pages }}
+{{ range where .Pages "Params.products_list" "true" }}
+{{- $index = $index | append (dict "name" .Params.name "price" .Params.price "products" .Params.products "image" .Params.image ) -}}
+{{ end }}
+{{ end }}
+{{- $index | jsonify -}}

@@ -6,8 +6,9 @@ test terms template collections
 <div class="flex ">
     {{ range .Data.Pages }}
             {{ range where .Pages "Params.products_list" "true" }}
+            {{ range .Translations }}
             <div class="w-1/5 p-4">
-                <a href="/products/{{.Params.products }}">
+                <a href="{{ "products/" | relLangURL }}{{.Params.products }}">
                 <div class="h-90 mb-4 ">
                     <img src="/uploads/beers/{{.Params.image}}" alt="">
                 </div>
@@ -15,6 +16,7 @@ test terms template collections
                 <div class="text-center">{{ .Params.price }}</div>
                 </a>
             </div>
+            {{ end }}
             {{ end }}
     {{ end }}
 </div>

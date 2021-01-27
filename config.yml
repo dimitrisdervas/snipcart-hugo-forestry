@@ -43,3 +43,9 @@ outputs:
     - json
   page:
     - html
+  taxonomy:
+    - html
+    - json
+  term:
+    - html
+    - json

@@ -1,0 +1,97 @@
+{{ define "main" }} {{.}}
+
+<div
+  class="h-full bg-gray-200 text-gray-800 p-4 lg:p-8"
+  x-data="searchResult()"
+>
+  <template x-for="item in searchResult.data.items">
+    <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 h-full font-light">
+      <div
+        class="flex bg-white rounded-lg shadow-md m-2 border-l-4 border-white hover:shadow-2xl hover:border-pink-500 cursor-pointer relative"
+      >
+        <div class="p-4 pr-6 leading-normal">
+          <div class="font-medium text-xl truncate" x-text="item.name"></div>
+          <div class="" x-text="item.price"></div>
+          <img :src="'/uploads/beers/' + item.image" alt="item.name" />
+        </div>
+      </div>
+    </div>
+  </template>
+</div>
+
+{{/* ITEMSJS */}}
+<script src="https://unpkg.com/itemsjs@latest/dist/itemsjs.min.js"></script>
+
+<script>
+  var products = fetch("http://localhost:1313/gr/products/index.json");
+
+  var configuration = {
+    sortings: {
+      name_asc: {
+        field: "name",
+        order: "asc",
+      },
+    },
+    aggregations: {
+      name: {
+        title: "Name",
+      },
+      price: {
+        title: "Price",
+        size: 10,
+      },
+    },
+    searchableFields: ["name", "price", "products"],
+  };
+
+  itemsjs = itemsjs(products, configuration);
+
+  function data() {
+    // making it more generic
+    var filters = {};
+    Object.keys(configuration.aggregations).map(function (v) {
+      filters[v] = [];
+    });
+
+    // adding pagination variables
+    var page = this.page || 1;
+    var per_page = this.per_page || 12;
+
+    return {
+      query: "",
+      // initializing filters with empty arrays
+      filters: filters,
+      // setting pagination variables
+      page: page,
+      per_page: per_page,
+    };
+  }
+
+  function reset() {
+    var filters = {};
+    Object.keys(configuration.aggregations).map(function (v) {
+      filters[v] = [];
+    });
+    this.filters = filters;
+    this.page = 1;
+    this.query = "";
+  }
+
+  function goToPage(page) {
+    this.page = page;
+    return page;
+  }
+
+  function searchResult() {
+    var result = itemsjs.search({
+      query: this.query,
+      page: this.page,
+      per_page: 12,
+      filters: this.filters,
+    });
+    return result;
+    console.log(result);
+  }
+</script>
+
+{{end}}
