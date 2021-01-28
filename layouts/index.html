@@ -5,31 +5,9 @@
 
 {{ partial "frontpage_collections" . }}
 
-  {{ range .Site.Taxonomies.products }}
+{{ partial "frontpage_featured_product" . }}
 
-    {{ range .Pages }}
   
-        <div class="product">
-            
-            <h2 class="product__name"><a href="{{ .Params.url }}">{{ .Params.name }}</a></h2>
-        
-            <img class="product__image" src="/uploads/beers/{{ .Params.image }}" alt="" />
-        
-            {{ range .Params.breweries}}
-            <div class="flex"><a href="/breweries/{{ . | urlize }}">{{.}}</a></div>
-            {{ end }}
-        
-            <p class="product__description">{{ .Params.description }}</p>
-            <div class="product__button-container">
-            <div class="product__price">€{{ .Params.price }}</div>
-        
-            {{ partial "snipcart_button.html" . }}
-        
-            </div>
-        </div>
-  
-    {{ end }}
-  {{ end }}
 </main>
 
 {{end}}
