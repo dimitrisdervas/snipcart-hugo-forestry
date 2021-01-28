@@ -1,0 +1,36 @@
+<h2 class="text-center">Popular this week</h2>
+
+
+<div class="swiper-container productspromoted"  style="width:100%;height:30vh">
+
+<div class="swiper-wrapper">
+
+{{ range .Site.Taxonomies.promotions  }}
+{{.}}
+{{ range .Pages}}
+<div class="swiper-slide flex-col flex " >
+    <a href="{{ "products/" | relLangURL }}{{.Params.products }}"></a>
+
+   {{ .Resources.ByType "image" }}
+
+{{ $original := .Resources.Match "*.jpg" }}
+original{{ range  $original}}
+
+{{ .}}
+{{ end}}
+
+            <img src="/uploads/beers/{{.Params.image}}" alt="">
+
+        <div class="text-center">{{ .Params.name }}</div>
+        <div class="text-center">{{ .Params.price }}</div>
+    </a>
+</div>
+{{ end }}
+{{ end }}
+</div>
+
+<!-- Add Arrows -->
+<div class="swiper-pagination productspromoted"></div>
+</div>
+
+

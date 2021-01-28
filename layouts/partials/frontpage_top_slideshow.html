@@ -1,61 +1,23 @@
-  <!-- Swiper -->
-  <div class="swiper-container heroslideshow" style="width:100%;height:30vh">
-    <div class="swiper-wrapper">
-     {{ range (where .Site.RegularPages.ByTitle "Section" "slideshow" ) }}
-        <div class="swiper-slide flex-col flex " >
+<!-- Swiper -->
+<div class="swiper-container heroslideshow" style="width: 100%; height: 30vh">
+  <div class="swiper-wrapper">
+    {{ range (where .Site.RegularPages.ByTitle "Section" "slideshow" ) }}
+    <div class="swiper-slide flex-col flex">
+      {{ partial "image_scrset.html" . }}
 
-{{ with .Params.image }}
-{{ $original := ($.Site.GetPage "section" "slideshow").Resources.GetMatch (string . ) }}
-
-{{ $image295w := $original.Resize "295x" }}
-{{ $image394w := $original.Resize "394x" }}
-{{ $image590w := $original.Resize "590x" }}
-{{ $image700w := $original.Resize "700x" }}
-{{ $image800w := $original.Resize "800x" }}
-{{ $image1000w := $original.Resize "1000x" }}
-{{ $image1200w := $original.Resize "1200x" }}
-{{ $image1500w := $original.Resize "1500x" }}
-{{ $image1800w := $original.Resize "1800x" }}
-{{ $image2400w := $original.Resize "2400x" }}
-
-
-<img
-alt="house by the lake"
-data-sizes="auto"
-data-srcset="        
-{{ $image295w.RelPermalink }}  295w,
-{{ $image394w.RelPermalink }}  394w,
-{{ $image590w.RelPermalink }}  590w,
-{{ $image700w.RelPermalink }}  700w,
-{{ $image800w.RelPermalink }}  800w,
-{{ $image1000w.RelPermalink }}  1000w,
-{{ $image1200w.RelPermalink }}  1200w,
-{{ $image1500w.RelPermalink }}  1500w,
-{{ $image1800w.RelPermalink }}  1800w,
-{{ $image2400w.RelPermalink }}  2400w,
-"
-data-src="{{ $image700w.RelPermalink }}"
-class="lazyload" />
-<!-- noscript pattern -->
-<noscript>
-<img src="{{ $image1000w.RelPermalink }}" />
-</noscript>
-
-
-{{ end }}
-<div class="px-4">
+      <div class="px-4">
         <div class="bold text-xl my-2">{{ .Title }}</div>
         <p class="text-sm mb-4">{{ .Params.description }}</p>
         {{ $product := printf "/products/%s" .Params.product_link }}
-        <a class="bg-black px-6 py-2 text-white w-24 mb-2" href="{{ $product | relLangURL }}">Shop</a>
-</div>
-</div>
-    {{ end }}
+        <a
+          class="bg-black px-6 py-2 text-white w-24 mb-2"
+          href="{{ $product | relLangURL }}"
+          >Shop</a
+        >
+      </div>
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
-    <div class="hidden md:swiper-button-next"></div>
-    <div class="hidden md:swiper-button-prev"></div>
+    {{ end }}
   </div>
-
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div>
