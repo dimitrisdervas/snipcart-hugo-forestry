@@ -2,5 +2,6 @@
 
 - id: "collections"
   translation: "Συλλογές"
-
+- id: "fontpage_collections"
+  translation: "Κατηγορίες"
 ---

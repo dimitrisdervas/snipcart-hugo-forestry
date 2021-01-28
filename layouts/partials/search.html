@@ -1,4 +1,8 @@
 <!-- layouts/partials/search.html -->
+    {{/*  {{ partialCached "search" . }}  */}}
+{{/*  <script src="{{ "/scripts/fixedsearch/fixedsearch.js" | relURL }}"></script>  */}}
+
+
 <form id="search-form" class="noscript" method="GET" action="https://duckduckgo.com/" data-language-prefix="{{ site.LanguagePrefix }}">
 	<div class="search-bar">
 		<input id="search-input" class="search--display" name="q" tabindex="0" autocomplete="off" {{ with site.BaseURL }}value=" site:{{ . }}"{{ end }} placeholder="{{ i18n "search" }}">
@@ -6,7 +10,7 @@
 	</div>
 	<ul id="search-results" class="search--display"></ul>
 </form>
-<script src="{{ "/scripts/fixedsearch/fixedsearch.js" | relURL }}"></script>
+
 
 <style>
 	#search-form {

@@ -1,4 +1,6 @@
 ---
 - id: "collections"
   translation: "Collections"
+- id: "fontpage_collections"
+  translation: "Shop by Colelction"
 ---

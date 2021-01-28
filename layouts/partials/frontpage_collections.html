@@ -1,0 +1,22 @@
+
+<div class="bg-gray-200 ">
+<h2 class="text-center ">{{ i18n "fontpage_collections"}}</h2>
+<div class="grid grid-cols-2 grid-flow-row md:grid-cols-4 ">
+
+{{ range $index, $t := .Site.Taxonomies.collections }}
+
+{{ $collection := printf "/collections/%s/" $index }}
+
+{{ with $.Site.GetPage $collection }}
+     <a class="w-full col-span-1 p-4  flex flex-wrap" href="{{.Permalink}}"> 
+        <img class="w-full" src="/uploads/beers/{{.Params.image}}" alt="">
+        <div class="w-full text-center py-4">
+            {{ .Title}}        
+        </div> 
+        
+     </a>
+{{end}}
+
+{{ end }}
+</div>
+</div>

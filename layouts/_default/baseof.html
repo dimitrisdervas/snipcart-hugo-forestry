@@ -4,6 +4,9 @@
     {{ partial "head.html" . }}
 <body>
 
+
+<a style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;" href="#main-content"> Skip to main content </a>
+
     {{ partial "header.html" . }}
 
     <!-- Code that all your templates share, like a header -->
@@ -16,6 +19,6 @@
 
     {{ partial "footer.html" . }}
     {{ partial "footer_scripts.html" . }}
-    {{ partialCached "search" . }}
+
   </body>
 </html>

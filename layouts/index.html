@@ -1,53 +1,9 @@
 {{ define "main" }}
-{{ .Content }}
 
 {{ partial "slideshow_hero.html" . }}
 
-{{ partial "slideshow_promotedproducts.html" . }}
 
-<main class="products">
-  <div class="promotional-message">
-    <h3>REDISCOVER</h3>
-    <h2>Cheese</h2>
-    <p>An exclusive <strong>collection of handcrafted cheese</strong> for the hardcore cheese enthusiasts.</p>
-  </div>
-
-  
-    
-
-  <section>
-    <ul id="all-taxonomies">
-        {{ range $taxonomy_term, $taxonomy := .Site.Taxonomies }}
-            {{ with $.Site.GetPage (printf "/%s" $taxonomy_term) }}
-                <li><a href="{{ .Permalink }}">{{ $taxonomy_term }}</a>
-                    <ul>
-                        {{ range $key, $value := $taxonomy }}
-                            <li>{{ $key }}</li>
-                            <ul>
-                                {{ range $value.Pages }}
-                                    <li hugo-nav="{{ .RelPermalink}}">
-                                        <a href="{{ .Permalink}}">{{ .LinkTitle }}</a>
-                                    </li>
-                                {{ end }}
-                            </ul>
-                        {{ end }}
-                    </ul>
-                </li>
-            {{ end }}
-        {{ end }}
-    </ul>
-</section>
-
-SECTIONS
-
-{{ range $section, $taxonomy := .Site.Sections }}
-<h4>{{ $taxonomy.Title }}</h4>
-    <ul>
-        {{ range $taxonomy.Pages }}
-        <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
-        {{ end }}
-    </ul>
-{{ end }}
+{{ partial "frontpage_collections" . }}
 
   {{ range .Site.Taxonomies.products }}
 
