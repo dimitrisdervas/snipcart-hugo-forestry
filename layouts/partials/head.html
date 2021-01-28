@@ -20,13 +20,6 @@
    <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
     
    
-  
-  <!-- OLD STYLE  -->
-    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-  <!-- OLD STYLE  -->
-
-
     <title>{{.Site.Title}}</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
