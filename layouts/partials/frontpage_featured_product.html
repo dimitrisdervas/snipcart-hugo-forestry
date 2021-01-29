@@ -1,6 +1,60 @@
 <div class="bg-white mb-6 ">
 <h2 class="text-center ">{{ i18n "fontpage_collections"}}</h2>
+                    {{ $originalScratch := newScratch }}
+{{range (where .Site.Pages "Section" "variants" )}}
+    {{ range .Pages }}
+        {{ if .Params.frontpage }}                                    
+            {{ range  .Pages }}
+                {{ if .Resources }}
+                    {{ .Params.name }}
+                    {{ $image := string .Params.image }}
+                    image {{$image}}
+                    {{ $original := .Resources.GetMatch $image }}
+                    original{{ $original }}
 
+                    {{ $originalScratch.Add "original_image" $original }}
+
+
+
+
+                   
+                {{ end }}
+            {{ end }}                                       
+        {{end}}
+    {{end}}
+{{end }}
+
+{{ $image295w := ($originalScratch.Get "original_image").Resize "295x" }}
+{{ $image394w := ($originalScratch.Get "original_image").Resize "394x" }}
+{{ $image590w := ($originalScratch.Get "original_image").Resize "590x" }}
+{{ $image700w := ($originalScratch.Get "original_image").Resize "700x" }}
+{{ $image800w := ($originalScratch.Get "original_image").Resize "800x" }}
+{{ $image1000w := ($originalScratch.Get "original_image").Resize "1000x" }}
+{{ $image1200w := ($originalScratch.Get "original_image").Resize "1200x" }}
+{{ $image1500w := ($originalScratch.Get "original_image").Resize "1500x" }}
+{{ $image1800w := ($originalScratch.Get "original_image").Resize "1800x" }}
+{{ $image2400w := ($originalScratch.Get "original_image").Resize "2400x" }}
+<img
+alt=""
+data-sizes="auto"
+data-srcset="        
+{{ $image295w.RelPermalink }}  295w,
+{{ $image394w.RelPermalink }}  394w,
+{{ $image590w.RelPermalink }}  590w,
+{{ $image700w.RelPermalink }}  700w,
+{{ $image800w.RelPermalink }}  800w,
+{{ $image1000w.RelPermalink }}  1000w,
+{{ $image1200w.RelPermalink }}  1200w,
+{{ $image1500w.RelPermalink }}  1500w,
+{{ $image1800w.RelPermalink }}  1800w,
+{{ $image2400w.RelPermalink }}  2400w,
+"
+data-src="{{ $image700w.RelPermalink }}"
+class="lazyload" />
+<!-- noscript pattern -->
+<noscript>
+<img src="{{ $image1000w.RelPermalink }}" />
+</noscript>
 
 {{ range $index, $t := .Site.Taxonomies.products }}
 {{ $collection := printf "/products/%s/" $index }}
@@ -16,7 +70,7 @@
     retail: '{{.Params.retail}}',
     price: '{{.Params.price}}',
     beer_types: '{{.Params.beer_types}}',
-    image: '/uploads/beers/{{.Params.image}}',
+    image: '{{.Params.image}}',
     description: '{{.Params.description}}',
     boximage: [],
     quantity: '1',

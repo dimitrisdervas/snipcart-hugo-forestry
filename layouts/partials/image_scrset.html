@@ -1,6 +1,6 @@
 {{ with .Params.image }}
 {{ $original := ($.Site.GetPage "section" "slideshow").Resources.GetMatch (string . ) }}
-
+{{$original}}
 {{ $image295w := $original.Resize "295x" }}
 {{ $image394w := $original.Resize "394x" }}
 {{ $image590w := $original.Resize "590x" }}
