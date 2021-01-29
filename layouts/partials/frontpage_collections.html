@@ -5,7 +5,11 @@
 
 {{ range $index, $t := .Site.Taxonomies.collections }}
 
+
+
 {{ $collection := printf "/collections/%s/" $index }}
+
+
 
 {{ with $.Site.GetPage $collection }}
      <a class="w-full col-span-1 p-4  flex flex-wrap" href="{{.Permalink}}"> 
@@ -16,6 +20,8 @@
         
      </a>
 {{end}}
+
+
 
 {{ end }}
 </div>
