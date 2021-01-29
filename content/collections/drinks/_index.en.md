@@ -1,4 +1,4 @@
 ---
 title: "Drinksenglish"
-image: "drinks.webp"
+image: "drinks.jpg"
 ---

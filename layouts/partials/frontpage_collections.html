@@ -1,22 +1,55 @@
 
-<div class="bg-gray-200 ">
-<h2 class="text-center ">{{ i18n "fontpage_collections"}}</h2>
+<div class="bg-gray-100 py-4">
+<h2 class="text-center text-xl py-2">{{ i18n "fontpage_collections"}}</h2>
 <div class="grid grid-cols-2 grid-flow-row md:grid-cols-4 ">
 
 {{ range $index, $t := .Site.Taxonomies.collections }}
 
-
-
 {{ $collection := printf "/collections/%s/" $index }}
 
-
-
 {{ with $.Site.GetPage $collection }}
-     <a class="w-full col-span-1 p-4  flex flex-wrap" href="{{.Permalink}}"> 
-        <img class="w-full" src="/uploads/beers/{{.Params.image}}" alt="">
-        <div class="w-full text-center py-4">
-            {{ .Title}}        
-        </div> 
+     <a class=" col-span-1 p-4  grid-row-2" href="{{.Permalink}}"> 
+      {{ if .Resources }}
+        {{ $image := string .Params.image }}
+        {{ $original := .Resources.GetMatch $image }}
+        {{ $image295w := $original.Resize "295x" }}
+        {{ $image394w := $original.Resize "394x" }}
+        {{ $image590w := $original.Resize "590x" }}
+        {{ $image700w := $original.Resize "700x" }}
+        {{ $image800w := $original.Resize "800x" }}
+        {{ $image1000w := $original.Resize "1000x" }}
+        {{ $image1200w := $original.Resize "1200x" }}
+        {{ $image1500w := $original.Resize "1500x" }}
+        {{ $image1800w := $original.Resize "1800x" }}
+        {{ $image2400w := $original.Resize "2400x" }}
+
+
+
+        <img
+            class="row-span-1 lazyload"
+            alt="title"
+            data-sizes="auto"
+            data-srcset="        
+                {{ $image295w.RelPermalink }} 295w,
+                {{ $image394w.RelPermalink }} 394w,
+                {{ $image590w.RelPermalink }} 590w,
+                {{ $image700w.RelPermalink }} 700w,
+                {{ $image800w.RelPermalink }} 800w,
+                {{ $image1000w.RelPermalink }} 1000w,
+                {{ $image1200w.RelPermalink }} 1200w,
+                {{ $image1500w.RelPermalink }} 1500w,
+                {{ $image1800w.RelPermalink }} 1800w,
+                {{ $image2400w.RelPermalink }} 2400w,
+
+            "
+            data-src="{{ $image700w.RelPermalink }}"
+             />
+    <!-- noscript pattern -->
+        <noscript>
+            <img src="{{ $image700w.RelPermalink }}" />
+        </noscript>
+    {{ end }}
+        <div class="w-full text-center py-4">{{.Title}}</div> 
         
      </a>
 {{end}}

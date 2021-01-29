@@ -1,4 +1,4 @@
 ---
 title: "Oils"
-image: "oil.webp"
+image: "oil.jpg"
 ---

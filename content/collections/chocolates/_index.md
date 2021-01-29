@@ -1,4 +1,4 @@
 ---
 title: "Chocolates"
-image: "choc.webp"
+image: "choc.jpg"
 ---

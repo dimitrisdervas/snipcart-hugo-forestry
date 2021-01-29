@@ -1,4 +1,4 @@
 ---
 title: "Ποτά"
-image: "drinks.webp"
+image: "drinks.jpg"
 ---
