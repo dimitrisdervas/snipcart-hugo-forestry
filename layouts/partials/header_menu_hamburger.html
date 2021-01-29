@@ -1,148 +1,113 @@
-<script>
-  function slideout() {
-    return {
-      open: false,
-      usedKeyboard: false,
-      init() {
-        this.$watch("open", (value) => {
-          value && this.$refs.closeButton.focus();
-          this.toggleOverlay();
-        });
-        this.toggleOverlay();
-      },
-      toggleOverlay() {
-        document.body.classList[this.open ? "add" : "remove"](
-          "h-screen",
-          "overflow-hidden"
-        );
-      },
-    };
-  }
-</script>
+<div class="md:hidden w-full flex flex-wrap justify-around items-center"
+ x-data="{ hamburgermenu : false }">
 
-<div
-  class="md:hidden w-full flex flex-wrap justify-around items-center"
-  x-data="slideout()"
-  x-cloak
-  @open-menu.window="open = $event.detail.open"
-  @keydown.window.tab="usedKeyboard = true"
-  @keydown.escape="open = false"
-  x-init="init()"
->
-  {{/* LANGUAGE */}}
-  <div class="w-full bg-black py-2">
-    {{ range $.Site.Home.AllTranslations }}
-    <a class="text-white" href="{{ .Permalink }}"
-      >{{ .Language.LanguageName }}</a
-    >
-    {{ end }}
-  </div>
+    {{/* LANGUAGE */}}
+    <div class="w-full bg-black py-2">
+        {{ range $.Site.Home.AllTranslations }}
+       <a class="text-white" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+        {{ end }}
+    </div>
 
-  <button
-    x-data="{usedKeyboard: false}"
-    @keydown.window.tab="usedKeyboard = true"
-    @click="$dispatch('open-menu', { open: true })"
-    :class="{'focus:outline-none': !usedKeyboard}"
-  >
+ <button
+    @click="hamburgermenu = !hamburgermenu"
+    >      
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="#000"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="feather feather-menu stroke-current"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#000"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-menu stroke-current"
+      >
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+
+
+    {{/* LOGO */}}
+
+    <div class="justify-start py-6 px-4">
+      <a class="" href="/">
+        <img
+          class="flex"
+          src="//cdn.shopify.com/s/files/1/0289/0326/files/delii_x45.png?v=1559925588"
+          srcset="
+            //cdn.shopify.com/s/files/1/0289/0326/files/delii_x45.png?v=1559925588    1x,
+            //cdn.shopify.com/s/files/1/0289/0326/files/delii_x45@2x.png?v=1559925588 2x
+          "
+          alt="Deli - Blockshop Shopify Theme"
+          itemprop="logo"
+        />
+      </a>
+    </div>
+
+
+
+    {{/* SNIPCART CART */}}
+
+    <div class="w-4 h-4">
+      <a href="#" class="snipcart-checkout" style="text-decoration: none">
+        <div class="snipcart-summary">
+                <svg class="fill-current text-black" viewBox="0 0 21 20">
+            <path d="M16.731 19.393a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8zm-9.74 0a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8zM2.534 1.9H1A.9.9 0 011 .1h2.277a.9.9 0 01.883.73l.469 2.422h15.14a.9.9 0 01.876 1.105l-2.203 9.445a.9.9 0 01-.876.695H5.712a.9.9 0 01-.884-.729L2.534 1.9zm16.1 3.152H4.977l1.477 7.645h10.397l1.783-7.645z" fill-rule="evenodd"></path>
+            </svg>
+          <span class="snipcart-total-items text-black"></span>
+        </div>
+      </a>
+    </div>
+
+
+
+
+
+
+
+   
+
+  <div
+    x-show="hamburgermenu"
+    class="fixed inset-0 bg-black bg-opacity-25 " style="z-index: 9999;"
+  >
+  
+  <div
+    class="fixed transition duration-300 right-0 top-0 transform w-full max-w-xs h-screen bg-gray-100 overflow-hidden"
+    :class="{'translate-x-full': !open}"
+  >
+  
+    <button
+      @click="hamburgermenu = !hamburgermenu"
+      class="fixed top-0 right-0 mr-4 mt-2 z-50"
     >
-      <line x1="3" y1="12" x2="21" y2="12"></line>
-      <line x1="3" y1="6" x2="21" y2="6"></line>
-      <line x1="3" y1="18" x2="21" y2="18"></line>
-    </svg>
-  </button>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="48"
+        height="48"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#000"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-x"
+      >
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
 
-  {{/* LOGO */}}
-
-  <div class="justify-start py-6 px-4">
-    <a class="" href="/">
-      <img
-        class="flex"
-        src="//cdn.shopify.com/s/files/1/0289/0326/files/delii_x45.png?v=1559925588"
-        srcset="
-          //cdn.shopify.com/s/files/1/0289/0326/files/delii_x45.png?v=1559925588    1x,
-          //cdn.shopify.com/s/files/1/0289/0326/files/delii_x45@2x.png?v=1559925588 2x
-        "
-        alt="Deli - Blockshop Shopify Theme"
-        itemprop="logo"
-      />
-    </a>
-
-
-  {{/* SNIPCART CART */}}
-
-  <div class="w-4 h-4">
-    <a href="#" class="snipcart-checkout" style="text-decoration: none">
-      <div class="snipcart-summary">
-        <svg class="fill-current text-black" viewBox="0 0 21 20">
-          <path
-            d="M16.731 19.393a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8zm-9.74 0a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8zM2.534 1.9H1A.9.9 0 011 .1h2.277a.9.9 0 01.883.73l.469 2.422h15.14a.9.9 0 01.876 1.105l-2.203 9.445a.9.9 0 01-.876.695H5.712a.9.9 0 01-.884-.729L2.534 1.9zm16.1 3.152H4.977l1.477 7.645h10.397l1.783-7.645z"
-            fill-rule="evenodd"
-          ></path>
-        </svg>
-        <span class="snipcart-total-items text-black"></span>
-      </div>
-    </a>
+    <div class="p-16 px-6 absolute top-0 h-full overflow-y-scroll">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+     
+    </div>
   </div>
 </div>
 
 
-  <div
-    x-show.transition.opacity.duration.500="open"
-    @click="open = false"
-    class="fixed inset-0 bg-black bg-opacity-25"
-    style="z-index: 9999;"
-  >
-    <div
-      class="fixed transition duration-300 right-0 top-0 transform w-full max-w-xs h-screen bg-gray-100 overflow-hidden"
-      :class="{'translate-x-full': !open}"
-    >
-      <button
-        @click="open = false"
-        x-ref="closeButton"
-        :class="{'focus:outline-none': !usedKeyboard}"
-        class="fixed top-0 right-0 mr-4 mt-2 z-50"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="48"
-          height="48"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#000"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-x"
-        >
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-      <div class="p-16 px-6 absolute top-0 h-full overflow-y-scroll">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-       
-      </div>
-    </div>
-  </div>
-
-  </div>
-
-
-
+</div>
