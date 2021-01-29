@@ -1,5 +1,5 @@
-<div class="bg-white mb-6 ">
-<h2 class="text-center ">{{ i18n "fontpage_promotedproduct"}}</h2>
+<div class="bg-white mb-6 py-4 px-4">
+<h2 class="text-center text-xl py-2 ">{{ i18n "fontpage_promotedproduct"}}</h2>
 
 
 {{ range (where .Site.Pages "Section" "variants" )}}
@@ -81,24 +81,24 @@
 
 
 {{/*  Title  */}}
-<div class="w-full text-center md:text-left mb-2">{{ .Title }}</div>
-<h2 class="text-3xl font-bold text-center md:text-left" x-text="title" >{{ .Params.name }}</h2>
+<div class="w-full text-center md:text-left mb-2 pt-4">{{ .Title }}</div>
+<h2 class="text-xl  text-center md:text-left" x-text="title" >{{ .Params.name }}</h2>
 
 {{/*  PRICE  */}}
 <div class="flex items-baseline mb-2 justify-center md:justify-left">
-<div x-text="price +  '€' "  class="flex-inline text-xl font-bold pr-2 font-sans"></div>
+<div x-text="price +  '€' "  class="flex-inline text-xl pr-2 font-sans"></div>
 <div x-text="retail + '€' "  class="flex-inline text-sm font-normal line-through font-sans" x-show="retail > 0"></div>
 </div>
 
 
 {{/*  Options block  */}}
-<div class="col-span-1">
+<div class="col-span-1 mt-8">
 
 
     <div class="flex justify-start col-span-1 mb-4">
         {{ range .Pages  }}   
         <button 
-            class=" border-2 border-gray-400 px-4 py-2 mr-2 "
+            class=" border border-gray-400 text-gray-400 px-4 py-2 mr-2 @click:text-gray-800 "
             type="radio" 
             x-on:click="
             id = '{{.Params.id}}',
