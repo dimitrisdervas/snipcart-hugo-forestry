@@ -3,4 +3,6 @@
   translation: "Collections"
 - id: "fontpage_collections"
   translation: "Shop by Colelction"
+- id: "fontpage_promotedproduct"
+  translation: "Product of the week"
 ---
