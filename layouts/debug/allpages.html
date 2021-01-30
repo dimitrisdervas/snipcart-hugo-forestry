@@ -2,6 +2,16 @@
 <h1>{{ .Title }}</h1>
 <div class="container w-full">
 <div class=" flex flex-wrap justify-around">
+
+    SHoW me all Sections
+    {{ range .Site.Sections }}
+        <div>{{ . }}{{ .Pages }}
+
+            {{ range .Pages }}
+            {{ . }}    <a href="{{ .Permalink }}">link</a>
+            {{ end }}
+        </div>
+    {{ end }}
     {{ range .Site.Pages }}
     <div class="flex-1 border px-2 m-2">
         {{.Kind}}

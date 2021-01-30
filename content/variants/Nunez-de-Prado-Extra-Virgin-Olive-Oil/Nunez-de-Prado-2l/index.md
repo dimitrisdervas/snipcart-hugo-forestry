@@ -1,6 +1,6 @@
 ---
 products : "Nunez-de-Prado"
-name : "Nunez-de-Prado-Extra-Virgin-Olive-Oil"
+name : "Nunez-de-Prado-Extra-Virgin-Iraklis-Oil"
 id : "Nunez-de-Prado01"
 volume: "2lt"
 price: "42.8"

@@ -7,6 +7,7 @@ breweries :  ["Donkey"]
 beer_types :  ["I.P.A."]
 description_short : "IPA"
 promotions: "fiveplusone"
+layout: "mutliplevariants"
 frontpage: "true"
 ---
 
