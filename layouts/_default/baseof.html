@@ -8,7 +8,9 @@
 <a style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;" href="#main-content"> Skip to main content </a>
 
     {{ partial "header.html" . }}
-
+{{ if ne .Kind "home"}}
+{{ partial "breadcrumb.html" . }}
+{{ end }}
     <!-- Code that all your templates share, like a header -->
     {{ block "main" . }}
       <!-- The part of the page that begins to differ between templates -->
