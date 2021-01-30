@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   repo: dimitrisdervas/snipcart-hugo-forestry
   site_url: https://beersdemo.netlify.app
-  branch: master # Branch to update (optional; defaults to master)
+  branch: main # Branch to update (optional; defaults to master)
   base_url: https://api.netlify.com
 
 # This line should *not* be indented
@@ -21,5 +21,5 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "date" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Featured Image", name: "image", widget: "image"}
-      - { label: "Description", name: "description", widget: "string"}
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "string" }
