@@ -1,9 +1,9 @@
 {{ define "main" }}
 {{/*  Beers Template  */}}
-
 <div class="flex w-full flex-wrap py-8" x-data="{ 
 
     {{ range first 1 .Pages }}  
+    
     title: '{{.Params.name}}',
     url: '{{.Params.url}}',
     id: '{{.Params.id }}',
