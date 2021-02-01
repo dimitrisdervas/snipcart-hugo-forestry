@@ -1,6 +1,6 @@
 ---
 products : "Nunez-de-Prado"
-name : "Nunez-de-Prado-Extra ελαιόλαδο 2Λ"
+name : "2lt τενεκές"
 id : "Nunez-de-Prado01"
 volume: "2lt"
 price: "42.8"

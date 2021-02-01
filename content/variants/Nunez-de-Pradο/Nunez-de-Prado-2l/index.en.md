@@ -1,6 +1,6 @@
 ---
 products : "Nunez-de-Prado"
-name : "Extra-Virgin-Olive-Oil 2lt"
+name : "2lt tin"
 id : "Nunez-de-Prado01"
 volume: "2lt"
 price: "42.8"

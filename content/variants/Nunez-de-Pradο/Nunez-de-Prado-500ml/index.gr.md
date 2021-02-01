@@ -1,6 +1,6 @@
 ---
 products : "Nunez-de-Prado"
-name : "Nunez de Prado-Extra ελαιόλαδο"
+name : "500ml μπουκάλι "
 id : "Nunez-de-Prado01"
 volume : "0.50lt"
 materila : "bottle"
