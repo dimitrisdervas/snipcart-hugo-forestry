@@ -53,12 +53,12 @@
 
 {{/*  Title  */}}
 {{/*  <div class="w-full">{{ .Title }}</div>  */}}
-<h2 class="text-3xl font-bold mb-2 px-4 h-16" x-text="title" >{{ .Params.name }}</h2>
+<h2 class="text-xl font-bold  mb-2 px-4 h-16" x-text="title" >{{ .Params.name }}</h2>
 
 {{/*  PRICE  */}}
 <div class="flex items-baseline py-2 px-4">
-<div x-text="price +  '€' "  class="flex-inline text-2xl font-bold pr-2 font-sans"></div>
-<div x-text="retail + '€' "  class="flex-inline text-lg font-normal line-through font-sans" x-show="retail > 0"></div>
+<div x-text="price +  '€' "  class="flex-inline text-2xl pr-2 "></div>
+<div x-text="retail + '€' "  class="flex-inline text-lg font-normal line-through " x-show="retail > 0"></div>
 </div>
 
 
