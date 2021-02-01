@@ -2,7 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Roboto-Regular';
+    src:url('../fonts/Roboto-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+  font-family: 'Roboto-mono';
+  src: url('../fonts/RobotoMono-VariableFont_wght.ttf') format("truetype-variations");
+  font-weight: 1 999;
+}
+
+
+body {
+    @apply font-robregular;
+}
+h2 {
+    @apply font-robmono;
+}
 :root {
 --image--popup: url(//cdn.shopify.com/s/files/1/0289/0326/files/mailing-list-2_1200x.jpg?v=1521205594);
     --color--accent: #fb8a68;
