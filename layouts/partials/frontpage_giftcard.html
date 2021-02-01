@@ -1,0 +1,169 @@
+<div class="bg-white mb-6 py-8 px-4 max-w-screen-xl mx-auto">
+<h2 class="text-center text-xl py-6 ">{{ i18n "fontpage_promotedproduct"}}</h2>
+<div class="grid grid-cols-1 md:grid-cols-2" 
+    x-data="{ 
+{{ range (where .Site.Pages "Section" "giftcards" )}} 
+    {{ range first 1 .Pages }}
+        id: '',
+        title: '{{ .Title }}',
+        url: '{{.Params.url}}',
+        price: '{{.Params.price}}',
+        description: '',
+        quantity: '1',
+        {{ if .Resources }}
+        {{ $image := string .Params.image }}
+        {{ $original := .Resources.GetMatch $image }}
+        {{ $image295w := $original.Resize "295x" }}
+        {{ $image394w := $original.Resize "394x" }}
+        {{ $image590w := $original.Resize "590x" }}
+        {{ $image700w := $original.Resize "700x" }}
+        {{ $image800w := $original.Resize "800x" }}
+        {{ $image1000w := $original.Resize "1000x" }}
+        {{ $image1200w := $original.Resize "1200x" }}
+        {{ $image1500w := $original.Resize "1500x" }}
+        {{ $image1800w := $original.Resize "1800x" }}
+        {{ $image2400w := $original.Resize "2400x" }}
+            image295w: '{{ $image295w.RelPermalink }}',
+            image394w: '{{ $image394w.RelPermalink }}',
+            image590w: '{{ $image590w.RelPermalink }}',
+            image700w: '{{ $image700w.RelPermalink }}',
+            image800w: '{{ $image800w.RelPermalink }}',
+            image1000w: '{{ $image1000w.RelPermalink }}',
+            image1200w: '{{ $image1200w.RelPermalink }}',
+            image1500w: '{{ $image1500w.RelPermalink }}',
+            image1800w: '{{ $image1800w.RelPermalink }}',
+            image2400w: '{{ $image2400w.RelPermalink }}',
+        {{ end }}
+        stock: '{{ .Params.stock }}'
+    {{ end }}
+    {{ end }}
+}">
+
+
+<div class="col-span-1  ">
+
+{{/*  Image block  */}}
+
+    <div class="flex justify-center w-full items-center h-full px-16 ">
+        <img
+            data-sizes="auto"
+            x-bind:data-srcset="        
+            image295w + ' 295w,' +
+            image394w + ' 394w,' +
+            image590w + ' 590w,' +
+            image700w + ' 700w,' +
+            image800w + ' 800w,' +
+            image1000w + ' 1000w,' +
+            image1200w + ' 1200w,' +
+            image1500w + ' 1500w,' +
+            image1800w + ' 1800w,' +
+            image2400w + ' 2400w'
+            "
+            x-bind:data-src="image700w"
+            class="lazyload" />
+    <!-- noscript pattern -->
+        <noscript>
+            <img x-bind:src="image700w" />
+        </noscript>
+    </div>
+
+{{/*  end Image block  */}}
+
+</div>
+
+
+
+<div class="col-span-1 flex items-center px-16 ">
+
+<div class="w-full px-10">
+{{/*  Title  */}}
+<div class="mb-2 ">
+<div class="w-full text-xl text-center md:text-left  pt-4">{{ .Title }}</div>
+<h2 class="text-xl  text-center md:text-left " x-text="title" >{{ .Params.name }}</h2>
+</div>
+{{/*  PRICE  */}}
+<div class="flex items-baseline mb-2 justify-start md:justify-left">
+<div x-text="price +  '€' "  class="flex-inline text-xl pr-2 font-sans"></div>
+</div>
+
+
+{{/*  Options block  */}}
+<div class=" grid col-span-1 mt-8">
+    <div class="flex justify-start col-span-1 mb-4">
+        {{ range (where .Site.Pages "Section" "giftcards" )}} 
+        {{ range .Pages  }}   
+        <button 
+            class=" border border-gray-400 text-gray-400 px-4 py-2 mr-2 "
+            @click:class="{'text-red-800' : true }"
+            type="radio" 
+            x-on:click="
+            id = '{{ .Params.id }}',
+            url = '{{ .Params.url }}'
+            price = '{{ .Params.price }}',
+            title= '{{ .Title }}',
+            base = '{{ .Params.base }}',
+            value= '{{ .Params.name }}',
+            description= '',
+            {{ if .Resources }}
+            {{ $image := string .Params.image }}
+            {{ $original := .Resources.GetMatch $image }}
+            {{ $image295w := $original.Resize "295x" }}
+            {{ $image394w := $original.Resize "394x" }}
+            {{ $image590w := $original.Resize "590x" }}
+            {{ $image700w := $original.Resize "700x" }}
+            {{ $image800w := $original.Resize "800x" }}
+            {{ $image1000w := $original.Resize "1000x" }}
+            {{ $image1200w := $original.Resize "1200x" }}
+            {{ $image1500w := $original.Resize "1500x" }}
+            {{ $image1800w := $original.Resize "1800x" }}
+            {{ $image2400w := $original.Resize "2400x" }}
+                image295w = '{{ $image295w.RelPermalink }}',
+                image394w = '{{ $image394w.RelPermalink }}',
+                image590w = '{{ $image590w.RelPermalink }}',
+                image700w = '{{ $image700w.RelPermalink }}',
+                image800w = '{{ $image800w.RelPermalink }}',
+                image1000w = '{{ $image1000w.RelPermalink }}',
+                image1200w = '{{ $image1200w.RelPermalink }}',
+                image1500w = '{{ $image1500w.RelPermalink }}',
+                image1800w = '{{ $image1800w.RelPermalink }}',
+                image2400w = '{{ $image2400w.RelPermalink }}',
+            {{ end }}
+            stock='{{ .Params.stock }}'
+            ">
+            {{ .Params.price }}
+            </button>
+        {{ end }}
+        {{ end }}
+    </div>
+
+
+<!-- Out of Stock -->
+    <div 
+        x-text="stock" 
+        x-show="stock === 'out of stock' " 
+        class="border-2 border-gray-300 text-gray-300 w-full py-2 uppercase text-md text-center">
+    </div>
+<!-- Out of Stock -->
+
+{{/*  Snipcart button  */}}
+    <button x-show="stock != 'out of stock' "
+    class="snipcart-add-item border-2 border-black w-full py-2 uppercase text-md mb-4"
+    x-bind:data-item-url="url"
+    x-bind:data-item-name="title"
+    x-bind:data-item-id="id"
+    x-bind:data-item-quantity = "quantity"
+    x-bind:data-item-image="image700w"
+    x-bind:data-item-price="price"
+    x-bind:data-item-description="description"
+    >
+    Add to cart
+    </button>
+
+ {{/*  end Snipcart button  */}}   
+</div>
+{{/*  end options block  */}}
+</div>
+</div>
+</div>
+</div>
+</div>

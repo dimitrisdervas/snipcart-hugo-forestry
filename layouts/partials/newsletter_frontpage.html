@@ -1,0 +1,57 @@
+<div class="w-full flex flex-col items-center bg-pink-400">
+  <div class="py-12">
+    <div class="newsletter--header">
+      <h2 class="text-center text-xl bold">
+        Subscribe to our newsletter
+      </h2>
+      <div class="text-center py-2">
+        <p>
+          Sign up to stay in the loop. Receive updates, access to exclusive
+          deals, and more.
+        </p>
+      </div>
+    </div>
+    <div class="text-center py-2">
+      <form
+        method="post"
+        action="/contact#newsletter_form"
+        id="newsletter_form"
+        accept-charset="UTF-8"
+        class="flex-inline flex justify-center"
+      >
+        <input type="hidden" name="form_type" value="customer" /><input
+          type="hidden"
+          name="utf8"
+          value="✓"
+        />
+        <input type="hidden" name="contact[tags]" value="newsletter" />
+        <label for="newsletter-email" data-item="hidden-text">Your email</label>
+        <input
+          class=""
+          id="newsletter-email"
+          name="contact[email]"
+          type="email"
+          aria-label="Your email"
+          placeholder="Your email"
+          required=""
+        />
+        <div class="bg-black px-4 py-2 text-white text-lg">
+          <button type="submit" value="Subscribe">Subscribe</button>
+        </div>
+        <div class="hidden">
+          <p data-spam-detection-disclaimer="">
+            This site is protected by reCAPTCHA and the Google
+            <a href="https://policies.google.com/privacy" tabindex="-1"
+              >Privacy Policy</a
+            >
+            and
+            <a href="https://policies.google.com/terms" tabindex="-1"
+              >Terms of Service</a
+            >
+            apply.
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
