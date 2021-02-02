@@ -13,8 +13,4 @@ materials :  "bottle"
 collections: "drinks"
 beer_types :  ["I.P.A."]
 promotions : [""]
-url: "donkey/crazy-donkey-ipa-0-33lt"
-aliases: 
-    - "crazy-donkey-ipa-0-33lt"
-slug: "donkeybeer01"
 ---

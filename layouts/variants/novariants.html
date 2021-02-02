@@ -1,0 +1,214 @@
+{{ define "main" }}
+
+No variants 
+{{ .Page.Resources.GetMatch .Params.image }}
+
+<div class="flex w-full flex-wrap py-8" x-data="{ 
+    title: '{{.Params.name}}',
+    url: '{{.Params.url}}',
+    id: '{{.Params.id }}',
+    retail: '{{.Params.retail}}',
+    price: '{{.Params.price}}',
+    beer_types: '{{.Params.beer_types}}',
+    galleryCurrentImg: '{{.Params.image}}',
+{{ if .Params.gallery }}
+    gallery: {
+    {{ with .Params.gallery }} {{ range $index , $images := . }}{{ $loop := len $images }}
+        {{ $index }} : { 
+        'image': '{{$images.image}}',
+        {{ $image := string $images.image }}
+        {{ $original := $.Page.Resources.GetMatch $image }}
+        {{ $image295w := $original.Resize "295x" }}
+        {{ $image394w := $original.Resize "394x" }}
+        {{ $image590w := $original.Resize "590x" }}
+        {{ $image700w := $original.Resize "700x" }}
+        {{ $image800w := $original.Resize "800x" }}
+        {{ $image1000w := $original.Resize "1000x" }}
+        {{ $image1200w := $original.Resize "1200x" }}
+        {{ $image1500w := $original.Resize "1500x" }}
+        {{ $image1800w := $original.Resize "1800x" }}
+        {{ $image2400w := $original.Resize "2400x" }}
+        image295w: '{{ $image295w.RelPermalink }}',
+        image394w: '{{ $image394w.RelPermalink }}',
+        image590w: '{{ $image590w.RelPermalink }}',
+        image700w: '{{ $image700w.RelPermalink }}',
+        image800w: '{{ $image800w.RelPermalink }}',
+        image1000w: '{{ $image1000w.RelPermalink }}',
+        image1200w: '{{ $image1200w.RelPermalink }}',
+        image1500w: '{{ $image1500w.RelPermalink }}',
+        image1800w: '{{ $image1800w.RelPermalink }}',
+        image2400w: '{{ $image2400w.RelPermalink }}',
+    }{{ if eq $index $loop }}{{else}},{{ end }}
+    {{ end }}{{ end }}
+    },
+{{ end }}
+{{ if .Resources }}
+    {{ $image := string .Params.image }}
+    {{ $original := .Resources.GetMatch $image }}
+    {{ $image295w := $original.Resize "295x" }}
+    {{ $image394w := $original.Resize "394x" }}
+    {{ $image590w := $original.Resize "590x" }}
+    {{ $image700w := $original.Resize "700x" }}
+    {{ $image800w := $original.Resize "800x" }}
+    {{ $image1000w := $original.Resize "1000x" }}
+    {{ $image1200w := $original.Resize "1200x" }}
+    {{ $image1500w := $original.Resize "1500x" }}
+    {{ $image1800w := $original.Resize "1800x" }}
+    {{ $image2400w := $original.Resize "2400x" }}
+    image295w: '{{ $image295w.RelPermalink }}',
+    image394w: '{{ $image394w.RelPermalink }}',
+    image590w: '{{ $image590w.RelPermalink }}',
+    image700w: '{{ $image700w.RelPermalink }}',
+    image800w: '{{ $image800w.RelPermalink }}',
+    image1000w: '{{ $image1000w.RelPermalink }}',
+    image1200w: '{{ $image1200w.RelPermalink }}',
+    image1500w: '{{ $image1500w.RelPermalink }}',
+    image1800w: '{{ $image1800w.RelPermalink }}',
+    image2400w: '{{ $image2400w.RelPermalink }}',
+{{ end }}
+    description: '{{.Params.description}}',
+    quantity: '1',
+    stock: '{{ .Params.stock }}',
+    tab: 'content'    
+    }">
+
+{{/*  first 1/3  */}}
+<div class="w-full md:w-1/3 px-4">
+
+    {{/*  Title  */}}
+    <h2 class="text-xl font-bold  mb-2 px-4 h-16" >{{ .Params.name }}</h2>
+
+    {{/*  PRICE  */}}
+    <div class="flex items-baseline py-2 px-4">
+    <div  class="flex-inline text-2xl pr-2 ">{{ .Params.price}}€</div>
+    <div   class="flex-inline text-lg font-normal line-through " x-show="retail > 0">{{ .Params.price}}€</div>
+    </div>
+
+
+
+    <div class="flex flex-col">
+
+    {{/*  Snipcart button  */}}
+
+    <div x-text="stock" 
+    x-show="stock === 'out of stock' " 
+    class="border-2 border-gray-300 text-gray-300 w-full py-2 uppercase text-md text-center">
+    </div>
+
+    <button x-show="stock != 'out of stock' "
+    class="snipcart-add-item border-2 border-black w-full py-2 uppercase text-md"
+    x-bind:data-item-url="url"
+    x-bind:data-item-name="title"
+    x-bind:data-item-id="id"
+    x-bind:data-item-quantity = "quantity"
+    x-bind:data-item-image="image700w"
+    x-bind:data-item-price="price"
+    x-bind:data-item-description="description"
+    >
+    Add to cart
+    </button>
+    </div>
+
+<!-- GALLERY -->
+<!-- GALLERY  thumbs -->
+    <div class="flex justify-around">
+        <template 
+            x-for="image in Object.keys(gallery)" 
+            x-bind:key="image">
+            <img 
+
+            class="w-32" 
+            :src="gallery[image].image" 
+            x-init="galleryCurrentImg = gallery[0].image" 
+            @click="galleryCurrentImg = gallery[image].image">
+            
+        </template>
+
+<a @click="$dispatch('img-modal', {  
+    imgModalSrc: 'https://picsum.photos/640/480', 
+imgModalDesc: 'Random Image One Description' })" 
+class="cursor-pointer">
+<img alt="Placeholder" class="object-fit w-full" src="https://picsum.photos/640/480">
+</a>
+
+    </div>
+
+
+</div>
+{{/*  end first 1/3 */}}
+
+
+
+{{/*  second 1/3  */}}
+<div class="w-full md:w-1/3 px-4">
+{{/*  Image block  */}}
+<!-- MODAL - https://tailwindcomponents.com/component/alpinejs-tailwindcss-lightbox-modal -->
+
+ <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
+        <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
+          <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="p-2 fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
+            <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full overflow-auto">
+              <div class="z-50">
+                <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
+                  <svg class="fill-current text-white " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                    <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+              <div class="p-2">
+                <img :alt="imgModalSrc" class="object-contain h-1/2-screen" :src="imgModalSrc">
+                <p x-text="imgModalDesc" class="text-center text-white"></p>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+
+
+
+
+    <div class="flex justify-center w-full items-center h-full ">
+        <img
+            x-bind:alt="title"
+            data-sizes="auto"
+            x-bind:srcset=" galleryCurrentImg"
+            x-bind:data-src="image700w"
+            class="" />
+    <!-- noscript pattern -->
+        <noscript>
+            <img x-bind:src="image700w" />
+        </noscript>
+    </div>
+{{/*  end Image block  */}}
+</div>
+{{/*  end second 1/3 */}}
+
+
+
+{{/*  third 1/3  */}}
+<div class="w-full md:w-1/3 px-4">
+<div>
+
+    <button class="bg-gray-200 px-3 py-4 @click:bg-gray-300" @click="tab = 'content'">Περιγραφή</button>
+    <button class="bg-gray-200 px-3 py-4 @click:bg-gray-300" @click="tab = 'details'">Χαρακτηριστικά</button>
+
+    <div class="content py-4"  x-show=" tab ==='content' ">
+        <div class="leading-relaxed">{{.Content}}</div>
+    </div>
+
+    <div class="igredients py-4" x-show="tab === 'details' ">
+    </div>
+</div>
+
+
+</div>
+{{/*  end third 1/3  */}}
+</div>
+
+
+
+{{ partial "sharethis.html" . }}
+
+
+{{ end }}

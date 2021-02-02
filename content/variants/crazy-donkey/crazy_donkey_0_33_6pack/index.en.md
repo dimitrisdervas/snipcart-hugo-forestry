@@ -9,8 +9,5 @@ image : "beer049.jpg"
 materials :  "bottle"
 beer_types :  ["I.P.A."]
 promotions : [""]
-url: "donkey/crazy-donkey-ipa-0-33lt-6pack/"
-aliases: 
-    - "crazy-donkey-ipa-0-33lt-6pack"
-slug: "donkeybeer03"
+
 ---

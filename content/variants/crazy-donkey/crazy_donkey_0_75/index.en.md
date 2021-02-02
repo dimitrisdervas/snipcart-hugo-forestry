@@ -10,8 +10,5 @@ price : "10.5"
 materials :  ["bottle"]
 beer_types :  ["I.P.A."]
 promotions : [""]
-url: "donkey/crazy-donkey-ipa-0-75lt"
-aliases: 
-    - "crazy-donkey-ipa-0-75lt"
-slug: "donkeybeer02"
+
 ---

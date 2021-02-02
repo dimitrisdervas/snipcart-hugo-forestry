@@ -22,6 +22,9 @@ body {
 h2 {
     @apply font-robmono;
 }
+.selected {
+    @apply text-gray-800 border-gray-800;
+}
 :root {
 --image--popup: url(//cdn.shopify.com/s/files/1/0289/0326/files/mailing-list-2_1200x.jpg?v=1521205594);
     --color--accent: #fb8a68;
