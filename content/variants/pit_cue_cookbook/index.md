@@ -2,6 +2,8 @@
 name: "Pitt Cue Co. Cookbook - GR"
 price: "13.95"
 image: "pit-co-cookbook.jpg"
+products_list: "true"
+layout: "novariants"
 description: "With great recipes for meats, sauces and rubs mixed with ideas for pickles, slaws, puddings and cocktails, plus features on meats, equipment and methods, the Pitt Cue Co. Cookbook is your guide to enjoying the best hot, smoky, sticky, spicy grub all year round."
 ---
 

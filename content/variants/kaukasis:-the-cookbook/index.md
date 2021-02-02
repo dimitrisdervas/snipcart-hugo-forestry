@@ -2,6 +2,8 @@
 name: "kaukasis:-the-cookbook - GR"
 price: "13.95"
 image: "kaukasiscover.jpg"
+products_list: "true"
+layout: "novariants"
 description: "A sensitive, personal journey expressed through the beauty of food - just wonderful - Jamie Oliver"
 ---
 
