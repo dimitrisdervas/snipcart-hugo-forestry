@@ -1,8 +1,8 @@
 {{ define "main" }}
-Variants
 
-{{.Pages}}
-<div class="container grid grid-col-4 grid-row-4 grid-flow-col grid-flow-row gap-8">
+    <h2 class="w-full text-center text-2xl bold pt-8 pb-12">All products</h2>
+<div class="container mx-auto grid grid-cols-4 grid-flow-row gap-8 mb-8">
+
 {{ range .Pages}}
 
     {{ if eq .Kind "section"}}
@@ -11,11 +11,14 @@ Variants
         {{ $title := .Title }}
 
         {{ range  where .Data.Pages "Params.products_list" "true" }}
-            <div class="flex flex-col">
-                <a href="{{ $link}}">
-                {{ if .Resources }}
-                    {{ $image := string .Params.image }}
-                    {{ $original := .Resources.GetMatch $image }}
+            <div class=" col-span-1">
+            <a 
+            class="flex flex-col items-center"
+            href="{{ $link}}">
+
+                {{ $image := string .Params.image }}
+                {{ $original := .Resources.GetMatch $image }}       
+                {{ if $original }}              
                     {{ $image295w := $original.Resize "295x" }} 
                     {{ $image394w := $original.Resize "394x" }}
                     {{ $image590w := $original.Resize "590x" }}
@@ -26,6 +29,7 @@ Variants
                     {{ $image1500w := $original.Resize "1500x" }}
                     {{ $image1800w := $original.Resize "1800x" }}
                     {{ $image2400w := $original.Resize "2400x" }}
+                    <div class="flex w-full justify-center items-center" style="height:30vh">
                     <img
                     alt="{{ $original }}"
                     data-sizes="auto"
@@ -47,10 +51,12 @@ Variants
                     <noscript>
                     <img src="{{ $image1000w.RelPermalink }}" />
                     </noscript>
+                    </div>
                 {{ end }}
-
-                <div class="px-2 text-center text-lg">{{ $title }}</div>
+                <div class="pt-4 row-span-1" style="font-family: Roboto Mono;">
+                <div class="px-2 text-center text-lg " >{{ $title }}</div>
                 <div class="px-2 text-center text-lg">from {{ .Params.price }}</div>
+                </div>
                 </a>
             </div>
          {{ end }}
@@ -61,11 +67,14 @@ Variants
         {{ $title := .Params.name }}
 
 
-        <div class="flex flex-col">
-            <a href="{{ $link}}">
-                {{ if .Params.image }}
+        <div class=" col-span-1">
+            <a 
+            class="flex flex-col items-center"
+            href="{{ $link}}">
+
                 {{ $image := string .Params.image }}
                 {{ $original := .Resources.GetMatch $image }}
+                {{ if $original }}  
                 {{ $image295w := $original.Resize "295x" }} 
                 {{ $image394w := $original.Resize "394x" }}
                 {{ $image590w := $original.Resize "590x" }}
@@ -76,6 +85,7 @@ Variants
                 {{ $image1500w := $original.Resize "1500x" }}
                 {{ $image1800w := $original.Resize "1800x" }}
                 {{ $image2400w := $original.Resize "2400x" }}
+                <div class="flex w-full justify-center items-center"  style="height:30vh">
                 <img
                 alt="{{ $original }}"
                 data-sizes="auto"
@@ -97,9 +107,14 @@ Variants
                 <noscript>
                 <img src="{{ $image1000w.RelPermalink }}" />
                 </noscript>
-                {{ end }}
-                <div class="px-2 text-center text-lg">{{ $title }}</div>
+                </div>
+
+
+                    <div class="pt-4" style="font-family: Roboto Mono;">
+                <div class="px-2 text-center text-lg " >{{ $title }}</div>
                 <div class="px-2 text-center text-lg">from {{ .Params.price }}</div>
+                </div>
+                                {{ end }}
             </a>
         </div>
     {{ end }}    
