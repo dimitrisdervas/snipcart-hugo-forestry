@@ -1,6 +1,6 @@
 ---
 title: "Staff recipe: (Yes, we like) Piña Coladas"
-image: "icerem_866x.jpg"
+image: "palate-cookbook_1000x.jpg"
 date: "APRIL 30, 2019"
 author: "Troop Themes"
 tags: "Food"
