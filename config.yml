@@ -50,3 +50,7 @@ outputs:
   term:
     - html
     - json
+
+# Used by PurgeCSS
+build:
+  writeStats: true

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* https://github.com/bep/hugo-starter-tailwind-basic/blob/master/assets/css/styles.css */
+/* @import "components/all.css"; */
+
 @font-face {
     font-family: 'Roboto-Regular';
     src:url('../fonts/Roboto-Regular.ttf') format('ttf');
