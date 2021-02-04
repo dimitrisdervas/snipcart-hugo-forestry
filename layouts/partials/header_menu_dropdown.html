@@ -43,31 +43,75 @@
 
 <div class="menus">
 
-  <!-- MENUS  -->
-    <div class="group inline-block">
-      <div>
- 
-      </div>     
+  <div class="inline-block">
+    <a href="/">Home</a>
   </div>
 
+    <!-- MENUS  -->
+    <div class="group inline-block">
+        <button class="outline-none focus:outline-none px-3 py-1 bg-gray-100 rounded-sm flex items-center min-w-32">
+          <span class="pr-1 flex-1">Breweries</span>
+          <span>
+            <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></span>
+          </button>
+          <ul class="bg-gray-100 rounded-sm transform scale-0 group-hover:scale-100 absolute
+          transition duration-150 ease-in-out origin-top min-w-32">
 
+          {{ partial "menu_render.html" (dict "menu" .Site.Menus.featured "currentPage" . ) }}
+        </ul>
+  </div>
 
-<ul>
+  <div class="inline-block">
+    <a href="/blog">Blog</a>
+  </div>
+  <div class="inline-block">
+    <a href="/abouts_us">About Us</a>
+  </div>
 
-Featured
-{{ partial "menu_render.html" (dict "menu" .Site.Menus.featured "currentPage" . ) }}
+</div>
+<!-- https://codepen.io/larapeak/pen/abdpzpg -->
 
-Collections
-{{ partial "menu_render.html" (dict "menu" .Site.Menus.collections "currentPage" . ) }}
+<div x-data="{ open: false }" class="relative">
+  <button x-on:click="open = true" class="block h-12 w-12 rounded-full overflow-hidden focus:outline-none">
+    <img class="h-full w-full object-cover" src="https://eu.ui-avatars.com/api/?name=John&size=1000" alt="avatar">
+  </button>
+  <!-- Dropdown Body -->
+  <div x-show.transition="open" x-on:click.away="open = false" class="absolute right-0 w-40 mt-2 py-2 bg-white border rounded shadow-xl">   
+    <a href="#" class="transition-colors duration-200 block px-4 py-2 text-normal text-gray-900 rounded hover:bg-purple-500 hover:text-white">Settings</a>
+    <div class="py-2">
+      <hr></hr>
+  </div>
+  <a href="#" class="transition-colors duration-200 block px-4 py-2 text-normal text-gray-900 rounded hover:bg-purple-500 hover:text-white">    
+    Logout
+  </a>
+</div>
+<!-- // Dropdown Body -->
+</div>
+<!-- // Dropdown -->
+</div>
 
-Featured
-{{ partial "menu_render.html" (dict "menu" .Site.Menus.featured "currentPage" . ) }}
+<!-- https://jsfiddle.net/jespr/g6xcrwhv/ -->
+<div class="bg-gray-200 flex min-h-screen items-center justify-center">
+  <div class="inline-block relative" x-data="{open: false}">
+    <button @click="open = !open" class="focus:outline-none shadow cursor-pointer inline-block text-gray-700 hover:text-black flex border border-gray-400 rounded p-2 pl-3 pr-1 bg-gray-100" :class="{'font-semibold': open, 'shadow-none': open}">
+      John Doe
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" :class="{'rotate-180': open}" class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+    </button>
 
-Speciality
-{{ partial "menu_render.html" (dict "menu" .Site.Menus.featured "currentPage" . ) }}
-
-</ul>
-
+    <ul x-show="open" class="bg-white absolute mt-2 shadow rounded w-40 py-1 text-indigo-600"
+      x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0 transform -translate-y-2"
+      x-transition:enter-end="opacity-100 transform translate-y-0"
+      x-transition:leave="transition ease-in duration-300"
+      x-transition:leave-end="opacity-0 transform -translate-y-3"
+    >
+      <li><a href="#" class="py-1 px-3 block hover:bg-indigo-100">Profile</a></li>
+      <li><a href="#" class="py-1 px-3 border-b block hover:bg-indigo-100">Billing</a></li>
+      <li><a href="#" class="py-1 px-3 block hover:bg-indigo-100">Log out</a></li>
+    </ul>
+  </div>
+</div>
 
 
 <!-- CART BUTTON  -->
@@ -87,6 +131,9 @@ Speciality
 
 </div>
 <!-- END MENUS  -->
+
+
+
      <style>
         /* since nested groupes are not supported we have to use 
            regular css for the nested dropdowns 

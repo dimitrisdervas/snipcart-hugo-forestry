@@ -1,25 +1,9 @@
-{{ $currentPage := . }}
+{{ $currentPage := .currentPage }}
 {{ range .menu }}
-    {{ if .HasChildren }}
-        <li class="{{ if $currentPage.HasMenuCurrent "collections" . }}active{{ end }}">
-            <a href="#">
-                {{ .Pre }}
-                <span>{{ .Name }}</span>
-            </a>
-        </li>
-        <ul class="sub-menu">
-            {{ range .Children }}
-                <li class="{{ if $currentPage.IsMenuCurrent "collections" . }}active{{ end }}">
-                    <a href="{{ .URL }}">{{ .Name }}</a>
-                </li>
-            {{ end }}
-        </ul>
-    {{ else }}
-        <li>
+        <li class="rounded-sm px-3 py-1 bg-gray-100">
             <a href="{{ .URL }}">
                 {{ .Pre }}
                 <span>{{ .Name }}</span>
             </a>
         </li>
-    {{ end }}
 {{ end }}
