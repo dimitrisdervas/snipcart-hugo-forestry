@@ -1,0 +1,31 @@
+- menu: home
+  title: "Home"
+  path: "/"
+- menu: catalog
+  title: "Collections"
+  dropdown:
+    suggested:
+      - title: "New"
+        collection: "new"
+      - title: "Sale"
+        collection: "sale"   
+      - title: "Gift Card"
+        collection: "gift card"                 
+    list:
+      - title: "Collections"
+        collections: 
+          - collection: drinks
+          - collection: sweets
+          - collection: sweets
+      - title: "Sale" 
+        collections:
+          - collection: on sale
+          - collection: new
+          - collection: featured
+      - title: "Speciality" 
+        collections:
+          - collection: "Speciality Cookbook"
+          - collection: "World Commidments"
+- menu: home
+  title: "About us"
+  page: "about_us"
