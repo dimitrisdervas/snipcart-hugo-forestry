@@ -1,63 +1,7 @@
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-<script async src="https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
-
-
-<div hidden id="snipcart" data-api-key="NTJlNjVhYWQtMjMxZi00MTA3LWJmYTEtNGUxMDY5YjgwMWNj" data-config-modal-style="side"></div>
-<!-- Initialize Swiper -->
-    <!-- Initialize Swiper -->
-    <script>
-        {{/*  https://github.com/nolimits4web/swiper/blob/master/demos/320-multiple-swipers.html  */}}
-        var swiper = new Swiper('.heroslideshow', {
-            loop: 'true',
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'progressbar',
-                dynamicBullets: true,
-            },
-        });
-
-
-        var swiper = new Swiper('.productspromoted', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            loop: 'true',
-            navigation: {
-                nextEl: '.productspromoted-next',
-                prevEl: '.productspromoted-prev',
-            },
-            breakpoints: {
-                320: {
-                slidesPerView: 1,
-                spaceBetween: 20
-                },
-                // when window width is >= 480px
-                480: {
-                slidesPerView: 2,
-                spaceBetween: 30
-                },
-                640: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-                },
-                768: {
-                slidesPerView: 4,
-                spaceBetween: 10,
-                }
-            },
-        });
-    </script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on('init', (user) => {
-      if (!user) {
-        window.netlifyIdentity.on('login', () => {
-          document.location.href = '/admin/';
-        });
-      }
-    });
-  }
-</script>
-</body>
-</html>
+{{- $scripts := resources.Get "js/scripts.js" | js.Build (dict "minify" true "target" "es2015") | fingerprint -}}
+<script src="{{ $scripts.Permalink }}"></script>
+<script async src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
+<div 
+    hidden id="snipcart" 
+    data-api-key="NTJlNjVhYWQtMjMxZi00MTA3LWJmYTEtNGUxMDY5YjgwMWNj" 
+    data-config-modal-style="side"></div>
