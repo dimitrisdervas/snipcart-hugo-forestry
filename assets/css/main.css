@@ -1,9 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 /* https://github.com/bep/hugo-starter-tailwind-basic/blob/master/assets/css/styles.css */
-/* @import "components/all.css"; */
+
+
+@import 'node_modules/swiper/swiper.min.css';
 
 @font-face {
     font-family: 'Roboto-Regular';
@@ -76,3 +76,8 @@ h2 {
     --font--bolder-paragraph--weight: 700;
     --image--grabbing-icon: url(//cdn.shopify.com/s/files/1/0289/0326/t/53/assets/grabbing.png?v=1629955…);
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
