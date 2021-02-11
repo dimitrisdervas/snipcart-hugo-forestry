@@ -1,10 +1,5 @@
 {{ $currentPage := .currentPage }}
 
-{{ range .menu }}
-     
-            <a href="{{ .URL }}">
-                {{ .Pre }}
-                <span>{{ .Name }}</span>
-            </a>
-
+{{ range .menu }}     
+<a class="text-gray-500" href="{{ .URL }}"> {{ .Pre }} <span>{{ .Name }}</span> </a>
 {{ end }}
