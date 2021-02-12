@@ -1,5 +1,4 @@
 
-
 /* https://github.com/bep/hugo-starter-tailwind-basic/blob/master/assets/css/styles.css */
 
 
@@ -32,55 +31,6 @@ h2 {
 .header--language a {
   @apply font-robmono;
 }
-:root {
---image--popup: url(//cdn.shopify.com/s/files/1/0289/0326/files/mailing-list-2_1200x.jpg?v=1521205594);
-    --color--accent: #fb8a68;
-    --color-text: #212121;
-    --color-page-bg: #ffffff;
-    --color-panel-bg: #f7f7f7;
-    --color-badge-bdr: rgba(33, 33, 33, 0.05);
-    --color-border: #e0e0e0;
-    --color-button: #ffffff;
-    --color-button-bg: #212121;
-    --color--body--light: #515151;
-    --color--alternative: #ffffff;
-    --color-header: #212121;
-    --color-header-bg: #fafafa;
-    --color-menubar: #212121;
-    --color-cart: #212121;
-    --color--footer: #212121;
-    --bg-color--footer: #f7f7f7;
-    --color-slider-caption: #212121;
-    --color-slider-caption-bg: #ffffff;
-    --color-slider-button: #ffffff;
-    --color-slider-button-bg: #212121;
-    --color-slider-button-hover-bg: ;
-    --color-slider-nav: #212121;
-    --color-product-slider-bg: ;
-    --color-featured-promo-bg: ;
-    --color-social-feed-bg: ;
-    --color-tabs-accordions: #e0e0e0;
-}
-:root {
-    --font--section-heading--size: 24px;
-    --font--block-heading--size: 18px;
-    --font--heading--uppercase: normal;
-    --font--paragraph--size: 16px;
-    --font--heading--family: Futura, sans-serif;
-    --font--heading--weight: 400;
-    --font--heading--normal-weight: 400;
-    --font--heading--style: normal;
-    --font--accent--family: Karla, sans-serif;
-    --font--accent--weight: 400;
-    --font--accent--style: normal;
-    --font--accent--size: 13px;
-    --font--paragraph--family: Karla, sans-serif;
-    --font--paragraph--weight: 400;
-    --font--paragraph--style: normal;
-    --font--bolder-paragraph--weight: 700;
-    --image--grabbing-icon: url(//cdn.shopify.com/s/files/1/0289/0326/t/53/assets/grabbing.png?v=1629955…);
-}
-
 
 @tailwind base;
 @tailwind components;
