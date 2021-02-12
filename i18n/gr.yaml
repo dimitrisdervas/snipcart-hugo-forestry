@@ -1,5 +1,6 @@
 ---
-
+- id: "home"
+  translation: "Αρχική"
 - id: "collections"
   translation: "Συλλογές"
 - id: "fontpage_collections"

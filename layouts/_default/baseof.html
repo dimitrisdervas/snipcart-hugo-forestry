@@ -7,7 +7,11 @@
 
 <a style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;" href="#main-content"> Skip to main content </a>
 
-    {{ partial "header.html" . }}
+{{ if .IsHome }}
+    {{ partial "header_frontpage.html" . }}
+{{ else }}
+    {{ partial "header_allpages.html" . }}
+{{ end }}
 {{ if ne .Kind "home"}}
 {{ partial "breadcrumb.html" . }}
 {{ end }}

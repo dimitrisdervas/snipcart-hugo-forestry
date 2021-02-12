@@ -1,4 +1,6 @@
 ---
+- id: "home"
+  translation: "Home"
 - id: "collections"
   translation: "Collections"
 - id: "fontpage_collections"
