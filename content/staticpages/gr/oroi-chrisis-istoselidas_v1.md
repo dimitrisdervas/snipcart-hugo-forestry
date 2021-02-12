@@ -1,4 +1,8 @@
-Όροι χρήσης της ιστοσελίδας www.pineiosbrewery.gr και www.lolabeer.gr
+---
+title: "Όροι χρήσης "
+---
+
+# Όροι χρήσης της ιστοσελίδας www.pineiosbrewery.gr και www.lolabeer.gr
 
 Ισχύουν από τον Απρίλιο 2018
 
