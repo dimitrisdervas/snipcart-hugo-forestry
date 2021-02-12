@@ -33,20 +33,34 @@
    
    
    
-handle: "bahn-mi-meal-kit"
-title: "Bahn Mi Meal Kit"
-body_html: ""
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+handle: "old-reserve-n6-balsamic-vineg"
+title: "Old Reserve N°6 Balsamic Vinegar"
+body_html: "Notes of ripe fruit, walnuts and chestnuts. Harmonious and full bodied, generous and delicious. Ideal accompaniment for oysters, scallops, duck breast and risotto. Approved by top chefs. Perfect for dressings, marinades and sauces."
 vendor: ""
 type: ""
 tags: ""
 published: ""
-option1_name: "base"
-option1_value: "chicken"
+option1_name: ""
+option1_value: ""
 option2_name: ""
 option2_value: ""
 option3_name: ""
 option3_value: ""
-variant_sku: "sku_032"
+variant_sku: "sku_046"
 variant_grams: ""
 variant_inventory_tracker: ""
 variant_inventory_qty: ""
@@ -57,7 +71,7 @@ variant_compare_at_price: ""
 variant_requires_shipping: ""
 variant_taxable: ""
 variant_barcode: ""
-image_src: "bahn-mi-meal-kit.jpg"
+image_src: "old-reserve-n6-balsamic-vineg_01.jpg"
 image_alt_text: ""
 gift_card: ""
 seo_title: ""
@@ -80,20 +94,6 @@ variant_weight_unit: ""
 collections: ""
 ---
 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
    
 
 

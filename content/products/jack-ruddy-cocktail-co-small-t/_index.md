@@ -19,45 +19,33 @@
    
    
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-handle: "bahn-mi-meal-kit"
-title: "Bahn Mi Meal Kit"
-body_html: ""
+handle: "jack-ruddy-cocktail-co-small-t"
+title: "Jack Ruddy Cocktail Co Small Tonic"
+body_html: "This Small Batch Tonic is essentially a quinine concentrate. It's designed to pair with your favorite Gin or Vodka, and is then stretched with soda water to make a bright, light, refreshing highball.
+
+With a backbone of quinine, culled from the Cinchona Tree, we've added a delicate mix of botanicals, and then sweetened it with real cane sugar; the final product is a complex mixture that introduces a fine bitterness to any cocktail, and a great pairing with the botanicals of the finest Gins in the world."
 vendor: ""
 type: ""
 tags: ""
 published: ""
-option1_name: "base"
-option1_value: "chicken"
+option1_name: "size"
+option1_value: "single"
 option2_name: ""
 option2_value: ""
 option3_name: ""
 option3_value: ""
-variant_sku: "sku_032"
+variant_sku: "sku_018"
 variant_grams: ""
 variant_inventory_tracker: ""
 variant_inventory_qty: ""
 variant_inventory_policy: ""
 variant_fulfillment_service: ""
-variant_price: "15.95"
+variant_price: "21.95"
 variant_compare_at_price: ""
 variant_requires_shipping: ""
 variant_taxable: ""
 variant_barcode: ""
-image_src: "bahn-mi-meal-kit.jpg"
+image_src: "jack-ruddy-cocktail-co-small-t.jpg"
 image_alt_text: ""
 gift_card: ""
 seo_title: ""
@@ -80,6 +68,20 @@ variant_weight_unit: ""
 collections: ""
 ---
 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
    
    
    

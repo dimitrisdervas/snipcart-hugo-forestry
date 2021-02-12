@@ -23,41 +23,31 @@
    
    
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-handle: "bahn-mi-meal-kit"
-title: "Bahn Mi Meal Kit"
-body_html: ""
+handle: "balilla-x-sollana-spanish-rice"
+title: "Balilla X Sollana Spanish Rice"
+body_html: "Spanish rice cultivated with Pyrenean water. This rice variety is typical of Cinca Medio (Huesca). This rice cooks well and is perfect for risottos and delicious paella."
 vendor: ""
 type: ""
 tags: ""
 published: ""
-option1_name: "base"
-option1_value: "chicken"
+option1_name: ""
+option1_value: ""
 option2_name: ""
 option2_value: ""
 option3_name: ""
 option3_value: ""
-variant_sku: "sku_032"
+variant_sku: "sku_022"
 variant_grams: ""
 variant_inventory_tracker: ""
 variant_inventory_qty: ""
 variant_inventory_policy: ""
 variant_fulfillment_service: ""
-variant_price: "15.95"
+variant_price: "€5,95"
 variant_compare_at_price: ""
 variant_requires_shipping: ""
 variant_taxable: ""
 variant_barcode: ""
-image_src: "bahn-mi-meal-kit.jpg"
+image_src: "balilla-x-sollana-spanish-rice_01.jpg"
 image_alt_text: ""
 gift_card: ""
 seo_title: ""
@@ -80,6 +70,16 @@ variant_weight_unit: ""
 collections: ""
 ---
 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
    
    
    

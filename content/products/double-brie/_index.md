@@ -33,31 +33,43 @@
    
    
    
-handle: "bahn-mi-meal-kit"
-title: "Bahn Mi Meal Kit"
-body_html: ""
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+handle: "double-brie"
+title: "Double Brie"
+body_html: "This locally made creamy Brie is one of Australia’s most enjoyed cheese styles, available in both large wheels and smaller rounds. It’s named after the most northern tip of King Island, home of the famous Cape Wickham lighthouse since 1861."
 vendor: ""
 type: ""
 tags: ""
 published: ""
-option1_name: "base"
-option1_value: "chicken"
+option1_name: "weight"
+option1_value: "200g"
 option2_name: ""
 option2_value: ""
 option3_name: ""
 option3_value: ""
-variant_sku: "sku_032"
+variant_sku: "sku_044"
 variant_grams: ""
 variant_inventory_tracker: ""
 variant_inventory_qty: ""
 variant_inventory_policy: ""
 variant_fulfillment_service: ""
-variant_price: "15.95"
+variant_price: "9.95"
 variant_compare_at_price: ""
 variant_requires_shipping: ""
 variant_taxable: ""
 variant_barcode: ""
-image_src: "bahn-mi-meal-kit.jpg"
+image_src: "double-brie_01.jpg"
 image_alt_text: ""
 gift_card: ""
 seo_title: ""
@@ -80,18 +92,6 @@ variant_weight_unit: ""
 collections: ""
 ---
 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
    
    
    

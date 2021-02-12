@@ -12,52 +12,34 @@
    
    
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-handle: "bahn-mi-meal-kit"
-title: "Bahn Mi Meal Kit"
-body_html: ""
+handle: "salt-malt-organic-chocolate"
+title: "Salt & Malt Organic Chocolate"
+body_html: "Certified fair trade ingredients. Single origin, nutty notes of toasted quinoa sprinkled into malty chocoalte for a light, crispy, crunch.
+
+60% cocoa from Ecuador, Madagascar bourbon vanilla bean, and puffed Royal Pearl quinoa. Exclusively harvested by Fortaleza Cooperative from Fortaleza, Ecuador.
+Organic, non-GMO, gluten-free, carbon neutral, and sustainablely sourced."
 vendor: ""
 type: ""
 tags: ""
 published: ""
-option1_name: "base"
-option1_value: "chicken"
+option1_name: "size"
+option1_value: "single"
 option2_name: ""
 option2_value: ""
 option3_name: ""
 option3_value: ""
-variant_sku: "sku_032"
+variant_sku: "sku_011"
 variant_grams: ""
 variant_inventory_tracker: ""
 variant_inventory_qty: ""
 variant_inventory_policy: ""
 variant_fulfillment_service: ""
-variant_price: "15.95"
+variant_price: "3.95"
 variant_compare_at_price: ""
 variant_requires_shipping: ""
 variant_taxable: ""
 variant_barcode: ""
-image_src: "bahn-mi-meal-kit.jpg"
+image_src: "salt-malt-organic-chocolate.webp"
 image_alt_text: ""
 gift_card: ""
 seo_title: ""
@@ -80,6 +62,27 @@ variant_weight_unit: ""
 collections: ""
 ---
 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
    
    
    
