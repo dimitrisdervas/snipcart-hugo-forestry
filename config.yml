@@ -14,7 +14,7 @@ taxonomies:
 languages:
     gr:
         title: Παντοπωλείο
-        languageName: Greek
+        languageName: Ελληνικά
         weight: 1
     en:
         title: Deli Shop
@@ -22,7 +22,7 @@ languages:
         weight: 2
 params:
     slideshow_promotion: "fiveplusone"
-
+    header_message: "Same day local delivery — order by noon for delivery between 2 - 10pm"
 # https://phrase.com/blog/posts/i18n-tutorial-how-to-go-multilingual-with-hugo/#Configure_the_Locales
 
 outputFormats:
@@ -56,4 +56,4 @@ build:
   writeStats: true
 
 
-
+ 

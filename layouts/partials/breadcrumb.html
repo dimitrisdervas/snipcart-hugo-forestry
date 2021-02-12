@@ -18,7 +18,9 @@
       {{ range $breadcumblinks  }} 
       {{ if gt (len . ) 0 }}
       <li class="flex items-center">
-        <a href="/{{ . }}">{{ humanize (replace . "posts" "blog") }}</a>
+        
+        <a href="/{{ . }}">{{ humanize (replace . "gr" "") }}</a>
+
         <svg
           class="fill-current w-3 h-3 mx-3"
           xmlns="http://www.w3.org/2000/svg"

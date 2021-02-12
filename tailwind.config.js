@@ -29,7 +29,7 @@ module.exports = {
     extend: {
       fontFamily: {
         robregular: ["Roboto-Regular"],
-        robmono: ["Roboto-mono"],
+        c: ["Roboto-mono"],
       },
     },
   },

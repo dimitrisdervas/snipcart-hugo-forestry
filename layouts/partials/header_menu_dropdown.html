@@ -1,92 +1,104 @@
 <div class="hidden md:block w-full">
 
-    {{/* LANGUAGE */}}
-    <div class="w-full bg-black py-2 text-right">
-        {{ range $.Site.Home.AllTranslations }}
-       <a class="text-white" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-        {{ end }}
+    {{/* Message */}}
+    <div class="header--language w-full bg-black py-2 flex justify-center px-8">
+        <div class="text-white w-full text-center ">{{ i18n "header-message" }}</div>
     </div>
 
-<div class="header--top-row flex px-10 pt-10 pb-8 justify-between items-center">
+    <div class="header--top-row flex px-10  pb-8 justify-between items-center">
 
-{{/* LOGO */}}
-    <div class="">
-      <a class="" href="/">
-        <img
-          class="flex"
-          src="//cdn.shopify.com/s/files/1/0289/0326/files/delii_x45.png?v=1559925588"
-          srcset="
-            //cdn.shopify.com/s/files/1/0289/0326/files/delii_x45.png?v=1559925588    1x,
-            //cdn.shopify.com/s/files/1/0289/0326/files/delii_x45@2x.png?v=1559925588 2x
-          "
-          alt="Deli - Blockshop Shopify Theme"
-          itemprop="logo"
-        />
-      </a>
+    {{/* LOGO */}}
+        <div class="pt-10">
+            <a class="" href="/">
+                <img
+                class="flex"
+                src="//cdn.shopify.com/s/files/1/0289/0326/files/delii_x45.png?v=1559925588"
+                srcset="
+                    //cdn.shopify.com/s/files/1/0289/0326/files/delii_x45.png?v=1559925588    1x,
+                    //cdn.shopify.com/s/files/1/0289/0326/files/delii_x45@2x.png?v=1559925588 2x
+                "
+                alt="Deli - Blockshop Shopify Theme"
+                itemprop="logo"
+                />
+            </a>
+        </div>
+
+        <div class="flex flex-col justify-center items-end">
+            {{/*  LANGUAGE   */}}
+                <div class=" text-right pb-2 ">
+                    {{ range $.Site.Home.AllTranslations }}
+                        {{ if ne .Language.Lang $.Site.Language.Lang }}
+                            <a class="text-black" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                        {{ end }}
+                    {{ end }}
+                </div>
+
+            {{/*  SEARCH   */}}
+            <a class="header--search  w-6 h-6" href="/search" role="img" aria-label="Search">
+                <svg class="icon--root icon--search" viewBox="0 0 20 20">
+                    <path d="M14.37 12.86l5.636 5.637-1.414 1.414-5.633-5.632a7.627 7.627 0 01-4.688 1.604c-4.256 0-7.707-3.483-7.707-7.78 0-4.297 3.45-7.78 7.707-7.78s7.707 3.483 7.707 7.78c0 1.792-.6 3.442-1.608 4.758zM8.27 14.084c3.259 0 5.907-2.673 5.907-5.98 0-3.306-2.648-5.98-5.907-5.98-3.258 0-5.907 2.674-5.907 5.98 0 3.307 2.649 5.98 5.907 5.98z" fill-rule="nonzero"></path>
+                </svg>
+            </a>
+
+        </div>
+
     </div>
-
-    <a class="header--search  w-6 h-6" href="/search" role="img" aria-label="Search">
-        
-      <svg class="icon--root icon--search" viewBox="0 0 20 20">
-        <path d="M14.37 12.86l5.636 5.637-1.414 1.414-5.633-5.632a7.627 7.627 0 01-4.688 1.604c-4.256 0-7.707-3.483-7.707-7.78 0-4.297 3.45-7.78 7.707-7.78s7.707 3.483 7.707 7.78c0 1.792-.6 3.442-1.608 4.758zM8.27 14.084c3.259 0 5.907-2.673 5.907-5.98 0-3.306-2.648-5.98-5.907-5.98-3.258 0-5.907 2.674-5.907 5.98 0 3.307 2.649 5.98 5.907 5.98z" fill-rule="nonzero"></path>
-      </svg>
-  
-    
-    </a>
-
-  </div>
 {{/*  END HEADER TOP  */}}
 
 {{/* START HEADER BOTTOM   */}}
 <div class="header--bottom-row flex justify-between w-full items-center px-10">
 
-<nav class="menus" x-data="{ tooltip: false }">
+    <nav class="menus">
 
-  <div class="inline-block">
-    <a href="/">Home</a>
- </div>
+        <div class="inline-block">
+            <a class="font-robmono px-3 py-1" href="/">Home</a>
+        </div>
 
-{{/*  https://tailwindcomponents.com/component/nestable-dropdown-menu  */}}
-    <!-- MENUS  -->
-<div class="group inline-block">
-    <div x-on:mouseover="tooltip = true" 
-        class="outline-none focus:outline-none px-3 py-1  flex items-center min-w-32">
-        <span class="pr-1 flex-1">Breweries</span>
-        <span>
-        <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></span>
-    </div>
-</div>
+        {{/*  https://tailwindcomponents.com/component/nestable-dropdown-menu  */}}
+            <!-- MENUS  -->
+        <div class="group inline-block">
+            <div x-on:mouseover="dropdown = true" 
+                class="outline-none focus:outline-none px-3 py-1  flex items-center min-w-32">
+                <span class="pr-1 flex-1">Breweries</span>
+                <span>
+                <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></span>
+            </div>
+        </div>
 
-  <div class="inline-block ">
-    <a class="font-robmono" href="/blog">Blog</a>
- </div>
-  <div class="inline-block">
-    <a href="/abouts_us">About Us</a>
- </div>
- <div x-cloak x-show.transition="tooltip" 
- x-on:mouseover="tooltip = true"
- x-on:mouseout="tooltip = false"
- class="bg-gray-100 rounded-sm left-0 px-6 py-6 absolute w-full">
-        <div class="rounded-sm px-3 py-1 bg-gray-100 flex ">
+        <div class="inline-block ">
+        <a class="font-robmono px-3 py-1" href="/blog">Blog</a>
+        </div>
+
+        <div class="inline-block">
+        <a class="font-robmono px-3 py-1" href="/abouts_us">About Us</a>
+        </div>
+
+         <div x-cloak x-show.transition="dropdown" 
+ x-on:mouseover="dropdown = true"
+ x-on:mouseout="dropdown = false"
+ class="rounded-sm px-6 py-6 bg-gray-100 bg-opacity-95 w-full absolute left-0"
+ style="top: 23vh">
+        <div class="rounded-sm px-3 py-1 flex ">
             <div class="flex flex-col border-r border-black pr-20" >
                 {{ partial "menu_render.html" (dict "menu" .Site.Menus.featured "currentPage" . ) }}
                 </div>
             <div class="flex flex-col pl-20" >
-                <a class="uppercase" href="">Collections</a>
+                <a class="uppercase font-robmono" href="">Collections</a>
                 {{ partial "menu_render.html" (dict "menu" .Site.Menus.collections "currentPage" . ) }}
                 </div>
             <div class="flex flex-col pl-20 " >
-                <a class="uppercase " href="">Featured</a>
+                <a class="uppercase font-robmono " href="">Featured</a>
                 {{ partial "menu_render.html" (dict "menu" .Site.Menus.collections "currentPage" . ) }}
                 </div>
             <div class="flex flex-col pl-20" >
-                <a class="uppercase" href="">Speciality</a>
+                <a class="uppercase font-robmono" href="">Speciality</a>
                 {{ partial "menu_render.html" (dict "menu" .Site.Menus.collections "currentPage" . ) }}
                 </div>
        </div>
  </div>
-</nav>
+ 
+    </nav>
 <!-- https://codepen.io/larapeak/pen/abdpzpg -->
 
 
@@ -110,6 +122,7 @@
 
 </div>
 {{/*  END HEADER BOTTOM   */}}
+
 
 
 </div>

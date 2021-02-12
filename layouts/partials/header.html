@@ -1,7 +1,9 @@
 <header class="w-full bg-gray-100 md:absolute 
 md:bg-opacity-0 md:inset-0 
-md:hover:bg-opacity-100 md:z-10" style="width: 100%;height: 25vh;">
-  <div class="bottom-row w-full flex justify-between pb-6">
+md:hover:bg-opacity-95 md:z-10" style="width: 100%;height: 23vh;"
+x-data="{ dropdown: false }">
+
+  <div class="w-full flex justify-between pb-6">
     {{ partial "header_menu_hamburger.html" . }} 
     
     {{ partial "header_menu_dropdown.html" . }}
