@@ -200,3 +200,8 @@ options: 2
 
 ---
 
+We use antique cider apple varieties, high in tannins and acids, to produce flavors that have not been widely experienced in America since Prohibition. These are the apples from which hard cider was traditionally made.
+
+We use real cider apples, we use the wild yeasts in the apples for a natural fermentation and we add nothing which isn't present naturally in the fruit, no concentrate, no colorings and no artificial sweeteners.
+
+This is a demonstration store. This product, and its image and text, is **placeholder only**.

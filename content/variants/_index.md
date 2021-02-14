@@ -1,4 +1,3 @@
 ---
 title: "variants"
-layout: "variants"
 ---
