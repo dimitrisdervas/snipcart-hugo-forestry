@@ -46,6 +46,19 @@ outputs:
     - html
     - json
 
+
+
+related:
+  includeNewer: false
+  indices:
+  - name: handle
+    weight: 100
+    includeNewer: true
+  - name: collections
+    weight: 10
+  threshold: 80
+  toLower: false
+
 # Used by PurgeCSS
 # build:
 #   writeStats: true

@@ -243,6 +243,18 @@ Add to cart
 
 {{ partial "sharethis.html" . }}
 
+{{ $related := .Site.RegularPages.RelatedIndices . "collections" | first 3 }}
+{{ with $related }}
+<h3>See Also</h3>
+<ul>
+	{{ range . }}
+	<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+	{{ end }}
+</ul>
+{{ end }}
+
+
+
 {{ else }}
 <h2 class="w-full text-center text-2xl bold pt-8 pb-12">All products</h2>
 <div class="mx-auto grid grid-cols-4 grid-flow-row gap-8 mb-8">
