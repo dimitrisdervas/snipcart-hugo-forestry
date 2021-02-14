@@ -11,9 +11,6 @@
 </script>
 
 
-{{.}}
-
-
 {{/*  https://codepen.io/eddieebeling/pen/dyoZOBX  */}}
 
 <div class="h-full bg-gray-200 text-gray-800 p-4 lg:p-8" 
@@ -28,11 +25,11 @@
         <template x-for="user in users" >
             <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 h-full font-light">
             <div class="flex bg-white rounded-lg shadow-md m-2 border-l-4 border-white hover:shadow-2xl hover:border-pink-500 cursor-pointer relative">
-               <a :href=" '{{ "products/" | relLangURL }}' + user.products ">               
+               <a :href=" user.link ">               
                 <div class="p-4 pr-6 leading-normal">
                 <div class="font-medium text-xl truncate" x-text="user.name"></div>
-                <div class="" x-text="user.price"></div>
-                <img :src="'/uploads/beers/' + user.image" alt="user.name">
+                <div class="" x-text="user.price + ' €' "></div>
+                <img :src="user.image" :alt="user.name">
                 </a>
                 </div>
             </div>

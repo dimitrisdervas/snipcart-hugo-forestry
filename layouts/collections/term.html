@@ -1,24 +1,63 @@
 {{ define "main" }}
-<h2 class="text-center text-xl py-8">{{ i18n "fontpage_collections"}}</h2>
 
-<div class="grid grid-col-4 grid-row-4 gap-8">
-{{ range  where .Pages "Params.products_list" "true" }}
-<div class="w-1/4 flex flex-col col-span-1">
-
-<a href="{{ .Parent.Permalink }}">
+    <h2 class="w-full text-center text-2xl bold pt-8 pb-12">{{ .Title }}</h2>
+<div class="container mx-auto grid grid-cols-4 grid-flow-row gap-8 mb-8">
 
 
-<div class="px-2 text-center text-lg">{{ .Params.name }}</div>
-<div class="px-2 text-center text-lg">from {{ .Params.price }}</div>
-</a>
+
+    {{ range .Data.Pages }}
+        {{ if in .Params.collections "products_list" }}
+        {{ $link := .Permalink }}
+        {{ $title := .Title }}
+            <div class=" col-span-1">
+            <a 
+            class="flex flex-col items-center"
+            href="{{ $link}}">
+
+                {{ $image := string .Params.image_src }}
+                {{ $original := .Resources.GetMatch $image }}       
+                {{ if $original }}              
+                    {{ $image295w := $original.Resize "295x" }} 
+                    {{ $image394w := $original.Resize "394x" }}
+                    {{ $image590w := $original.Resize "590x" }}
+                    {{ $image700w := $original.Resize "700x" }}
+                    {{ $image800w := $original.Resize "800x" }}
+                    {{ $image1000w := $original.Resize "1000x" }}
+                    {{ $image1200w := $original.Resize "1200x" }}
+                    {{ $image1500w := $original.Resize "1500x" }}
+                    {{ $image1800w := $original.Resize "1800x" }}
+                    {{ $image2400w := $original.Resize "2400x" }}
+                    <div class="flex w-full justify-center items-center" style="height:30vh">
+                    <img
+                    alt="{{ $original }}"
+                    data-sizes="auto"
+                    data-srcset="        
+                    {{ $image295w.RelPermalink }}  295w,
+                    {{ $image394w.RelPermalink }}  394w,
+                    {{ $image590w.RelPermalink }}  590w,
+                    {{ $image700w.RelPermalink }}  700w,
+                    {{ $image800w.RelPermalink }}  800w,
+                    {{ $image1000w.RelPermalink }}  1000w,
+                    {{ $image1200w.RelPermalink }}  1200w,
+                    {{ $image1500w.RelPermalink }}  1500w,
+                    {{ $image1800w.RelPermalink }}  1800w,
+                    {{ $image2400w.RelPermalink }}  2400w,
+                    "
+                    data-src="{{ $image700w.RelPermalink }}"
+                    class="lazyload" />
+                    <!-- noscript pattern -->
+                    <noscript>
+                    <img src="{{ $image1000w.RelPermalink }}" />
+                    </noscript>
+                    </div>
+                {{ end }}
+                <div class="pt-4 row-span-1" style="font-family: Roboto Mono;">
+                <div class="px-2 text-center text-lg " >{{ $title }}</div>
+                <div class="px-2 text-center text-lg">from {{ .Params.variant_price }}</div>
+                </div>
+                </a>
+            </div>
+            {{ end }}
+    {{ end }}
 </div>
-{{ end }}
-
-
-</div>
-
-
-
-
-
 {{ end }}
