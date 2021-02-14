@@ -13,6 +13,22 @@
             py-8 " 
     style="grid-template-rows: auto auto 1fr;"
     x-data="{ 
+    {{ range $index, $variants := .Pages }}  
+    {{$index}} : {
+        url: '{{$variants.Permalink  }}',
+        id: '{{$variants.Params.variant_sku }}',
+        retail: '{{$variants.Params.retail}}',
+        price: '{{$variants.Params.variant_price}}',
+        quantity: '1',
+        stock: '{{ $variants.Params.stock }}',
+        image: '{{ $variants.Params.image_src}}',
+        options: {
+        {{ if $variants.Params.option1_name}}{{ $variants.Params.option1_name}} : '{{ $variants.Params.option1_value}}',{{end}}
+        {{ if $variants.Params.option2_name}}{{ $variants.Params.option2_name}} : '{{ $variants.Params.option2_value}}',{{end}}
+        {{ if $variants.Params.option3_name}}{{ $variants.Params.option3_name}} : '{{ $variants.Params.option3_value}}'{{end}}
+        }
+    },
+    {{ end }}
     {{ range first 1 .Pages }}  
     {{ .Title }}
     {{ end }}
