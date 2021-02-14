@@ -1,21 +1,7 @@
 ---
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
 products: "eden-brewers-adam-eve-cider"
 handle: "eden-brewers-adam-eve-cider"
 title: ""
-body_html: >
-    
 vendor: ""
 type: ""
 tags: "beers"
@@ -29,7 +15,7 @@ option3_value: ""
 variant_sku: "sku_003"
 variant_grams: ""
 variant_inventory_tracker: ""
-variant_inventory_qty: ""
+variant_inventory_qty: "0"
 variant_inventory_policy: ""
 variant_fulfillment_service: ""
 variant_price: "9,95"
@@ -40,156 +26,8 @@ variant_barcode: ""
 image_src: "eden-brewers-adam-eve-cider_01.jpg"
 image_alt_text: ""
 gift_card: ""
-seo_title: ""
-seo_description: ""
-google_shopping_google_produ: ""
-google_shopping_gender: ""
-google_shopping_age_group: ""
-google_shopping_mpn: ""
-google_shopping_adwords_grou: ""
-google_shopping_adwords_labe: ""
-google_shopping_condition: ""
-google_shopping_custom_produ: ""
-google_shopping_custom_label: ""
-google_shopping_custom_label: ""
-google_shopping_custom_label: ""
-google_shopping_custom_label: ""
-google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
-collections: "[]"
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
-
+collections: []
+gallery: []
 ---
