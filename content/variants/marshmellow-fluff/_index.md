@@ -14,33 +14,50 @@
  
  
 
-products: "eden-brewers-adam-eve-cider"
-handle: "eden-brewers-adam-eve-cider"
-title: ""
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+handle: "marshmellow-fluff"
+title: "Marshmellow Fluff"
 body_html: >
-    
+    Marshmallow Fluff is still produced by the same batch process developed over 75 years ago - it's the only marshmallow creme made in this manner. It's what makes Durkee-Mower's product so fluffy, white, and smooth; it's what makes the difference. Because Marshmallow Fluff is made only with the finest ingredients under the most demanding sanitary conditions, it requires no artificial preservatives. 
 vendor: ""
 type: ""
-tags: "beers"
+tags: ""
 published: ""
-option1_name: "size"
-option1_value: "single"
-option2_name: "material"
-option2_value: "can"
+option1_name: "flavour"
+option1_value: "caramel"
+option2_name: ""
+option2_value: ""
 option3_name: ""
 option3_value: ""
-variant_sku: "sku_004"
+variant_sku: "sku_009"
 variant_grams: ""
 variant_inventory_tracker: ""
 variant_inventory_qty: ""
 variant_inventory_policy: ""
 variant_fulfillment_service: ""
-variant_price: "2.95"
-variant_compare_at_price: "3.95"
+variant_price: "3.95"
+variant_compare_at_price: ""
 variant_requires_shipping: ""
 variant_taxable: ""
 variant_barcode: ""
-image_src: "eden-brewers-adam-eve-cider_01.jpg"
+image_src: "marshmellow-fluff_01.jpg"
 image_alt_text: ""
 gift_card: ""
 seo_title: ""
@@ -60,22 +77,8 @@ google_shopping_custom_label: ""
 google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
-collections: "[]"
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
+collections: ["Sweets","products_list"]
+gallery: []
 
  
  

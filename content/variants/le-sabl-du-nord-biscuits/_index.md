@@ -14,33 +14,44 @@
  
  
 
-products: "eden-brewers-adam-eve-cider"
-handle: "eden-brewers-adam-eve-cider"
-title: ""
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+handle: "le-sabl-du-nord-biscuits"
+title: "Le sablé du nord biscuits"
 body_html: >
-    
+    Discover these truly delicious ‘sablés du nord’ shortbread biscuits from biscuit-maker Eugène Blond. 
 vendor: ""
 type: ""
-tags: "beers"
+tags: "chocolates"
 published: ""
 option1_name: "size"
 option1_value: "single"
-option2_name: "material"
-option2_value: "can"
+option2_name: ""
+option2_value: ""
 option3_name: ""
 option3_value: ""
-variant_sku: "sku_004"
+variant_sku: "sku_007"
 variant_grams: ""
 variant_inventory_tracker: ""
 variant_inventory_qty: ""
 variant_inventory_policy: ""
 variant_fulfillment_service: ""
-variant_price: "2.95"
-variant_compare_at_price: "3.95"
+variant_price: "9.95"
+variant_compare_at_price: "11.95"
 variant_requires_shipping: ""
 variant_taxable: ""
 variant_barcode: ""
-image_src: "eden-brewers-adam-eve-cider_01.jpg"
+image_src: "le-sabl-du-nord-biscuits_01.jpg"
 image_alt_text: ""
 gift_card: ""
 seo_title: ""
@@ -60,16 +71,8 @@ google_shopping_custom_label: ""
 google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
-collections: "[]"
-
- 
- 
-
- 
- 
-
- 
- 
+collections: ["Sweets","products_list"]
+gallery: []
 
  
  

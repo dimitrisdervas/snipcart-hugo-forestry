@@ -1,23 +1,50 @@
 ---
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
 handle: "salt-malt-organic-chocolate"
 title: "Salt & Malt Organic Chocolate"
-body_html: "Certified fair trade ingredients. Single origin, nutty notes of toasted quinoa sprinkled into malty chocoalte for a light, crispy, crunch.
+body_html: >
+    Certified fair trade ingredients. Single origin, nutty notes of toasted quinoa sprinkled into malty chocoalte for a light, crispy, crunch.
 
-60% cocoa from Ecuador, Madagascar bourbon vanilla bean, and puffed Royal Pearl quinoa. Exclusively harvested by Fortaleza Cooperative from Fortaleza, Ecuador.
-Organic, non-GMO, gluten-free, carbon neutral, and sustainablely sourced."
+    60% cocoa from Ecuador, Madagascar bourbon vanilla bean, and puffed Royal Pearl quinoa. Exclusively harvested by Fortaleza Cooperative from Fortaleza, Ecuador.
+    Organic, non-GMO, gluten-free, carbon neutral, and sustainablely sourced.
 vendor: ""
 type: ""
 tags: ""
@@ -59,44 +86,117 @@ google_shopping_custom_label: ""
 google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
-collections: ""
+collections: ["Sweets","products_list"]
+gallery: []
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+
 ---
-
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-
 
