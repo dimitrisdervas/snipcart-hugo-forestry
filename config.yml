@@ -4,10 +4,6 @@ title: BeerCityGreece
 DefaultContentLanguage: gr
 defaultContentLanguageInSubdir: true
 taxonomies:
-    material: materials
-    size: sizes
-    brewery: breweries
-    beer_type: beer_types
     promotion: promotions
     collection: collections
     product: products
@@ -22,7 +18,6 @@ languages:
         weight: 2
 params:
     slideshow_promotion: "fiveplusone"
-    header_message: "Same day local delivery — order by noon for delivery between 2 - 10pm"
 # https://phrase.com/blog/posts/i18n-tutorial-how-to-go-multilingual-with-hugo/#Configure_the_Locales
 
 outputFormats:
@@ -52,8 +47,8 @@ outputs:
     - json
 
 # Used by PurgeCSS
-build:
-  writeStats: true
+# build:
+#   writeStats: true
 
 
  
