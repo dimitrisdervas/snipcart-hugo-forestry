@@ -1,4 +1,6 @@
 ---
+- id: "addtocart"
+  translation: "Προσθήκη"
 - id: "home"
   translation: "Αρχική"
 - id: "collections"

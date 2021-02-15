@@ -19,6 +19,7 @@ languages:
         weight: 2
 params:
     slideshow_promotion: "fiveplusone"
+    featured_product: "dark-quinoa-organic-chocolate"
 # https://phrase.com/blog/posts/i18n-tutorial-how-to-go-multilingual-with-hugo/#Configure_the_Locales
 
 outputFormats:

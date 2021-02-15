@@ -9,9 +9,13 @@
     .heroslideshow {
       height: 90vh; }
     }
+    @media only screen and (min-width: 1920px) { 
+    .heroslideshow {
+      height: 100vh; }
+    }
 </style>
 
-<div class="heroslideshow swiper-container " style="width: 100%; height: 80vh;">
+<div class="heroslideshow swiper-container " style="width: 100%;">
   <div class="swiper-wrapper">
     {{ range (where .Site.RegularPages.ByTitle "Section" "slideshow" ) }}
     <div class="swiper-slide flex-col flex">

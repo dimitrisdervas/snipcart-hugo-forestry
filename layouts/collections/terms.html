@@ -6,7 +6,9 @@
     {{ $collection := printf "/collections/%s/" $index }}
     {{ with $.Site.GetPage $collection }}
         {{ if eq .Params.show true }}
-            <a class=" col-span-1 p-4  grid-row-2" href="{{.Permalink}}"> 
+            <a 
+            class=" col-span-1 p-4  grid-row-2" 
+            href="{{.Permalink}}"> 
             {{ if .Resources }}
                 {{ $image := string .Params.image }}
                 {{ $original := .Resources.GetMatch $image }}

@@ -1,25 +1,31 @@
 <div class="bg-white mb-6 py-8 px-4 max-w-screen-xl mx-auto">
 <h2 class="text-center text-xl py-6 ">{{ i18n "fontpage_promotedproduct"}}</h2>
 
+{{ $featured_product := printf "/variants/%s" .Site.Params.featured_product}}
 
-{{ range (where .Site.Pages "Section" "variants" )}}
-{{ range .Pages }}
-{{ if .Params.frontpage }}                              
+{{ with  .Site.GetPage $featured_product }}
+{{ $numberVariants := len .Pages}}
 
 <div class="grid grid-cols-1 md:grid-cols-2" 
-    x-data="{ 
-    {{ range first 1 .Pages }}
-        title: '{{.Params.name}}',
-        url: '{{.Params.url}}',
-        id: '{{.Params.id }}',
-        retail: '{{.Params.retail}}',
-        price: '{{.Params.price}}',
-        beer_types: '{{.Params.beer_types}}',
-        description: '{{.Params.description}}',
-        boximage: [],
+     x-data="{ 
+    {{ range $index, $variants := .Pages }}  
+    {{$index}} : {
+        url: '{{$variants.Permalink  }}',
+        id: '{{$variants.Params.variant_sku }}',
+        retail: '{{$variants.Params.retail}}',
+        price: '{{$variants.Params.variant_price}}',
         quantity: '1',
-        {{ if .Resources }}
-        {{ $image := string .Params.image }}
+        stock: '{{ $variants.Params.stock }}',
+        image: '{{ $variants.Params.image_src}}',
+        options: {
+        {{ if $variants.Params.option1_name}}{{ $variants.Params.option1_name}} : '{{ $variants.Params.option1_value}}',{{end}}
+        {{ if $variants.Params.option2_name}}{{ $variants.Params.option2_name}} : '{{ $variants.Params.option2_value}}',{{end}}
+        {{ if $variants.Params.option3_name}}{{ $variants.Params.option3_name}} : '{{ $variants.Params.option3_value}}'{{end}}
+        }
+    },
+    {{ end }}
+    {{ if .Resources }}
+        {{ $image := string .Params.image_src }}
         {{ $original := .Resources.GetMatch $image }}
         {{ $image295w := $original.Resize "295x" }}
         {{ $image394w := $original.Resize "394x" }}
@@ -41,19 +47,27 @@
             image1500w: '{{ $image1500w.RelPermalink }}',
             image1800w: '{{ $image1800w.RelPermalink }}',
             image2400w: '{{ $image2400w.RelPermalink }}',
-        {{ end }}
-        stock: '{{ .Params.stock }}'
     {{ end }}
-}">
+    title: '{{.Title}}',
+    url: '{{.Params.url  }}',
+    id: '{{.Params.variant_sku }}',
+    retail: '{{.Params.retail}}',
+    price: '{{.Params.variant_price}}',
+    description: '{{.Params.description}}',
+    quantity: '1',
+    stock: '{{ .Params.variant_inventory_qty }}',
+    tab: 'content'    
+    }">
+
 
 
 <div class="col-span-1  ">
 {{/*  Image block  */}}
     <div class="flex justify-center w-full items-center h-full px-16 ">
-        <img
+         <img
             x-bind:alt="title"
             data-sizes="auto"
-            x-bind:data-srcset="        
+            x-bind:srcset="        
             image295w + ' 295w,' +
             image394w + ' 394w,' +
             image590w + ' 590w,' +
@@ -66,7 +80,7 @@
             image2400w + ' 2400w' 
             "
             x-bind:data-src="image700w"
-            class="lazyload" />
+            class="" />
     <!-- noscript pattern -->
         <noscript>
             <img x-bind:src="image700w" />
@@ -82,8 +96,7 @@
 <div class="w-full px-10">
 {{/*  Title  */}}
 <div class="mb-2 ">
-<div class="w-full text-xl text-center md:text-left  pt-4">{{ .Title }}</div>
-<h2 class="text-xl  text-center md:text-left " x-text="title" >{{ .Params.name }}</h2>
+<h2 class="text-xl  text-center md:text-left " x-text="title" >{{ .Title }}</h2>
 </div>
 {{/*  PRICE  */}}
 <div class="flex items-baseline mb-2 justify-start md:justify-left">
@@ -94,81 +107,79 @@
 
 {{/*  Options block  */}}
 <div class=" grid col-span-1 mt-8">
-
-
     <div class="flex justify-start col-span-1 mb-4">
-        {{ range .Pages  }}   
-        <button 
-            class=" border border-gray-400 text-gray-400 px-4 py-2 mr-2 "
-            @click:class="{'text-red-800' : true }"
-            type="radio" 
-            x-on:click="
-            id = '{{.Params.id}}',
-            url = '{{.Params.url}}'
-            price = '{{.Params.price}}',
-            title= '{{ .Params.name }}',
-            base = '{{ .Params.base }}',
-            value='{{.Params.name}}',
-            
-            {{ if .Resources }}
-            {{ $image := string .Params.image }}
-            {{ $original := .Resources.GetMatch $image }}
-            {{ $image295w := $original.Resize "295x" }}
-            {{ $image394w := $original.Resize "394x" }}
-            {{ $image590w := $original.Resize "590x" }}
-            {{ $image700w := $original.Resize "700x" }}
-            {{ $image800w := $original.Resize "800x" }}
-            {{ $image1000w := $original.Resize "1000x" }}
-            {{ $image1200w := $original.Resize "1200x" }}
-            {{ $image1500w := $original.Resize "1500x" }}
-            {{ $image1800w := $original.Resize "1800x" }}
-            {{ $image2400w := $original.Resize "2400x" }}
-                image295w = '{{ $image295w.RelPermalink }}',
-                image394w = '{{ $image394w.RelPermalink }}',
-                image590w = '{{ $image590w.RelPermalink }}',
-                image700w = '{{ $image700w.RelPermalink }}',
-                image800w = '{{ $image800w.RelPermalink }}',
-                image1000w = '{{ $image1000w.RelPermalink }}',
-                image1200w = '{{ $image1200w.RelPermalink }}',
-                image1500w = '{{ $image1500w.RelPermalink }}',
-                image1800w = '{{ $image1800w.RelPermalink }}',
-                image2400w = '{{ $image2400w.RelPermalink }}',
-            {{ end }}
-            stock='{{.Params.stock}}'
-            ">
-            {{ if .Params.volume }} {{.Params.volume }} {{ end}}
-            {{ if .Params.materials }}{{ .Params.materials }}  {{ end }}
-            {{ if .Params.sizes }}{{ .Params.sizes }} {{ end }} 
-            {{ if .Params.sizes }}{{ .Params.base }} {{ end }}
-            {{ if .Params.base }}{{ .Params.base }}{{ end }}
-            </button>
-        {{ end }}
-    </div>
 
+    {{ if gt $numberVariants 1 }}
+        <div class="selection">
+            <div class="flex justify-start flex-wrap">
+            {{ range .Pages  }}   
+                <button 
+                class="w-40 h-16 border-2 border-gray-200 text-gray-400 
+                flex items-center px-4 py-2 m-2 justify-center
+                hover:border-gray-800 hover:text-gray-800 
+                @click:selected"
+                type="radio" 
+                x-on:click="
+                id = '{{.Params.variant_sku}}',
+                url = '{{.Params.url}}'
+                price = '{{.Params.variant_price}}',
+                title= '{{ .Title }}',
+                {{ if $.Resources }}
+                {{ $image := string .Params.image_src }}
+                {{ $original := $.Resources.GetMatch $image }}
+                {{ $image295w := $original.Resize "295x" }}
+                {{ $image394w := $original.Resize "394x" }}
+                {{ $image590w := $original.Resize "590x" }}
+                {{ $image700w := $original.Resize "700x" }}
+                {{ $image800w := $original.Resize "800x" }}
+                {{ $image1000w := $original.Resize "1000x" }}
+                {{ $image1200w := $original.Resize "1200x" }}
+                {{ $image1500w := $original.Resize "1500x" }}
+                {{ $image1800w := $original.Resize "1800x" }}
+                {{ $image2400w := $original.Resize "2400x" }}
+                    image295w = '{{ $image295w.RelPermalink }}',
+                    image394w = '{{ $image394w.RelPermalink }}',
+                    image590w = '{{ $image590w.RelPermalink }}',
+                    image700w = '{{ $image700w.RelPermalink }}',
+                    image800w = '{{ $image800w.RelPermalink }}',
+                    image1000w = '{{ $image1000w.RelPermalink }}',
+                    image1200w = '{{ $image1200w.RelPermalink }}',
+                    image1500w = '{{ $image1500w.RelPermalink }}',
+                    image1800w = '{{ $image1800w.RelPermalink }}',
+                    image2400w = '{{ $image2400w.RelPermalink }}',
+                {{ end }}
+                option= '{{ .Params.option1_value }}'
+                value='{{.Title}}',
+                stock='{{.Params.stock}}' 
+                ">          
+                {{ partial "options_icons.html" . }}
+                {{ .Params.option1_value }} / {{ .Params.option2_value }}
+                </button>
+            {{ end }}
+            </div>
+        </div>
+    {{ end}}
 
 <!-- Out of Stock -->
     <div 
         x-text="stock" 
-        x-show="stock === 'out of stock' " 
+        x-show="stock === 0 " 
         class="border-2 border-gray-300 text-gray-300 w-full py-2 uppercase text-md text-center">
     </div>
 <!-- Out of Stock -->
 
 {{/*  Snipcart button  */}}
     <button x-show="stock != 'out of stock' "
-    class="snipcart-add-item border-2 border-black w-full py-2 uppercase text-md mb-4"
-    x-bind:data-item-url="url"
-    x-bind:data-item-name="title"
-    x-bind:data-item-id="id"
-    x-bind:data-item-quantity = "quantity"
-    x-bind:data-item-image="image700w"
-    x-bind:data-item-price="price"
-    x-bind:data-item-description="description"
-    x-bind:data-item-price-box6="12"
-    x-bind:data-item-price-box12="24"
-    x-bind:data-item-price-box24="48"
+        class="snipcart-add-item border-2 border-black w-full py-2 uppercase text-md"
+        x-bind:data-item-url="url"
+        x-bind:data-item-name="title"
+        x-bind:data-item-id="id"
+        x-bind:data-item-quantity = "quantity"
+        x-bind:data-item-image="image700w"
+        x-bind:data-item-price="price"
+        x-bind:data-item-description="description"
     >
-    Add to cart
+    {{ i18n "addtocart"}}
     </button>
 
  {{/*  end Snipcart button  */}}   
@@ -182,8 +193,7 @@
 
 
 {{ end }}                                       
-{{ end }}
-{{ end }}
+
 
 
 

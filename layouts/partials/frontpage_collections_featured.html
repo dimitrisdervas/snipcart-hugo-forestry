@@ -5,13 +5,9 @@
 
 {{ range $index, $t := .Site.Taxonomies.collections }}
 
-
-
 {{ $collection := printf "/collections/%s/" $index }}
-
 {{ with $.Site.GetPage $collection }}
 {{ if isset .Params  "image_featured" }}
-
      <a class=" col-span-1 p-4  grid-row-2" href="{{ .Permalink }}"> 
       {{ if .Resources }}
         {{ $image := string .Params.image_featured }}
@@ -26,9 +22,6 @@
         {{ $image1500w := $original.Resize "1500x" }}
         {{ $image1800w := $original.Resize "1800x" }}
         {{ $image2400w := $original.Resize "2400x" }}
-
-
-
         <img
             class="row-span-1 lazyload"
             alt="title"

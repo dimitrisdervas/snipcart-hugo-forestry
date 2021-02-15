@@ -1,0 +1,16 @@
+[
+
+{{ $length := len .Data.Pages}}
+
+{{ range $index, $CollectionProducts := .Data.Pages  }}
+{
+    "link" : {{$CollectionProducts.Permalink }}
+    "sku": {{$CollectionProducts.Params.variant_sku}}
+    "name" : {{$CollectionProducts.Params.title }}
+    "price" : {{$CollectionProducts.Params.variant_price }}
+    "products" : {{$CollectionProducts.Params.products }}
+    "image" : {{$CollectionProducts.Params.image_src }}
+    }{{ if ne (add $index 1) $length }},{{ end }}
+{{ end }}
+
+]

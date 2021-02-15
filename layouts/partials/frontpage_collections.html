@@ -3,7 +3,7 @@
 <h2 class="text-center text-xl py-2">{{ i18n "fontpage_collections"}}</h2>
 <div class="grid grid-cols-2 grid-flow-row md:grid-cols-4 ">
 
-{{ range $index, $t := .Site.Taxonomies.collections }}
+{{ range $index, $featuredCollections := .Site.Taxonomies.collections }}
 
 {{ $collection := printf "/collections/%s/" $index }}
 

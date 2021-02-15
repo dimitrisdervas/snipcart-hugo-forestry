@@ -1,6 +1,7 @@
 {{ define "main" }}
 
 {{if in .File.Dir .Params.handle}}
+{{/*  so that we show the product page or the list page  */}}
 {{ $numberVariants := len .Pages}}
 
 <div class="
@@ -59,7 +60,7 @@
             image1500w: '{{ $image1500w.RelPermalink }}',
             image1800w: '{{ $image1800w.RelPermalink }}',
             image2400w: '{{ $image2400w.RelPermalink }}',
-        {{ end }}
+    {{ end }}
     description: '{{.Params.description}}',
     quantity: '1',
     stock: '{{ .Params.stock }}',
@@ -251,6 +252,9 @@ Add to cart
 
 
 {{ else }}
+
+{{/*  LIST PRODUCTS PAGE   */}}
+
 <h2 class="w-full text-center text-2xl bold pt-8 pb-12">All products</h2>
 <div class="mx-auto grid grid-cols-4 grid-flow-row gap-8 mb-8">
 
