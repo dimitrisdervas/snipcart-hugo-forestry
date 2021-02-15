@@ -5,6 +5,8 @@
   translation: "Συλλογές"
 - id: "fontpage_collections"
   translation: "Κατηγορίες"
+- id: catalog
+  translation: "Κατάλογος"
 - id: "fontpage_promotedproduct"
   translation: "Προιόν της εβδομάδος"
 - id: "header-message"

@@ -56,6 +56,7 @@ related:
     includeNewer: true
   - name: collections
     weight: 10
+    includeNewer: true
   threshold: 80
   toLower: false
 
