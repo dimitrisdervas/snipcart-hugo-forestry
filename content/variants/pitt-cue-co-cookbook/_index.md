@@ -199,3 +199,4 @@ gallery: []
 
 ---
 
+Enter the world of breddos Tacos and discover the ultimate edible plates with this inspired, innovative taco cookbook. The brainchild of Nud Dudhia and Chris Whitney, the undisputed kings of street food, offer over 75 recipes for tacos and condiments. Their awesome dishes include Barbacoa beef cheeks, Yucatán chicken with mango habanero sauce, Green chorizo & duck egg, Baja fish tacos and Octopus 'al pastor' with roasted pineapple. The Cookbook is guaranteed to excite even the most discerning of tastebuds whilst revolutionising what it takes to make truly epic tacos.
