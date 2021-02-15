@@ -23,13 +23,8 @@
  
  
 
- 
- 
-
 handle: "le-sabl-du-nord-biscuits"
 title: "Le sablé du nord biscuits"
-body_html: >
-    Discover these truly delicious ‘sablés du nord’ shortbread biscuits from biscuit-maker Eugène Blond. 
 vendor: ""
 type: ""
 tags: "chocolates"
@@ -51,7 +46,7 @@ variant_compare_at_price: "11.95"
 variant_requires_shipping: ""
 variant_taxable: ""
 variant_barcode: ""
-image_src: "le-sabl-du-nord-biscuits_01.webp"
+image_src: "le-sabl-du-nord-biscuits_01.jpg"
 image_alt_text: ""
 gift_card: ""
 seo_title: ""
@@ -71,129 +66,132 @@ google_shopping_custom_label: ""
 google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
-collections: ["Sweets","products_list"]
+collections: ["Sweets"]
+collection_lv2s: ["Speciality","Biscuits"]
 gallery: []
 
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
-
 ---
+
+Discover these truly delicious ‘sablés du nord’ shortbread biscuits from biscuit-maker Eugène Blond. 
+
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
 

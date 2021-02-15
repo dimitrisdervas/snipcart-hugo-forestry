@@ -33,7 +33,6 @@ variant_weight_unit: "{{ index $r 47 }}"
 collections: [{{ index $r 48 }}]
 gallery: [{{ index $r 49 }}]
 
-
 ---
 
 

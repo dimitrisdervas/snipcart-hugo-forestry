@@ -45,10 +45,13 @@ google_shopping_custom_label: "{{ index $r 44 }}"
 google_shopping_custom_label: "{{ index $r 45 }}"
 variant_image: "{{ index $r 46 }}"
 variant_weight_unit: "{{ index $r 47 }}"
-collections: [{{ index $r 48 }}]
-gallery: [{{ index $r 49 }}]
-{{ end }}
-{{ end }}
+collections: {{ split (index $r 48) "," }}
+collection_lv2: {{ split (index $r 49) "," }}
+gallery: [{{ index $r 50 }}]
+
 ---
 
 {{ index $r 6 }}
+
+{{ end }}
+{{ end }}
