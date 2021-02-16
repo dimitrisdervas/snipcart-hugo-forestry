@@ -1,132 +1,241 @@
 <div class="flex justify-around flex-wrap border px-2 m-2"
     x-data="{
-'button': 'close',
-'pageVariable' : {
-    'Data' : '{{.Data }}',
-    'Draft' : '{{.Draft }}',
-    'Hugo' : '{{.Hugo }}',
-    'Keywords' : '{{.Keywords }}',
-    'Title' : '{{.Title }}',
-    'LinkTitle' : '{{.LinkTitle }}',
-    'Next' : '{{.Next }}',
-    'Prev' : '{{.Prev }}',
-    'PrevInSection' : '{{.PrevInSection }}',
-    'Resources' : '{{.Resources }}',
-    '{{/*  RelRef' : '{{.RelRef }} */}}',
-    '{{/*  First' : '{{.First}} */}}',
-    'Weight' : '{{.Weight }}'
+        'top': false,
+        'side': false,
+        'fileVariables':{
+            1 : {id:'.Dir', result: '{{.Dir }}'},
+            2 : {id:'.File', result: '{{.File }}'},
+            3 : {id:'.File.Path', result: '{{.File.Path}}'},
+            4 : {id:'.File.LogicalName', result: '{{.File.LogicalName}}'},
+            5 : {id:'File.TranslationBaseName', result: '{{.File.TranslationBaseName}}'},
+            6 : {id:'.File.ContentBaseName', result: '{{.File.ContentBaseName}}'},
+            7 : {id:'.File.BaseFileName', result: '{{.File.BaseFileName}}'},
+            8 : {id:'.File.Ext', result: '{{.File.Ext}}'},
+            9 : {id:'.File.Lang', result: '{{.File.Lang}}'},
+            10 : {id:'.File.Dir', result: '{{.File.Dir}}'},
+            11 : {id:'.File.UniqueID', result: '{{.File.UniqueID}}'}
+        },
+        'sectionPagesVariables' : {
+            0: {id:'.Pages', result:'{{.Pages}}'},
+            1: {id:'.RegularPage', result:'{{.RegularPages}}'},
+            2: {id:'.RegularPagesRecursive', result:'{{.RegularPagesRecursive}}'},
+        },
+        'siteVariables': {
+            0: {id: '.Site', result: '{{.Site }}'},
+            1: {id: '.SitePages', result: '{{.Site.Pages}}'},
+            2: {id: '.SiteRegularPages', result: '{{.Site.RegularPages}}'}
+        },
+        'translations' : {
+            0: {id: '.IsTranslated', result: '{{.IsTranslated }}'},
+            1: {id: '.Language', result: '{{.Language }}'},
+            2: {id: '.Translations', result: '{{.Translations }}'},
+            3: {id: '.TranslationKey', result: '{{.TranslationKey }}'}
+        },
+        'variables': {    
+            0: {id: '.Kind', result: '{{.Kind }}'},
+            1: {id: '.Type', result: '{{.Type }}'},
+            2: {id: '.IsHome', result: '{{.IsHome }}'},
+            3: {id: '.IsNode', result: '{{.IsNode }}'},
+            4: {id: '.IsPage', result: '{{.IsPage }}'},
+            5: {id: '.IsSection', result: '{{.IsSection }}' }
+        },
+        'contents': {
+    0 : {id: 'Summary', result: {{.Summary | jsonify }} },
+    1 : {id: 'RawContent', result: {{.RawContent | jsonify  }} },
+    2 : {id: 'ReadingTime', result: '{{.ReadingTime }}' },
+    3 : {id: 'FuzzyWordCount', result: '{{.FuzzyWordCount }}' },
+    4 : {id: 'Content', result: {{.Content | jsonify }} },
+    5 : {id: 'Description', result: {{.Description | jsonify }} },
+    6 : {id: 'Truncated', result: '{{.Truncated }}' },
+    7 : {id: 'WordCoun', result: '{{.WordCount}}' },
+    8 : {id: 'Plain', result: {{.Plain | jsonify }} },
+    9 : {id: 'PlainWords', result: {{.PlainWords  | jsonify }}},
+    10 : {id: 'TableOfContents', result: '{{.TableOfContents }}'}
 },
 
+        'timeVariables': {
+            0 : {id: '.PublishDate', result: '{{.PublishDate }}'},
+            1 : {id: '.Date', result: '{{.Date }}'},
+            2 : {id: '.ExpiryDate', result: '{{.ExpiryDate }}'},
+            3 : {id: '.Lastmod', result: '{{.Lastmod }}'}
+        },
+        'links':{
+            0: {id: '.Aliases', result: '{{.Aliases }}'},
+            1: {id: '.Permalink', result: '{{.Permalink }}'},
+            2: {id: '.RelPermalink', result: '{{.RelPermalink }}' }
+        },
+        'pageVariables' : {
+            0: {id: '.Draft', result: {{.Draft }}},
+            1: {id: '.Hugo', result: '{{.Hugo }}'},
+            2: {id: '.Data', result: '{{.Data }}'},
+            3: {id: '.Title', result: '{{.Title }}'},
+            4: {id: '.LinkTitle', result: '{{.LinkTitle }}'},
+            5: {id: '.Next', result: '{{.Next }}'},
+            6: {id: '.Prev', result: '{{.Prev }}'},
+            7: {id: '.PrevInSection', result: '{{.PrevInSection }}'},
+            8: {id: '.Resources', result: '{{.Resources }}'},
+            9: {id: '.Weight', result: '{{.Weight }}'}
+        },
+        'pages': {
+            {{ range $index , $pages := .Pages }}
+             {{ $index }} : { id: 'file', result: '{{ .File }}'},
+            {{ end }}
+        },
+        'frontMatterVariables': {
+            {{ $length := len .Params}}      
+            {{ $counter := 0 }}      
+            {{ range $key, $value := .Params }}        
+                {{ if ne $key "PlainWords"}}
+                    {{ $counter }}:{ id: '{{$key}}', result: {{ $value | jsonify }}}{{ if ne $length $counter }},{{ end }}
+                {{ end }}
+                {{ $counter := add $counter 1 }}
+            {{ end }}
+        },
+        'Sites' : '{{.Sites }}',
 
-'link':{
-    'Aliases' : '{{.Aliases }}',
-    'Permalink' : '{{.Permalink }}',
-    '{{/*  Ref' : '{{.Ref }}     */}}',
-    'RelPermalink' : '{{.RelPermalink }}'
-},
+}">
 
-'variables': {    
-    'Kind' : '{{.Kind }}',
-    'Type' : '{{.Type }}',
-    'IsHome' : '{{.IsHome }}',
-    'IsNode' : '{{.IsNode }}',
-    'IsPage' : '{{.IsPage }}',
-    'IsSection' : '{{.IsSection }}'
-},
+<div class="fixed z-50 overflow-scroll top-0 right-0 w-96 h-full bg-white p-4 shadow-lg " 
+  x-show="side" 
+  @click.away="side = false"
+  >
+    <ul>
+        <li>
+            <div class="text-2xl bold py-2">pageVariables</div>
+            <ul>
+                <template x-for="pageVariable in Object.values(pageVariables)" :key="pageVariable">
+                <li class="flex flex-inline border-b mb-1">
+                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="pageVariable.id"></div>
+                    <div class="text-md pl-2" x-text="pageVariable.result"></div>
+                </li>
+                </template>
+            </ul>
+        </li>
+        <li>
+            <div class="text-2xl bold py-2">timeVariables</div>
+            <ul>
+                <template x-for="timeVariable in Object.values(timeVariables)" :key="timeVariable">
+                <li class="flex flex-inline border-b mb-1">
+                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="timeVariable.id"></div>
+                    <div class="text-md pl-2" x-text="timeVariable.result"></div>
+                </li>
+                </template>
+            </ul>
+        </li>
+        <li>
+            <div class="text-2xl bold py-2">links</div>
+            <ul>
+                <template x-for="link in Object.values(links)" :key="link">
+                <li class="flex flex-inline border-b mb-1">
+                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="link.id"></div>
+                    <div class="text-md pl-2" x-text="link.result"></div>
+                </li>
+                </template>
+            </ul>
+        </li>
+        <li>
+            <div class="text-2xl bold py-2">variables</div>
+            <ul>
+                <template x-for="variable in Object.values(variables)" :key="variable">
+                <li class="flex flex-inline border-b mb-1">
+                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="variable.id"></div>
+                    <div class="text-md pl-2" x-text="variable.result"></div>
+                </li>
+                </template>
+            </ul>
+        </li>
+        <li>
+            <div class="text-2xl bold py-2">translations</div>
+            <ul>
+                <template x-for="translation in Object.values(translations)" :key="translation">
+                <li class="flex flex-inline border-b mb-1">
+                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="translation.id"></div>
+                    <div class="text-md pl-2" x-text="translation.result"></div>
+                </li>
+                </template>
+            </ul>
+        </li>
+        <li>
+            <div class="text-2xl bold py-2">Site Variables</div>
+            <ul>
+                <template x-for="siteVariable in Object.values(siteVariables)" :key="siteVariable">
+                <li class="flex flex-inline border-b mb-1">
+                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="siteVariable.id"></div>
+                    <div class="text-md pl-2" x-text="siteVariable.result"></div>
+                </li>
+                </template>
+            </ul>
+        </li>
+        <li>
+            <div class="text-2xl bold py-2">File Variables</div>
+            <ul>
+                <template x-for="fileVariable in Object.values(fileVariables)" :key="fileVariable">
+                <li class="flex flex-inline border-b mb-1">
+                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="fileVariable.id"></div>
+                    <div class="text-md pl-2" x-text="fileVariable.result"></div>
+                </li>
+                </template>
+            </ul>
+        </li>
+        <li>
+            <div class="text-2xl bold py-2">Pages</div>
+            <ul>
+                <template x-for="page in Object.values(pages)" :key="page">
+                <li class="flex flex-inline border-b mb-1">
+                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="page.id"></div>
+                    <div class="text-md pl-2" x-text="page.result"></div>
+                </li>
+                </template>
+            </ul>
+        </li>
+        <li>
+            <div class="text-2xl bold py-2">SectionPagesVariables</div>
+            <ul>
+                <template x-for="sectionPagesVariable in Object.values(sectionPagesVariables)" :key="sectionPagesVariable">
+                <li class="flex flex-inline border-b mb-1">
+                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="sectionPagesVariable.id"></div>
+                    <div class="text-md pl-2" x-text="sectionPagesVariable.result"></div>
+                </li>
+                </template>
+            </ul>
+        </li>
+        <li>
+            <div class="text-2xl bold py-2">contents</div>
+            <ul>
+                <template x-for="content in Object.values(contents)" :key="content">
+                <li class="flex flex-inline border-b mb-1">
+                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="content.id"></div>
+                    <div class="text-md pl-2" x-text="content.result"></div>
+                </li>
+                </template>
+            </ul>
+        </li>
+    </ul>
+</div>
 
 
 
-'time': {
-    'PublishDate' : '{{.PublishDate }}',
-    'Date' : '{{.Date }}',
-    'ExpiryDate' : '{{.ExpiryDate }}',
-    'Lastmod' : '{{.Lastmod }}'
-},
+<div 
+class="bg-gray-100 fixed   w-80 bottom-0 right-0 z-50 h-24 flex justify-between px-4 py-8 shadow-lg mb-6 mr-4"
+x-show="top">
+    <button 
+    class="hover:bg-pink-800 hover:text-white px-4"
+    @click="side = true"
+    @click.away="side = false">File Variables</button>
+   <button 
+    class="hover:bg-pink-800 hover:text-white px-4"
+    @click="side = true"
+    @click.away="side = false">Pages</button>
 
-
-'translation':{
-    'IsTranslated' : '{{.IsTranslated }}',
-    'Language' : '{{.Language }}',
-    'Translations' : '{{.Translations }}',
-    'TranslationKey' : '{{.TranslationKey }}'
-},
-
-'OutputFormats: {
-    {{ range $key, $value := .OutputFormats }}
-    '{{$key}}' : '{{$value}}',
-    {{ end }}
-},
-
-    'AlternativeOutputFormats' :{
-    {{ range $key, $value := .AlternativeOutputFormats}}
-    '{{$key}}' : '{{$value}}',
-    {{ end }}
-},
-'RSSLink' : '{{.RSSLink }}',
-
-{{ if eq .Kind "term"}}
-'TermVariable' : {
-    'Data.Singula' : '{{.Data.Singular}}',
-    'Data.Plura' : '{{.Data.Plural}}',
-    'Data.Page' : '{{.Data.Pages}}',
-    'Data.Term' : '{{.Data.Terms}}',
-    'Data.Terms.Alphabetica' : '{{.Data.Terms.Alphabetical}}',
-    'Data.Terms.ByCoun' : '{{.Data.Terms.ByCount}}'
-},
-{{end }}
-
-'FIleVariable':{
-    'Dir' : '{{.Dir }}',
-    'File' : '{{.File }}',
-    'File.Path' : '{{.File.Path}}',
-    'File.LogicalName' : '{{.File.LogicalName}}',
-    'File.TranslationBaseName' : '{{.File.TranslationBaseName}}',
-    'File.ContentBaseName' : '{{.File.ContentBaseName}}',
-    'File.BaseFileName' : '{{.File.BaseFileName}}',
-    'File.Ext' : '{{.File.Ext}}',
-    'File.Lang' : '{{.File.Lang}}',
-    'File.Dir' : '{{.File.Dir}}',
-    'File.UniqueID' : '{{.File.UniqueID}}'
-},
-
-'SiteVariable': {
-    'Site' : '{{.Site }}',
-    'Sites' : '{{.Sites }}',
-    'Site.Pages' : '{{.Site.Pages}}',
-    'Site.RegularPages' : '{{.Site.RegularPages}}'
-},
-
-'SectionPagesVariable' : {}
-    'Pages' : '{{.Pages}}',
-    'RegularPage' : '{{.RegularPages}}',
-    'RegularPagesRecursive' : '{{.RegularPagesRecursive}}'
-},
-
-'Pages': {
-    {{ range .Pages }}
-       'directory': '{{ .Dir}}',
-        'file': '{{ .File}}',
-    {{ end }}
-},
-
-'frontMatterVariable': {
-    {{ range $key, $value := .Params}}
-    '{{$key}}' : '{{$value}}',
-    {{ end }}
-}
-
-    }">
-
-<div class="absolute z-50 inset-0" x-show="button=open">
-
-
-
+    <button 
+    class="hover:bg-gray-800 hover:text-white px-4 text-sm"
+    @click="top = false">close</button>
 </div>
 
 <button 
-class="absolute inset-0 "
-@click="button = open">
-open Variables</button>
+class=" fixed bottom-0 left-0 w-24 h-24 z-50 bg-yellow-500"
+@click="side = true"
+>open Variables</button>
 
 </div>
 
