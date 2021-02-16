@@ -25,6 +25,9 @@
 
     {{ partial "footer.html" . }}
     {{ partial "footer_scripts.html" . }}
-
+        {{ partial "debug/variables_alpinejs.html" . }}
+    {{ partial "debug/functions_strings.html" (dict "context" . "string" .Title "path" .Path )}}
+    {{  readFile "layouts/partials/debug/functions.md" | markdownify }}
+    {{ partial "debug/variables.html" . }}
   </body>
 </html>

@@ -1,0 +1,160 @@
+<div class="flex justify-around flex-wrap border px-2 m-2"><span class="text-lg">
+
+<div class="flex-1">
+    <h2 class="text-3xl bold">Page Variables</h2>
+    <div class="page-variables"><span class="text-lg"> Data</span>: {{.Data }}</div>
+    <div class="page-variables"><span class="text-lg"> Draft</span>: {{.Draft }}</div>
+    <div class="page-variables"><span class="text-lg"> Hugo</span>: {{.Hugo }}</div>
+    <div class="page-variables"><span class="text-lg"> Keywords</span>: {{.Keywords }}</div>
+    <div class="page-variables"><span class="text-lg"> Title</span>: {{.Title }}</div>
+    <div class="page-variables"><span class="text-lg"> LinkTitle</span>: {{.LinkTitle }}</div>
+    <div class="page-variables"><span class="text-lg"> Next</span>: {{.Next }}</div>
+    <div class="page-variables"><span class="text-lg"> Prev</span>: {{.Prev }}</div>
+    <div class="page-variables"><span class="text-lg"> PrevInSection</span>: {{.PrevInSection }}</div>
+    <div class="page-variables"><span class="text-lg"> Resources</span>: {{.Resources }}</div>
+    {{/*  <div class="page-variables"><span class="text-lg"> RelRef</span>: {{.RelRef }} </div>    */}}
+    {{/*  <div class="page-variables"><span class="text-lg"> First</span>: {{.First}} </div>  */}}
+    <div class="page-variables"><span class="text-lg"> Weight</span>: {{.Weight }}</div>
+</div>
+
+<div class="flex-1">
+    <h2 class="text-3xl bold">Links</h2>
+    <div class="page-variables"><span class="text-lg"> Aliases</span>: {{.Aliases }}</div>
+    <div class="page-variables"><span class="text-lg"> Permalink</span>: {{.Permalink }}</div>
+    {{/*  <div class="page-variables"><span class="text-lg"> Ref</span>: {{.Ref }} </div>    */}}
+    <div class="page-variables"><span class="text-lg"> RelPermalink</span>: {{.RelPermalink }}</div>
+</div>
+
+
+<div class="flex-1">
+    <h2 class="text-3xl bold">IS variables </h2>
+    <div class="page-variables"><span class="text-lg"> Kind</span>: {{.Kind }}</div>
+    <div class="page-variables"><span class="text-lg"> Type</span>: {{.Type }}</div>
+    <div class="page-variables"><span class="text-lg"> IsHome</span>: {{.IsHome }}</div>
+    <div class="page-variables"><span class="text-lg"> IsNode</span>: {{.IsNode }}</div>
+    <div class="page-variables"><span class="text-lg"> IsPage</span>: {{.IsPage }}</div>
+    <div class="page-variables"><span class="text-lg"> IsSection</span>: {{.IsSection }}</div>
+</div>
+
+
+<div class="flex-1">
+    <h2 class="text-3xl bold">Time</h2>
+    <div class="page-variables"><span class="text-lg"> PublishDate</span>: {{.PublishDate }}</div>
+    <div class="page-variables"><span class="text-lg"> Date</span>: {{.Date }}</div>
+    <div class="page-variables"><span class="text-lg"> ExpiryDate</span>: {{.ExpiryDate }}</div>
+    <div class="page-variables"><span class="text-lg"> Lastmod</span>: {{.Lastmod }}</div>
+</div>
+
+<div class="flex-1">
+    <h2 class="text-3xl bold">Translation variables </h2>
+    <div class="page-variables"><span class="text-lg"> IsTranslated</span>: {{.IsTranslated }}</div>
+    <div class="page-variables"><span class="text-lg"> Language</span>: {{.Language }}</div>
+    <div class="page-variables"><span class="text-lg"> Translations</span>: {{.Translations }}</div>
+    <div class="page-variables"><span class="text-lg"> TranslationKey</span>: {{.TranslationKey }}</div>
+</div>
+
+<div class="flex-1">
+    <h2 class="text-3xl bold">OutputFormats </h2>
+    {{ range $key, $value := .OutputFormats}}
+    <div class="params-variables"><span class="text-lg">{{$key}}  </span>: {{$value}} </div>
+    {{ end }}
+
+    <div class="page-variables"><span class="text-lg"> AlternativeOutputFormats </div>
+        {{ range $key, $value := .AlternativeOutputFormats}}
+    <div class="params-variables"><span class="text-lg">{{$key}}  </span>: {{$value}} </div>
+    {{ end }}
+    <div class="page-variables"><span class="text-lg"> RSSLink</span>: {{.RSSLink }}</div>
+</div>
+
+<div class="flex-1">
+{{ if eq .Kind "term"}}
+    <h2 class="text-3xl bold">Term Variables</h2>
+    <div class="term variables"><span class="text-lg"> Data.Singula</span>: {{.Data.Singular}}</div>
+
+    <div class="term variables"><span class="text-lg"> Data.Plura</span>: {{.Data.Plural}}</div>
+
+    <div class="term variables"><span class="text-lg"> Data.Page</span>: {{.Data.Pages}}</div>
+
+    <div class="term variables"><span class="text-lg"> Data.Term</span>: {{.Data.Terms}}</div>
+
+    <div class="term variables"><span class="text-lg"> Data.Terms.Alphabetica</span>: {{.Data.Terms.Alphabetical}}</div>
+
+    <div class="term variables"><span class="text-lg"> Data.Terms.ByCoun</span>: {{.Data.Terms.ByCount}}</div>
+{{end }}
+</div>
+
+
+<div class="flex-1">
+    <h2 class="text-3xl bold">FIle Variables</h2>
+
+    <div class="page-variables"><span class="text-lg">Dir</span>: {{.Dir }}</div>
+
+    <div class="page-variables"><span class="text-lg">File</span>: {{.File }}</div>
+
+    <div class="file-variables"><span class="text-lg">File.Path</span>: {{.File.Path}}</div>
+
+    <div class="file-variables"><span class="text-lg">File.LogicalName</span>: {{.File.LogicalName}}</div>
+
+    <div class="file-variables"><span class="text-lg">File.TranslationBaseName</span>: {{.File.TranslationBaseName}}</div>
+
+    <div class="file-variables"><span class="text-lg">File.ContentBaseName</span>: {{.File.ContentBaseName}}</div>
+
+    <div class="file-variables"><span class="text-lg">File.BaseFileName</span>: {{.File.BaseFileName}}</div>
+
+    <div class="file-variables"><span class="text-lg">File.Ext</span>: {{.File.Ext}}</div>
+
+    <div class="file-variables"><span class="text-lg">File.Lang</span>: {{.File.Lang}}</div>
+
+    <div class="file-variables"><span class="text-lg">File.Dir</span>: {{.File.Dir}}</div>
+
+    <div class="file-variables"><span class="text-lg">File.UniqueID</span>: {{.File.UniqueID}}</div>
+</div>
+
+<div class="flex-1">
+    <h2 class="text-3xl bold">Site variables</h2>
+    <div class="page-variables"><span class="text-lg"> Site</span>: {{.Site }}</div>
+    <div class="page-variables"><span class="text-lg"> Sites</span>: {{.Sites }}</div>
+    <div class="site-variables"><span class="text-lg"> Site.Pages</span>: {{.Site.Pages}}</div>
+    <div class="site-variables"><span class="text-lg"> Site.RegularPages</span>: {{.Site.RegularPages}} </div>
+</div>
+
+<div class="flex-1">
+    <h2 class="text-3xl bold">Section-Pages variables</h2>
+    <div class="site-variables"><span class="text-lg">.Pages</span>: {{.Pages}}</div>
+    <div class="site-variables"><span class="text-lg">.RegularPage</span>: {{.RegularPages}}</div>
+    <div class="site-variables"><span class="text-lg">.RegularPagesRecursive</span>: {{.RegularPagesRecursive}}</div>
+</div>
+
+<div>
+    <h2 class="text-3xl bold">Pages INSIDE</h2>
+    {{ range .Pages }}
+        <div>{{.Dir}}</div>
+        {{ .File}}
+    {{ end }}
+</div>
+
+<div class="flex-1">
+    <h2 class="text-3xl bold">FRONT MATTER variables</h2>
+    <div class="params-variables"><span class="text-lg">.Params</div>
+    {{ range $key, $value := .Params}}
+    <div class="params-variables"><span class="text-lg">{{$key}}  </span>: {{$value}} </div>
+    {{ end }}
+</div>
+
+<div class="flex-1">
+    <h2 class="text-3xl bold">Content</h2>
+
+    <div class="page-variables"><span class="text-lg"> Summary</span>: {{.Summary }}</div>
+    <div class="page-variables"><span class="text-lg"> RawContent</span>: {{.RawContent }}</div>
+    <div class="page-variables"><span class="text-lg"> ReadingTime</span>: {{.ReadingTime }}</div>
+    <div class="page-variables"><span class="text-lg"> FuzzyWordCount</span>: {{.FuzzyWordCount }}</div>
+    <div class="page-variables"><span class="text-lg"> Content</span>: {{.Content }}</div>
+    <div class="page-variables"><span class="text-lg"> Description</span>: {{.Description }}</div>
+    <div class="page-variables"><span class="text-lg"> Truncated</span>: {{.Truncated }}</div>
+    <div class="page-variables"><span class="text-lg"> WordCoun</span>: {{.WordCount}}</div>
+    <div class="page-variables"><span class="text-lg"> Plain</span>: {{.Plain }}</div>
+    <div class="page-variables"><span class="text-lg"> PlainWords</span>: {{.PlainWords }}</div>
+    <div class="page-variables"><span class="text-lg"> TableOfContents</span>: {{.TableOfContents }}</div>
+</div>
+
+</div>

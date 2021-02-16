@@ -1,0 +1,132 @@
+<div class="flex justify-around flex-wrap border px-2 m-2"
+    x-data="{
+'button': 'close',
+'pageVariable' : {
+    'Data' : '{{.Data }}',
+    'Draft' : '{{.Draft }}',
+    'Hugo' : '{{.Hugo }}',
+    'Keywords' : '{{.Keywords }}',
+    'Title' : '{{.Title }}',
+    'LinkTitle' : '{{.LinkTitle }}',
+    'Next' : '{{.Next }}',
+    'Prev' : '{{.Prev }}',
+    'PrevInSection' : '{{.PrevInSection }}',
+    'Resources' : '{{.Resources }}',
+    '{{/*  RelRef' : '{{.RelRef }} */}}',
+    '{{/*  First' : '{{.First}} */}}',
+    'Weight' : '{{.Weight }}'
+},
+
+
+'link':{
+    'Aliases' : '{{.Aliases }}',
+    'Permalink' : '{{.Permalink }}',
+    '{{/*  Ref' : '{{.Ref }}     */}}',
+    'RelPermalink' : '{{.RelPermalink }}'
+},
+
+'variables': {    
+    'Kind' : '{{.Kind }}',
+    'Type' : '{{.Type }}',
+    'IsHome' : '{{.IsHome }}',
+    'IsNode' : '{{.IsNode }}',
+    'IsPage' : '{{.IsPage }}',
+    'IsSection' : '{{.IsSection }}'
+},
+
+
+
+'time': {
+    'PublishDate' : '{{.PublishDate }}',
+    'Date' : '{{.Date }}',
+    'ExpiryDate' : '{{.ExpiryDate }}',
+    'Lastmod' : '{{.Lastmod }}'
+},
+
+
+'translation':{
+    'IsTranslated' : '{{.IsTranslated }}',
+    'Language' : '{{.Language }}',
+    'Translations' : '{{.Translations }}',
+    'TranslationKey' : '{{.TranslationKey }}'
+},
+
+'OutputFormats: {
+    {{ range $key, $value := .OutputFormats }}
+    '{{$key}}' : '{{$value}}',
+    {{ end }}
+},
+
+    'AlternativeOutputFormats' :{
+    {{ range $key, $value := .AlternativeOutputFormats}}
+    '{{$key}}' : '{{$value}}',
+    {{ end }}
+},
+'RSSLink' : '{{.RSSLink }}',
+
+{{ if eq .Kind "term"}}
+'TermVariable' : {
+    'Data.Singula' : '{{.Data.Singular}}',
+    'Data.Plura' : '{{.Data.Plural}}',
+    'Data.Page' : '{{.Data.Pages}}',
+    'Data.Term' : '{{.Data.Terms}}',
+    'Data.Terms.Alphabetica' : '{{.Data.Terms.Alphabetical}}',
+    'Data.Terms.ByCoun' : '{{.Data.Terms.ByCount}}'
+},
+{{end }}
+
+'FIleVariable':{
+    'Dir' : '{{.Dir }}',
+    'File' : '{{.File }}',
+    'File.Path' : '{{.File.Path}}',
+    'File.LogicalName' : '{{.File.LogicalName}}',
+    'File.TranslationBaseName' : '{{.File.TranslationBaseName}}',
+    'File.ContentBaseName' : '{{.File.ContentBaseName}}',
+    'File.BaseFileName' : '{{.File.BaseFileName}}',
+    'File.Ext' : '{{.File.Ext}}',
+    'File.Lang' : '{{.File.Lang}}',
+    'File.Dir' : '{{.File.Dir}}',
+    'File.UniqueID' : '{{.File.UniqueID}}'
+},
+
+'SiteVariable': {
+    'Site' : '{{.Site }}',
+    'Sites' : '{{.Sites }}',
+    'Site.Pages' : '{{.Site.Pages}}',
+    'Site.RegularPages' : '{{.Site.RegularPages}}'
+},
+
+'SectionPagesVariable' : {}
+    'Pages' : '{{.Pages}}',
+    'RegularPage' : '{{.RegularPages}}',
+    'RegularPagesRecursive' : '{{.RegularPagesRecursive}}'
+},
+
+'Pages': {
+    {{ range .Pages }}
+       'directory': '{{ .Dir}}',
+        'file': '{{ .File}}',
+    {{ end }}
+},
+
+'frontMatterVariable': {
+    {{ range $key, $value := .Params}}
+    '{{$key}}' : '{{$value}}',
+    {{ end }}
+}
+
+    }">
+
+<div class="absolute z-50 inset-0" x-show="button=open">
+
+
+
+</div>
+
+<button 
+class="absolute inset-0 "
+@click="button = open">
+open Variables</button>
+
+</div>
+
