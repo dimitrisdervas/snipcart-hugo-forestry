@@ -64,10 +64,12 @@
             1: {id: '.Permalink', result: '{{.Permalink }}'},
             2: {id: '.RelPermalink', result: '{{.RelPermalink }}' }
         },
+        
         'pageVariables' : {
-            0: {id: '.Draft', result: {{.Draft }}},
+        {{ if ne .Kind "taxonomy" }}
+            0: {id: '.Draft', result: {{.Draft }}'},
             1: {id: '.Hugo', result: '{{.Hugo }}'},
-            2: {id: '.Data', result: '{{.Data }}'},
+            2: {id: '.Data', result: '{{.Data }}},
             3: {id: '.Title', result: '{{.Title }}'},
             4: {id: '.LinkTitle', result: '{{.LinkTitle }}'},
             5: {id: '.Next', result: '{{.Next }}'},
@@ -75,12 +77,25 @@
             7: {id: '.PrevInSection', result: '{{.PrevInSection }}'},
             8: {id: '.Resources', result: '{{.Resources }}'},
             9: {id: '.Weight', result: '{{.Weight }}'}
+        {{ end }}
         },
+        
         'pages': {
             {{ range $index , $pages := .Pages }}
              {{ $index }} : { id: 'file', result: '{{ .File }}'},
             {{ end }}
         },
+        'termVariables' : {
+        {{ if eq .Kind "term"}}
+            0: {id: '.DataSingular', result: '{{.Data.Singular}}'},
+            1: {id: '.DataPlural', result: '{{.Data.Plural}}'},
+            2: {id: '.Data.Pages', result: '{{.Data.Pages}}'},
+            3: {id: '.Data.Terms', result: '{{.Data.Terms}}'},
+            4: {id: '.Data.Terms.Alphabetica', result: '{{.Data.Terms.Alphabetical}}'},
+            5: {id: '.Data.Terms.ByCount', result: '{{.Data.Terms.ByCount}}'}
+        {{end }}
+        },
+        
         'frontMatterVariables': {
             {{ $length := len .Params}}      
             {{ $counter := 0 }}      
@@ -91,7 +106,7 @@
                 {{ $counter := add $counter 1 }}
             {{ end }}
         },
-        'Sites' : '{{.Sites }}',
+        'Sites' : '{{.Sites }}'
 
 }">
 
@@ -99,7 +114,19 @@
   x-show="side" 
   @click.away="side = false"
   >
+  
     <ul>
+        <li>
+            <div class="text-2xl bold py-2">TermVariables</div>
+            <ul>
+                <template x-for="termVariable in Object.values(termVariables)" :key="termVariable">
+                <li class="flex flex-inline border-b mb-1">
+                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="termVariable.id"></div>
+                    <div class="text-md pl-2" x-text="termVariable.result"></div>
+                </li>
+                </template>
+            </ul>
+        </li>
         <li>
             <div class="text-2xl bold py-2">pageVariables</div>
             <ul>
