@@ -106,8 +106,19 @@
                 {{ $counter := add $counter 1 }}
             {{ end }}
         },
-        'Sites' : '{{.Sites }}'
+        'Sites' : '{{.Sites }}',
+        'RSSLink' : '{{.RSSLink }}',
+        'OutputFormats' : {
+            {{ range $key, $value := .OutputFormats }}
+            '{{$key}}' : '{{$value}}',
+            {{ end }}
+            },
 
+            'AlternativeOutputFormats' : {
+            {{ range $key, $value := .AlternativeOutputFormats}}
+            '{{$key}}' : '{{$value}}',
+            {{ end }}
+            },
 }">
 
 <div class="fixed z-50 overflow-scroll top-0 right-0 w-96 h-full bg-white p-4 shadow-lg " 
