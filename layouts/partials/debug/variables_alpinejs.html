@@ -69,7 +69,7 @@
         {{ if ne .Kind "taxonomy" }}
             0: {id: '.Draft', result: {{.Draft }}'},
             1: {id: '.Hugo', result: '{{.Hugo }}'},
-            2: {id: '.Data', result: '{{.Data }}},
+            2: {id: '.Data', result: '{{.Data }}'},
             3: {id: '.Title', result: '{{.Title }}'},
             4: {id: '.LinkTitle', result: '{{.LinkTitle }}'},
             5: {id: '.Next', result: '{{.Next }}'},
@@ -107,18 +107,8 @@
             {{ end }}
         },
         'Sites' : '{{.Sites }}',
-        'RSSLink' : '{{.RSSLink }}',
-        'OutputFormats' : {
-            {{ range $key, $value := .OutputFormats }}
-            '{{$key}}' : '{{$value}}',
-            {{ end }}
-            },
+          'RSSLink' : '{{.RSSLink }}',
 
-            'AlternativeOutputFormats' : {
-            {{ range $key, $value := .AlternativeOutputFormats}}
-            '{{$key}}' : '{{$value}}',
-            {{ end }}
-            },
 }">
 
 <div class="fixed z-50 overflow-scroll top-0 right-0 w-96 h-full bg-white p-4 shadow-lg " 

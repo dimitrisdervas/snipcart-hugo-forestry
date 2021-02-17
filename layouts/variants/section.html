@@ -1,4 +1,7 @@
+
 {{ define "main" }}
+{{/*  Must Have for debugging  */}}
+{{ .Scratch.Set "templatePath" "layouts/variants/section.html" }}
 
 {{if in .File.Dir .Params.handle}}
 {{/*  so that we show the product page or the list page  */}}

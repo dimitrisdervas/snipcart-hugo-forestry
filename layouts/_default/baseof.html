@@ -4,6 +4,7 @@
     {{ partial "head.html" . }}
 <body>
 
+{{ block "template" . }}{{ end }}
 
 <a style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;" href="#main-content"> Skip to main content </a>
 
@@ -25,8 +26,9 @@
 
     {{ partial "footer.html" . }}
     {{ partial "footer_scripts.html" . }}
-    {{ partial "debug/variables_alpinejs.html" . }}
-    {{ partial "debug/functions_strings.html" (dict "context" . "string" .Title "path" .Path )}}
-    {{ partial "debug/variables.html" . }}
+
+    {{ partial "debug/templates_debug" (dict "Which" .Kind "Type" .Type "Template" (.Scratch.Get "templatePath" )) }}
+    {{ partial "debug/range_pages.html" . }}
+    {{ partial "debug/functions_strings.html" . }}
   </body>
 </html>
