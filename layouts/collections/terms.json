@@ -1,0 +1,11 @@
+[
+{{ $length := len .Data.Pages}}
+
+{{ range $index, $CollectionProducts := .Data.Pages  }}
+{{$CollectionProducts.Permalink | path.Base }} : {
+    
+
+    }{{ if ne (add $index 1) $length }},{{ end }}
+{{ end }}
+
+]

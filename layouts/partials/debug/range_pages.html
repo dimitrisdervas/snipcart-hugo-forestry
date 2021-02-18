@@ -31,7 +31,7 @@
 </div>
 
 {{/*  YAMl  is Working */}}
-{{ if or (eq .Kind "section") (eq .Kind "page") (eq .Kind "term")}}
+{{ if eq .Kind "page"}}
 <div class="">
 {{ highlight (readFile .Filename) "bash" ""  }}
 </div>

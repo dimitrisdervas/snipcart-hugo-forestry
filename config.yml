@@ -37,11 +37,12 @@ outputFormats:
 outputs:
   home:
     - html
-    - rss
-    - json
   page:
     - html
   taxonomy:
+    - html
+    - json
+  terms:
     - html
     - json
   term:
@@ -66,5 +67,5 @@ related:
 # build:
 #   writeStats: true
 
-
+ignoreErrors : "error-remote-getjson"
  

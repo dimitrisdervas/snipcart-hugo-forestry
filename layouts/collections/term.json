@@ -1,16 +1,21 @@
 [
-
 {{ $length := len .Data.Pages}}
-
 {{ range $index, $CollectionProducts := .Data.Pages  }}
+
 {
-    "link" : {{$CollectionProducts.Permalink }}
-    "sku": {{$CollectionProducts.Params.variant_sku}}
-    "name" : {{$CollectionProducts.Params.title }}
-    "price" : {{$CollectionProducts.Params.variant_price }}
-    "products" : {{$CollectionProducts.Params.products }}
-    "image" : {{$CollectionProducts.Params.image_src }}
+        "id": "{{ $index }}",
+        "link" : {{$CollectionProducts.Permalink | jsonify }},
+        "sku" : {{$CollectionProducts.Params.variant_sku| jsonify }},
+        "name" : {{$CollectionProducts.Params.title | jsonify }},
+        "price" : {{$CollectionProducts.Params.variant_price | jsonify }},
+        "products" : {{$CollectionProducts.Params.products | jsonify }},
+        "image" : {{$CollectionProducts.Params.image_src | jsonify }}
     }{{ if ne (add $index 1) $length }},{{ end }}
+
+
 {{ end }}
 
 ]
+
+
+     
