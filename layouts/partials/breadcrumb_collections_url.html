@@ -13,10 +13,11 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
     ">
 
     <template x-for="product in Object.values(products)">
-        <div>
+        <div class="flex justify-items-stretch">
+            
                 <template x-if="previousProduct === parseInt(product.id)">
 
-                        <a class="flex flex-inline items-center " :href="product.link">
+                        <a class="flex flex-inline items-center justify-self-start" :href="product.link">
                             <svg class="w-4 h-4 mx-2" viewBox="0 0 16 12">
                             <path d="M3.617 5.016h11.669v1.5h-12.1L7.15 10.48l-1.06 1.06L.53 5.982 6.09.421l1.061 1.06-3.534 3.535z" fill-rule="nonzero"></path>
                             </svg>
@@ -28,7 +29,7 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
 
                 <template x-if="nextProduct === parseInt(product.id)">                
 
-                            <a class="flex flex-inline items-center " :href="product.link" >Next item
+                            <a class="flex flex-inline items-center justify-self-end" :href="product.link" >Next item
                             <svg class="w-4 h-4 mx-2" viewBox="0 0 16 12">
                             <path d="M12.199 6.946H.53v-1.5h12.1L8.664 1.481l1.06-1.06 5.562 5.56-5.561 5.56-1.06-1.06 3.534-3.535z" fill-rule="nonzero"></path>
                             </svg>
@@ -56,6 +57,9 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
                     previousProduct: previousProduct
                 }
             }
+
+        <!-- nextproductLink: products.find(x => x.id === currentProduct).link -->
+
       </script> 
 
 

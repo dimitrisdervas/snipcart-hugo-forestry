@@ -15,77 +15,7 @@
             10 : {id:'.File.Dir', result: '{{.File.Dir}}'},
             11 : {id:'.File.UniqueID', result: '{{.File.UniqueID}}'}
         },
-        'sectionPagesVariables' : {
-            0: {id:'.Pages', result:'{{.Pages}}'},
-            1: {id:'.RegularPage', result:'{{.RegularPages}}'},
-            2: {id:'.RegularPagesRecursive', result:'{{.RegularPagesRecursive}}'},
-        },
-        'siteVariables': {
-            0: {id: '.Site', result: '{{.Site }}'},
-            1: {id: '.SitePages', result: '{{.Site.Pages}}'},
-            2: {id: '.SiteRegularPages', result: '{{.Site.RegularPages}}'}
-        },
-        'translations' : {
-            0: {id: '.IsTranslated', result: '{{.IsTranslated }}'},
-            1: {id: '.Language', result: '{{.Language }}'},
-            2: {id: '.Translations', result: '{{.Translations }}'},
-            3: {id: '.TranslationKey', result: '{{.TranslationKey }}'}
-        },
-        'variables': {    
-            0: {id: '.Kind', result: '{{.Kind }}'},
-            1: {id: '.Type', result: '{{.Type }}'},
-            2: {id: '.IsHome', result: '{{.IsHome }}'},
-            3: {id: '.IsNode', result: '{{.IsNode }}'},
-            4: {id: '.IsPage', result: '{{.IsPage }}'},
-            5: {id: '.IsSection', result: '{{.IsSection }}' }
-        },
-        'contents': {
-    0 : {id: 'Summary', result: {{.Summary | jsonify }} },
-    1 : {id: 'RawContent', result: {{.RawContent | jsonify  }} },
-    2 : {id: 'ReadingTime', result: '{{.ReadingTime }}' },
-    3 : {id: 'FuzzyWordCount', result: '{{.FuzzyWordCount }}' },
-    4 : {id: 'Content', result: {{.Content | jsonify }} },
-    5 : {id: 'Description', result: {{.Description | jsonify }} },
-    6 : {id: 'Truncated', result: '{{.Truncated }}' },
-    7 : {id: 'WordCoun', result: '{{.WordCount}}' },
-    8 : {id: 'Plain', result: {{.Plain | jsonify }} },
-    9 : {id: 'PlainWords', result: {{.PlainWords  | jsonify }}},
-    10 : {id: 'TableOfContents', result: '{{.TableOfContents }}'}
-},
-
-        'timeVariables': {
-            0 : {id: '.PublishDate', result: '{{.PublishDate }}'},
-            1 : {id: '.Date', result: '{{.Date }}'},
-            2 : {id: '.ExpiryDate', result: '{{.ExpiryDate }}'},
-            3 : {id: '.Lastmod', result: '{{.Lastmod }}'}
-        },
-        'links':{
-            0: {id: '.Aliases', result: '{{.Aliases }}'},
-            1: {id: '.Permalink', result: '{{.Permalink }}'},
-            2: {id: '.RelPermalink', result: '{{.RelPermalink }}' }
-        },
-        
-        'pageVariables' : {
-        {{ if ne .Kind "taxonomy" }}
-            0: {id: '.Draft', result: {{.Draft }}'},
-            1: {id: '.Hugo', result: '{{.Hugo }}'},
-            2: {id: '.Data', result: '{{.Data }}'},
-            3: {id: '.Title', result: '{{.Title }}'},
-            4: {id: '.LinkTitle', result: '{{.LinkTitle }}'},
-            5: {id: '.Next', result: '{{.Next }}'},
-            6: {id: '.Prev', result: '{{.Prev }}'},
-            7: {id: '.PrevInSection', result: '{{.PrevInSection }}'},
-            8: {id: '.Resources', result: '{{.Resources }}'},
-            9: {id: '.Weight', result: '{{.Weight }}'}
-        {{ end }}
-        },
-        
-        'pages': {
-            {{ range $index , $pages := .Pages }}
-             {{ $index }} : { id: 'file', result: '{{ .File }}'},
-            {{ end }}
-        },
-        'termVariables' : {
+         'termVariables' : {
         {{ if eq .Kind "term"}}
             0: {id: '.DataSingular', result: '{{.Data.Singular}}'},
             1: {id: '.DataPlural', result: '{{.Data.Plural}}'},
@@ -95,7 +25,57 @@
             5: {id: '.Data.Terms.ByCount', result: '{{.Data.Terms.ByCount}}'}
         {{end }}
         },
-        
+        'links':{
+            0: {id: '.Aliases', result: '{{.Aliases }}'},
+            1: {id: '.Permalink', result: '{{.Permalink }}'},
+            2: {id: '.RelPermalink', result: '{{.RelPermalink }}' }
+        },
+                'timeVariables': {
+            0 : {id: '.PublishDate', result: '{{.PublishDate }}'},
+            1 : {id: '.Date', result: '{{.Date }}'},
+            2 : {id: '.ExpiryDate', result: '{{.ExpiryDate }}'},
+            3 : {id: '.Lastmod', result: '{{.Lastmod }}'}
+        },
+        'variables': {    
+            0: {id: '.Kind', result: '{{.Kind }}'},
+            1: {id: '.Type', result: '{{.Type }}'},
+            2: {id: '.IsHome', result: '{{.IsHome }}'},
+            3: {id: '.IsNode', result: '{{.IsNode }}'},
+            4: {id: '.IsPage', result: '{{.IsPage }}'},
+            5: {id: '.IsSection', result: '{{.IsSection }}' }
+        },
+        'pages': {
+            {{ range $index , $pages := .Pages }}
+             {{ $index }} : { id: 'file', result: '{{ .File }}'},
+            {{ end }}
+        },
+                'translations' : {
+            0: {id: '.IsTranslated', result: '{{.IsTranslated }}'},
+            1: {id: '.Language', result: '{{.Language }}'},
+            2: {id: '.Translations', result: '{{.Translations }}'},
+            3: {id: '.TranslationKey', result: '{{.TranslationKey }}'}
+        },
+                'sectionPagesVariables' : {
+            0: {id:'.Pages', result:'{{.Pages}}'},
+            1: {id:'.RegularPage', result:'{{.RegularPages}}'},
+            2: {id:'.RegularPagesRecursive', result:'{{.RegularPagesRecursive}}'},
+        },
+                'siteVariables': {
+            0: {id: '.Site', result: '{{.Site }}'},
+            1: {id: '.SitePages', result: '{{.Site.Pages}}'},
+            2: {id: '.SiteRegularPages', result: '{{.Site.RegularPages}}'}
+        },
+        'contents': {
+            0 : {id: 'Summary', result: {{.Summary | jsonify }} },
+            1 : {id: 'RawContent', result: {{.RawContent | jsonify  }} },
+            2 : {id: 'ReadingTime', result: '{{.ReadingTime }}' },
+            3 : {id: 'FuzzyWordCount', result: '{{.FuzzyWordCount }}' },
+            5 : {id: 'Description', result: {{.Description | jsonify }} },
+            6 : {id: 'Truncated', result: '{{.Truncated }}' },
+            7 : {id: 'WordCoun', result: '{{.WordCount}}' },
+            
+            10 : {id: 'TableOfContents', result: '{{.TableOfContents }}'}
+        },
         'frontMatterVariables': {
             {{ $length := len .Params}}      
             {{ $counter := 0 }}      
@@ -106,8 +86,11 @@
                 {{ $counter := add $counter 1 }}
             {{ end }}
         },
-        'Sites' : '{{.Sites }}',
-          'RSSLink' : '{{.RSSLink }}',
+        'pageVariables' : {
+        {{ if ne .Kind "taxonomy" }}
+         
+        {{ end }}
+        }
 
 }">
 
@@ -118,72 +101,84 @@
   
     <ul>
         <li>
-            <div class="text-2xl bold py-2">TermVariables</div>
+            <div class="text-2xl bold py-2">File Variables</div>
             <ul>
-                <template x-for="termVariable in Object.values(termVariables)" :key="termVariable">
+                <template x-for="fileVariable in Object.values(fileVariables)" :key="fileVariable">
                 <li class="flex flex-inline border-b mb-1">
-                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="termVariable.id"></div>
-                    <div class="text-md pl-2" x-text="termVariable.result"></div>
+                    <div class="flex items-center text-sm px-2 bg-gray-200 w-4/6 justify-right" x-text="fileVariable.id"></div>
+                    <div class="text-sm pl-2" x-text="fileVariable.result"></div>
                 </li>
                 </template>
             </ul>
         </li>
-        <li>
-            <div class="text-2xl bold py-2">pageVariables</div>
-            <ul>
-                <template x-for="pageVariable in Object.values(pageVariables)" :key="pageVariable">
-                <li class="flex flex-inline border-b mb-1">
-                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="pageVariable.id"></div>
-                    <div class="text-md pl-2" x-text="pageVariable.result"></div>
-                </li>
-                </template>
-            </ul>
-        </li>
-        <li>
-            <div class="text-2xl bold py-2">timeVariables</div>
-            <ul>
-                <template x-for="timeVariable in Object.values(timeVariables)" :key="timeVariable">
-                <li class="flex flex-inline border-b mb-1">
-                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="timeVariable.id"></div>
-                    <div class="text-md pl-2" x-text="timeVariable.result"></div>
-                </li>
-                </template>
-            </ul>
-        </li>
-        <li>
+                <li>
             <div class="text-2xl bold py-2">links</div>
             <ul>
                 <template x-for="link in Object.values(links)" :key="link">
                 <li class="flex flex-inline border-b mb-1">
-                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="link.id"></div>
-                    <div class="text-md pl-2" x-text="link.result"></div>
+                    <div class="flex items-center text-sm px-2 bg-gray-200 w-4/6 justify-right" x-text="link.id"></div>
+                    <div class="text-sm pl-2" x-text="link.result"></div>
                 </li>
                 </template>
             </ul>
         </li>
-        <li>
+         <li>
+            <div class="text-2xl bold py-2">timeVariables</div>
+            <ul>
+                <template x-for="timeVariable in Object.values(timeVariables)" :key="timeVariable">
+                <li class="flex flex-inline border-b mb-1">
+                    <div class="flex items-center text-sm px-2 bg-gray-200 w-4/6 justify-right" x-text="timeVariable.id"></div>
+                    <div class="text-sm pl-2" x-text="timeVariable.result"></div>
+                </li>
+                </template>
+            </ul>
+        </li>
+                <li>
             <div class="text-2xl bold py-2">variables</div>
             <ul>
                 <template x-for="variable in Object.values(variables)" :key="variable">
                 <li class="flex flex-inline border-b mb-1">
-                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="variable.id"></div>
-                    <div class="text-md pl-2" x-text="variable.result"></div>
+                    <div class="flex items-center text-sm px-2 bg-gray-200 w-4/6 justify-right" x-text="variable.id"></div>
+                    <div class="text-sm pl-2" x-text="variable.result"></div>
                 </li>
                 </template>
             </ul>
         </li>
+                <li>
+            <div class="text-2xl bold py-2">Pages</div>
+            <ul>
+                <template x-for="page in Object.values(pages)" :key="page">
+                <li class="flex flex-inline border-b mb-1">
+                    <div class="flex items-center text-sm px-2 bg-gray-200 w-4/6 justify-right" x-text="page.id"></div>
+                    <div class="text-sm pl-2" x-text="page.result"></div>
+                </li>
+                </template>
+            </ul>
+        </li>
+
         <li>
             <div class="text-2xl bold py-2">translations</div>
             <ul>
                 <template x-for="translation in Object.values(translations)" :key="translation">
                 <li class="flex flex-inline border-b mb-1">
-                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="translation.id"></div>
-                    <div class="text-md pl-2" x-text="translation.result"></div>
+                    <div class="flex items-center text-sm px-2 bg-gray-200 w-4/6 justify-right" x-text="translation.id"></div>
+                    <div class="text-sm pl-2" x-text="translation.result"></div>
                 </li>
                 </template>
             </ul>
         </li>
-        <li>
+              <li>
+            <div class="text-2xl bold py-2">SectionPagesVariables</div>
+            <ul>
+                <template x-for="sectionPagesVariable in Object.values(sectionPagesVariables)" :key="sectionPagesVariable">
+                <li class="flex flex-inline border-b mb-1">
+                    <div class="flex items-center text-sm px-2 bg-gray-200 w-4/6 justify-right" x-text="sectionPagesVariable.id"></div>
+                    <div class="text-sm pl-2" x-text="sectionPagesVariable.result"></div>
+                </li>
+                </template>
+            </ul>
+        </li>
+                <li>
             <div class="text-2xl bold py-2">Site Variables</div>
             <ul>
                 <template x-for="siteVariable in Object.values(siteVariables)" :key="siteVariable">
@@ -194,40 +189,7 @@
                 </template>
             </ul>
         </li>
-        <li>
-            <div class="text-2xl bold py-2">File Variables</div>
-            <ul>
-                <template x-for="fileVariable in Object.values(fileVariables)" :key="fileVariable">
-                <li class="flex flex-inline border-b mb-1">
-                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="fileVariable.id"></div>
-                    <div class="text-md pl-2" x-text="fileVariable.result"></div>
-                </li>
-                </template>
-            </ul>
-        </li>
-        <li>
-            <div class="text-2xl bold py-2">Pages</div>
-            <ul>
-                <template x-for="page in Object.values(pages)" :key="page">
-                <li class="flex flex-inline border-b mb-1">
-                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="page.id"></div>
-                    <div class="text-md pl-2" x-text="page.result"></div>
-                </li>
-                </template>
-            </ul>
-        </li>
-        <li>
-            <div class="text-2xl bold py-2">SectionPagesVariables</div>
-            <ul>
-                <template x-for="sectionPagesVariable in Object.values(sectionPagesVariables)" :key="sectionPagesVariable">
-                <li class="flex flex-inline border-b mb-1">
-                    <div class="flex items-center text-lg bold px-2 bg-gray-200 w-4/6 justify-right" x-text="sectionPagesVariable.id"></div>
-                    <div class="text-md pl-2" x-text="sectionPagesVariable.result"></div>
-                </li>
-                </template>
-            </ul>
-        </li>
-        <li>
+                <li>
             <div class="text-2xl bold py-2">contents</div>
             <ul>
                 <template x-for="content in Object.values(contents)" :key="content">
