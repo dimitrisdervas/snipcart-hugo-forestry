@@ -2,9 +2,9 @@
     breadcrumbs from http://hugocodex.org/add-ons/breadcrumbs/ 
 https://codewithhugo.com/alpinejs-x-data-watch-url/
 
--->
+--> 
 <nav 
-    class="text-black text-sm font-robmono" 
+    class="text-black text-sm font-robmono w-full flex justify-between py-4 " 
     aria-label="previous and next products"    
     x-data="alpineInstance()"
     x-init="fetch('http://localhost:1313/gr/collections/drinks/index.json')
@@ -16,19 +16,20 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
         <div>
                 <template x-if="previousProduct === parseInt(product.id)">
 
-                        <a :href="product.link">Previous item
-                            <svg class="w-4 h-4" viewBox="0 0 16 12">
+                        <a class="flex flex-inline items-center " :href="product.link">
+                            <svg class="w-4 h-4 mx-2" viewBox="0 0 16 12">
                             <path d="M3.617 5.016h11.669v1.5h-12.1L7.15 10.48l-1.06 1.06L.53 5.982 6.09.421l1.061 1.06-3.534 3.535z" fill-rule="nonzero"></path>
                             </svg>
+                            Previous item
                         </a>
                 </template>
                 
              
 
-                    <template x-if="nextProduct === parseInt(product.id)">                
+                <template x-if="nextProduct === parseInt(product.id)">                
 
-                            <a :href="product.link" >Next item
-                            <svg class="w-4 h-4" viewBox="0 0 16 12">
+                            <a class="flex flex-inline items-center " :href="product.link" >Next item
+                            <svg class="w-4 h-4 mx-2" viewBox="0 0 16 12">
                             <path d="M12.199 6.946H.53v-1.5h12.1L8.664 1.481l1.06-1.06 5.562 5.56-5.561 5.56-1.06-1.06 3.534-3.535z" fill-rule="nonzero"></path>
                             </svg>
                             </a>
@@ -46,6 +47,7 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
             const currentProduct = index;
             const nextProduct = index + 1;
             const previousProduct = index - 1;
+
                 return {
                     products: {},
                     collectionTerm: queryTerm,

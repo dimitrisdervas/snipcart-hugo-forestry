@@ -1,10 +1,11 @@
 <div class="hidden md:block w-full">
 
     {{/* Message */}}
+    {{ if .IsHome }}
     <div class="header--language w-full bg-black py-2 flex justify-center px-8">
         <div class="text-white w-full text-center ">{{ i18n "header-message" }}</div>
     </div>
-
+    {{ end }}
     <div class="header--top-row flex px-10  pb-8 justify-between items-center">
 
     {{/* LOGO */}}

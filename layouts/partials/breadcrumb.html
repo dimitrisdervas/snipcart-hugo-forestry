@@ -1,11 +1,8 @@
-<div id="breadcrumbs" class="px-8 py-8 hidden lg:flex justify-between border-b items-center">
+<div id="breadcrumbs" 
+    class="px-10 py-4 hidden lg:flex flex-wrap border-b items-center">
 
 {{ partial "breadcrumb_variants_url.html" . }}
 
 {{ partial "breadcrumb_collections_url.html" . }}
-
-{{ if in .Dir "collections" }}
-    {{ partial "taxonomy_select.html" . }}
-{{ end }}
 
 </div>
