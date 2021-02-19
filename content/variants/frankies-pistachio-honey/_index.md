@@ -80,14 +80,9 @@
  
  
 
- 
- 
-
 handle: "frankies-pistachio-honey"
 title: "Frankie's Pistachio Honey"
-body_html: >
-    This ice cream recipe captures all the flavours of the Middle East beautifully and is a sweet and delicately floral dessert with notes of orange blossom. Smooth Italian ice cream with pistachios.
-vendor: ""
+vendor: "frankie's"
 type: ""
 tags: ""
 published: ""
@@ -129,71 +124,9 @@ google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Food","products_list"]
+collection_lv2: []
 gallery: []
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
 
 ---
 
+This ice cream recipe captures all the flavours of the Middle East beautifully and is a sweet and delicately floral dessert with notes of orange blossom. Smooth Italian ice cream with pistachios.

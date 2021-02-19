@@ -50,14 +50,9 @@
  
  
 
- 
- 
-
 handle: "colonial-brewing-co-draught"
 title: "Colonial Brewing Co. Draught"
-body_html: >
-    It's draught, but not as you know it. Think German noble hops and malt. Think perfect carbonation. Think refreshing on a scorching summer day and tasty on a cold winter one. Our mission was simple: to create a beer that's perfect for those times when you feel like a beer - because the sun is shining, it’s the weekend, or because it’s day time, or night time.
-vendor: ""
+vendor: "Colonial"
 type: ""
 tags: ""
 published: ""
@@ -99,101 +94,104 @@ google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Drinks","products_list"]
+collection_lv2: []
 gallery: []
 
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
-
 ---
+
+It's draught, but not as you know it. Think German noble hops and malt. Think perfect carbonation. Think refreshing on a scorching summer day and tasty on a cold winter one. Our mission was simple: to create a beer that's perfect for those times when you feel like a beer - because the sun is shining, it’s the weekend, or because it’s day time, or night time.
+
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
 

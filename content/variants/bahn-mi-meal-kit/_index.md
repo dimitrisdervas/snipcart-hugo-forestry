@@ -98,13 +98,8 @@
  
  
 
- 
- 
-
 handle: "bahn-mi-meal-kit"
 title: "Bahn Mi Meal Kit"
-body_html: >
-    
 vendor: ""
 type: ""
 tags: ""
@@ -126,7 +121,7 @@ variant_compare_at_price: ""
 variant_requires_shipping: ""
 variant_taxable: ""
 variant_barcode: ""
-image_src: "bahn-mi-meal-kit.jpg"
+image_src: "bahn-mi-meal-kit_01.jpg"
 image_alt_text: ""
 gift_card: ""
 seo_title: ""
@@ -146,54 +141,57 @@ google_shopping_custom_label: ""
 google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
-collections: ["Food","products_list"]
+collections: ["Food", "products_list"]
+collection_lv2: []
 gallery: []
 
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
-
 ---
+
+
+
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
 

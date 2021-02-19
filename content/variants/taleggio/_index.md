@@ -125,13 +125,8 @@
  
  
 
- 
- 
-
 handle: "taleggio"
 title: "Taleggio"
-body_html: >
-    Taleggio is a semi-soft Italian cheese with a strong aroma, but a mild, fruity and slightly tangy flavour.
 vendor: ""
 type: ""
 tags: ""
@@ -174,26 +169,9 @@ google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Food","products_list"]
+collection_lv2: []
 gallery: []
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
 
 ---
 
+Taleggio is a semi-soft Italian cheese with a strong aroma, but a mild, fruity and slightly tangy flavour.

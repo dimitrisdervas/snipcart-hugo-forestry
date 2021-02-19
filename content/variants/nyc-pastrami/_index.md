@@ -107,17 +107,8 @@
  
  
 
- 
- 
-
 handle: "nyc-pastrami"
 title: "NYC Pastrami"
-body_html: >
-    Hot smoked, cured beef brisket. Made to our traditional recipe. We use only the fattiest cuts of Brisket to produce this exceptional product. Brined, smoked, steamed.
-
-    Comes vacuum packed, fully cooked.
-
-    Ingredients: beef brisket, coriander, black pepper, salt, sugar, pickling spice (contains mustard), garlic.
 vendor: ""
 type: ""
 tags: ""
@@ -160,44 +151,13 @@ google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Food","products_list"]
+collection_lv2: []
 gallery: []
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
 
 ---
 
+Hot smoked, cured beef brisket. Made to our traditional recipe. We use only the fattiest cuts of Brisket to produce this exceptional product. Brined, smoked, steamed.
+
+Comes vacuum packed, fully cooked.
+
+Ingredients: beef brisket, coriander, black pepper, salt, sugar, pickling spice (contains mustard), garlic.

@@ -140,14 +140,9 @@
  
  
 
- 
- 
-
 handle: "old-reserve-n6-balsamic-vineg"
 title: "Old Reserve N°6 Balsamic Vinegar"
-body_html: >
-    Notes of ripe fruit, walnuts and chestnuts. Harmonious and full bodied, generous and delicious. Ideal accompaniment for oysters, scallops, duck breast and risotto. Approved by top chefs. Perfect for dressings, marinades and sauces.
-vendor: ""
+vendor: "Old reserve"
 type: ""
 tags: ""
 published: ""
@@ -189,11 +184,14 @@ google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Oils and VInegars","products_list"]
+collection_lv2: []
 gallery: []
 
- 
- 
-
-
 ---
+
+Notes of ripe fruit, walnuts and chestnuts. Harmonious and full bodied, generous and delicious. Ideal accompaniment for oysters, scallops, duck breast and risotto. Approved by top chefs. Perfect for dressings, marinades and sauces.
+
+
+ 
+ 
 

@@ -116,15 +116,8 @@
  
  
 
- 
- 
-
 handle: "salt-beef"
 title: "Salt Beef"
-body_html: >
-    Slowly cured, steamed salt beef. Fully cooked, vacuum packed.
-
-Ingredients: beef brisket, salt, sugar, preservative (E250), pickling spice (mustard), garlic
 vendor: ""
 type: ""
 tags: ""
@@ -167,35 +160,11 @@ google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Food","products_list"]
+collection_lv2: [Beef]
 gallery: []
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
 
 ---
 
+Slowly cured, steamed salt beef. Fully cooked, vacuum packed.
+
+Ingredients: beef brisket, salt, sugar, preservative (E250), pickling spice (mustard), garlic

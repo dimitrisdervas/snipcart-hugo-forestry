@@ -134,13 +134,8 @@
  
  
 
- 
- 
-
 handle: "double-brie"
 title: "Double Brie"
-body_html: >
-    This locally made creamy Brie is one of Australia’s most enjoyed cheese styles, available in both large wheels and smaller rounds. It’s named after the most northern tip of King Island, home of the famous Cape Wickham lighthouse since 1861.
 vendor: ""
 type: ""
 tags: ""
@@ -183,17 +178,9 @@ google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Food","products_list"]
+collection_lv2: [Cheese]
 gallery: []
-
- 
- 
-
- 
- 
-
- 
- 
-
 
 ---
 
+This locally made creamy Brie is one of Australia’s most enjoyed cheese styles, available in both large wheels and smaller rounds. It’s named after the most northern tip of King Island, home of the famous Cape Wickham lighthouse since 1861.

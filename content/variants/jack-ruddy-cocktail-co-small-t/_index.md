@@ -56,15 +56,9 @@
  
  
 
- 
- 
-
 handle: "jack-ruddy-cocktail-co-small-t"
 title: "Jack Ruddy Cocktail Co Small Tonic"
-body_html: >
-    This Small Batch Tonic is essentially a quinine concentrate. It's designed to pair with your favorite Gin or Vodka, and is then stretched with soda water to make a bright, light, refreshing highball.
-    With a backbone of quinine, culled from the Cinchona Tree, we've added a delicate mix of botanicals, and then sweetened it with real cane sugar; the final product is a complex mixture that introduces a fine bitterness to any cocktail, and a great pairing with the botanicals of the finest Gins in the world.
-vendor: ""
+vendor: "Jack Ruddy"
 type: ""
 tags: ""
 published: ""
@@ -85,7 +79,7 @@ variant_compare_at_price: ""
 variant_requires_shipping: ""
 variant_taxable: ""
 variant_barcode: ""
-image_src: "jack-ruddy-cocktail-co-small-t.jpg"
+image_src: "jack-ruddy-cocktail-co-small-t_01.jpg"
 image_alt_text: ""
 gift_card: ""
 seo_title: ""
@@ -106,95 +100,100 @@ google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Drinks","products_list"]
+collection_lv2: []
 gallery: []
 
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
-
 ---
+
+This Small Batch Tonic is essentially a quinine concentrate. It's designed to pair with your favorite Gin or Vodka, and is then stretched with soda water to make a bright, light, refreshing highball.
+
+With a backbone of quinine, culled from the Cinchona Tree, we've added a delicate mix of botanicals, and then sweetened it with real cane sugar; the final product is a complex mixture that introduces a fine bitterness to any cocktail, and a great pairing with the botanicals of the finest Gins in the world.
+
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
 

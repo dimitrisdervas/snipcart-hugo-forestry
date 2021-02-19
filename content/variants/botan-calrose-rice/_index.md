@@ -74,14 +74,9 @@
  
  
 
- 
- 
-
 handle: "botan-calrose-rice"
 title: "Botan Calrose Rice"
-body_html: >
-    Easily create side and main dishes with Botan Calrose Rice in a 5 lb bag. It's grown in the rich fertile soil and crystal clear water of California. This calrose medium grain rice is easy to prepare by just adding water and boiling. It's made using updated milling technology for a tender texture and delicate flavor that makes it versatile for numerous cuisines. This extra fancy rice is specially selected to ensure the finest quality.
-vendor: ""
+vendor: "Botan"
 type: ""
 tags: ""
 published: ""
@@ -123,77 +118,9 @@ google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Food","products_list"]
+collection_lv2: [Rice]
 gallery: []
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
 
 ---
 
+Easily create side and main dishes with Botan Calrose Rice in a 5 lb bag. It's grown in the rich fertile soil and crystal clear water of California. This calrose medium grain rice is easy to prepare by just adding water and boiling. It's made using updated milling technology for a tender texture and delicate flavor that makes it versatile for numerous cuisines. This extra fancy rice is specially selected to ensure the finest quality.

@@ -68,14 +68,9 @@
  
  
 
- 
- 
-
 handle: "balilla-x-sollana-spanish-rice"
 title: "Balilla X Sollana Spanish Rice"
-body_html: >
-    Spanish rice cultivated with Pyrenean water. This rice variety is typical of Cinca Medio (Huesca). This rice cooks well and is perfect for risottos and delicious paella.
-vendor: ""
+vendor: "Balila"
 type: ""
 tags: ""
 published: ""
@@ -117,83 +112,9 @@ google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Food","products_list"]
+collection_lv2: [Rice]
 gallery: []
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
 
 ---
 
+Spanish rice cultivated with Pyrenean water. This rice variety is typical of Cinca Medio (Huesca). This rice cooks well and is perfect for risottos and delicious paella.

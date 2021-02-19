@@ -89,18 +89,9 @@
  
  
 
- 
- 
-
 handle: "kaukasis-the-cookbook"
 title: "Kaukasis: The Cookbook"
-body_html: >
-    "A sensitive, personal journey expressed through the beauty of food - just wonderful" - Jamie Oliver
-
-    "Olia Hercules is a storyteller-foodwriter, and a wholly original voice in the kitchen - there's not a recipe of hers I don't want to cook immediately" - Nigella Lawson
-
-    From the winner of the Observer's Rising Star Award and Fortnum & Mason Debut Food Book Award 2016 comes a celebration of the food and flavours of the Caucasus - bridging Europe and Asia and incorporating Georgia, Azerbaijan, Armenia, Iran, Russia and Turkey. Olia Hercules introduces us to more than 100 recipes for vibrant, earthy, unexpected dishes from across the region such as Plum fruit leather, Chestnut plov with pumpkin crust, Quince stuffed with lamb & carmalised shallots, Vine leaf dolma, Village breakfast, Khachapouri, Armenian "cognac" profiteroles and Red basil sherbet.
-vendor: ""
+vendor: "Cookbooks"
 type: ""
 tags: ""
 published: ""
@@ -121,7 +112,7 @@ variant_compare_at_price: ""
 variant_requires_shipping: ""
 variant_taxable: ""
 variant_barcode: ""
-image_src: "kaukasis-the-cookbook.jpg"
+image_src: "kaukasis-the-cookbook_01.jpg"
 image_alt_text: ""
 gift_card: ""
 seo_title: ""
@@ -142,71 +133,13 @@ google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Books","products_list"]
+collection_lv2: [Cookbook]
 gallery: []
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
 
 ---
 
-With great recipes for meats, sauces and rubs mixed with ideas for pickles, slaws, puddings and cocktails, plus features on meats, equipment and methods, the Pitt Cue Co. Cookbook is your guide to enjoying the best hot, smoky, sticky, spicy grub all year round.
+"A sensitive, personal journey expressed through the beauty of food - just wonderful" - Jamie Oliver
 
-From Pitt Cue's legendary Pickle backs and bourbon cocktails, to their acclaimed Pulled pork shoulder; Burnt ends mash; Smoked ox cheek toasts with pickled walnuts; Lamb rib with molasses mop and onion salad; Chipotle & confit garlic slaw; Crispy pickled shiitake mushrooms; Toffee apple grunt; Sticky bourbon & cola pudding and so much more, it's all irresistibly delicious food to savour and share.
+"Olia Hercules is a storyteller-foodwriter, and a wholly original voice in the kitchen - there's not a recipe of hers I don't want to cook immediately" - Nigella Lawson
 
- 
-
- 
-
- 
+From the winner of the Observer's Rising Star Award and Fortnum & Mason Debut Food Book Award 2016 comes a celebration of the food and flavours of the Caucasus - bridging Europe and Asia and incorporating Georgia, Azerbaijan, Armenia, Iran, Russia and Turkey. Olia Hercules introduces us to more than 100 recipes for vibrant, earthy, unexpected dishes from across the region such as Plum fruit leather, Chestnut plov with pumpkin crust, Quince stuffed with lamb & carmalised shallots, Vine leaf dolma, Village breakfast, Khachapouri, Armenian "cognac" profiteroles and Red basil sherbet.

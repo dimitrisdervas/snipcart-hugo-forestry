@@ -92,16 +92,9 @@
  
  
 
- 
- 
-
 handle: "pitt-cue-co-cookbook"
 title: "Pitt Cue Co. Cookbook"
-body_html: >
-    With great recipes for meats, sauces and rubs mixed with ideas for pickles, slaws, puddings and cocktails, plus features on meats, equipment and methods, the Pitt Cue Co. Cookbook is your guide to enjoying the best hot, smoky, sticky, spicy grub all year round.
-
-    From Pitt Cue's legendary Pickle backs and bourbon cocktails, to their acclaimed Pulled pork shoulder; Burnt ends mash; Smoked ox cheek toasts with pickled walnuts; Lamb rib with molasses mop and onion salad; Chipotle & confit garlic slaw; Crispy pickled shiitake mushrooms; Toffee apple grunt; Sticky bourbon & cola pudding and so much more, it's all irresistibly delicious food to savour and share.
-vendor: ""
+vendor: "Cookbooks"
 type: ""
 tags: ""
 published: ""
@@ -122,7 +115,7 @@ variant_compare_at_price: ""
 variant_requires_shipping: ""
 variant_taxable: ""
 variant_barcode: ""
-image_src: "pitt-cue-co-cookbook.jpg"
+image_src: "pitt-cue-co-cookbook_01.jpg"
 image_alt_text: ""
 gift_card: ""
 seo_title: ""
@@ -143,60 +136,11 @@ google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Books","products_list"]
+collection_lv2: [Cookbook]
 gallery: []
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
 
 ---
 
-Enter the world of breddos Tacos and discover the ultimate edible plates with this inspired, innovative taco cookbook. The brainchild of Nud Dudhia and Chris Whitney, the undisputed kings of street food, offer over 75 recipes for tacos and condiments. Their awesome dishes include Barbacoa beef cheeks, Yucatán chicken with mango habanero sauce, Green chorizo & duck egg, Baja fish tacos and Octopus 'al pastor' with roasted pineapple. The Cookbook is guaranteed to excite even the most discerning of tastebuds whilst revolutionising what it takes to make truly epic tacos.
+With great recipes for meats, sauces and rubs mixed with ideas for pickles, slaws, puddings and cocktails, plus features on meats, equipment and methods, the Pitt Cue Co. Cookbook is your guide to enjoying the best hot, smoky, sticky, spicy grub all year round.
+
+From Pitt Cue's legendary Pickle backs and bourbon cocktails, to their acclaimed Pulled pork shoulder; Burnt ends mash; Smoked ox cheek toasts with pickled walnuts; Lamb rib with molasses mop and onion salad; Chipotle & confit garlic slaw; Crispy pickled shiitake mushrooms; Toffee apple grunt; Sticky bourbon & cola pudding and so much more, it's all irresistibly delicious food to savour and share.
