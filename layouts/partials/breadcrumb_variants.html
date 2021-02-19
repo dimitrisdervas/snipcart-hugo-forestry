@@ -1,9 +1,9 @@
 <!-- https://tailwindcomponents.com/component/breadcrumbs-1 & breadcrumbs from http://hugocodex.org/add-ons/breadcrumbs/ -->
   <nav class="text-black text-sm font-robmono w-full py-4" aria-label="Breadcrumb">
     <ol class="list-none p-0 inline-flex">
-      <li class="flex items-center">
+        <li class="flex items-center">
         <a href="/">{{ i18n "home" }}</a>
-      </li>
+         </li>
       {{ range $index , $breadcumblinks := split .RelPermalink "/"  }}
         {{ $loop := len . }}
         {{ if gt $loop 0 }}

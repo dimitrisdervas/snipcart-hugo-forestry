@@ -1,0 +1,65 @@
+{{ range .Pages }}
+    {{ range .GetTerms "collection_lv2s" }}
+        {{ if ne .Title "Products List"}}
+            {{ $.Scratch.Add "links" (slice (.RelPermalink) ) }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+<div 
+class="flex justify-center items-center"
+x-data="{
+    open: false,
+    category: 'All',
+    filters : {
+    {{ range $index, $uniqlinks := uniq ($.Scratch.Get "links")}}
+    {{ $lastUrlElement := index (last 1 (split (delimit (split . "/") "," "") ",")) 0 }}
+        {{$index}}: {
+            title: '{{ with $.Site.GetPage $lastUrlElement }}{{ .Title }}{{ end }}',
+            link: '{{.}}'
+        },
+    {{ end  }}
+        all: {
+            title: 'ALL',
+            link: '{{.RelPermalink}}'
+        },
+    }
+}">
+
+<!-- Dropdown -->
+    <div  class="relative">
+        <div class="flex flex-inline justify-center items-center">
+            <span>Sort by Tags | </span>
+            <a 
+                x-on:click="open = true" 
+                class="block overflow-hidden focus:outline-none ml-2  border px-6 py-2"
+                x-text="category">
+                <span>ALL</span>    
+                <svg class="icon--root icon--chevron-up" viewBox="0 0 10 6">
+                <path d="M5 1.942l-3.53 3.53-.707-.707 3.53-3.53L5 .528l4.237 4.237-.707.707L5 1.942z" fill-rule="nonzero"></path>
+                </svg>
+
+                <svg class="icon--root icon--chevron-down" viewBox="0 0 10 6">
+                <path d="M5 4.058L8.53.528l.707.707-3.53 3.53L5 5.472.763 1.235 1.47.528 5 4.058z" fill-rule="nonzero"></path>
+                </svg>
+            </a>
+        </div>
+        <!-- Dropdown Body -->
+        <div x-show.transition="open" x-on:click.away="open = false" 
+        class="absolute right-0 w-40 mt-2 py-2 bg-white border rounded shadow-xl">   
+
+            <template x-for="filter in Object.values(filters)" :key="filter">
+            <a :href="filter.link" 
+                x-text="filter.title"
+                @click="category = filter.title"
+                class="transition-colors duration-200 block px-4 py-2 text-normal text-gray-900 rounded hover:bg-purple-500 hover:text-white" 
+                > </a>
+            </template>
+        </div>
+    <!-- // Dropdown Body -->
+    </div>
+<!-- // Dropdown -->
+</div>
+
+
+
