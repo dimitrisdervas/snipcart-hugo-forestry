@@ -6,57 +6,19 @@
 
 <div class="swiper-wrapper">
 
-{{ range (where .Site.Pages "Section" "variants" )}}
 
-{{ if eq .Params.promotions "fiveplusone" }}
+{{ range $index := .Params.products }}
 
-{{ range first 1 .Pages }}
+{{ $product := printf "/variants/%s/" $index }}
+
+{{ with $.Site.GetPage $product }}
 
 <div class="swiper-slide  flex-col flex" >
     <a 
     class=" p-4 "
     href="{{ "products/" | relLangURL }}{{.Params.products }}">
 
-{{ if .Resources }}
-        {{ $image := string .Params.image }}
-        {{ $original := .Resources.GetMatch $image }}
-        {{ $image295w := $original.Resize "295x" }}
-        {{ $image394w := $original.Resize "394x" }}
-        {{ $image590w := $original.Resize "590x" }}
-        {{ $image700w := $original.Resize "700x" }}
-        {{ $image800w := $original.Resize "800x" }}
-        {{ $image1000w := $original.Resize "1000x" }}
-        {{ $image1200w := $original.Resize "1200x" }}
-        {{ $image1500w := $original.Resize "1500x" }}
-        {{ $image1800w := $original.Resize "1800x" }}
-        {{ $image2400w := $original.Resize "2400x" }}
 
-
-
-        <img
-        class=" lazyload h-30"
-            alt="title"
-            data-sizes="auto"
-            data-srcset="        
-                {{ $image295w.RelPermalink }} 295w,
-                {{ $image394w.RelPermalink }} 394w,
-                {{ $image590w.RelPermalink }} 590w,
-                {{ $image700w.RelPermalink }} 700w,
-                {{ $image800w.RelPermalink }} 800w,
-                {{ $image1000w.RelPermalink }} 1000w,
-                {{ $image1200w.RelPermalink }} 1200w,
-                {{ $image1500w.RelPermalink }} 1500w,
-                {{ $image1800w.RelPermalink }} 1800w,
-                {{ $image2400w.RelPermalink }} 2400w,
-
-            "
-            data-src="{{ $image700w.RelPermalink }}"
-            />
-    <!-- noscript pattern -->
-        <noscript>
-            <img src="{{ $image700w.RelPermalink }}" />
-        </noscript>
-    {{ end }}
       
     </a>
 
@@ -66,7 +28,6 @@
 </div>
 
 {{ end}}
-{{ end }}
 {{ end }}
 
 
