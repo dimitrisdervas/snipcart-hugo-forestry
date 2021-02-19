@@ -1,0 +1,34 @@
+{{ $stringPlainpath := ".Path"}}
+<div class="w-full">    
+<p class="flex flex-col">
+    <a class="w-full text-pink-800 " href="https://gohugo.io/functions/path.base/"> path.Base</a>
+    <p class="hidden">Base returns the last element of a path.</p>
+    <div class="bg-gray-100 text-xs py-2 px-2">{{  path.Base .   }} </div>
+    </p>
+<p class="flex flex-col">
+    <a class="w-full text-pink-800 " href="https://gohugo.io/functions/path.dir/"> path.Dir</a>
+    <p class="hidden">Dir returns all but the last element of a path.</p>
+    <div class="bg-gray-100 text-xs py-2 px-2">{{ path.Dir . }} </div>
+    </p>
+<p class="flex flex-col">
+    <a class="w-full text-pink-800 " href="https://gohugo.io/functions/path.ext/"> path.Ext</a>
+    <p class="hidden">Ext returns the file name extension of a path.</p>
+    <div class="bg-gray-100 text-xs py-2 px-2">{{  .  | path.Ext }} </div>
+    </p>
+<p class="flex flex-col">
+    <a class="w-full text-pink-800 " href="https://gohugo.io/functions/path.join/"> path.Join</a>
+    <p class="hidden">Join path elements into a single path.</p>
+    <div class="bg-gray-100 text-xs py-2 px-2">{{ path.Join .  . }} </div>
+    </p>
+<p class="flex flex-col">
+    <a class="w-full text-pink-800 " href="https://gohugo.io/functions/path.split/">
+    path.Split</a>
+    <p class="hidden">Split path immediately following the final slash.</p>
+    <div class="bg-gray-100 text-xs py-2 px-2 flex flex-col">
+            <span>$dirFile := path.Split . : </span><span class="bg-white p-1">{{  $dirFile := path.Split .  }}</span>
+            <span>$dirFile print  : </span><span class="bg-white p-1">{{ $dirFile    }}</span>
+            <span>$dirFile.Dir : </span><span class="bg-white p-1">{{ $dirFile.Dir}}</span>
+            <span>$dirFile.File : </span><span class="bg-white p-1">{{ $dirFile.File }}</span>
+        </div>
+    </p>
+</div>

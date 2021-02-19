@@ -8,6 +8,7 @@ taxonomies:
     collection: collections
     product: products
     collection_lv2: collection_lv2s
+    blogtag: blogtags
 languages:
     gr:
         title: Παντοπωλείο

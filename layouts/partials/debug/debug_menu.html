@@ -1,0 +1,32 @@
+<div x-data="{
+    button: false,
+    side: false
+    }">
+
+{{/*  BUTTON   */}}
+<button 
+class=" fixed bottom-0 left-0 w-24 h-24 z-50 bg-yellow-500"
+@click="button = true"
+>open Variables</button>
+
+{{/*  MENU OPEN  */}}
+<div 
+class="bg-gray-100 fixed   w-80 bottom-0 right-0 z-50 h-24 flex justify-between px-4 py-8 shadow-lg mb-6 mr-4"
+x-show="top">
+    <button 
+    class="hover:bg-pink-800 hover:text-white px-4"
+    @click="side = true"
+    @click.away="side = false">File Variables</button>
+   <button 
+    class="hover:bg-pink-800 hover:text-white px-4"
+    @click="side = true"
+    @click.away="side = false">Pages</button>
+
+    <button 
+    class="hover:bg-gray-800 hover:text-white px-4 text-sm"
+    @click="top = false">close</button>
+</div>
+
+ {{ partial "debug/range_pages.html" . }}
+
+</div>

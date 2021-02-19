@@ -27,10 +27,8 @@
     {{ partial "footer.html" . }}
     {{ partial "footer_scripts.html" . }}
 
-    {{ partial "debug/templates_debug" (dict "Which" .Kind "Type" .Type "Template" (.Scratch.Get "templatePath" )) }}
-    {{ partial "debug/functions_strings.html" . }}
-    {{ partial "debug/range_pages.html" . }}
-    {{ partial "debug/variables_alpinejs.html" . }}
+    
+    {{ partial "debug/debug_menu.html" . }}
 
   </body>
 </html>

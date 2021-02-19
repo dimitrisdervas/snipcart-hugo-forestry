@@ -3,7 +3,7 @@ title: "Ice cream biscuit roundup: Our verdict"
 image: "icerem_866x.jpg"
 date: "OCTOBER 17, 2018"
 author: "Troop Themes"
-tags: "Food"
+blogtags: "Food"
 ---
 
 Ice cream biscuit roundup: Our verdict

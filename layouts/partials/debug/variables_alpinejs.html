@@ -15,12 +15,12 @@
             10 : {id:'.File.Dir', result: '{{.File.Dir}}'},
             11 : {id:'.File.UniqueID', result: '{{.File.UniqueID}}'}
         },
-         'termVariables' : {
+        'termVariables' : {
         {{ if eq .Kind "term"}}
             0: {id: '.DataSingular', result: '{{.Data.Singular}}'},
             1: {id: '.DataPlural', result: '{{.Data.Plural}}'},
             2: {id: '.Data.Pages', result: '{{.Data.Pages}}'},
-            3: {id: '.Data.Terms', result: '{{.Data.Terms}}'},
+            3: {id: '.Data.Terms', result: '{{.Data.Terms }}'},
             4: {id: '.Data.Terms.Alphabetica', result: '{{.Data.Terms.Alphabetical}}'},
             5: {id: '.Data.Terms.ByCount', result: '{{.Data.Terms.ByCount}}'}
         {{end }}
@@ -30,7 +30,7 @@
             1: {id: '.Permalink', result: '{{.Permalink }}'},
             2: {id: '.RelPermalink', result: '{{.RelPermalink }}' }
         },
-                'timeVariables': {
+        'timeVariables': {
             0 : {id: '.PublishDate', result: '{{.PublishDate }}'},
             1 : {id: '.Date', result: '{{.Date }}'},
             2 : {id: '.ExpiryDate', result: '{{.ExpiryDate }}'},
@@ -49,18 +49,18 @@
              {{ $index }} : { id: 'file', result: '{{ .File }}'},
             {{ end }}
         },
-                'translations' : {
+        'translations' : {
             0: {id: '.IsTranslated', result: '{{.IsTranslated }}'},
             1: {id: '.Language', result: '{{.Language }}'},
             2: {id: '.Translations', result: '{{.Translations }}'},
             3: {id: '.TranslationKey', result: '{{.TranslationKey }}'}
         },
-                'sectionPagesVariables' : {
+        'sectionPagesVariables' : {
             0: {id:'.Pages', result:'{{.Pages}}'},
             1: {id:'.RegularPage', result:'{{.RegularPages}}'},
             2: {id:'.RegularPagesRecursive', result:'{{.RegularPagesRecursive}}'},
         },
-                'siteVariables': {
+        'siteVariables': {
             0: {id: '.Site', result: '{{.Site }}'},
             1: {id: '.SitePages', result: '{{.Site.Pages}}'},
             2: {id: '.SiteRegularPages', result: '{{.Site.RegularPages}}'}

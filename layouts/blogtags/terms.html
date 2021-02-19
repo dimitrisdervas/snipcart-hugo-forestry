@@ -1,10 +1,11 @@
 {{ define "main"}}
 <div class="mx-auto max-w-screen-xl mb-8 px-16 grid grid-cols-2 gap-8 grid-flow-row">
-{{ $.Scratch.Add "categories" slice }}
-{{ range .Pages }}
-{{ $.Scratch.Add "categories"  .Params.blogtags }}
-{{ end }}
-{{ $.Scratch.Get "categories" | uniq }}
+<ul>
+    {{ range .Data.Terms.Alphabetical }}
+            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+    {{ end }}
+</ul>
+
     {{ range .Data.Pages}}
         <div class="flex flex-col">
                         {{ $image := string .Params.image }}

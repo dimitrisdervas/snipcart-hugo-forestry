@@ -1,38 +1,20 @@
-
-
 {{/*  LAYOUT Structure   */}}
 {{ range (readDir "layouts") }}
-{{ .Name }}
+    {{ .Name }}
 {{ end }}
 
-<div class="flex flex-col border p-4 ">
-   <div class="flex items-center border-b"><div class="bg-gray-100 p-2 border-b">Current Page Path: </div><div class="p-2">{{ .Path }}</div></div>
-    {{ range .Pages }}
-    <div class="py-2 border-b" >
-        <a href="{{ .Permalink }}">{{ .Title}} / {{ . }} </a>
-    </div>
-    {{ end }}
-</div>
 
+ {{ partial "debug/variables_partials/Taxonomies_variables.html" . }}
 
-<div class="flex flex-col">
-    <div class="flex"><h2 class="w-48">ALL TAxonomomies</h2><div class="flex-1">Current Page Taxonomies </div></div>
-    {{ range $index , $taxonomies := $.Site.Taxonomies }}
-        {{ $pageCollections := $index }}
-        <div class=" flex " >
-        <a class="bg-gray-100 px-2 py-2 w-48" href="{{ $index | relLangURL }}" target="_blank" >{{ $index}} </a>
-        {{ range $index, $params:=$.Params }}
-            {{ if eq $index $pageCollections }}
-            <div class="bg-gray-100 px-2 py-2 flex-1"> yes / {{ . }} / {{ len . }}</div>
-            {{ end }}
-        {{ end }}
-        </div>
-    {{ end }}
-</div>
-
-{{/*  YAMl  is Working */}}
 {{ if eq .Kind "page"}}
-<div class="">
-{{ highlight (readFile .Filename) "bash" ""  }}
-</div>
+    {{ partial "debug/variables_partials/Page_variables.html" . }}
 {{ end }}
+
+
+{{ if eq .Kind "section"}}
+    {{ partial "debug/variables_partials/Section_variables.html" . }}
+{{ end }}
+
+{{ partial "debug/functions_strings.html" . }}
+
+{{ partial "debug/templates_debug" (dict "Which" .Kind "Type" .Type "Template" (.Scratch.Get "templatePath" )) }}
