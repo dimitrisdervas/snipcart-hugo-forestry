@@ -6,7 +6,7 @@
  
 
 handle: "eden-brewers-adam-eve-cider"
-title: ""
+title: "Eden  Brewers Adam Eve Cider"
 vendor: ""
 type: ""
 tags: "beers"
