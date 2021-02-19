@@ -81,7 +81,7 @@
                 class="rounded-sm px-6 py-6 bg-gray-100
                 {{ if .IsHome }}bg-opacity-95 {{ end }}
                 w-full absolute left-0"
-                style="top: 23vh">
+                style="{{if .IsHome }}top: 23vh{{else}}top: 19vh{{end}}">
         <div class="rounded-sm px-3 py-1 flex ">
             <div class="flex flex-col border-r border-black pr-20" >
                 {{ partial "menu_render.html" (dict "menu" .Site.Menus.featured "currentPage" . ) }}
