@@ -1,0 +1,66 @@
+{{/*  Options block  */}}
+{{ $numberVariants := .numberVariants }}
+<div class="flex flex-col">
+    {{ if gt $numberVariants 1 }}
+    <div class="selection mb-4">
+
+        {{/*  OPTIONS  */}}
+        <div class="flex justify-start flex-wrap">
+        {{ with .context.Params.option1_name }}
+       <div class="w-full font-robmono uppercase text-sm py-4"> {{.}}</div>
+        {{ end}}
+        {{ range .context.Pages  }}   
+            <button 
+            class=" mr-4
+            border-2 border-gray-200 
+            text-gray-800  text-sm uppercase
+            flex items-center px-4 py-3 my-2 justify-center
+            hover:border-gray-800 hover:text-gray-800 
+            @click:selected"
+            type="radio"             
+            x-on:click="
+            id = '{{.Params.variant_sku}}',
+            url = '{{ .Path  }}'
+            price = '{{.Params.variant_price}}',
+            title= '{{ .Params.handle}}',
+            {{ partial "resources_image_resize.html" (dict "context" . "ImagesResources" $.ImagesResources ) }}
+            option= '{{ .Params.option1_name }}'
+            value='{{.Params.option1_value}}',
+            stock='{{.Params.variant_inventory_qty}}' 
+            ">          
+
+            {{ partial "options_icons.html" . }}
+
+            {{ .Params.option1_value }}{{ with .Params.option2_value }} / {{ . }}{{ end }}
+            </button>
+        {{ end }}
+        </div>
+
+    </div>
+    {{ end}}
+
+
+
+
+{{ partial "products_snipcart_button.html" . }}
+
+</div>
+{{/*  end options block  */}}
+
+{{/*  {{ range .context.Pages }}
+    {{ $optionimage := .Params.option1_value | urlize }}
+    <div>
+        <img
+        alt="title"
+        data-sizes="auto"
+        srcset="        
+    
+        "
+        data-src="{{ $optionimage }}_image700w "
+        class="" />
+        <!-- noscript pattern -->
+        <noscript>
+        <img src="{{ $optionimage }}_image700w" />
+        </noscript>
+    </div>
+{{ end }}  */}}

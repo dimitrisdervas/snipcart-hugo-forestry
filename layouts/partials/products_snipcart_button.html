@@ -1,0 +1,18 @@
+{{/*  Snipcart button  */}}
+<div x-text="stock" 
+x-show="stock === 'out of stock' " 
+class="border-2 border-gray-300 text-gray-300 w-full py-2 uppercase text-md text-center">
+</div>
+
+<button x-show="stock != 'out of stock' "
+class="snipcart-add-item border-2 border-black w-full py-2 uppercase text-md"
+x-bind:data-item-url="url"
+x-bind:data-item-name="title"
+x-bind:data-item-id="id"
+x-bind:data-item-quantity = "quantity"
+x-bind:data-item-image="image700w"
+x-bind:data-item-price="price"
+x-bind:data-item-description="description"
+>
+Add to cart
+</button>
