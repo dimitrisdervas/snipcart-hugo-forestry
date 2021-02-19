@@ -3,8 +3,8 @@
 {{ $pathtertm := index $path 3 }}
 <h2 class="w-full text-center text-2xl bold pt-8 pb-12">{{ .Title }}</h2>
 <div class="container mx-auto grid grid-cols-4 grid-flow-row gap-8 mb-8">
-{{ range $index , $terms := .Data.Pages }}
-    {{ if eq .Kind "section"}}
+{{ range $index , $terms := (where .Data.Pages "Kind" "section") }}
+
     {{ if in .Params.collections "products_list" }}
     {{ $link := .Permalink }}
     {{ $title := .Title }}
@@ -56,7 +56,7 @@
             </a>
         </div>
         {{ end }}
-{{ end }}       
+    
 {{ end }}
 </div>
 {{ end }}
