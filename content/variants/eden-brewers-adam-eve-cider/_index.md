@@ -48,8 +48,8 @@ google_shopping_custom_label: ""
 google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
-collections: [Drinks products_list]
-collection_lv2: [Speciality]
+collections: ["Drinks","products_list"]
+collection_lv2: ["Speciality"]
 gallery: []
 
 ---
