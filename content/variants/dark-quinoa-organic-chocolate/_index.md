@@ -63,7 +63,7 @@ google_shopping_custom_label: ""
 google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
-collections: ["Sweets"]
+collections: ["Sweets","Chips"]
 collection_lv2s: ["Speciality","Chocolates"]
 gallery: []
 

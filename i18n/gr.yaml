@@ -1,8 +1,12 @@
 ---
+- id: "home"
+  translation: "Αρχική"
 - id: "addtocart"
   translation: "Προσθήκη"
 - id: "home"
   translation: "Αρχική"
+- id: "blog"
+  translation: "Άρθρα"
 - id: "collections"
   translation: "Συλλογές"
 - id: "fontpage_collections"
