@@ -22,7 +22,7 @@
             id = '{{.Params.variant_sku}}',
             url = '{{ .Path  }}'
             price = '{{.Params.variant_price}}',
-            title= '{{ .Params.handle}}',
+            title= '{{ .Params.handle }}',
             {{ partial "resources_image_resize.html" (dict "context" . "ImagesResources" $.ImagesResources ) }}
             option= '{{ .Params.option1_name }}'
             value='{{.Params.option1_value}}',
@@ -64,3 +64,4 @@
         </noscript>
     </div>
 {{ end }}  */}}
+

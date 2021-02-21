@@ -55,7 +55,7 @@ gift_card: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Sweets","products_list"]
-gallery: []
+gallery: ["salted-butter-caramels_01.jpg","salted-butter-caramels_02.jpg"]
 
 ---
 

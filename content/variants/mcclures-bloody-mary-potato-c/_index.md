@@ -64,7 +64,7 @@
 
 handle: "mcclures-bloody-mary-potato-c"
 title: "McClure's Bloody Mary Potato chips"
-vendor: ""
+vendor: "McClure's"
 type: ""
 tags: ""
 published: ""

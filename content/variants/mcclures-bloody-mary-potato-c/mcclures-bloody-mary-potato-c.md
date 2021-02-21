@@ -71,7 +71,7 @@ gift_card: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Chips","products_list"]
-gallery: []
+gallery: ["mcclures-bloody-mary-potato-c_01.jpg","mcclures-bloody-mary-potato-c_02.jpg"]
 
 ---
 
@@ -80,95 +80,3 @@ Garlic Bloody Mary Kettle Chips gives the taste and sensation as if you were dri
 These bright red Bloody Mary-spiked chips will knock your socks off...and make you reach for another pickle back.
 
 Made by McClure's (pickle makers extraordinaire, and producers of the Bloody Mary mix that redefined Bloody Mary mix), they're thick-cut and kettle-cooked, making them perfectly crisp and crunchy. A liberal seasoning of tomato, garlic, and paprika gives them their zingy, tangy, spicy taste. These personal sized bags are just right, and you're definitely not going to want to share.
-
- 
-
-products: "mcclures-bloody-mary-potato-c"
-handle: "mcclures-bloody-mary-potato-c"
-title: ""
-vendor: ""
-type: ""
-tags: ""
-published: ""
-option1_name: ""
-option1_value: ""
-option2_name: ""
-option2_value: ""
-option3_name: ""
-option3_value: ""
-variant_sku: "sku_020"
-variant_grams: ""
-variant_inventory_tracker: ""
-variant_inventory_qty: ""
-variant_inventory_policy: ""
-variant_fulfillment_service: ""
-variant_price: ""
-variant_compare_at_price: ""
-variant_requires_shipping: ""
-variant_taxable: ""
-variant_barcode: ""
-image_src: "mcclures-bloody-mary-potato-c_01.jpg"
-image_alt_text: ""
-gift_card: ""
-variant_image: ""
-variant_weight_unit: ""
-collections: []
-gallery: []
-
----
-
-
-
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
