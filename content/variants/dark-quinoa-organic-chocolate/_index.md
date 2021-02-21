@@ -64,7 +64,7 @@ google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Sweets"]
-collection_lv2: ["Speciality","Chocolates"]
+collection_lv2s: ["Speciality","Chocolates"]
 gallery: []
 
 ---

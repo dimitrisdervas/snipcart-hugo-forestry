@@ -42,8 +42,8 @@ image_alt_text: ""
 gift_card: ""
 variant_image: ""
 variant_weight_unit: ""
-collections: [Sweets]
-gallery: [Speciality,Chocolates]
+collections: ["Sweets"]
+collection_lv2s: ["Speciality","Chocolates"]
 
 ---
 
