@@ -10,12 +10,12 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
     aria-label="previous and next products"    
     x-data="alpineInstance()"
     x-init="
+    index = parseInt(new URLSearchParams(location.search).get('index'),10);
     queryTerm = new URLSearchParams(location.search).get('q');
     url = 'http://localhost:1313/gr/collections/' + queryTerm + '/index.json';
     fetch(url)
-                      .then(response => response.json())
-                      .then(data => products = data);
-                      console.log(url);
+        .then(response => response.json())
+        .then(data => products = data);
     ">
 
     <template x-for="product in Object.values(products)">
@@ -48,8 +48,8 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
 </div>
 
 
-      <script>
-          function alpineInstance() {
+    <script>
+        function alpineInstance() {
             const queryTerm = new URLSearchParams(location.search).get('q');
             let index = parseInt(new URLSearchParams(location.search).get('index'),10);
             const currentProduct = index;
@@ -57,17 +57,12 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
             const previousProduct = index - 1;
                 return {
                     products: {},
-                    collectionTerm: queryTerm,
-                    currentProduct: currentProduct,
                     nextProduct: nextProduct,
                     previousProduct: previousProduct
                 }
-
             }
 
-        <!-- nextproductLink: products.find(x => x.id === currentProduct).link -->
-
-      </script> 
+</script> 
 
 
 </nav>
