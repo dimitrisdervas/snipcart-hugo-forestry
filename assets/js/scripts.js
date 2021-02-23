@@ -18,10 +18,9 @@ import "lazysizes/plugins/parent-fit/ls.parent-fit";
             slidesPerView: 1,
             spaceBetween: 10,
             loop: 'true',
-            navigation: {
-                nextEl: '.productspromoted-next',
-                prevEl: '.productspromoted-prev',
-            },
+            pagination: {
+                el: '.swiper-pagination'
+              },
             breakpoints: {
                 320: {
                 slidesPerView: 1,
