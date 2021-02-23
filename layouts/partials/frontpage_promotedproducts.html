@@ -9,25 +9,25 @@
 
 {{ range $index := .Params.products }}
 
-{{ $product := printf "/variants/%s/" $index }}
+{{ $product := path.Join "/variants" $index }}
 
-{{ with $.Site.GetPage $product }}
+    {{ with $.Site.GetPage $product }}
 
-<div class="swiper-slide  flex-col flex" >
-    <a 
-    class=" p-4 "
-    href="{{ "products/" | relLangURL }}{{.Params.products }}">
+    <div class="swiper-slide  flex-col flex" >
+        <a 
+        class=" p-4 "
+        href="{{ "products/" | relLangURL }}{{.Params.products }}">
 
 
-      
-    </a>
+        
+        </a>
 
-<div class="text-center text-back">{{ .Params.name }}</div>
-<div class="text-center text-back">{{ .Params.price }}</div>
+    <div class="text-center text-back">{{ .Params.title }}</div>
+    <div class="text-center text-back">{{ .Params.variant_price }}</div>
 
-</div>
+    </div>
 
-{{ end}}
+    {{ end}}
 {{ end }}
 
 

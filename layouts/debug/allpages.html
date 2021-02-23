@@ -1,113 +1,190 @@
 {{ define "main"}}
 <h1>{{ .Title }}</h1>
-<div class="container w-full">
-<div class=" flex flex-wrap justify-around">
-
-    SHoW me all Sections
-    {{ range .Site.Sections }}
-        <div>{{ . }}{{ .Pages }}
-
-            {{ range .Pages }}
-            {{ . }}    <a href="{{ .Permalink }}">link</a>
-            {{ end }}
-        </div>
-    {{ end }}
-    {{ range .Site.Pages }}
-    <div class="flex-1 border px-2 m-2">
-        {{.Kind}}
-<div class="page-variables"> AlternativeOutputFormats : {{.AlternativeOutputFormats }}</div>
-<div class="page-variables"> Aliases : {{.Aliases }}</div>
-<div class="page-variables"> Content : {{.Content }}</div>
-<div class="page-variables"> Data : {{.Data }}</div>
-<div class="page-variables"> Date : {{.Date }}</div>
-<div class="page-variables"> Description : {{.Description }}</div>
-<div class="page-variables"> Dir : {{.Dir }}</div>
-<div class="page-variables"> Draft : {{.Draft }}</div>
-<div class="page-variables"> ExpiryDate : {{.ExpiryDate }}</div>
-<div class="page-variables"> File : {{.File }}</div>
-<div class="page-variables"> FuzzyWordCount : {{.FuzzyWordCount }}</div>
-<div class="page-variables"> Hugo : {{.Hugo }}</div>
-<div class="page-variables"> IsHome : {{.IsHome }}</div>
-<div class="page-variables"> IsNode : {{.IsNode }}</div>
-<div class="page-variables"> IsPage : {{.IsPage }}</div>
-<div class="page-variables"> IsSection : {{.IsSection }}</div>
-<div class="page-variables"> IsTranslated : {{.IsTranslated }}</div>
-<div class="page-variables"> Keywords : {{.Keywords }}</div>
-<div class="page-variables"> Kind : {{.Kind }}</div>
-<div class="page-variables"> Language : {{.Language }}</div>
-<div class="page-variables"> Lastmod : {{.Lastmod }}</div>
-<div class="page-variables"> LinkTitle : {{.LinkTitle }}</div>
-<div class="page-variables"> Next : {{.Next }}</div>
-<div class="page-variables"> OutputFormats : {{.OutputFormats }}</div>
-<div class="page-variables"> Pages : {{.Pages }}</div>
-<div class="page-variables"> Permalink : {{.Permalink }}</div>
-<div class="page-variables"> Plain : {{.Plain }}</div>
-<div class="page-variables"> PlainWords : {{.PlainWords }}</div>
-<div class="page-variables"> Prev : {{.Prev }}</div>
-<div class="page-variables"> PrevInSection : {{.PrevInSection }}</div>
-<div class="page-variables"> PublishDate : {{.PublishDate }}</div>
-<div class="page-variables"> RSSLink : {{.RSSLink }}</div>
-<div class="page-variables"> RawContent : {{.RawContent }}</div>
-<div class="page-variables"> ReadingTime : {{.ReadingTime }}</div>
-<div class="page-variables"> Resources : {{.Resources }}</div>
- {{/*  <div class="page-variables"> Ref : Ref </div>    */}}
-<div class="page-variables"> RelPermalink : {{.RelPermalink }}</div>
- {{/*  <div class="page-variables"> RelRef : RelRef </div>    */}}
-<div class="page-variables"> Site : {{.Site }}</div>
-<div class="page-variables"> Sites : {{.Sites }}</div>
-<div class="page-variables"> Sites: {{.Sites}}</div>
-{{/*  <div class="page-variables"> First : First </div>  */}}
-<div class="page-variables"> Summary : {{.Summary }}</div>
-<div class="page-variables"> TableOfContents : {{.TableOfContents }}</div>
-<div class="page-variables"> Title : {{.Title }}</div>
-<div class="page-variables"> Translations : {{.Translations }}</div>
-<div class="page-variables"> TranslationKey : {{.TranslationKey }}</div>
-<div class="page-variables"> Truncated : {{.Truncated }}</div>
-<div class="page-variables"> Type : {{.Type }}</div>
-<div class="page-variables"> Weight : {{.Weight }}</div>
-<div class="page-variables"> WordCount: {{.WordCount}}</div>
-
-
-{{ if eq .Kind "term"}}
-<h2>Term Variables</h2>
-<div class="term variables"> Data.Singular: {{.Data.Singular}}</div>
-
-<div class="term variables"> Data.Plural: {{.Data.Plural}}</div>
-
-<div class="term variables"> Data.Pages: {{.Data.Pages}}</div>
-
-<div class="term variables"> Data.Terms: {{.Data.Terms}}</div>
-
-<div class="term variables"> Data.Terms.Alphabetical: {{.Data.Terms.Alphabetical}}</div>
-
-<div class="term variables"> Data.Terms.ByCount: {{.Data.Terms.ByCount}}</div>
-{{else }}
-{{end }}
-    <h2><a href="{{ .Permalink }} ">{{ .Title }} {{ .Params.name }} {{ .Params.brand }}</a> </h2>
-    <h3>permalink: {{ .Permalink }} </h3>
-
-<h2>FIle Variables</h2>
-<div class="file-variables">{{.File.Path}}</div>
-
-<div class="file-variables">{{.File.LogicalName}}</div>
-
-<div class="file-variables">{{.File.TranslationBaseName}}</div>
-
-<div class="file-variables">{{.File.ContentBaseName}}</div>
-
-<div class="file-variables">{{.File.BaseFileName}}</div>
-
-<div class="file-variables">{{.File.Ext}}</div>
-
-<div class="file-variables">{{.File.Lang}}</div>
-
-<div class="file-variables">{{.File.Dir}}</div>
-
-<div class="file-variables">{{.File.UniqueID}}</div>
-
-    {{ .Params }}
+<div class="p-2 border">
+    <h2>Hugo</h2>
+<div class="page-variables text-sm"> Hugo : {{.Hugo.Environment }}</div>
+<div class="page-variables text-sm"> Hugo : {{.Hugo.Version }}</div>
 </div>
-    {{ end}}
+<div class="p-2 border">
+    <h2>Site</h2>
+<div class="page-variables text-sm"> Site : {{.Site }}</div>
+<div class="page-variables text-sm"> Sites : {{.Sites }}</div>
+<div class="page-variables text-sm"> Sites: {{.Sites}}</div>
+ </div>
+
+<div class="container w-full flex"
+>
+<div class="w-1/5 flex flex-wrap justify-around">
+    <div>
+        <h2>SECTIONS</h2>
+        {{ range $index , $sections := .Site.Sections }}
+            <div>
+                <a class="uppercase bold text-xl" href="#{{$index }}">{{.Title}}</a>
+                 ( {{ .Parent.BundleType }} / {{.Kind}} )
+            </div>
+        {{ end }}
+    </div>
+</div>
+
+<div class="w-4/5 flex flex-wrap">
+
+
+{{ range $index , $sections := .Site.Sections }}
+<div name="{{$index}}" class="flex justify-start flex-wrap px-2">
+    {{ $t := .Title}}
+
+<h2 class="w-full py-2 px-2">Section: {{ $t }} / Number of Pages:  {{ len .Pages}}</h2>
+
+<div class="w-1/4">
+    <h2>Pages Links</h2>
+    {{ range  .Pages }}
+    <div class="w-full page-variables text-sm"> RelPermalink : {{.RelPermalink }}</div>
+    {{end }}
+</div>
+
+
+{{ range first 1 .Pages }}
+<div class="w-3/4 border px-2 flex flex-wrap">
+    <div class="w-full page-variables text-sm"> RelPermalink : {{.RelPermalink }}</div>
+
+<div class="p-2 border">
+<h2>MOre Checks</h2>
+<div class="page-variables text-sm"> .Page.BundleType: {{ .Page.BundleType }}</div>
+<div class="page-variables text-sm"> Type : {{.Type }}</div>
+<div class="page-variables text-sm"> Weight : {{.Weight }}</div>
+<div class="page-variables text-sm"> Draft : {{.Draft }}</div>
+<div class="page-variables text-sm"> Kind : {{.Kind }}</div>
+<div class="page-variables text-sm"> Language : {{.Language }}</div>
+</div>
+        
+<div class="p-2 border">
+<h2>Checks</h2>
+<div class="page-variables text-sm"> IsHome : {{.IsHome }}</div>
+<div class="page-variables text-sm"> IsNode : {{.IsNode }}</div>
+<div class="page-variables text-sm"> IsPage : {{.IsPage }}</div>
+<div class="page-variables text-sm"> IsSection : {{.IsSection }}</div>
+<div class="page-variables text-sm"> IsTranslated : {{.IsTranslated }}</div>
+</div>
+
+
+
+
+<div class="p-2 border">
+<h2>Translations</h2>
+<div class="page-variables text-sm"> Language : {{.Language }}</div>
+<div class="page-variables text-sm"> IsTranslated : {{.IsTranslated }}</div>
+<div class="page-variables text-sm"> Translations : {{.Translations }}</div>
+<div class="page-variables text-sm"> TranslationKey : {{.TranslationKey }}</div>
+</div>
+
+
+<div class="p-2 border">
+    <h2>Links</h2>
+    <div class="page-variables text-sm"> Title : {{.Title }}</div>
+    <div class="page-variables text-sm"> LinkTitle : {{.LinkTitle }}</div>
+    <div class="page-variables text-sm"> Permalink : {{.Permalink }}</div>
+
+    <div class="page-variables text-sm"> Aliases : {{.Aliases }}</div>
+    <div class="page-variables text-sm"> RSSLink : {{.RSSLink }}</div>
+    </div>
+
+<div class="p-2 border">
+<h2>In Section</h2>
+<div class="page-variables text-sm"> Next : {{.Next }}</div>
+<div class="page-variables text-sm"> Prev : {{.Prev }}</div>
+<div class="page-variables text-sm"> PrevInSection : {{.PrevInSection }}</div>
+</div>
+
+
+
+<div class="p-2 border">
+    <h2>FIle Variables</h2>
+    <div class="page-variables text-sm">.Dir : {{.Dir }}</div>
+    <div class="page-variables text-sm">.File : {{.File }}</div>
+    <div class="page-variables text-sm">.File.Path :{{ .File.Path }}</div>
+    <div class="page-variables text-sm">.File.LogicalName : {{.File.LogicalName}}</div>
+    <div class="page-variables text-sm">.File.TranslationBaseName : {{.File.TranslationBaseName}}</div>
+    <div class="page-variables text-sm">.File.ContentBaseName : {{.File.ContentBaseName}}</div>
+    <div class="page-variables text-sm">.File.BaseFileName : {{.File.BaseFileName}}</div>
+    <div class="page-variables text-sm">.File.Ext : {{.File.Ext}}</div>
+    <div class="page-variables text-sm">.File.Lang : {{.File.Lang}}</div>
+    <div class="page-variables text-sm">.File.Dir : {{.File.Dir}}</div>
+    <div class="page-variables text-sm">.File.UniqueID : {{.File.UniqueID}}</div>
+    </div>
+
+
+<div class="p-2 border">
+<h2>Pages / Data</h2>
+<div class="page-variables text-sm"> Pages : {{.Pages }}</div>
+<div class="page-variables text-sm"> Data : {{.Data }}</div>
+</div>
+
+
+
+
+
+
+<div class="p-2 border">
+    <h2>Resources</h2>
+
+<div class="page-variables text-sm"> Resources : {{.Resources }}</div>
+
+</div>
+
+ {{/*  <div class="page-variables text-sm"> Ref : Ref </div>    */}}
+
+ {{/*  <div class="page-variables text-sm"> RelRef : RelRef </div>    */}}
+
+
+{{/*  <div class="page-variables text-sm"> First : First </div>  */}}
+<div class="p-2 border">
+<h2>Content</h2>
+<details>
+<div class="page-variables text-sm"> PublishDate : {{.PublishDate }}</div>
+<div class="page-variables text-sm"> Keywords : {{.Keywords }}</div>
+<div class="page-variables text-sm"> Content : {{.Content }}</div>
+<div class="page-variables text-sm"> Description : {{.Description }}</div>
+<div class="page-variables text-sm"> Summary : {{.Summary }}</div>
+<div class="page-variables text-sm"> TableOfContents : {{.TableOfContents }}</div>
+<div class="page-variables text-sm"> Title : {{.Title }}</div>
+<div class="page-variables text-sm"> Plain : {{.Plain }}</div>
+<div class="page-variables text-sm"> PlainWords : {{.PlainWords }}</div>
+<div class="page-variables text-sm"> WordCount: {{.WordCount}}</div>
+<div class="page-variables text-sm"> Truncated : {{.Truncated }}</div>
+<div class="page-variables text-sm"> ReadingTime : {{.ReadingTime }}</div>
+<div class="page-variables text-sm"> RawContent : {{.RawContent }}</div>
+<div class="page-variables text-sm"> FuzzyWordCount : {{.FuzzyWordCount }}</div>
+</details> 
+</div>
+
+<div class="p-2 border">
+    <h2>Time - Dates</h2>
+    <details>
+    <div class="page-variables text-sm"> Date : {{.Date }}</div>
+    <div class="page-variables text-sm"> Lastmod : {{.Lastmod }}</div>
+    <div class="page-variables text-sm"> ExpiryDate : {{.ExpiryDate }}</div>
+    <div class="page-variables text-sm"> PublishDate : {{.PublishDate }}</div>
+    </details>
+    </div>
+    
+
+
+<div class="p-2 border">
+<h2>OutputFormats</h2>
+<details>
+<div class="page-variables text-sm"> OutputFormats : {{ range .OutputFormats }}{{.}}{{end}}</div>
+<div class="page-variables text-sm"> AlternativeOutputFormats : {{ range .AlternativeOutputFormats }}{{.}}{{end}}</div>
+</details>
+</div>
+
+
+
+</div>
+</div>
+{{ end }}
+{{ end }}
+</div>
+
 </div>
 </div>
 {{ end }}

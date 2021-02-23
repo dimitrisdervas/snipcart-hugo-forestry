@@ -1,36 +1,37 @@
+{{ define "main"}}
+<div class=" flex ">
+        <section class="w-1/5 ">
+                {{ range $taxonomy_term, $taxonomy := .Site.Taxonomies }}
+                    {{ with $.Site.GetPage (printf "/%s" $taxonomy_term) }}
+                        <div class="flex-1 border p-2">
+                            <a class="text-2xl bold bg-gray-200 w-full flex p-2" href="{{ .Permalink }}">{{ $taxonomy_term }}</a>
+                        </div>
+                    {{ end }}
+                {{ end }}
+        </section>
 
-<section>
-    <ul>
-        {{ range .Data.Pages }}
-        {{.}}
-          <li>
-            <a href="{{ .Permalink }}">{{ .Params.name }}</a>
-          </li>
-        {{ end }}
-      </ul>
-</section>
-
-<section>
-    <ul>
-        {{ range $taxonomy_term, $taxonomy := .Site.Taxonomies }}
-            {{ with $.Site.GetPage (printf "/%s" $taxonomy_term) }}
-                <li><a href="{{ .Permalink }}">{{ $taxonomy_term }}</a>
-                    <ul>
-
-                        {{ range $key, $value := $taxonomy }}
-                            <li>{{ $key }}</li>
-                            <ul class="flex flex-col">
-                                {{ range $value.Pages }}
-                                    <li >
-                                        <a class="bg-gray-200" href="{{ .Permalink}}">{{ .Params.name }}</a>
-                                    </li>
+        <section class="w-4/5 flex justify-around flex-wrap">
+            
+                {{ range $taxonomy_term, $taxonomy := .Site.Taxonomies }}
+                    {{ with $.Site.GetPage (printf "/%s" $taxonomy_term) }}
+                        <div class="flex-1 border p-2">
+                            <a class="text-2xl bold bg-gray-200 w-full flex p-2" href="{{ .Permalink }}">{{ $taxonomy_term }}</a>
+                            <ul>
+                                {{ range $key, $value := $taxonomy }}
+                                    <li class="border-b pb-1 pt-2 mt-2  bg-gray-50">{{ $key }}</li>
+                                    <details >
+                                        <div class="flex flex-col">
+                                        {{ range $value.Pages }}
+                                                <a class="" href="{{ .Permalink}}">{{ .Params.name }}{{ .Params.handle }}/ {{.Kind}}</a>
+                                        {{ end }}
+                                    </div>
+                                    </details>
                                 {{ end }}
                             </ul>
-                        {{ end }}
-                    </ul>
-                </li>
-            {{ end }}
-        {{ end }}
-    </ul>
-</section>
+                        </div>
+                    {{ end }}
+                {{ end }}
 
+        </section>
+</div>
+{{ end }}

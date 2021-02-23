@@ -1,0 +1,41 @@
+<div class="flex justify-around flex-wrap border px-2 m-2"
+    x-data="{
+        'top': false,
+        'side': false}"
+    >
+
+
+    <div class="fixed z-50 overflow-scroll top-0 right-0 w-96 h-full bg-white p-4 shadow-lg " 
+  x-show="side" 
+  @click.away="side = false"
+  >
+  test
+    </div>
+
+    <div 
+    class="bg-gray-100 fixed   w-80 bottom-0 right-0 z-50 h-24 flex justify-between px-4 py-8 shadow-lg mb-6 mr-4"
+    x-show="top">
+        <button 
+        class="hover:bg-pink-800 hover:text-white px-4"
+        @click="side = true"
+        @click.away="side = false">File Variables</button>
+       <button 
+        class="hover:bg-pink-800 hover:text-white px-4"
+        @click="side = true"
+        @click.away="side = false">Pages</button>
+    
+        <button 
+        class="hover:bg-gray-800 hover:text-white px-4 text-sm"
+        @click="top = false">close</button>
+        Extra Pages
+        <a href="/gr/debug/alltaxonomies/">All Taxonomies</a>
+    </div>
+    
+    <button 
+    class=" fixed bottom-0 left-0 w-24 h-24 z-50 bg-yellow-500"
+    @click="top = true"
+    >open Variables</button>
+    
+    </div>
+
+</div>
