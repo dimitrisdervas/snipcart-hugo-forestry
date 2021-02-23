@@ -11,6 +11,9 @@ vendor: ""
 type: ""
 tags: "beers"
 published: ""
+options: 
+    - option: size
+    - option: material
 option1_name: "size"
 option1_value: "6 pack"
 option2_name: "material"
