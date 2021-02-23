@@ -2,31 +2,21 @@
 <h2 class="text-center text-xl py-6 ">Popular this week</h2>
 
 
-<div class="swiper-container productspromoted"  style="width:100%;height:60vh">
+<div class="swiper-container productspromoted"  style="width:100%;height:
+40vh">
 
 <div class="swiper-wrapper">
 
-
 {{ range $index := .Params.products }}
-
-{{ $product := path.Join "/variants" $index }}
-
+    {{ $product := path.Join "/variants" $index "_index.md" }}
     {{ with $.Site.GetPage $product }}
-
-    <div class="swiper-slide  flex-col flex" >
-        <a 
-        class=" p-4 "
-        href="{{ "products/" | relLangURL }}{{.Params.products }}">
-
-
-        
-        </a>
-
-    <div class="text-center text-back">{{ .Params.title }}</div>
-    <div class="text-center text-back">{{ .Params.variant_price }}</div>
-
-    </div>
-
+        <div class="swiper-slide  flex-col flex" >
+            <a class="p-4" href="{{ .Permalink }}">
+                {{ partial "resources_product_single_image_resize.html" (dict "context" . "ImagesResources" .Resources)}}
+                <div class="text-center text-back">{{ .Params.title }}</div>
+                <div class="text-center text-back">{{ .Params.variant_price }}</div>
+            </a>
+        </div>
     {{ end}}
 {{ end }}
 

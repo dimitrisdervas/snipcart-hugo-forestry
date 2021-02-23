@@ -1,0 +1,32 @@
+
+{{ $image := string .context.Params.image_src }}
+{{ $original := .ImagesResources.GetMatch $image }}
+ {{ $image295w := $original.Resize "295x" }}
+ {{ $image394w := $original.Resize "394x" }}
+ {{ $image590w := $original.Resize "590x" }}
+ {{ $image700w := $original.Resize "700x" }}
+ {{ $image800w := $original.Resize "800x" }}
+<img
+    style="object-fit: contain;"
+    alt="{{ $original }}"
+    data-sizes="auto"
+    data-parent-fit="contain"
+    data-srcset="        
+    
+    {{ $image295w.RelPermalink }}  295w,
+    
+    {{ $image394w.RelPermalink }}  394w,
+    
+    {{ $image590w.RelPermalink }}  590w,
+    
+    {{ $image700w.RelPermalink }}  700w,
+    
+    {{ $image800w.RelPermalink }}  800w
+    "
+    data-src="{{ $image700w.RelPermalink }}"
+    class="lazyload" />
+    <!-- noscript pattern -->
+    <noscript>
+    <img src="{{ $image700w.RelPermalink }}" />
+    </noscript>
+
