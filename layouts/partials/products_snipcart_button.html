@@ -4,7 +4,8 @@
     class="border-2 border-gray-300 text-gray-300 w-full py-2 uppercase text-md text-center">
 </div>
 
-<button x-show="stock != 'out of stock' "
+<button 
+    x-show="stock != 'out of stock' "
     class="snipcart-add-item border-2 border-black w-full py-2 uppercase text-md"
     x-bind:data-item-url="url"
     x-bind:data-item-name="title"

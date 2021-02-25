@@ -95,8 +95,11 @@ variant_image: ""
 variant_weight_unit: ""
 collections: ["Drinks","products_list"]
 collection_lv2: []
-gallery: []
-
+gallery: 
+    - image_src: colonial-brewing-co-draught_01.jpg
+      image_alt_text: "colonial brewing"
+    - image_src: colonial-brewing-co-draught_02.jpg
+      image_alt_text: "colonial brewing"
 ---
 
 It's draught, but not as you know it. Think German noble hops and malt. Think perfect carbonation. Think refreshing on a scorching summer day and tasty on a cold winter one. Our mission was simple: to create a beer that's perfect for those times when you feel like a beer - because the sun is shining, it’s the weekend, or because it’s day time, or night time.

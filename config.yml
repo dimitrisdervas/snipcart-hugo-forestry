@@ -53,11 +53,7 @@ outputs:
 
 
 related:
-  includeNewer: false
   indices:
-  - name: handle
-    weight: 100
-    includeNewer: true
   - name: collections
     weight: 10
     includeNewer: true

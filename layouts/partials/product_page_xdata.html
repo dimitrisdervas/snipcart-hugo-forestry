@@ -1,0 +1,23 @@
+<div 
+    class=" py-8
+    grid grid-cols-2 grid-rows-3 
+    md:grid-cols-5 md:grid-rows 
+    lg:grid-cols-8  
+    "    
+    style="grid-template-rows: auto auto 1fr;"
+    x-data="{ 
+    {{ $.Scratch.Set "default_variant" .Params.variant_sku }}
+    {{.Params.variant_sku }}: true,
+    title: '{{ replace .Title "'"  ""  }}',
+    url: '{{ .Dir }}',
+    id: '{{.Params.variant_sku }}',
+    retail: '{{.Params.retail}}',
+    price: '{{.Params.variant_price}}',
+    {{ partial "resources_image_resize_xdata.html" (dict "context" . "ImagesResources" $.Resources ) }}
+    description: '{{.Params.description}}',
+    quantity: '1',
+    option1Name: '{{.Params.option1_name}}',
+    option1Value: '{{.Params.option1_value}}',
+    stock: '{{ .Params.variant_inventory_qty }}',
+    tab: 'content'
+    }">

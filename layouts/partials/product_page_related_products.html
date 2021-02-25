@@ -1,0 +1,19 @@
+{{/*  RELATED PRODUCTS  */}}
+<div class="flex w-full flex-wrap  justify-center py-12 max-w-screen-xl mx-auto">
+{{ $related := $.Site.RegularPages.RelatedIndices . "collections" | first 4  }}
+{{ with $related }}
+    <h3 class="w-full text-center py-8 text-2xl">You may also like</h3>
+    {{ range . }}
+        {{ $product := string .Parent.Path }}
+        {{ with $.Site.GetPage $product }}
+        <div class="flex-col flex justify-center px-4 w-1/2 lg:w-1/4" >
+            <a class="p-4 flex justify-center flex-col" href="{{ .Permalink }}">
+                {{ partial "resources_product_single_image_resize.html" (dict "context" . "ImagesResources" .Resources)}}
+                <div class="text-center text-back font-robmono mt-4 mb-2">{{ .Params.title }}</div>
+                <div class="text-center text-back font-robmono text-sm">{{ .Params.variant_price }}</div>
+            </a>
+        </div>
+        {{ end }}
+    {{ end }}   
+{{ end }}
+</div>

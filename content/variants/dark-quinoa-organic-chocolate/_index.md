@@ -1,31 +1,12 @@
 ---
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
 handle: "dark-quinoa-organic-chocolate"
 title: "Dark Quinoa Organic Chocolate"
 vendor: ""
 type: ""
 tags: "chocolates"
 published: ""
+options:
+    number: 1
 option1_name: "size"
 option1_value: "single"
 option2_name: ""
@@ -65,7 +46,7 @@ variant_image: ""
 variant_weight_unit: ""
 collections: ["Sweets","Chips"]
 collection_lv2s: ["Speciality","Chocolates"]
-gallery: []
+gallery: 
 
 ---
 

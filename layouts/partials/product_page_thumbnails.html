@@ -1,0 +1,53 @@
+{{ if .context.Params.gallery }}
+<div class="mt-8 w-full flex justify-center col-span-4 
+            md:col-start-3 md:h-2
+            lg:mt-0 lg:col-start-1 lg:col-span-2 lg:row-start-3 lg:row-span-2 lg:h-24 ">
+    <div class="flex w-full justify-center">
+        {{ range $index, $gallery := .context.Params.gallery }}
+        {{ $image := string .image_src }} 
+        {{ $original := $.ImagesResources.GetMatch $image }} 
+        {{ $image80w := $original.Resize "80x" }} 
+        {{ $image100w := $original.Resize "100x" }} 
+        {{ $image180w := $original.Resize "180x" }}
+        {{ $image295w := $original.Resize "295x" }} 
+        {{ $image394w := $original.Resize "394x" }} 
+        {{ $image590w := $original.Resize "590x" }} 
+        {{ $image700w := $original.Resize "700x" }} 
+        {{ $image800w := $original.Resize "800x" }} 
+        {{ $image1000w := $original.Resize "1000x" }} 
+        {{ $image1200w := $original.Resize "1200x" }} 
+        {{ $image1500w := $original.Resize "1500x" }} 
+        {{ $image1800w := $original.Resize "1800x" }} 
+        {{ $image2400w := $original.Resize "2400x" }}
+        <img
+            data-sizes="auto"
+            class="m-2"
+            x-on:click="
+                image295w = '{{ $image295w.RelPermalink }}',
+                image394w = '{{ $image394w.RelPermalink }}',
+                image590w = '{{ $image590w.RelPermalink }}',
+                image700w = '{{ $image700w.RelPermalink }}',
+                image800w = '{{ $image800w.RelPermalink }}',
+                image1000w = '{{ $image1000w.RelPermalink }}',
+                image1200w = '{{ $image1200w.RelPermalink }}',
+                image1500w = '{{ $image1500w.RelPermalink }}',
+                image1800w = '{{ $image1800w.RelPermalink }}',
+                image2400w = '{{ $image2400w.RelPermalink }}'
+            "
+            alt="title"
+            data-sizes="auto"
+            srcset="
+                    {{ $image80w.RelPermalink }} 80x,
+                    {{ $image100w.RelPermalink }} 100x,
+                    {{ $image180w.RelPermalink }} 180x
+            "
+            src="{{ $image180w.RelPermalink }}">
+            <!-- noscript pattern -->
+            <noscript>
+                <img src="{{ $image180w.RelPermalink }}" />
+            </noscript>
+        {{ end }}
+
+    </div>
+</div>
+{{ end }}

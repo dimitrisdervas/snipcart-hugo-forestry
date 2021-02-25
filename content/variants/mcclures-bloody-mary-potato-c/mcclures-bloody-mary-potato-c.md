@@ -71,7 +71,6 @@ gift_card: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Chips","products_list"]
-gallery: ["mcclures-bloody-mary-potato-c_01.jpg","mcclures-bloody-mary-potato-c_02.jpg"]
 
 ---
 

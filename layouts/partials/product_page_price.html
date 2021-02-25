@@ -1,0 +1,5 @@
+{{/*  PRICE  */}}
+<div class="flex items-baseline py-2 ">
+    <div x-text="price +  '€' "  class="flex-inline text-xl pr-2 font-robmono "></div>
+    <div x-text="retail + '€' "  class="flex-inline text-lg font-normal line-through " x-show="retail > 0"></div>
+</div>

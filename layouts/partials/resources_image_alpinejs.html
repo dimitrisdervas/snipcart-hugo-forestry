@@ -1,0 +1,21 @@
+<img
+    x-bind:alt="title"
+    data-sizes="auto"
+    x-bind:srcset="        
+    image295w + ' 295w,' +
+    image394w + ' 394w,' +
+    image590w + ' 590w,' +
+    image700w + ' 700w,' +
+    image800w + ' 800w,' +
+    image1000w + ' 1000w,' +
+    image1200w + ' 1200w,' +
+    image1500w + ' 1500w,' +
+    image1800w + ' 1800w,' +
+    image2400w + ' 2400w' 
+    "
+    x-bind:data-src="image700w"
+    class="" />
+    <!-- noscript pattern -->
+<noscript>
+    <img x-bind:src="image700w" />
+</noscript>

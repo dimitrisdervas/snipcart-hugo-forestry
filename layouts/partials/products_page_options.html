@@ -1,4 +1,5 @@
 {{/*  Options block  */}}
+
 {{ $numberVariants := .numberVariants }}
 <div class="flex flex-col">
     {{ if gt $numberVariants 1 }}
@@ -15,28 +16,25 @@
             {{/*  OPTIONS BUTTONS  */}}
             {{ range .context.Pages  }}   
                 <button 
-
                     class=" mr-4
                     border-2 border-gray-200 
                     text-gray-800  text-sm uppercase
                     flex items-center px-4 py-3 my-2 justify-center
                     hover:border-gray-800 hover:text-gray-800 
                     @click:selected"
-
                     type="radio"       
-
                     x-on:click="
-                    id = '{{.Params.variant_sku}}',
-                    url = '{{ .Path  }}'
-                    price = '{{.Params.variant_price}}',
-                    title= '{{ .Params.handle }}',
-                    {{ partial "resources_image_resize.html" (dict "context" . "ImagesResources" $.ImagesResources ) }}
-                    option= '{{ .Params.option1_name }}'
-                    value='{{.Params.option1_value}}',
-                    stock='{{.Params.variant_inventory_qty}}'
-                    option1Name= '{{.Params.option1_name}}',
-                    option1Value= '{{.Params.option1_value}}'
-                ">          
+                        id = '{{.Params.variant_sku}}',
+                        url = '{{ .Path  }}'
+                        price = '{{.Params.variant_price}}',
+                        title= '{{ .Params.handle }}',
+                        {{ partial "resources_image_resize.html" (dict "context" . "ImagesResources" $.ImagesResources ) }}
+                        option= '{{ .Params.option1_name }}'
+                        value='{{.Params.option1_value}}',
+                        stock='{{.Params.variant_inventory_qty}}'
+                        option1Name= '{{.Params.option1_name}}',
+                        option1Value= '{{.Params.option1_value}}' 
+                    ">          
 
                 {{ partial "options_icons.html" . }}
 
@@ -53,24 +51,12 @@
 
 {{ partial "products_snipcart_button.html" . }}
 
+
+
 </div>
+
+
+
 {{/*  end options block  */}}
 
-{{ range .Pages }}
-{{ $optionimage := .Params.option1_value | urlize }}
-    <div>
-        <img
-        alt="title"
-        data-sizes="auto"
-        srcset="        
-        {{ partial "resources_image_resize_xadata.html" (dict "context" . "ImagesResources" $.ImagesResources ) }}
-        "
-        data-src="{{ $optionimage }}_image700w "
-        class="" />
-        <!-- noscript pattern -->
-        <noscript>
-        <img src="{{ $optionimage }}_image700w" />
-        </noscript>
-    </div>
-{{ end }}
 

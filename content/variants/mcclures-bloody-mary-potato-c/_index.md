@@ -68,10 +68,12 @@ vendor: "McClure's"
 type: ""
 tags: ""
 published: ""
-option1_name: "size"
-option1_value: "small"
-option2_name: "material"
-option2_value: "silk"
+options: 
+    number: 0
+option1_name: ""
+option1_value: ""
+option2_name: ""
+option2_value: ""
 option3_name: ""
 option3_value: ""
 variant_sku: "sku_020"
@@ -107,7 +109,9 @@ variant_image: ""
 variant_weight_unit: ""
 collections: ["Chips","products_list"]
 collection_lv2: []
-gallery: []
+gallery: 
+    - image_src: mcclures-bloody-mary-potato-c_01.jpg
+    - image_src: mcclures-bloody-mary-potato-c_02.jpg
 
 ---
 

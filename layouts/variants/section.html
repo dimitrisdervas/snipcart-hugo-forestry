@@ -6,7 +6,15 @@
 {{if in .File.Dir .Params.handle}}
 {{/*  so that we show the product page or the list page  */}}
 
-{{ .Render "product_page"}}
+    {{ if gt .Params.options.number "1"}}
+        {{ .Render "product_options_multiple"}}
+    {{ else }}
+        {{ if eq .Params.options.number "1" }}
+            {{ .Render "product_options_one"}}
+        {{ else }} 
+            {{ .Render "product_options_zero"}}
+        {{ end }}
+    {{ end }}
 
 {{ else }}
 
