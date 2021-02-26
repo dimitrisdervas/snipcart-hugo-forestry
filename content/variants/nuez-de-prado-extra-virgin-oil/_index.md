@@ -87,7 +87,7 @@ google_shopping_custom_label: ""
 google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
-collections: ["Oils and VInegars","products_list"]
+collections: ["Oils","products_list"]
 collection_lv2: [Oils]
 gallery: []
 
