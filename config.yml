@@ -38,8 +38,10 @@ outputFormats:
 outputs:
   home:
     - html
+    - json
   page:
     - html
+    - json
   taxonomy:
     - html
     - json

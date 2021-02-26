@@ -1,7 +1,12 @@
 {{/* layouts/_default/index.json */}}
 {{- $index := slice -}}
-{{- range where .Site.RegularPages "Type" "not in"  (slice "page" "json") -}}
-    {{- $index = $index | append (dict "title" ( .Title | plainify ) "permalink" .Permalink "section" (i18n (.Section | title)) "name" .Params.name "products" .Params.products "collections" .Params.collections ) -}}
+{{- range where .Site.Sections "Title" "Variants" -}}
+    {{ range  .Pages }}
+    {{ $image := string .Params.image_src }}
+    {{ $original := .Resources.GetMatch $image }}
+    {{ $image295w := $original.Resize "295x" }}
+        {{- $index = $index | append (dict "title" ( .Title | plainify ) "permalink" .Permalink "image" ($image295w.RelPermalink)  "price" .Params.variant_price "collections" .Params.collections ) -}}
+    {{- end -}}
 {{- end -}}
 {{- $index | jsonify -}}
 

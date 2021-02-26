@@ -1,6 +1,8 @@
 ---
 - id: "home"
   translation: "Αρχική"
+- id: "search"
+  translation: "Αναζήτηση"
 - id: "addtocart"
   translation: "Προσθήκη"
 - id: "home"

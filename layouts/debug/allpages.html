@@ -31,7 +31,7 @@
 
 {{ range $index , $sections := .Site.Sections }}
 <div name="{{$index}}" class="flex justify-start flex-wrap px-2">
-    {{ $t := .Title}}
+    {{ $t := .Title }}
 
 <h2 class="w-full py-2 px-2">Section: {{ $t }} / Number of Pages:  {{ len .Pages}}</h2>
 

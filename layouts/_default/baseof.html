@@ -8,15 +8,15 @@
 
 <a style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;" href="#main-content"> Skip to main content </a>
 
-{{ if .IsHome }}
-    {{ partial "header_frontpage.html" . }}
-{{ else }}
-    {{ partial "header_allpages.html" . }}
-{{ end }}
+    {{ if .IsHome }}
+        {{ partial "header_frontpage.html" . }}
+    {{ else }}
+        {{ partial "header_allpages.html" . }}
+    {{ end }}
 
-{{ if ne .Kind "home"}}
-    {{ partial "breadcrumb.html" . }}
-{{ end }}
+    {{ if ne .Kind "home"}}
+        {{ partial "breadcrumb.html" . }}
+    {{ end }}
 
     <!-- Code that all your templates share, like a header -->
     {{ block "main" . }}
@@ -27,13 +27,14 @@
     {{ end }}
 
     {{ partial "footer.html" . }}
-    {{ partial "footer_scripts.html" . }}
     
     {{ partial "debug/alpinejs_debug_menu.html" . }}
     {{ partial "debug/fuctions_path_urls.html" . }}
     {{ partial "debug/functions_strings_only.html" . }}
     {{ partial "debug/functions_strings.html" . }}
 
+    {{ partial "search" . }}
 
+    {{ partial "footer_scripts.html" . }}
   </body>
 </html>

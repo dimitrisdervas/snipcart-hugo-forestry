@@ -1,7 +1,12 @@
 {{- $scripts := resources.Get "js/scripts.js" | js.Build (dict "minify" true "target" "es2015") | fingerprint -}}
 <script src="{{ $scripts.Permalink }}"></script>
 <script async src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
+
 <div 
     hidden id="snipcart" 
     data-api-key="NTJlNjVhYWQtMjMxZi00MTA3LWJmYTEtNGUxMDY5YjgwMWNj" 
     data-config-modal-style="side"></div>
+
+
+<script src="{{ "/scripts/fuse.js" | relURL }}"></script>
+<script src="{{ "/scripts/fixedsearch/fixedsearch.js" | relURL }}"></script>

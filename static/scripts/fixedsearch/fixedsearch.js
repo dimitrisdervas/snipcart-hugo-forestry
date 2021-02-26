@@ -1,3 +1,5 @@
+// https://gist.github.com/Arty2/8b0c43581013753438a3d35c15091a9f
+
 // static/scripts/fixedsearch/fixedsearch.js
 /*--------------------------------------------------------------
 fixedsearch — Super fast, client side search for Hugo.io with Fusejs.io
@@ -17,68 +19,15 @@ fixedsearch = function(){
 	var last = search_results.lastChild; // last child of search list
 
 
-	search_form.classList.remove('noscript'); // JavaScript is active
-	search_form.setAttribute('data-focus', search__focus);
+	/*--------------------------------------------------------------
+	The main keyboard event listener running the show
+	--------------------------------------------------------------*/
+
 
 	/*--------------------------------------------------------------
 	The main keyboard event listener running the show
 	--------------------------------------------------------------*/
-	document.addEventListener('keydown', function(e) {
-		// console.log(event); // DEBUG
-		// Ctrl + / to show or hide Search
-		// if (event.metaKey && event.which === 191) {
-		if (event.ctrlKey && event.which === 191) {
-			search_toggle_focus(e); // toggle visibility of search box
-		}
-	});
 
-	/*--------------------------------------------------------------
-	The main keyboard event listener running the show
-	--------------------------------------------------------------*/
-	search_form.addEventListener('keydown', function(e) {
-		// Allow ESC (27) to close search box
-		if (e.keyCode == 27) {
-				search__focus = true; // make sure toggle removes focus
-				search_toggle_focus(e);
-		}
-
-		// DOWN (40) arrow
-		if (e.keyCode == 40) {
-			if (results_available) {
-				e.preventDefault(); // stop window from scrolling
-				if ( document.activeElement == search_input) { first.focus(); } // if the currently focused element is the main input --> focus the first <li>
-				else if ( document.activeElement == last ) { first.focus(); } // if we're at the bottom, loop to the start
-				// else if ( document.activeElement == last ) { last.focus(); } // if we're at the bottom, stay there
-				else { document.activeElement.parentElement.nextSibling.firstElementChild.focus(); } // otherwise select the next search result
-			}
-		}
-
-		// UP (38) arrow
-		if (e.keyCode == 38) {
-			if (results_available) {
-				e.preventDefault(); // stop window from scrolling
-				if ( document.activeElement == search_input) { search_input.focus(); } // If we're in the input box, do nothing
-				else if ( document.activeElement == first) { search_input.focus(); } // If we're at the first item, go to input box
-				else { document.activeElement.parentElement.previousSibling.firstElementChild.focus(); } // Otherwise, select the search result above the current active one
-			}
-		}
-
-		// Use Enter (13) to move to the first result
-		if (e.keyCode == 13) {			
-			if (results_available && document.activeElement == search_input) {
-				e.preventDefault(); // stop form from being submitted
-				first.focus();
-			}
-		}
-
-		// Use Backspace (8) to switch back to the search input
-		if (e.keyCode == 8) {			
-			if (document.activeElement != search_input) {
-				e.preventDefault(); // stop browser from going back in history
-				search_input.focus();
-			}
-		}
-	});
 
 	/*--------------------------------------------------------------
 	Load our json data and builds fuse.js search index
@@ -90,43 +39,17 @@ fixedsearch = function(){
 	/*--------------------------------------------------------------
 	Make submit button toggle focus
 	--------------------------------------------------------------*/
-	search_form.addEventListener('submit', function(e) {
-		search_toggle_focus(e);
-		e.preventDefault();
-		return false;
-	});
+
 
 	/*--------------------------------------------------------------
 	Remove focus on blur
 	--------------------------------------------------------------*/
-	search_form.addEventListener('focusout', function(e) {
-		if (e.relatedTarget === null) {
-			search_toggle_focus(e);
-		}
-		else if (e.relatedTarget.type === 'submit') {
-			e.stopPropagation();
-		}
-	});
+
 
 	/*--------------------------------------------------------------
 	Toggle focus UI of form
 	--------------------------------------------------------------*/
-	function search_toggle_focus(e) {
-		// console.log(e); // DEBUG
-		// order of operations is very important to keep focus where it should stay
-		if (!search__focus) {
-			search_submit.value = '⨯';
-			search_form.setAttribute('data-focus', true);
-			search_input.focus(); // move focus to search box
-			search__focus = true;
-		}
-		else {
-			search_submit.value = '⌕';
-			search_form.setAttribute('data-focus', false);
-			document.activeElement.blur(); // remove focus from search box
-			search__focus = false;
-		}
-	}
+
 
 	/*--------------------------------------------------------------
 	Fetch some json without jquery
@@ -183,9 +106,7 @@ fixedsearch = function(){
 						keys: [
 							'permalink',
 							'title',
-                            'name',
-                            'collections',
-                            'products'
+                            'collections'
 							]
 					};
 
@@ -194,7 +115,7 @@ fixedsearch = function(){
 					search_input.addEventListener('keyup', function(e) { // execute search as each character is typed
 						search_exec(this.value);
 					});
-					// console.log("index.json loaded"); // DEBUG
+					console.log("index.json loaded"); // DEBUG
 				});
 			}).catch((error) => { console.log('fixedsearch failed to load: ' + error); });
 		}
@@ -214,11 +135,10 @@ fixedsearch = function(){
 			search_items = '';
 		} else { // build our html
 			for (let item in results.slice(0,5)) { // only show first 5 results
-				search_items = search_items + '<li><a href="' + results[item].item.permalink + '" tabindex="0">' +
-					'<span class="title">' + results[item].item.title + '</span>' +
-					'<span class="name">' + results[item].item.name + '</span>' +
-					'<span class="products">' + results[item].item.products + '</span>' +
-					'<span class="colelctions">'+ results[item].item.colelctions +'</span>' +
+				search_items = search_items + '<li class="w-1/6 mx-2"><a href="' + results[item].item.permalink + '" tabindex="0">' +
+					'<img src="' + results[item].item.image + '">' +
+                    '<div class="title">' + results[item].item.title + '</div>' +
+					'<div class="price">'+ results[item].item.price +'</div>' +
 				'</a></li>';
 			}
 			results_available = true;
