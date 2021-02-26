@@ -1,132 +1,109 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@3.0.6/css/line.css">
+<footer class="bg-gray-100 pt-10 sm:mt-10 p-10">
+    <div class="text-gray-800 flex flex-wrap justify-beteween">
 
-<footer class="bg-gray-800 pt-10 sm:mt-10 pt-10">
-    <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">
+        
         <!-- Col-1 -->
-        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+        <div class="p-5 w-1/3 flex justify-start flex-col px-8">
             <!-- Col Title -->
-            <div class="text-xs uppercase text-gray-400 font-medium mb-6">
-                Getting Started
+            <div class="text-lg text-gray-800 mb-6">
+                {{ .Site.Title }}
+            </div>           
+            <p>{{ .Site.Params.company.about }}</p>
+            <div class="social flex flex-inline mt-2">
+                {{ range .Site.Params.company.social }}
+                    {{ if .link }}
+                        <a class="mr-4" href="{{ .link }}">
+                            <img src="data:image/svg+xml;utf8;base64,{{.base64}}" alt="{{.icon}}" width="24" height="24">
+                        </a>
+                    {{ end }}
+                {{ end }}
             </div>
-            {{ with .Site.GetPage "/staticpages/gr/chreoseis-methodoi-pliromis.md" }}            
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                {{ .Title }}
-               
-            </a>
-            {{ end }}
+            
+
        </div>
 
         <!-- Col-2 -->
-        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+        <div class="p-5 w-1/3 flex justify-start flex-col px-8">
             <!-- Col Title -->
-            <div class="text-xs uppercase text-gray-400 font-medium mb-6">
-                Core Concepts
+            <div class=" text-lg text-gray-800 mb-6">
+               Info
             </div>
-
-            <!-- Links -->
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Utility-First
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Responsive Design
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Hover, Focus, & Other States
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Dark Mode
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Adding Base Styles
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Extracting Components
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Adding New Utilities
-            </a>
+            <div class="">
+                <!-- Links -->
+                <a href="#" class="py-1 block text-gray-800 hover:underline text-sm">
+                    Utility-First
+                </a>
+                <a href="#" class="py-1 block text-gray-800 hover:underline text-sm">
+                    Responsive Design
+                </a>
+                <a href="#" class="py-1 block text-gray-800 hover:underline text-sm">
+                    Hover, Focus, & Other States
+                </a>
+            </div>
         </div>
 
         <!-- Col-3 -->
-        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+        <div class="p-5 w-1/3 flex justify-start     flex-col px-8">
             <!-- Col Title -->
-            <div class="text-xs uppercase text-gray-400 font-medium mb-6">
-                Customization
+            <div class="text-lg text-gray-800 mb-6">
+                Subscribe
             </div>
+            <div>
+                {{ .Site.Params.newsletter.subscribe_text }}
+            
+            <div class="text-center py-2">
+                <form
+                  method="post"
+                  action="/contact#newsletter_form"
+                  id="newsletter_form"
+                  accept-charset="UTF-8"
+                  class="flex-inline flex justify-center"
+                >
+                  <input
+                    class="mr-2 py-1 px-2 text-sm w-4/5"
+                    id="newsletter-email"
+                    name="contact[email]"
+                    type="email"
+                    aria-label="Your email"
+                    placeholder="Your email"
+                    required=""
+                  />
+                  <div class="bg-black px-4 py-2 text-white text-lg w-1/5">
+                    <button type="submit" value="Subscribe">OK</button>
+                  </div>
+                  <div class="hidden">
+                    <p data-spam-detection-disclaimer="">
+                      This site is protected by reCAPTCHA and the Google
+                      <a href="https://policies.google.com/privacy" tabindex="-1"
+                        >Privacy Policy</a
+                      >
+                      and
+                      <a href="https://policies.google.com/terms" tabindex="-1"
+                        >Terms of Service</a
+                      >
+                      apply.
+                    </p>
+                  </div>
+                </form>
+              </div>
 
-            <!-- Links -->
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Configuration
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Theme Configuration
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Breakpoints
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Customizing Colors
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Customizing Spacing
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Configuring Variants
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Plugins
-            </a>
+            </div>
         </div>
 
-        <!-- Col-3 -->
-        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-            <!-- Col Title -->
-            <div class="text-xs uppercase text-gray-400 font-medium mb-6">
-                Community
-            </div>
 
-            <!-- Links -->
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                GitHub
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Discord
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Twitter
-            </a>
-            <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                YouTube
-            </a>
-        </div>
     </div>
 
     <!-- Copyright Bar -->
     <div class="pt-2">
-        <div class="flex pb-5 px-3 m-auto pt-5 
-            border-t border-gray-500 text-gray-400 text-sm 
-            flex-col md:flex-row max-w-6xl">
+        <div class="flex pb-5 px-3 w-full  pt-5 border-gray-500 text-gray-800 text-sm 
+            flex-col justify-between md:flex-row">
             <div class="mt-2">
                 © Copyright 1998-year. All Rights Reserved.
             </div>
-
-            <!-- Required Unicons (if you want) -->
-            <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
-                <a href="#" class="w-6 mx-1">
-                    <i class="uil uil-facebook-f"></i>
-                </a>
-                <a href="#" class="w-6 mx-1">
-                    <i class="uil uil-twitter-alt"></i>
-                </a>
-                <a href="#" class="w-6 mx-1">
-                    <i class="uil uil-youtube"></i>
-                </a>
-                <a href="#" class="w-6 mx-1">
-                    <i class="uil uil-linkedin"></i>
-                </a>
-                <a href="#" class="w-6 mx-1">
-                    <i class="uil uil-instagram"></i>
-                </a>
+            <div class="flex flex-inline justify-between w-48 justify-self-end">
+                {{ range .Site.Params.cards_accepted }}
+                    <img class="border bg-white" src="data:image/svg+xml;base64,{{.base64 }}" alt="{{ .card }}" width="36" height="22">
+                {{ end }}
             </div>
         </div>
     </div>
