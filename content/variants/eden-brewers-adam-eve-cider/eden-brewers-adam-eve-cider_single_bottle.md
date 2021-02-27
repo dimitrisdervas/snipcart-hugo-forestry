@@ -1,10 +1,4 @@
 ---
- 
-
- 
-
- 
-
 products: "eden-brewers-adam-eve-cider"
 handle: "eden-brewers-adam-eve-cider"
 title: ""
@@ -24,7 +18,7 @@ variant_inventory_tracker: ""
 variant_inventory_qty: ""
 variant_inventory_policy: ""
 variant_fulfillment_service: ""
-variant_price: "2.95"
+variant_price: "3.95"
 variant_compare_at_price: "3.95"
 variant_requires_shipping: ""
 variant_taxable: ""

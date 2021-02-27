@@ -1,14 +1,4 @@
 ---
- 
-
- 
-
- 
-
- 
-
- 
-
 products: "eden-brewers-adam-eve-cider"
 handle: "eden-brewers-adam-eve-cider"
 title: ""
@@ -25,7 +15,7 @@ option3_value: ""
 variant_sku: "sku_004"
 variant_grams: ""
 variant_inventory_tracker: ""
-variant_inventory_qty: ""
+variant_inventory_qty: "0"
 variant_inventory_policy: ""
 variant_fulfillment_service: ""
 variant_price: "2.95"
@@ -40,7 +30,6 @@ variant_image: ""
 variant_weight_unit: ""
 collections: []
 gallery: []
-
 ---
 
 

@@ -1,52 +1,11 @@
 ---
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
 handle: "nuez-de-prado-extra-virgin-oil"
 title: "Nuñez de Prado Extra Virgin Olive Oil"
 vendor: "Nuñez"
+options:
+    number: 1
+    names:
+        - option: size
 type: ""
 tags: ""
 published: ""
@@ -88,9 +47,7 @@ google_shopping_custom_label: ""
 variant_image: ""
 variant_weight_unit: ""
 collections: ["Oils","products_list"]
-collection_lv2: [Oils]
-gallery: []
-
+collection_lv2: []
 ---
 
 

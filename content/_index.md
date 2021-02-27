@@ -10,6 +10,5 @@ collections:
     - oils
     - sweets
     - chips
-
 ---
 

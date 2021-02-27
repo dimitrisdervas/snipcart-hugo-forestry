@@ -53,6 +53,10 @@
 handle: "colonial-brewing-co-draught"
 title: "Colonial Brewing Co. Draught"
 vendor: "Colonial"
+options:
+    number: 1
+    names:
+        - option: size
 type: ""
 tags: ""
 published: ""
