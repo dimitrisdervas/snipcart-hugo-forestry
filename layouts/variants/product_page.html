@@ -1,7 +1,3 @@
-{{ if gt .Params.options.number "1"}}
-    {{ .Render "multiple_options"}}
-{{ else if eq .Params.options.number "1" }}
-    {{ .Render "one_option"}}
-{{ else if eq .Params.options.number "0" }}
-    {{ .Render "product_options_zero"}}
+{{ define "main"}}
+product page to delete
 {{ end }}

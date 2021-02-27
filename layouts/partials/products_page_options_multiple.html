@@ -10,9 +10,9 @@
             {{ with .context.Params.option1_name }}
                 <div class="w-full font-robmono uppercase text-sm py-4"> {{.}}</div>
             {{ end}}
-
-            {{/*  OPTIONS BUTTONS  */}}
+            {{/*  OPTIONS BUTTONS  */}}            
             {{ range .context.Pages  }}   
+            
                 <button 
                     class=" mr-4
                             border-2 border-gray-200 
@@ -36,7 +36,7 @@
                         option1Name= '{{.Params.option1_name}}',
                         option1Value= '{{.Params.option1_value}}' 
                     ">          
-                    {{ .Params.option1_value }}{{ with .Params.option2_value }} / {{ . }}{{ end }}
+                    {{ .Params.option1_value }}
                 </button>
             {{ end }}
         </div>

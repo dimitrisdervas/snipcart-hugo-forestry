@@ -1,4 +1,4 @@
- Options Zero 
+ Options Zero  test
 {{/*  Check how many variants there are   */}}{{ $numberVariants := len .Pages}}
 {{/*  See if there is gallery  */}}
 {{/*  Check if the variants have gallery   */}}
@@ -7,15 +7,12 @@
 {{/*  Product one image multiple options-variants   */}}
 {{/*  Product multiple images multiple options-variants   */}}
 {{/*  Product multiple image one options-variants   */}}
-
-
-
 {{/*  Create x-data for default options  */}}
 
-    {{/*  XDATA PAGE   */}} {{ partial "product_page_xdata.html" . }}
+{{/*  XDATA PAGE   */}} {{ partial "product_page_xdata.html" . }}
 
     {{/*  COlUMN 1,2 / ROW 1   */}}
-    {{/*  TITLE   */}} <div class="col-span-2 col-start-1 row-start-1 pl-8 text-left"> <h2 class="text-2xl  mb-2 " >{{ .Title }}</h2> </div>
+        {{/*  TITLE   */}} <div class="col-span-2 col-start-1 row-start-1 pl-8 text-left"> <h2 class="text-2xl  mb-2 " >{{ .Title }}</h2> </div>
     
 
     {{/* COlUMN 1,2 / ROW 2 */}}
@@ -24,18 +21,12 @@
         {{/*  OPTIONS   */}} {{ partial "products_page_options.html" (dict "context" . "numberVariants" $numberVariants "ImagesResources" $.Resources  "default_variant" ($.Scratch.Get "default_variant") ) }}
         </div>
 
-    {{/*  GALLERY THUMBNAILS  */}} {{ partial "product_page_thumbnails.html" (dict "context" . "ImagesResources" .Resources) }}
+    {{/* COlUMN 3 / ROW 1 */}} 
+        {{/*  SINGLE PRODUCT IMAGE   */}} {{ partial "resources_product_single_image_resize.html" (dict "context" . "ImagesResources" .Resources)}}
 
-
-
-    {{/* COlUMN 3 / ROW 1 */}}
-    
-    {{ if .Params.gallery }} {{/*  GALLERY PRODUCT */}} {{ partial "product_page_gallery.html" . }}
-    {{ else}} {{/*  SINGLE PRODUCT IMAGE   */}} {{ partial "resources_product_single_image_resize.html" (dict "context" . "ImagesResources" .Resources)}}
-    {{ end }}
 
     {{/*  COlUMN 3 / ROW 1 */}}
-    {{/*  Details */}} {{ partial "product_page_details.html" . }}
+        {{/*  Details */}} {{ partial "product_page_details.html" . }}
 
 
 </div>

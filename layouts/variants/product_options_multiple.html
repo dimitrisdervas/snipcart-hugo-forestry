@@ -8,7 +8,7 @@
 {{/*  Product multiple images multiple options-variants   */}}
 {{/*  Product multiple image one options-variants   */}}
 
-
+multiple template
 {{/*  Create x-data for default options  */}}
 <div 
     class=" grid grid-flow-row grid-cols-2 grid-rows-3 md:grid-cols-5 md:grid-rows lg:grid-cols-7  
@@ -18,7 +18,7 @@
     x-data="{ 
     {{/*  INDEX OF ALL VARIANTS  */}}
     {{ range $index, $variants := .Pages }}  
-        {{$index}} : {
+        {{$variants.Params.variant_sku}} : {
             url: '{{ .Path  }}',
             id: '{{$variants.Params.variant_sku }}',
             retail: '{{$variants.Params.retail}}',
@@ -27,12 +27,20 @@
             stock: '{{ $variants.Params.variant_inventory_qty }}',
             image: '{{ $variants.Params.image_src}}',
             {{ partial "resources_image_resize_xdata.html" (dict "context" . "ImagesResources" $.Resources ) }}
-            options: {
-            {{ if $variants.Params.option1_name}}{{ $variants.Params.option1_name}} : '{{ $variants.Params.option1_value}}',{{end}}
-            {{ if $variants.Params.option2_name}}{{ $variants.Params.option2_name}} : '{{ $variants.Params.option2_value}}',{{end}}
-            {{ if $variants.Params.option3_name}}{{ $variants.Params.option3_name}} : '{{ $variants.Params.option3_value}}'{{end}}
-            }
+            {{ if  $variants.Params.option1_name}}{{ $variants.Params.option1_name}} : '{{ $variants.Params.option1_value}}',{{end}}
+            {{ if  $variants.Params.option2_name}}{{ $variants.Params.option2_name}} : '{{ $variants.Params.option2_value}}'{{end}}
         },
+    {{ end }}
+    {{ range .Params.options.names }}
+    {{ $option := .option }}
+    {{ $option  }} : {
+        {{ range where $.Pages "Params.option1_name" $option }}
+            {{.Params.variant_sku}} : {{ .Params.option2_value}} ,
+            {{ end }}
+        {{ range where $.Pages "Params.option2_name" $option }}
+            {{.Params.variant_sku}} : {{ .Params.option2_value}} ,
+            {{ end }}
+    }
     {{ end }}
     {{/*  DEFAULT VALUES FOR VARIANT   */}}
     {{ $.Scratch.Set "default_variant" .Params.variant_sku }}
@@ -65,7 +73,7 @@
             <div x-text="retail + '€' "  class="flex-inline text-lg font-normal line-through " x-show="retail > 0"></div>
         </div>
     {{/*  OPTIONS   */}}
-        {{ partial "products_page_options.html" (dict "context" . "numberVariants" $numberVariants "ImagesResources" $.Resources  "default_variant" ($.Scratch.Get "default_variant") ) }}
+        {{ partial "products_page_options_multiple.html" (dict "context" . "numberVariants" $numberVariants "ImagesResources" $.Resources  "default_variant" ($.Scratch.Get "default_variant") ) }}
     </div>
 {{/*  end first 1/3 */}}
 
