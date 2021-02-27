@@ -86,7 +86,6 @@ outputs:
     - json
   terms:
     - html
-    - json
   term:
     - html
     - json
@@ -106,4 +105,6 @@ related:
 #   writeStats: true
 
 ignoreErrors : "error-remote-getjson"
- 
+
+minify:
+ disableJSON: true

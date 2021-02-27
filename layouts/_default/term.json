@@ -1,0 +1,22 @@
+[
+{{ $length := len ( where .Data.Pages "Kind" "section")}}
+{{ range $index, $CollectionProducts := (where .Data.Pages "Kind" "section") }}
+{{ $path :=  split $.RelPermalink "/"}}
+{{ $pathtertm := index $path 3 | urlize }}
+{
+        "id": "{{ $index }}",
+        "link" : "{{ printf "%s?%s" $CollectionProducts.Permalink (querify "q" $pathtertm "index" $index | safeURL) | safeURL }}",
+        "sku" : {{ $CollectionProducts.Params.variant_sku| jsonify }},
+        "name" : {{ $CollectionProducts.Params.title | jsonify }},
+        "price" : {{ $CollectionProducts.Params.variant_price | jsonify }},
+        "products" : {{ $CollectionProducts.Params.products | jsonify }},
+        "image" : {{ $CollectionProducts.Params.image_src | jsonify }}
+    }{{ if ne (add $index 1) $length }},{{ end }}
+
+
+{{ end }}
+
+]
+
+
+     
