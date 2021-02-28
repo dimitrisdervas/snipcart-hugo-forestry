@@ -1,0 +1,8 @@
+{{/*  LANGUAGE   */}}
+                <div class=" text-right pb-2 ">
+                    {{ range $.Site.Home.AllTranslations }}
+                        {{ if ne .Language.Lang $.Site.Language.Lang }}
+                            <a class="text-black" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                        {{ end }}
+                    {{ end }}
+                </div>

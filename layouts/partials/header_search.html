@@ -1,0 +1,35 @@
+{{/*  SEARCH   */}}
+<div    x-data =" { isOpen : false }">
+    <button id="search-button"
+            @click="$dispatch('toggle');"
+            class="header--search  w-6 h-6" 
+            aria-label="Search">
+        <svg class="icon--root icon--search" viewBox="0 0 20 20">
+            <path d="M14.37 12.86l5.636 5.637-1.414 1.414-5.633-5.632a7.627 7.627 0 01-4.688 1.604c-4.256 0-7.707-3.483-7.707-7.78 0-4.297 3.45-7.78 7.707-7.78s7.707 3.483 7.707 7.78c0 1.792-.6 3.442-1.608 4.758zM8.27 14.084c3.259 0 5.907-2.673 5.907-5.98 0-3.306-2.648-5.98-5.907-5.98-3.258 0-5.907 2.674-5.907 5.98 0 3.307 2.649 5.98 5.907 5.98z" fill-rule="nonzero"></path>
+        </svg>
+    </button>
+</div>
+
+<div   x-data="{ isOpen : false }"
+        x-cloak
+        x-show="isOpen"
+        x-on:toggle.window="isOpen = !isOpen" 
+        x-init="$refs.searchInput.focus()"
+    style="width:100vw;height:100vh;"
+    class="absolute top-0 left-0 bg-white flex items-center justify-center z-50">
+    <form  id="search-form" 
+        class="noscript absolute flex flex-col w-full max-w-screen-lg" 
+        style="top:23px;left:-1px;"
+        data-language-prefix="{{ site.LanguagePrefix }}">
+        <div class="search-bar pl-4 flex justify-between">
+            <input autofocus x-ref="searchInput" id="search-input" class="search--display border-b text-2xl text-gray-600 focus:outline-none leading-8" name="q" tabindex="0" autocomplete="off" {{ with site.BaseURL }}value=" site:{{ . }}"{{ end }} placeholder="{{ i18n "search" }}">
+        </div>
+        <div class="border-b pb-4 mt-4 px-4">Products</div>
+        <a @click="$dispatch('toggle')">close</a>
+        <ul id="search-results" 
+            style=""
+            class="search--display flex flex-wrap justify-start w-full mt-10">
+        </ul>
+    </form>
+</div>
+
