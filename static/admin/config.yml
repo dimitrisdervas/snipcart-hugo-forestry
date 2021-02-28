@@ -23,3 +23,18 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Description", name: "description", widget: "string" }
+  - name: "product"
+    label: "Products"
+    folder: "content/variants"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+  - name: "Config"
+    label: "config"
+    files:
+      - label: "Config"
+        name: "config"
+        file: "condig.yml"
+        fields:
+          - label: Parameteres
+            name: params
+            widget: string
