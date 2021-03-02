@@ -1,14 +1,25 @@
 <div class="flex justify-around flex-wrap border px-2 m-2"
     x-data="{
-        top :false,
-        side : false
+        top : false,
+        pageVariables : false,
+        frontmatter: false
     }"
     >
 
+    <div class="fixed z-50 overflow-scroll top-0 right-0 w-96 h-full bg-white p-2 shadow-lg " 
+    x-show="frontmatter" 
+    @click.away="frontmatter = false">
+        <div class="">
+            
+            </div>
+
+                
+            </div>
+    
 
     <div    class="fixed z-50 overflow-scroll top-0 right-0 w-96 h-full bg-white p-2 shadow-lg " 
-            x-show="side" 
-            @click.away="side = false">
+            x-show="pageVariables" 
+            @click.away="pageVariables = false">
 
     
 
@@ -21,26 +32,26 @@
 
 
             {{ if .IsSection }}
-                <h2 class="w-full py-2 px-2">This Page is a Section / Number of Pages  {{ len .Pages}}</h2>
+                <h2 class="w-full py-2 px-2">This Page is a Section </br> Number of Pages  {{ len .Pages}}</h2>
                  <h2 class="bg-gray-100 px-2 w-full py-1"> {{ .Title }}</h2>
                 <div class="">
                      <h2 class="bg-gray-100 px-2 w-full py-1">Pages that belong to the Section</h2>
-                    <div class="w-full page-variables text-sm flex w-full justify-between border-b pb-1 hover:bg-gray-100 px-1">range  .Pages /  .RelPermalink </div>
+                    <div class="bg-gray-100 px-2 w-full py-1">range  .Pages /  .RelPermalink </div>
                     {{ range  .Pages }}
-                        <a class="variable_value text-xs" href="{{.RelPermalink}}"> {{.RelPermalink }}</a>
+                        <a class="variable_value text-xs w-full py-1 border-b hover:bg-gray-100" href="{{.RelPermalink}}"> {{.RelPermalink }}</a></br>
                     {{end }}
                     </div>
 
                         <div class="flex flex-col">
-                            <h2>.RegularPages</h2>
+                            <h2 class="bg-gray-100 px-2 w-full py-1">.RegularPages</h2>
                         {{ range first 5 .RegularPages}}
-                        <a class="variable_value text-xs"  href="{{.RelPermalink}}">{{ .RelPermalink }}</a>
+                        <a class="variable_value text-xs w-full py-1 border-b hover:bg-gray-100"  href="{{.RelPermalink}}">{{ .RelPermalink }}</a>
                         {{ end }}
                     </div>
                         <div class="flex flex-col">
-                            <h2>.RegularPagesRecursive</h2>
+                            <h2 class="bg-gray-100 px-2 w-full py-1">.RegularPagesRecursive</h2>
                         {{ range first 5 .RegularPagesRecursive}}
-                        <a class="variable_value text-xs"  href="{{.RelPermalink}}">{{ .RelPermalink }}</a>
+                        <a class="variable_value text-xs w-full py-1 border-b hover:bg-gray-100"  href="{{.RelPermalink}}">{{ .RelPermalink }}</a>
                         {{ end }}
                     </div>
 
@@ -132,9 +143,13 @@
             <div x-show="top">
                 <button
                 class="hover:bg-pink-800 hover:text-white mx-2 px-2 py-2"
-                x-on:click="side = true"
-                x-on:click.away="side = false">Page Variables</button>
+                x-on:click="pageVariables = true"
+                x-on:click.away="pageVariables = false">Page Variables</button>
 
+                <button
+                class="hover:bg-pink-800 hover:text-white mx-2 px-2 py-2"
+                x-on:click="frontmatter = true"
+                x-on:click.away="frontmatter = false">FrontMatter</button>
 
                 <a class="hover:bg-pink-800 hover:text-white mx-2 px-2 py-2" target="_blank"
                 href="/gr/debug/alltaxonomies/">All Taxonomies</a>
