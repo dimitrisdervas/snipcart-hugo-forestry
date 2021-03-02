@@ -1,25 +1,6 @@
 <!-- https://tailwindcomponents.com/component/breadcrumbs-1 & breadcrumbs from http://hugocodex.org/add-ons/breadcrumbs/ -->
   <nav class="text-black text-sm font-robmono w-full py-4 lg:w-1/2" aria-label="Breadcrumb"
-  {{ if in .Dir "variants" }}
-  x-data="{
-        links : {
-        {{ $length := len .Params.collections }}
-        {{ range $index, $collection := .Params.collections }}
-            {{ $collectionString := path.Join "/collections" $collection }}
-            {{ with $.Site.GetPage $collectionString }}
-            {{ $collection | urlize }} : { 
-                link : '{{ .Permalink | absLangURL }}',
-                path : '{{ $collection | urlize }}',
-                title : '{{ .Title }}'
-            }{{ if ne $index $length }},{{ else }}{{ end }}
-            {{ end }}
-        {{ end }}
-        },
-        terms: '{{.Params.collections}}',
-        collectionTerm : ''
-        }"
-        x-init="queryTerm = new URLSearchParams(location.search).get('q');"
-        {{ end }}
+
         >
 
 
@@ -94,16 +75,3 @@
   </nav>
 
 
-  <script>
-    function alpineInstance() {
-      const queryTerm = new URLSearchParams(location.search).get('q');
-      console.log(queryTerm);
-          return {
-              collectionTerm: queryTerm
-          }
-         
-      }
-
-
-
-</script> 

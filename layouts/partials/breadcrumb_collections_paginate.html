@@ -5,17 +5,17 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
 --> 
 {{ if .IsSection }}
 
-<nav 
+<div 
     class="text-black text-sm font-robmono w-full flex justify-between py-4 " 
     aria-label="previous and next products"    
     x-data="alpineInstance()"
     x-init="
-    index = parseInt(new URLSearchParams(location.search).get('index'),10);
-    queryTerm = new URLSearchParams(location.search).get('q');
-    url = 'http://localhost:1313/gr/collections/' + queryTerm + '/index.json';
-    fetch(url)
-        .then(response => response.json())
-        .then(data => products = data);
+        index = parseInt(new URLSearchParams(location.search).get('index'),10);
+        queryTerm = new URLSearchParams(location.search).get('q');
+        url = 'http://localhost:1313/gr/collections/' + queryTerm + '/index.json';
+        fetch(url)
+            .then(response => response.json())
+            .then(data => products = data);
     ">
 
     <template x-for="product in Object.values(products)">
@@ -43,6 +43,7 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
                             </a>
 
                 </template>
+
             </div>
     </template>
 </div>
@@ -55,15 +56,18 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
             const currentProduct = index;
             const nextProduct = index + 1;
             const previousProduct = index - 1;
+            var url = 'http://localhost:1313/gr/collections/' + queryTerm + '/index.json';
+            fetch(url)
+                .then(response => response.json())
+                .then(data => products = data);
                 return {
                     products: {},
                     nextProduct: nextProduct,
                     previousProduct: previousProduct
                 }
             }
-
 </script> 
 
 
-</nav>
+
 {{ end }}
