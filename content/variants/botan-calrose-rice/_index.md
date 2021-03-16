@@ -1,79 +1,4 @@
 ---
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
 handle: "botan-calrose-rice"
 title: "Botan Calrose Rice"
 vendor: "Botan"
@@ -119,7 +44,9 @@ variant_image: ""
 variant_weight_unit: ""
 collections: ["Food","products_list"]
 collection_lv2: [Rice]
-gallery: []
+gallery: 
+    - image_src: botan-calrose-rice_01.jpg
+    - image_src: botan-calrose-rice_02.jpg
 
 ---
 
