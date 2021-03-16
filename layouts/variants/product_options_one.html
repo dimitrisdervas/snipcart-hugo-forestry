@@ -9,7 +9,7 @@ Options One  test
 {{/*  Product multiple image one options-variants   */}}
 {{/*  Create x-data for default options  */}}
 
-{{/*  XDATA PAGE   */}} {{ partial "product_page_xdata.html" . }}
+{{/*  x-data PAGE   */}} {{ partial "product_page_xdata.html" . }}
 
     {{/*  COlUMN 1,2 / ROW 1   */}}
         {{/*  TITLE   */}} <div class="col-span-2 col-start-1 row-start-1 pl-8 text-left"> <h2 class="text-2xl  mb-2 " >{{ .Title }}</h2> </div>
@@ -27,7 +27,7 @@ Options One  test
 
         {{/*  GALLERY PRODUCT */}} {{ partial "product_page_gallery.html" . }}
 
-{{/*  If there are different variants images  */}}        
+{{/*  If there are variants images  */}}        
     {{ else if gt (len .Pages) 1 }} 
 
         {{/*  GALLERY THUMBNAILS  */}} {{ partial "product_page_thumbnails_option_one.html" (dict "context" . "ImagesResources" .Resources) }}

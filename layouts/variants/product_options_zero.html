@@ -9,7 +9,7 @@
 {{/*  Product multiple image one options-variants   */}}
 {{/*  Create x-data for default options  */}}
 
-{{/*  XDATA PAGE   */}} {{ partial "product_page_xdata.html" . }}
+{{/*  x-data PAGE   */}} {{ partial "product_page_xdata.html" . }}
 
     {{/*  COlUMN 1,2 / ROW 1   */}}
         {{/*  TITLE   */}} <div class="col-span-2 col-start-1 row-start-1 pl-8 text-left"> <h2 class="text-2xl  mb-2 " >{{ .Title }}</h2> </div>
@@ -21,9 +21,18 @@
         {{/*  OPTIONS   */}} {{ partial "products_page_options.html" (dict "context" . "numberVariants" $numberVariants "ImagesResources" $.Resources  "default_variant" ($.Scratch.Get "default_variant") ) }}
         </div>
 
-    {{/* COlUMN 3 / ROW 1 */}} 
-        {{/*  SINGLE PRODUCT IMAGE   */}} {{ partial "resources_product_single_image_resize.html" (dict "context" . "ImagesResources" .Resources)}}
+{{/*  If there is a gallery but gallery images  */}}
+    {{ if .Params.gallery }}
+            {{/*  GALLERY THUMBNAILS  */}} {{ partial "product_page_thumbnails.html" (dict "context" . "ImagesResources" .Resources) }}
+    
+            {{/*  GALLERY PRODUCT */}} {{ partial "product_page_gallery.html" . }}
 
+    {{/*  If there are no gallery images  */}}  
+    {{ else }}
+        
+    {{/*  SINGLE PRODUCT IMAGE   */}} {{ partial "resources_product_single_image_resize.html" (dict "context" . "ImagesResources" .Resources)}}
+            
+    {{ end }}
 
     {{/*  COlUMN 3 / ROW 1 */}}
         {{/*  Details */}} {{ partial "product_page_details.html" . }}

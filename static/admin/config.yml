@@ -26,6 +26,14 @@ collections:
   - name: "product"
     label: "Products"
     folder: "content/variants"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Price", name: "price", widget: "string"}
+  - name: "collection"
+    label: "Collections"
+    folder: "content/collections"
+    create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
   - name: "Config"
@@ -33,8 +41,8 @@ collections:
     files:
       - label: "Config"
         name: "config"
-        file: "condig.yml"
+        file: "config.yml"
         fields:
-          - label: Parameteres
+          - label: Parametres
             name: params
             widget: string
