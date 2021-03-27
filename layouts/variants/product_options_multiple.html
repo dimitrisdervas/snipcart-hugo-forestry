@@ -31,20 +31,8 @@ multiple template
             {{ if  $variants.Params.option2_name}}{{ $variants.Params.option2_name}} : '{{ $variants.Params.option2_value}}'{{end}}
         },
     {{ end }}
-    {{ range .Params.options.names }}
-    {{ $option := .option }}
-    {{ $option  }} : {
-        {{ range where $.Pages "Params.option1_name" $option }}
-            {{.Params.variant_sku}} : {{ .Params.option2_value}} ,
-            {{ end }}
-        {{ range where $.Pages "Params.option2_name" $option }}
-            {{.Params.variant_sku}} : {{ .Params.option2_value}} ,
-            {{ end }}
-    }
-    {{ end }}
     {{/*  DEFAULT VALUES FOR VARIANT   */}}
     {{ $.Scratch.Set "default_variant" .Params.variant_sku }}
-    
     {{ range first 1 .Pages }}  
         {{.Params.variant_sku }}: true,
         title: '{{.Title}}',
@@ -58,9 +46,28 @@ multiple template
         option1Name: '{{.Params.option1_name}}',
         option1Value: '{{.Params.option1_value}}',
         stock: '{{ .Params.variant_inventory_qty }}',
-        tab: 'content'
+        tab: 'content',
     {{ end }}
-    }">
+    option1: 'single',
+    option2: 'bottle',
+    options_selected: [ 'single', 'bottle' ]
+    }"
+    >
+
+    
+<script>
+
+            
+            var tv_current_product_price = {};
+            tv_current_product_price['single']['can'] = 100;
+            tv_current_product_price['single']['bottle'] = 200;
+            tv_current_product_price['6 pack']['can'] = 300;
+            tv_current_product_price['6 pack']['bottle'] = 400;
+        
+
+
+</script>
+
 
 {{/*  first 1/3  */}}
     {{/*  Title  */}}
@@ -69,8 +76,9 @@ multiple template
     <div class="col-span-2  md:row-start-2 md:col-start-1 lg:row-start-2 lg:row-span-2 pl-8">
     {{/*  PRICE  */}}
         <div class="flex items-baseline py-2 ">
+            <div id="product_price_shown"></div>
             <div x-text="price +  '€' "  class="flex-inline text-xl pr-2 font-robmono "></div>
-            <div x-text="retail + '€' "  class="flex-inline text-lg font-normal line-through " x-show="retail > 0"></div>
+            <div x-text="retail + '€' "  class="flex-inline text-lg font-normal line-through " x-show="retail > 0 " > </div>
         </div>
     {{/*  OPTIONS   */}}
         {{ partial "products_page_options_multiple.html" (dict "context" . "numberVariants" $numberVariants "ImagesResources" $.Resources  "default_variant" ($.Scratch.Get "default_variant") ) }}
