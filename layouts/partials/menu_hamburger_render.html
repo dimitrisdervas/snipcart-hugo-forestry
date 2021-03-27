@@ -1,0 +1,5 @@
+{{ $currentPage := .currentPage }}
+
+{{ range .menu }}    
+<a class="font-robmono px-3 py-5 border-b border-gray-300 w-full" href="{{ .URL }}"> {{ .Name }}</a>
+{{ end }}

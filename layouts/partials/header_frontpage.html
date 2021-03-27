@@ -2,12 +2,14 @@
         class="w-full bg-gray-100 md:absolute 
         md:bg-opacity-0 md:inset-0
         md:hover:bg-opacity-95 md:z-10" 
-style="width: 100%;height: 23vh;"
-x-data="{ dropdown: false }">
+        style="@media only screen and (min-width: 768px) { height: 23vh; }"
+        x-data="{ dropdown: false }">
 
-  <div class="w-full flex justify-between pb-6">
+  <div class="w-full flex justify-between md:pb-6">
     {{ partial "header_menu_hamburger.html" . }} 
     
     {{ partial "header_menu_dropdown.html" . }}
   </div>
 </header>
+
+<style>@media only screen and (min-width: 768px) { header { height: 23vh;} }</style>

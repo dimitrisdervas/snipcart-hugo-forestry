@@ -1,5 +1,6 @@
-<div class="md:hidden w-full flex flex-wrap justify-around items-center"
- x-data="{ hamburgermenu : false }">
+<div class=" md:hidden w-full flex flex-wrap items-center"
+    x-cloak
+    x-data="{ hamburgermenu : false }">
 
     {{/* LANGUAGE */}}
     <div class="w-full bg-black py-2">
@@ -8,25 +9,26 @@
         {{ end }}
     </div>
 
- <button
-    @click="hamburgermenu = !hamburgermenu"
-    >      
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#000"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="feather feather-menu stroke-current"
-      >
-        <line x1="3" y1="12" x2="21" y2="12"></line>
-        <line x1="3" y1="6" x2="21" y2="6"></line>
-        <line x1="3" y1="18" x2="21" y2="18"></line>
-      </svg>
+    <div class="flex flex-inline w-full items-center  justify-around">
+    <button
+        @click="hamburgermenu = !hamburgermenu"
+        >      
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-menu stroke-current"
+        >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
     </button>
 
 
@@ -52,62 +54,124 @@
     {{/* SNIPCART CART */}}
 
     <div class="w-4 h-4">
-      <a href="#" class="snipcart-checkout" style="text-decoration: none">
+        <a href="#" class="snipcart-checkout" style="text-decoration: none">
         <div class="snipcart-summary">
                 <svg class="fill-current text-black" viewBox="0 0 21 20">
             <path d="M16.731 19.393a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8zm-9.74 0a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8zM2.534 1.9H1A.9.9 0 011 .1h2.277a.9.9 0 01.883.73l.469 2.422h15.14a.9.9 0 01.876 1.105l-2.203 9.445a.9.9 0 01-.876.695H5.712a.9.9 0 01-.884-.729L2.534 1.9zm16.1 3.152H4.977l1.477 7.645h10.397l1.783-7.645z" fill-rule="evenodd"></path>
             </svg>
-          <span class="snipcart-total-items text-black"></span>
+            <span class="snipcart-total-items text-black"></span>
         </div>
-      </a>
+        </a>
     </div>
+</div> 
+<!-- LOGO + Buttons -->
 
+    {{/* GREY AREA MENU */}}
 
-
-
-
-
-
-   
-
-  <div
-    x-show="hamburgermenu"
-    class="fixed inset-0 bg-black bg-opacity-25 " style="z-index: 9999;"
-  >
-  
-  <div
-    class="fixed transition duration-300 right-0 top-0 transform w-full max-w-xs h-screen bg-gray-100 overflow-hidden"
-    :class="{'translate-x-full': !open}"
-  >
-  
-    <button
-      @click="hamburgermenu = !hamburgermenu"
-      class="fixed top-0 right-0 mr-4 mt-2 z-50"
+    <div
+        x-show="hamburgermenu"
+        class="fixed inset-0 bg-black bg-opacity-25 " style="z-index: 9999;"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="48"
-        height="48"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#000"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="feather feather-x"
-      >
-        <line x1="18" y1="6" x2="6" y2="18"></line>
-        <line x1="6" y1="6" x2="18" y2="18"></line>
-      </svg>
-    </button>
+  
+        {{/* SIDE MENU */}}
+        <div
+            class="fixed 
+                    transition duration-300 
+                    left-0 top-0 transform 
+                    w-10/12
+                    max-w-xs h-screen 
+                    bg-white overflow-hidden
+                    flex flex-col "
+            :class="{'translate-x-full': !open}"
+        >
+        <!-- TOP HEADER IN SIDE MENU  -->
+        <div class="w-full">
+            <a href="">Search</a>
+        <!-- CLOSE SIDE MENU BUTTON  -->
+            <button 
+                    @click="hamburgermenu = !hamburgermenu"
+                    class=""
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#000"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-x"
+                >
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+            <!-- MENUS IN SIDE MENU  -->
+            <div class="flex flex-col relative">
 
-    <div class="p-16 px-6 absolute top-0 h-full overflow-y-scroll">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-     
+
+                    <a class="font-robmono px-3 py-5 border-b border-gray-300 w-full" href="/">{{ i18n "home" }}</a>
+            
+                    <div x-data="{ 
+                        collection: false,
+                        submenu_1: false,
+                        submenu_2: false,
+                        submenu_3: false
+
+                         }"
+                        class="block">
+                        <div 
+                            @click=" collection = !collection "
+                            class="font-robmono px-3 py-5 border-b border-gray-300 w-full flex flex-inline justify-between items-center">
+                            {{ i18n "catalog" }}
+
+                                <svg class="fill-current h-4 w-4 " viewBox="0 0 8 14">
+                                    <path d="M6.274 7.202L.408 1.336l.707-.707 6.573 6.573-.096.096-6.573 6.573-.707-.707 5.962-5.962z" fill-rule="nonzero"></path>
+                                  </svg>
+
+                        </div>
+                            
+                        <div 
+                            x-show="collection"
+                            class="absolute top-0 bottom-0 block -translate-x-full rounded-sm h-full w-full bg-white">
+                            <div class="flex flex-col" >
+                                <div class="font-robmono px-3 py-5 border-b border-t border-gray-300 w-full text-center flex justify-start items-center" @click=" collection = !collection ">
+                                    <svg class="fill-current h-4 w-4 transform rotate-180 justify-self-start " viewBox="0 0 8 14">
+                                        <path d="M6.274 7.202L.408 1.336l.707-.707 6.573 6.573-.096.096-6.573 6.573-.707-.707 5.962-5.962z" fill-rule="nonzero"></path>
+                                      </svg>                                
+                                    <div class="flex-1">Back</div>    
+                                </div>
+                                {{ partial "menu_hamburger_render.html" (dict "menu" .Site.Menus.featured "currentPage" . ) }}
+                                <div class="font-robmono px-3 py-5 border-b border-gray-300 w-full flex flex-inline justify-between items-center" 
+                                    @click=" submenu_1 = !submenu_1 ">
+                                    Collections
+                                    <svg class="fill-current h-4 w-4 " viewBox="0 0 8 14">
+                                        <path d="M6.274 7.202L.408 1.336l.707-.707 6.573 6.573-.096.096-6.573 6.573-.707-.707 5.962-5.962z" fill-rule="nonzero"></path>
+                                      </svg>
+                                </div>
+                                {{ partial "menu_hamburger_submenu_render.html" (dict "menu" .Site.Menus.collections "currentPage" . ) }}
+                            </div>
+
+                        </div>
+
+
+                    </div>
+            
+                        <a class="font-robmono px-3 py-5 border-b border-gray-300 w-full" href="{{ "blog" | relLangURL }}">{{ i18n "blog" }}</a>
+
+            
+
+                        <a class="font-robmono px-3 py-5 border-b border-gray-300 w-full" href="{{ "abouts_us" | relLangURL }}">About Us</a>
+
+        
+        </div> {{/* END SIDE MENU*/}}
     </div>
-  </div>
+
+
+
+
 </div>
-
-
 </div>
