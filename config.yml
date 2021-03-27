@@ -21,6 +21,16 @@ languages:
 params:
     slideshow_promotion: "fiveplusone"
     featured_product: "dark-quinoa-organic-chocolate"
+    collections_featured:
+        - collection: anne_anderson
+          title: "Pantry Picks with Annie Anderson"
+          image: "anne_anderson.jpg"
+          text: "This years Masterchef winner shares her pantry staples that will instantly up your chef game"
+          link_title: "SHOP THE COLLECTION"
+        - collection: drinks
+          title: "Stock up and Save — 25% Off Specialty Beer"
+          text: "Spend $100 get  25% off our specialty beers"
+          link_title: "OK, LETS GO!"
     company:
       about: "The Deli Co is a family-owned business delivering the finest food and produce in Vancouver since 2008."
       social: 

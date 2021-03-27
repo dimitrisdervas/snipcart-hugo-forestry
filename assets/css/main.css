@@ -32,6 +32,12 @@ h2 {
   @apply font-robmono;
 }
 
+[x-cloak] {
+    display: none !important;
+}
+.input__field:checked + .button {
+    @apply border-gray-800;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
