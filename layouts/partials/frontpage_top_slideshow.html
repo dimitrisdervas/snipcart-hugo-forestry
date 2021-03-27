@@ -15,28 +15,29 @@
     }
 </style>
 
-<div class="heroslideshow swiper-container " style="width: 100%;">
-  <div class="swiper-wrapper">
+<div class="heroslideshow swiper-container w-full ">
+<div class="swiper-wrapper">
     {{ range (where .Site.RegularPages.ByTitle "Section" "slideshow" ) }}
     <div class="swiper-slide flex-col flex">
-  
-    {{ partial "image_scrset.html" . }}
+
+        {{ partial "image_scrset.html" . }}
     
-      <div class="px-4 md:absolute md:inset-y-1/2 md:ml-8 md:bg-white">
-        <div class="w-80 hidden md:block px-8 py-8 md:bg-white">
-        <div class="bold text-xl my-2">{{ .Title }}</div>
-        <p class="text-sm mb-4">{{ .Params.description }}</p>
-        {{ $product := printf "/products/%s" .Params.product_link }}
-        <a
-          class="bg-black px-6 py-2 text-white w-24 mb-2"
-          href="{{ $product | relLangURL }}"
-          >Shop</a
-        >
+        <div class="px-4 md:absolute md:inset-y-1/2 md:ml-8 md:bg-white">
+            <div class="w-full md:px-8 py-8   
+                        md:w-80 md:block md:bg-white">
+                <div class="bold text-xl my-2">{{ .Title }}</div>
+                <p class="text-sm mb-4">{{ .Params.description }}</p>
+                {{ $product := printf "/products/%s" .Params.product_link }}
+                <a
+                class="bg-black px-6 py-2 text-white w-24 mb-2"
+                href="{{ $product | relLangURL }}"
+                >Shop</a
+                >
+            </div>
         </div>
-      </div>
     </div>
     {{ end }}
-  </div>
+</div>
   <!-- Add Pagination -->
   <div class="swiper-pagination"></div>
 </div>

@@ -1,7 +1,7 @@
 <div class="bg-white mb-6 py-8 px-4 max-w-screen-xl mx-auto">
 <h2 class="text-center text-xl py-6 ">{{ i18n "fontpage_promotedproduct"}}</h2>
 
-{{ $featured_product := printf "/variants/%s" .Site.Params.featured_product}}
+{{ $featured_product := printf "/variants/%s" .Site.Params.featured_product }}
 
 {{ with  .Site.GetPage $featured_product }}
 {{ $numberVariants := len .Pages}}
