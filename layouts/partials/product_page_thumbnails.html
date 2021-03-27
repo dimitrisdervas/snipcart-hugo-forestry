@@ -1,7 +1,13 @@
 {{ if .context.Params.gallery }}
 <div class="mt-8 w-full flex justify-center col-span-4 
-            md:col-start-3 md:h-2
-            lg:mt-0 lg:col-start-1 lg:col-span-2 lg:row-start-3 lg:row-span-2 lg:h-24 ">
+            md:col-start-3 
+            md:h-2
+            lg:mt-0 
+            lg:col-start-1 
+            lg:col-span-2 
+            lg:row-start-3 
+            lg:row-span-1 
+            lg:h-24 ">
     <div class="flex w-full justify-center">
         {{ range $index, $gallery := .context.Params.gallery }}
         {{ $image := string .image_src }} 

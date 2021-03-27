@@ -1,5 +1,5 @@
- Options Zero
-{{/*  Check how many variants there are   */}}{{ $numberVariants := len .Pages}}
+Options One  test
+{{/*  Check how many variants there are   */}}
 {{/*  See if there is gallery  */}}
 {{/*  Check if the variants have gallery   */}}
 {{/*  Prepare all the images for resize   */}}
@@ -9,6 +9,8 @@
 {{/*  Product multiple image one options-variants   */}}
 {{/*  Create x-data for default options  */}}
 
+{{ $numberVariants := len .Pages}}
+
 {{/*  x-data PAGE   */}} {{ partial "product_page_xdata.html" . }}
 
     {{/*  COlUMN 1,2 / ROW 1   */}}
@@ -16,33 +18,36 @@
     
 
     {{/* COlUMN 1,2 / ROW 2 */}}
-        <div class="col-span-2  
-                    md:row-start-2 md:col-start-1 
-                    lg:row-start-2 
-                    lg:row-span-1 
-                    pl-8">
+        <div class="col-span-2  md:row-start-2 md:col-start-1 lg:row-start-2 lg:row-span-2 pl-8">
         {{/*  PRICE     */}} {{ partial "product_page_price.html" . }}
         {{/*  OPTIONS   */}} {{ partial "products_page_options.html" (dict "context" . "numberVariants" $numberVariants "ImagesResources" $.Resources  "default_variant" ($.Scratch.Get "default_variant") ) }}
         </div>
 
-    {{/*  If there is a gallery but gallery images  */}}
+{{/*  If there is a gallery but no variants images  */}}
     {{ if .Params.gallery }}
-            {{/*  GALLERY THUMBNAILS  */}} {{ partial "product_page_thumbnails.html" (dict "context" . "ImagesResources" .Resources) }}
-    
-            {{/*  GALLERY PRODUCT */}} {{ partial "product_page_gallery.html" . }}
+        {{/*  GALLERY THUMBNAILS  */}} {{ partial "product_page_thumbnails.html" (dict "context" . "ImagesResources" .Resources) }}
 
-    {{/*  If there are no gallery images  */}}  
+        {{/*  GALLERY PRODUCT */}} {{ partial "product_page_gallery.html" . }}
+
+{{/*  If there are variants images  */}}        
+    {{ else if gt (len .Pages) 1 }} 
+
+        {{/*  GALLERY THUMBNAILS  */}} {{ partial "product_page_thumbnails_option_one.html" (dict "context" . "ImagesResources" .Resources) }}
+
+        {{/*  GALLERY PRODUCT */}} {{ partial "product_page_gallery.html" . }}
+
+{{/*  If there are no variants images  */}}  
     {{ else }}
-        
-    {{/*  SINGLE PRODUCT IMAGE   */}} {{ partial "resources_product_single_image_resize.html" (dict "context" . "ImagesResources" .Resources)}}
-            
+
+         {{/*  SINGLE PRODUCT IMAGE   */}} {{ partial "resources_product_single_image_resize.html" (dict "context" . "ImagesResources" .Resources)}}
+    
     {{ end }}
 
     {{/*  COlUMN 3 / ROW 1 */}}
-        {{/*  Details */}} {{ partial "product_page_details.html" . }}
+    {{/*  Details */}} {{ partial "product_page_details.html" . }}
 
 
-</div>
+</div>{{/*  End of x-data <div></div>  */}}
 
 {{/*  SHARE THIS BLOCK   */}} {{ partial "sharethis.html" . }}
 

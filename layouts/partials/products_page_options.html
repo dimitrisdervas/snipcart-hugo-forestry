@@ -22,8 +22,10 @@
                             @click:{'border-gray-800'}
                             @click.away:{'border-gray-200'}
                         "
-                    type="radio"
-                    x-ref="{{.Params.variant_sku}}"       
+                    :class="{ 'border-gray-800' : id === '{{.Params.variant_sku}}' }"
+                    type="button"
+                    id="{{.Params.variant_sku}}"
+                    x-ref="{{.Params.variant_sku}}"      
                     x-on:click="
                         id = '{{.Params.variant_sku}}',
                         url = '{{ .Path  }}'

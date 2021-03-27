@@ -2,50 +2,77 @@
 <div class="flex flex-col">
     {{ if gt $numberVariants 1 }}
     <div class="selection mb-4">
-
         {{/*  OPTIONS  */}}
         <div class="flex justify-start flex-wrap">
-
-            {{/*  OPTIONS TITLE   */}}
-            {{ with .context.Params.option1_name }}
-                <div class="w-full font-robmono uppercase text-sm py-4"> {{.}}</div>
-            {{ end}}
-            {{/*  OPTIONS BUTTONS  */}}            
+            {{ $options1 := slice }}   
+            {{ $options2 := slice }}      
             {{ range .context.Pages  }}   
+                {{ $options1 = $options1 | append .Params.option1_value }}
+                {{ $options2 = $options2 | append .Params.option2_value }}
             
-                <button 
-                    class=" mr-4
-                            border-2 border-gray-200 
-                            text-gray-800  text-sm uppercase
-                            flex items-center px-4 py-3 my-2 justify-center
-                            hover:border-gray-800 hover:text-gray-800 
-                            @click:{'border-gray-800'}
-                            @click.away:{'border-gray-200'}
-                        "
-                    type="radio"
-                    x-ref="{{.Params.variant_sku}}"       
-                    x-on:click="
-                        id = '{{.Params.variant_sku}}',
-                        url = '{{ .Path  }}'
-                        price = '{{.Params.variant_price}}',
-                        title= '{{ .Params.handle }}',
-                        {{ partial "resources_image_resize.html" (dict "context" . "ImagesResources" $.ImagesResources ) }}
-                        option= '{{ .Params.option1_name }}'
-                        value='{{.Params.option1_value}}',
-                        stock='{{.Params.variant_inventory_qty}}'
-                        option1Name= '{{.Params.option1_name}}',
-                        option1Value= '{{.Params.option1_value}}' 
-                    ">          
-                    {{ .Params.option1_value }}
-                </button>
-            {{ end }}
+            {{ end }} 
+            {{ $options1_name := $options1 | uniq }} 
+            {{ $options2_name := $options2 | uniq }} 
+    {{/*  OPTIONS TITLE   */}}
+                {{ with .context.Params.option1_name }}
+                    <div class="w-full font-robmono uppercase text-sm py-4"> {{.}}</div>
+                {{ end}}
+    {{/*  OPTIONS BUTTONS  */}}  
+            <div class="flex">
+                <div x-text="option1"></div></br>
+                <div x-text="option2"></div></br>
+                options:<div x-text="options_selected"></div>
+                {{ range $options1_name }}        
+                    <label for="{{ . | urlize }}" >
+                        <input x-model="option1"
+                        @click="option1 = '{{ . }}' "
+                        id="option1"
+                        value="{{ . }}"
+                        class="hidden input__field" name="option1" class="hidden" id="{{ . | urlize }}" 
+                        type="radio" >
+                        <div class="button 
+                        cursor-pointer mr-4
+                        border-2 border-gray-200 
+                        text-gray-800  text-sm uppercase
+                        flex items-center justify-center
+                        px-4 py-3 
+                        hover:border-gray-800 hover:text-gray-800
+                        ">
+                            {{ . }}
+                        </div>                        
+                    </label>                        
+                {{ end }}
+            </div>
+    {{/*  OPTIONS TITLE   */}}
+                {{ with .context.Params.option2_name }}
+                    <div class="w-full font-robmono uppercase text-sm py-4"> {{.}}</div>
+                {{ end}}
+    {{/*  OPTIONS BUTTONS  */}}
+            <div class="flex">  
+                {{ range $options2_name }}
+                <label for="{{ . | urlize }}" >
+                    <input x-model="option2"
+                    @click="options_selected.splice(1,1,'{{ . }}')"
+                    value="{{ . }}"
+                    id="option2"
+                    class="hidden input__field" name="option2" class="hidden" id="{{ . | urlize }}" type="radio" >
+                    <div class="button 
+                    cursor-pointer mr-4
+                    border-2 border-gray-200 
+                    text-gray-800  text-sm uppercase
+                    flex items-center justify-center
+                    px-4 py-3 
+                    hover:border-gray-800 hover:text-gray-800
+                    ">
+                        {{ . }}
+                    </div>                        
+                </label>
+                {{ end }}
+            </div>
         </div>
-
     </div>
     {{ end}}
-
     {{ partial "products_snipcart_button.html" . }}
-
 </div>
 
 
