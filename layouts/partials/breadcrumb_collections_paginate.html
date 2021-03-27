@@ -10,7 +10,6 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
     aria-label="previous and next products"    
     x-data="alpineInstance()"
     x-init="
-        index = parseInt(new URLSearchParams(location.search).get('index'),10);
         queryTerm = new URLSearchParams(location.search).get('q');
         url = 'http://localhost:1313/gr/collections/' + queryTerm + '/index.json';
         fetch(url)
@@ -48,24 +47,25 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
     </template>
 </div>
 
-
-    <script>
-        function alpineInstance() {
-            const queryTerm = new URLSearchParams(location.search).get('q');
-            let index = parseInt(new URLSearchParams(location.search).get('index'),10);
-            const currentProduct = index;
-            const nextProduct = index + 1;
-            const previousProduct = index - 1;
-            var url = 'http://localhost:1313/gr/collections/' + queryTerm + '/index.json';
-            fetch(url)
-                .then(response => response.json())
-                .then(data => products = data);
-                return {
-                    products: {},
-                    nextProduct: nextProduct,
-                    previousProduct: previousProduct
-                }
+<!-- https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data -->
+<!-- https://stackoverflow.com/questions/54837999/specify-multiple-integers-with-javascript-includes -->
+<script>
+    function alpineInstance() {
+        const queryTerm = new URLSearchParams(location.search).get('q');
+        let index = parseInt(new URLSearchParams(location.search).get('index'),10);
+        const currentProduct = index;
+        const nextProduct = index + 1;
+        const previousProduct = index - 1;
+        var url = 'http://localhost:1313/gr/collections/' + queryTerm + '/index.json';
+        fetch(url)
+            .then(response => response.json())
+            .then(data => products = data);
+            return {
+                products: {},
+                nextProduct: nextProduct,
+                previousProduct: previousProduct
             }
+        }
 </script> 
 
 
