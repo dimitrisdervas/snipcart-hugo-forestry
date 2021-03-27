@@ -1,15 +1,15 @@
-<footer class="bg-gray-100 pt-10 sm:mt-10 p-10">
+<footer class="bg-gray-100  p-10 ">
     <div class="text-gray-800 flex flex-wrap justify-beteween">
 
         
         <!-- Col-1 -->
-        <div class="p-5 w-1/3 flex justify-start flex-col px-8">
+        <div class="p-5 w-full md:w-1/3 flex justify-center md:justify-start flex-col px-8">
             <!-- Col Title -->
-            <div class="text-lg text-gray-800 mb-6">
+            <div class="text-lg text-gray-800 mb-6  text-center md:text-left">
                 {{ .Site.Title }}
             </div>           
-            <p>{{ .Site.Params.company.about }}</p>
-            <div class="social flex flex-inline mt-2">
+            <p class=" text-center md:text-left">{{ .Site.Params.company.about }}</p>
+            <div class="social flex flex-inline mt-2 ">
                 {{ range .Site.Params.company.social }}
                     {{ if .link }}
                         <a class="mr-4" href="{{ .link }}">
@@ -23,12 +23,12 @@
        </div>
 
         <!-- Col-2 -->
-        <div class="p-5 w-1/3 flex justify-start flex-col px-8">
+        <div class="p-5 w-full md:w-1/3 flex justify-center md:justify-start flex-col px-8">
             <!-- Col Title -->
-            <div class=" text-lg text-gray-800 mb-6">
+            <div class=" text-lg text-gray-800 mb-6 text-center md:text-left">
                Info
             </div>
-            <div class="">
+            <div class=" text-center md:text-left">
                 <!-- Links -->
                 <a href="#" class="py-1 block text-gray-800 hover:underline text-sm">
                     Utility-First
@@ -43,9 +43,9 @@
         </div>
 
         <!-- Col-3 -->
-        <div class="p-5 w-1/3 flex justify-start     flex-col px-8">
+        <div class="p-5 w-full md:w-1/3 flex justify-center md:justify-start     flex-col px-8">
             <!-- Col Title -->
-            <div class="text-lg text-gray-800 mb-6">
+            <div class="text-lg text-gray-800 mb-6  text-center md:text-left">
                 Subscribe
             </div>
             <div>
