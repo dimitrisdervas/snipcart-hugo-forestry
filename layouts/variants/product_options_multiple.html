@@ -16,21 +16,6 @@ multiple template
     style="grid-template-rows: auto auto 1fr;"
 
     x-data="{ 
-    {{/*  INDEX OF ALL VARIANTS  */}}
-    {{ range $index, $variants := .Pages }}  
-        {{$variants.Params.variant_sku}} : {
-            url: '{{ .Path  }}',
-            id: '{{$variants.Params.variant_sku }}',
-            retail: '{{$variants.Params.retail}}',
-            price: '{{$variants.Params.variant_price}}',
-            quantity: '1',
-            stock: '{{ $variants.Params.variant_inventory_qty }}',
-            image: '{{ $variants.Params.image_src}}',
-            {{ partial "resources_image_resize_xdata.html" (dict "context" . "ImagesResources" $.Resources ) }}
-            {{ if  $variants.Params.option1_name}}{{ $variants.Params.option1_name}} : '{{ $variants.Params.option1_value}}',{{end}}
-            {{ if  $variants.Params.option2_name}}{{ $variants.Params.option2_name}} : '{{ $variants.Params.option2_value}}'{{end}}
-        },
-    {{ end }}
     {{/*  DEFAULT VALUES FOR VARIANT   */}}
     {{ $.Scratch.Set "default_variant" .Params.variant_sku }}
     {{ range first 1 .Pages }}  
@@ -50,21 +35,27 @@ multiple template
     {{ end }}
     option1: 'single',
     option2: 'bottle',
+    tv_product_price: '',
+    options_json: '',
+    ...optionsProducts(),
     options_selected: [ 'single', 'bottle' ]
     }"
     >
+    <div>Name:<span x-text="name"></span></div>
 
+    <button @click="setName('nnamdi')">Set Name</button>
     
 <script>
-
-            
-            var tv_current_product_price = {};
-            tv_current_product_price['single']['can'] = 100;
-            tv_current_product_price['single']['bottle'] = 200;
-            tv_current_product_price['6 pack']['can'] = 300;
-            tv_current_product_price['6 pack']['bottle'] = 400;
-        
-
+    function optionsProducts(){
+            var options_obj = {};
+            options_obj['single'] = {};
+            options_obj['single']['can'] = 100;
+            options_obj['single']['bottle'] = 200;
+            options_obj['6 pack'] = {};
+            options_obj['6 pack']['can'] = 300;
+            options_obj['6 pack']['bottle'] = 400;
+        return { options_json: options_obj }
+        }
 
 </script>
 
@@ -76,7 +67,7 @@ multiple template
     <div class="col-span-2  md:row-start-2 md:col-start-1 lg:row-start-2 lg:row-span-2 pl-8">
     {{/*  PRICE  */}}
         <div class="flex items-baseline py-2 ">
-            <div id="product_price_shown"></div>
+            <div id="product_price_shown" x-text="options_json[option1][option2]"></div>
             <div x-text="price +  '€' "  class="flex-inline text-xl pr-2 font-robmono "></div>
             <div x-text="retail + '€' "  class="flex-inline text-lg font-normal line-through " x-show="retail > 0 " > </div>
         </div>
