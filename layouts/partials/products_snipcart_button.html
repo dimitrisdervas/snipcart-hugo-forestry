@@ -1,11 +1,52 @@
 {{/*  Snipcart button  */}}
-<div x-text="stock" 
-    x-show="stock === 'out of stock' " 
+
+<div x-show="stock === '0'" 
     class="border-2 border-gray-300 text-gray-300 w-full py-2 uppercase text-md text-center">
+    {{ i18n "outofstock"}}
+</div>
+
+<div class="pt-12" x-show="stock === '0'" >
+    
+    {{/*  We have to add the sku of the product that we must order and notify  */}}
+
+    <p class="font-robmono text-sm pb-2"> Please fill in the form below if you'd like to be notified when it becomes available. </p>
+    <form
+    method="post"
+    action="/contact#newsletter_form"
+    id="newsletter_form"
+    accept-charset="UTF-8"
+    class="flex-inline flex justify-center"
+  >
+    <input
+      class="mr-2 py-1 px-2 text-sm w-4/5 border"
+      id="newsletter-email"
+      name="contact[email]"
+      type="email"
+      aria-label="Your email"
+      placeholder="Your email"
+      required=""
+    />
+    <div class="bg-black px-4 py-2 text-white text-lg w-1/5">
+      <button type="submit" value="Subscribe">OK</button>
+    </div>
+    <div class="hidden">
+      <p data-spam-detection-disclaimer="">
+        This site is protected by reCAPTCHA and the Google
+        <a href="https://policies.google.com/privacy" tabindex="-1"
+          >Privacy Policy</a
+        >
+        and
+        <a href="https://policies.google.com/terms" tabindex="-1"
+          >Terms of Service</a
+        >
+        apply.
+      </p>
+    </div>
+  </form>
 </div>
 
 <button 
-    x-show="stock != 'out of stock' "
+    x-show="stock != '0' "
     class="snipcart-add-item border-2 border-black w-full py-2 uppercase text-md"
     x-bind:data-item-url="url"
     x-bind:data-item-name="title"

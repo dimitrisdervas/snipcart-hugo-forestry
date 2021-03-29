@@ -13,6 +13,8 @@
   translation: "Συλλογές"
 - id: "fontpage_collections"
   translation: "Κατηγορίες"
+- id: outofstock
+  translation: "Μη διαθέσιμο"
 - id: catalog
   translation: "Κατάλογος"
 - id: "fontpage_promotedproduct"

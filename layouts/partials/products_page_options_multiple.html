@@ -24,7 +24,9 @@
                         <input 
                             x-model="option1"
                             id="option1"
-                            @click="price = (options_json[option1][option2]) "
+                            @click="{ price = (options_json[option1][option2].price),
+                                      retail = (options_json[option1][option2].retail),
+                                        stock =  (options_json[option1][option2].stock)  } "
                             value="{{ . }}"
                             class=" input__field" 
                             name="option1" 
@@ -52,7 +54,9 @@
                 {{ range $options2_name }}
                 <label for="{{ . | urlize }}" >
                     <input x-model="option2"
-                    @click="price = (options_json[option1][option2]) "
+                    @click="{price = (options_json[option1][option2].price),
+                            retail = (options_json[option1][option2].retail),
+                            stock =  (options_json[option1][option2].stock)}  "
                     value="{{ . }}"
                     id="option2"
                     class=" input__field" 

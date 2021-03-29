@@ -23,7 +23,7 @@ multiple template
         title: '{{.Title}}',
         url: '{{ .Path }}',
         id: '{{.Params.variant_sku }}',
-        retail: '{{.Params.retail}}',
+        retail: '{{.Params.variant_retail}}',
         price: '{{.Params.variant_price}}',
         {{ partial "resources_image_resize_xdata.html" (dict "context" . "ImagesResources" $.Resources ) }}
         description: '{{.Params.description}}',
@@ -35,25 +35,40 @@ multiple template
     {{ end }}
     option1: 'single',
     option2: 'bottle',
-    tv_product_price: '',
     options_json: '',
-    ...optionsProducts(),
-    options_selected: [ 'single', 'bottle' ]
+    ...optionsProducts()
     }"
     >
-    <div>Name:<span x-text="name"></span></div>
 
-    <button @click="setName('nnamdi')">Set Name</button>
-    
 <script>
+    {{/*  https://stackoverflow.com/questions/4329092/multi-dimensional-associative-arrays-in-javascript  */}}
+    
     function optionsProducts(){
             var options_obj = {};
-            options_obj['single'] = {};
-            options_obj['single']['can'] = 100;
-            options_obj['single']['bottle'] = 200;
-            options_obj['6 pack'] = {};
-            options_obj['6 pack']['can'] = 300;
-            options_obj['6 pack']['bottle'] = 400;
+            {{ $options1 := slice }}   
+            {{ $options2 := slice }}   
+            
+            {{ range .Pages  }}   
+                {{ $options1 = $options1 | append .Params.option1_value }}
+                {{ $options2 = $options2 | append .Params.option2_value }}
+            {{ end }} 
+            
+            {{ $options1_name := $options1 | uniq }} 
+            {{ $options2_name := $options2 | uniq }} 
+            
+            {{ range $options1_name }}
+                options_obj['{{.}}'] = {};
+            {{ end }}
+            
+            {{ range .Pages }}   
+            options_obj['{{.Params.option1_value}}']['{{.Params.option2_value}}'] =  { 
+                price: '{{.Params.variant_price}}' , 
+                stock: '{{ .Params.variant_inventory_qty }}',
+                retail: '{{.Params.variant_retail}}'
+             };
+            {{ end }}
+
+
         return { options_json: options_obj }
         }
 
@@ -67,7 +82,6 @@ multiple template
     <div class="col-span-2  md:row-start-2 md:col-start-1 lg:row-start-2 lg:row-span-2 pl-8">
     {{/*  PRICE  */}}
         <div class="flex items-baseline py-2 ">
-            <div id="product_price_shown" x-text="options_json[option1][option2]"></div>
             <div x-text="price +  '€' "  class="flex-inline text-xl pr-2 font-robmono "></div>
             <div x-text="retail + '€' "  class="flex-inline text-lg font-normal line-through " x-show="retail > 0 " > </div>
         </div>

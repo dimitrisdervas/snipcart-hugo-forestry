@@ -7,6 +7,8 @@
   translation: "Shop by Colelction"
 - id: "fontpage_promotedproduct"
   translation: "Product of the week"
+- id: outofstock
+  translation: "Out of stock "
 - id: "header-message"
   translation: "EN Same day local delivery — order by noon for delivery between 2 - 10pm"
 ---
