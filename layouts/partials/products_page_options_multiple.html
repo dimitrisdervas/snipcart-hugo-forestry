@@ -23,16 +23,16 @@
                     <label for="{{ . | urlize }}" >
                         <input 
                             x-model="option1"
-                            id="option1"
                             @click="{ price = (options_json[option1][option2].price),
                                       retail = (options_json[option1][option2].retail),
                                         stock =  (options_json[option1][option2].stock)  } "
                             value="{{ . }}"
-                            class=" input__field" 
+                            class=" input__field invisible" 
                             name="option1" 
                             id="{{ . | urlize }}" 
                             type="radio" >
-                        <div class="button 
+                        <div class=" 
+                                button
                             cursor-pointer mr-4
                             border-2 border-gray-200 
                             text-gray-800  text-sm uppercase
@@ -53,23 +53,22 @@
             <div class="flex">  
                 {{ range $options2_name }}
                 <label for="{{ . | urlize }}" >
-                    <input x-model="option2"
-                    @click="{ price = (options_json[option1][option2].price),
-                            retail = (options_json[option1][option2].retail),
-                            stock =  (options_json[option1][option2].stock)}  "
-                    value="{{ . }}"
-                    id="option2"
-                    class=" input__field" 
-                    name="option2" 
-                    id="{{ . | urlize }}" type="radio" >
-                    <div class="
-                            button 
-                        cursor-pointer mr-4
-                        border-2 border-gray-200 
-                        text-gray-800  text-sm uppercase
-                        flex items-center justify-center
-                        px-4 py-3 
-                        hover:border-gray-800 hover:text-gray-800
+                    <input  x-model="option2"
+                            @click="{ price = (options_json[option1][option2].price),
+                                    retail = (options_json[option1][option2].retail),
+                                    stock =  (options_json[option1][option2].stock)}  "
+                            value="{{ . }}"
+                            class="input__field invisible" 
+                            name="option2" 
+                            id="{{ . | urlize }}" type="radio" >                
+                    <div class=" 
+                                button
+                            cursor-pointer mr-4
+                            border-2 border-gray-200 
+                            text-gray-800  text-sm uppercase
+                            flex items-center justify-center
+                            px-4 py-3 
+                            hover:border-gray-800 hover:text-gray-800
                     ">
                         {{ . }}
                     </div>                        

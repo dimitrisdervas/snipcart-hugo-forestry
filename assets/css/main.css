@@ -35,8 +35,11 @@ h2 {
 [x-cloak] {
     display: none !important;
 }
-.input__field:checked + .button {
+.input__field:checked + .button, {
     @apply border-gray-800;
+}
+.input__field::focus + .button {
+    @apply border-gray-500;
 }
 @tailwind base;
 @tailwind components;
