@@ -9,18 +9,23 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
     class="text-black text-sm font-robmono w-full flex justify-between py-4 " 
     aria-label="previous and next products"    
     x-data="alpineInstance()"
-    x-init="
+    x-init="()=>{
         queryTerm = new URLSearchParams(location.search).get('q');
         url = 'http://localhost:1313/gr/collections/' + queryTerm + '/index.json';
         fetch(url)
             .then(response => response.json())
-            .then(data => products = data);
+            .then(data => products = data, nextLink = products[nextProduct]);
+        ;
+    }
     ">
 
-    <template x-for="product in Object.values(products)">
 
-        <div class="flex justify-items-stretch w-1/2">
-                        
+<div class="flex justify-between w-full">
+
+    <template x-for="product in Object.values(products)" :key="product">
+
+        <div class="flex justify-items-stretch w-1/2" x-show="previousProduct === parseInt(product.id)">
+
                 <template x-if="previousProduct === parseInt(product.id)">
 
                         <a class="flex flex-inline items-center justify-self-start" :href="product.link">
@@ -30,9 +35,12 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
                             Previous item
                         </a>
                 </template>
-                
-             
+        </div>
+    </template>
 
+    <template x-for="product in Object.values(products)" :key="product">
+
+        <div class="flex justify-items-stretch w-1/2 justify-end" x-show="nextProduct === parseInt(product.id)">
                 <template x-if="nextProduct === parseInt(product.id)">                
 
                             <a class="flex flex-inline items-center  justify-self-end" :href="product.link" >Next item
@@ -45,8 +53,9 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
 
             </div>
     </template>
-</div>
 
+</div>
+</div>
 <!-- https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data -->
 <!-- https://stackoverflow.com/questions/54837999/specify-multiple-integers-with-javascript-includes -->
 <script>
@@ -57,11 +66,10 @@ https://codewithhugo.com/alpinejs-x-data-watch-url/
         const nextProduct = index + 1;
         const previousProduct = index - 1;
         var url = 'http://localhost:1313/gr/collections/' + queryTerm + '/index.json';
-        fetch(url)
-            .then(response => response.json())
-            .then(data => products = data);
             return {
-                products: {},
+                products: '',
+                nextLink: '',
+                previousLink: '',
                 nextProduct: nextProduct,
                 previousProduct: previousProduct
             }

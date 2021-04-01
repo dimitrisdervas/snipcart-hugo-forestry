@@ -3,7 +3,9 @@
 
 {{ partial "breadcrumb_links.html" . }}
 
-{{ partial "breadcrumb_collections_paginate.html" . }}
+{{ if .IsSection }}
+    {{ partial "breadcrumb_collections_paginate.html" . }}
+{{ end }}
 
 {{ if in .Dir "collections" }}
     {{ partial "breadcrumb_taxonomy_select.html" . }}
