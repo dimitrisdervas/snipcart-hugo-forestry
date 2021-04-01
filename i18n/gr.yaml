@@ -11,6 +11,10 @@
   translation: "Άρθρα"
 - id: "collections"
   translation: "Συλλογές"
+- id: "featured"
+  translation: "Ειδικά"
+- id: "speciality"
+  translation: "Εξειδικευμένα"
 - id: "fontpage_collections"
   translation: "Κατηγορίες"
 - id: outofstock
@@ -25,4 +29,8 @@
   translation: "Επόμενο"
 - id: "previous item"
   translation: "Προηγούμενο"
+- id: "product_description"
+  translation: "Περιγραφή"
+- id: "product_details"
+  translation: "Χαρακτηριστικά"
 ---

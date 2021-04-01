@@ -76,15 +76,15 @@ x-data="{ dropdown: false }">
                     {{ partial "menu_render.html" (dict "menu" .Site.Menus.featured "currentPage" . ) }}
                     </div>
                 <div class="flex flex-col pl-20" >
-                    <a class="uppercase font-robmono" href="">Collections</a>
+                    <a class="uppercase font-robmono" href="{{ "/collections" | relLangURL }}">{{ i18n "collections"}}</a>
                     {{ partial "menu_render.html" (dict "menu" .Site.Menus.collections "currentPage" . ) }}
                     </div>
                 <div class="flex flex-col pl-20 " >
-                    <a class="uppercase font-robmono " href="">Featured</a>
+                    <a class="uppercase font-robmono " href="{{ "/featured" | relLangURL }}">{{ i18n "featured"}}</a>
                     {{ partial "menu_render.html" (dict "menu" .Site.Menus.collections "currentPage" . ) }}
                     </div>
                 <div class="flex flex-col pl-20" >
-                    <a class="uppercase font-robmono" href="">Speciality</a>
+                    <a class="uppercase font-robmono" href="{{ "/speciality" | relLangURL }}">{{ i18n "speciality"}}</a>
                     {{ partial "menu_render.html" (dict "menu" .Site.Menus.collections "currentPage" . ) }}
                     </div>
             </div>
