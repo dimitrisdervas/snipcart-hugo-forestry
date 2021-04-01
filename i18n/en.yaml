@@ -11,4 +11,8 @@
   translation: "Out of stock "
 - id: "header-message"
   translation: "EN Same day local delivery — order by noon for delivery between 2 - 10pm"
+- id: "next item"
+  translation: "Next item"
+- id: "previous item"
+  translation: "Previous item"
 ---

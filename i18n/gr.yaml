@@ -21,4 +21,8 @@
   translation: "Προιόν της εβδομάδος"
 - id: "header-message"
   translation: "GR Same day local delivery — order by noon for delivery between 2 - 10pm"
+- id: "next item"
+  translation: "Επόμενο"
+- id: "previous item"
+  translation: "Προηγούμενο"
 ---
