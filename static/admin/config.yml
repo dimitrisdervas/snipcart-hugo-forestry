@@ -4,7 +4,9 @@ backend:
   site_url: https://beersdemo.netlify.app
   branch: main # Branch to update (optional; defaults to master)
   base_url: https://api.netlify.com
-
+  name: test-repo
+  
+local_backend: true
 # This line should *not* be indented
 publish_mode: editorial_workflow
 
@@ -17,6 +19,10 @@ collections:
     label: "Blog"
     folder: "content/blog"
     create: true
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+      meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "date" }
@@ -28,8 +34,13 @@ collections:
     label: "Products"
     folder: "content/variants"
     create: true
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+      meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Handle", name: "handle", widget: "string"}
       - {label: "Price", name: "price", widget: "string"}
   - name: "collection"
     label: "Collections"
