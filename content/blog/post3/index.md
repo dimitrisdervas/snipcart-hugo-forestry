@@ -1,9 +1,10 @@
 ---
 title: "NEW IN: Frankie's ice cream available for same day delivery"
-image: "palate-cookbook_1000x.jpg"
-date: "OCTOBER 17, 2018"
-author: "Troop Themes"
-blogtags: "Food"
+date: OCTOBER 17, 2018
+image: palate-cookbook_1000x.jpg
+author: Troop Themes
+blogtags:
+  - food
 ---
 
 NEW IN: Frankie's ice cream available for same day delivery

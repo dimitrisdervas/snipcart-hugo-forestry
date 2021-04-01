@@ -1,9 +1,10 @@
 ---
 title: "Staff recipe: (Yes, we like) Piña Coladas"
-image: "palate-cookbook_1000x.jpg"
-date: "APRIL 30, 2019"
-author: "Troop Themes"
-blogtags: "Food"
+date: APRIL 30, 2019
+image: palate-cookbook_1000x.jpg
+author: Troop Themes
+blogtags:
+  - food
 ---
 
 The piña colada may not be an everyday drink (or something to drink too much of; there's a lot of sugar in them after all). But for those occasions when you're feeling festive—especially if that festivity should be accompanied by warm weather—the classic PC is tough to beat.
