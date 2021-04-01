@@ -5,9 +5,7 @@ backend:
   repo: dimitrisdervas/snipcart-hugo-forestry
   site_url: https://beersdemo.netlify.app
   branch: main # Branch to update (optional; defaults to master)
-  base_url: https://api.netlify.com
-  name: test-repo
-  
+  base_url: https://api.netlify.com  
 
 # This line should *not* be indented
 publish_mode: editorial_workflow
@@ -15,29 +13,102 @@ publish_mode: editorial_workflow
 # These lines should *not* be indented
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
-
 collections:
   - name: "blog"
     label: "Blog"
+    label_singular: 'Post'
     folder: "content/blog"
+    media_folder: ''
+    public_folder: ''
     create: true
+    slug: "{{slug}}"
+    preview_path: "content/blog/{{slug}}"
     nested:
-      depth: 100 # max depth to show in the collection tree
+      depth: 2 # max depth to show in the collection tree
       summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
-      meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
+    meta: { path: { label: Parent, widget: parent, index_file: 'index' } }
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "date" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Author", name: "author", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
+      - {label: "Tags", name: "blogtags" , widget: "select", multiple: true, options: [{ label: "Food", value: "food" },{ label: "Drinks", value: "drinks" }]}
   - name: "product"
+    identifier_field: handle
     label: "Products"
+    label_singular: 'Product'
+    folder: "content/variants"
+    create: true
+    media_folder: ''
+    public_folder: ''
+    nested:
+      depth: 2 # max depth to show in the collection tree
+      summary: '{{handle}}' # optional summary for a tree node, defaults to the inferred title field
+    meta: { path: { label: Parent, widget: parent, index_file: '_index' } }
+    sortable_fields: ['handle', 'title', 'variant_price']
+    fields:
+      - {label: "Handle" ,name: "handle", widget: "string" }
+      - {label: "Title" ,name: "title", widget: "string" }
+      - {label: "Vendor" ,name: "vendor", widget: "string" }
+      - {label: "Type" ,name: "type", widget: "string" }
+      - {label: "Tags" ,name: "tags", widget: "string" }
+      - {label: "Published" ,name: "published", widget: "boolean", default: false }
+      - {label: "Option 1 - Name" ,name: "option1_name", widget: "string" }
+      - {label: "Option 1 - Value" ,name: "option1_value", widget: "string" }
+      - {label: "Option 2 - Name" ,name: "option2_name", widget: "string" }
+      - {label: "Option 2 - Value" ,name: "option2_value", widget: "string" }
+      - {label: "Option 3 - Name" ,name: "option3_name", widget: "string" }
+      - {label: "Option 3 - Value" ,name: "option3_value", widget: "string" }
+      - {label: "SKU" ,name: "variant_sku", widget: "string" }
+      - {label: "Weight in grams" ,name: "variant_grams", widget: "string" }
+      - {label: "Inventory_tracker" ,name: "variant_inventory_tracker", widget: "string" }
+      - {label: "inventory_qty" ,name: "variant_inventory_qty", widget: "string" }
+      - {label: "inventory_policy" ,name: "variant_inventory_policy", widget: "string" }
+      - {label: "fulfillment_service" ,name: "variant_fulfillment_service", widget: "string" }
+      - {label: "Price" ,name: "variant_price", widget: "string" }
+      - {label: "Retail" ,name: "variant_compare_at_price", widget: "string" }
+      - {label: "Requires Shipping" ,name: "variant_requires_shipping", widget: "boolean", default: true }
+      - {label: "taxable" ,name: "variant_taxable", widget: "boolean", default: true }
+      - {label: "Barcode" ,name: "variant_barcode", widget: "string" }
+      - {label: "Image" ,name: "image_src", widget: "string" }
+      - {label: "Image Text" ,name: "image_alt_text", widget: "string" }
+      - {label: "Gift Card" ,name: "gift_card", widget: "boolean", default: true }
+      - {label: "SEO Title" ,name: "seo_title", widget: "string" }
+      - {label: "SEO Description" ,name: "seo_description", widget: "string" }
+      - {label: "Google Shopping product" ,name: "google_shopping_google_product", widget: "string" }
+      - {label: "Google Shopping Gender" ,name: "google_shopping_gender", widget: "string" }
+      - {label: "Google Shopping age group" ,name: "google_shopping_age_group", widget: "string" }
+      - {label: "Google Shopping mpn" ,name: "google_shopping_mpn", widget: "string" }
+      - {label: "Google Shopping Groups" ,name: "google_shopping_adwords_groups", widget: "string" }
+      - {label: "Google Shopping Label" ,name: "google_shopping_adwords_label", widget: "string" }
+      - {label: "Google Shopping Condition" ,name: "google_shopping_condition", widget: "string" }
+      - {label: "Google Shopping Custom Product" ,name: "google_shopping_custom_product", widget: "string" }
+      - {label: "Google Shopping Custom Label" ,name: "google_shopping_custom_label1", widget: "string" }
+      - {label: "Google Shopping Custom Label" ,name: "google_shopping_custom_label2", widget: "string" }
+      - {label: "Google Shopping Custom Label" ,name: "google_shopping_custom_label3", widget: "string" }
+      - {label: "Google Shopping Custom Label" ,name: "google_shopping_custom_label4", widget: "string" }
+      - {label: "Google Shopping Custom Label" ,name: "google_shopping_custom_label5", widget: "string" }
+      - {label: "Weight Unit" ,name: "variant_weight_unit", widget: "string" }
+      - {label: "Collections" ,name: "collections", widget: "string" }
+      - {label: "Collections v2" ,name: "collection_lv2", widget: "string" }
+      - label: "Images Gallery"
+        name: "gallery"
+        widget: "image"
+        default: "/uploads/chocolate-dogecoin.jpg"
+        media_library:
+          config:
+            multiple: true
+    view_filters:
+      - label: Drafts
+        field: draft
+        pattern: true
+  - name: "variant"
+    label: "Variants"
     folder: "content/variants"
     create: true
     nested:
-      depth: 100 # max depth to show in the collection tree
+      depth: 2 # max depth to show in the collection tree
       summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
       meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
     fields:
