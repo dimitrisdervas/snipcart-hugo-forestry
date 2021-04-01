@@ -123,45 +123,8 @@ multiple template
 
 
 
-{{/*  third 1/3  */}}
-    <div class="col-span-2 mt-8 lg:mt-0 lg:row-start-1 lg:row-span-2 px-4">
-
-        {{ if .Params.details }}
-            <div class="flex-inline">
-                <button 
-                class="bg-gray-100 px-3 py-4 border-0 font-robmono" 
-                x-bind:class="{ 'bg-gray-200': tab === 'content' }" 
-                @click=" tab = 'content' " 
-                type="button">
-                Περιγραφή
-                </button>
-
-                <button 
-                class="bg-gray-100 px-3 py-4 border-0 font-robmono"
-                x-bind:class="{ 'bg-gray-200': tab === 'details' }"
-                @click=" tab = 'details' " 
-                type="button">
-                Χαρακτηριστικά
-                </button>
-            </div>
-
-            <div class="content py-4"  x-show=" tab ==='content' ">
-                <div class="leading-relaxed">{{ .Content }}</div>
-            </div>
-
-            <div class="igredients py-4" x-show="tab === 'details' ">
-
-            </div>
-
-        {{ else }}   
-
-            <div class="content py-4"  x-show=" tab ==='content' ">
-                <div class="leading-relaxed">{{ .Content }}</div>
-            </div>
-
-        {{ end }}
-    </div>
-{{/*  end third 1/3  */}}
+{{/*  COlUMN 3 / ROW 1 */}}
+{{/*  Details */}} {{ partial "product_page_details.html" . }}
 
 </div>
 

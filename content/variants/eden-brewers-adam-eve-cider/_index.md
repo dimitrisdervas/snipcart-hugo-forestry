@@ -50,7 +50,12 @@ variant_weight_unit: ""
 collections: ["Drinks","products_list"]
 collection_lv2: ["Speciality"]
 gallery: []
-
+details: |
+    - **Culinary Apples**: Braeburn, Fuji, Granny Smith, Gala
+    - French Bittersweet Apples: Amere de Berthecourt, Beden, Medaille d’or, - Michelin, and Binet Rouge
+    - Gluten Free: Yes
+    - Packaging Options: 12oz bottle (6-pack, 12-pack, 24-pack, Variety Pack), 12oz can (12-pack), 16oz can (Single serve, 4-pack)
+    - Availability: Year-round
 ---
 
 We use antique cider apple varieties, high in tannins and acids, to produce flavors that have not been widely experienced in America since Prohibition. These are the apples from which hard cider was traditionally made.

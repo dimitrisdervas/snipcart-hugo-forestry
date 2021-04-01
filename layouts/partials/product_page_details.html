@@ -10,7 +10,7 @@
             x-bind:class="{ 'bg-gray-200': tab === 'content' }" 
             @click=" tab = 'content' " 
             type="button">
-            Περιγραφή
+            {{ i18n "product_description"}}
             </button>
 
             <button 
@@ -18,16 +18,17 @@
             x-bind:class="{ 'bg-gray-200': tab === 'details' }"
             @click=" tab = 'details' " 
             type="button">
-            Χαρακτηριστικά
+            {{ i18n "product_details"}}
             </button>
         </div>
 
-        <div class="content py-4"  x-show=" tab ==='content' ">
-            <div class="leading-relaxed">{{ .Content }}</div>
+        <div class="content py-4"  x-show=" tab === 'content' ">
+            <div class="leading-relaxed prose">{{ .Content }}</div>
         </div>
 
         <div class="igredients py-4" x-show="tab === 'details' ">
-
+            <div class="leading-relaxed prose">
+                {{ .Params.details | markdownify }}</div>
         </div>
 
     {{ else }}   
