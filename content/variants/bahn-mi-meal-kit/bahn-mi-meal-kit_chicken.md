@@ -1,6 +1,4 @@
 ---
- 
-
 products: "bahn-mi-meal-kit"
 handle: "bahn-mi-meal-kit"
 title: "Bahn Mi Meal Kit"
@@ -32,7 +30,8 @@ variant_image: ""
 variant_weight_unit: ""
 collections: ["Food","products_list"]
 gallery: []
-
+main_product: no
+variant_product: yes
 ---
 
 

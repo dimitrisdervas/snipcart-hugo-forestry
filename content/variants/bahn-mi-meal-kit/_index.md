@@ -45,4 +45,6 @@ variant_weight_unit: ""
 collections: ["Food", "products_list"]
 collection_lv2: []
 gallery: 
+main_product: yes
+variant_product: no
 ---

@@ -39,12 +39,13 @@ collections:
     label: "Products"
     label_singular: 'Product'
     folder: "content/variants"
+    filter:  { field: "main_product", value: "yes" }
     create: true
     media_folder: ''
     public_folder: ''
     nested:
-      depth: 2 # max depth to show in the collection tree
-      summary: '{{handle}}' # optional summary for a tree node, defaults to the inferred title field
+      depth: 4 # max depth to show in the collection tree
+      summary: 'Product: {{handle}}' # optional summary for a tree node, defaults to the inferred title field
     meta: { path: { label: Parent, widget: parent, index_file: '_index' } }
     sortable_fields: ['handle', 'title', 'variant_price']
     fields:
@@ -107,9 +108,15 @@ collections:
     label: "Variants"
     folder: "content/variants"
     create: true
+    filter:  {field: "variant_product", value: "yes"}
+    preview_path: "gr/variants/{{slug}}"
+    view_filters:
+      - label: Posts With Index
+        field: handle
+        pattern: 'This is post #'
     nested:
-      depth: 2 # max depth to show in the collection tree
-      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+      depth: 4 # max depth to show in the collection tree
+      summary: 'Variant: {{handle}}' # optional summary for a tree node, defaults to the inferred title field
       meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -127,7 +134,24 @@ collections:
       - label: "Config"
         name: "config"
         file: "config.yml"
+        editor:
+            preview: false
         fields:
           - label: Parametres
             name: params
+            widget: string
+      - label: "Translation GR"
+        name: "translationGR"
+        format: yaml
+        file: "i18n/gr.yaml"
+        collapsed: false
+        editor:
+            preview: false
+        widget: "list"
+        fields: 
+          - label: id
+            name: id  
+            widget: string
+          - label: translation
+            name: traslation
             widget: string

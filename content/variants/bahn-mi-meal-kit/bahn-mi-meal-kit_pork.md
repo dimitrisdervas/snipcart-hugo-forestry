@@ -1,72 +1,4 @@
 ---
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
 products: "bahn-mi-meal-kit"
 handle: "bahn-mi-meal-kit"
 title: ""
@@ -98,7 +30,8 @@ variant_image: ""
 variant_weight_unit: ""
 collections: []
 gallery: []
-
+main_product: no
+variant_product: yes
 ---
 
 
