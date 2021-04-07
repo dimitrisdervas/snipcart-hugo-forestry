@@ -1,5 +1,6 @@
 // https://gist.github.com/Arty2/8b0c43581013753438a3d35c15091a9f
 
+
 // static/scripts/fixedsearch/fixedsearch.js
 /*--------------------------------------------------------------
 fixedsearch — Super fast, client side search for Hugo.io with Fusejs.io
@@ -135,7 +136,7 @@ fixedsearch = function(){
 			search_items = '';
 		} else { // build our html
 			for (let item in results.slice(0,5)) { // only show first 5 results
-				search_items = search_items + '<li class="w-1/6 mx-2"><a href="' + results[item].item.permalink + '" tabindex="0">' +
+				search_items = search_items + '<li class="col-span-1 p-4"><a href="' + results[item].item.permalink + '" tabindex="0">' +
 					'<img src="' + results[item].item.image + '">' +
                     '<div class="title">' + results[item].item.title + '</div>' +
 					'<div class="price">'+ results[item].item.price +'</div>' +
@@ -150,4 +151,4 @@ fixedsearch = function(){
 			last = search_results.lastChild.firstElementChild; // last result container — used for checking against keyboard up/down location
 		}
 	}
-}();
+};

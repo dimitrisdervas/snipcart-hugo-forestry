@@ -10,7 +10,7 @@
     </button>
 </div>
 
-<div   x-data="{ isOpen : false }"
+<div    x-data="{ isOpen : false }"
         x-cloak
         x-show="isOpen"
         x-on:toggle.window="isOpen = !isOpen" 
@@ -18,18 +18,37 @@
     style="width:100vw;height:100vh;"
     class="absolute top-0 left-0 bg-white flex items-center justify-center z-50">
     <form  id="search-form" 
-        class="noscript absolute flex flex-col w-full max-w-screen-lg" 
+        class="noscript absolute flex flex-col w-full max-w-screen-lg p-4" 
         style="top:23px;left:-1px;"
         data-language-prefix="{{ site.LanguagePrefix }}">
+        <div class="flex justify-between mb-6">
         <div class="search-bar pl-4 flex justify-between">
-            <input autofocus x-ref="searchInput" id="search-input" class="search--display border-b text-2xl text-gray-600 focus:outline-none leading-8" name="q" tabindex="0" autocomplete="off" {{ with site.BaseURL }}value=" site:{{ . }}"{{ end }} placeholder="{{ i18n "search" }}">
+            <input 
+            autofocus 
+            x-ref="searchInput" 
+            id="search-input" 
+            class="search--display text-2xl text-gray-600 focus:outline-none leading-8" 
+            name="q" 
+            tabindex="0" 
+            autocomplete="off" 
+            placeholder="{{ i18n "search" }}">
         </div>
-        <div class="border-b pb-4 mt-4 px-4">Products</div>
-        <a @click="$dispatch('toggle')">close</a>
-        <ul id="search-results" 
-            style=""
-            class="search--display flex flex-wrap justify-start w-full mt-10">
-        </ul>
+        <button class="hover:text-gray-800 " @click="$dispatch('toggle')">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </button>
+    </div>
+        <div>
+            <div class="w-full">
+                <div class="border-b pb-4 mt-4 px-4">Products</div>
+                
+            </div>  
+            <ul id="search-results" 
+                style=""
+                class="search--display container mx-auto grid grid-cols-4 grid-flow-row gap-8 mb-8 ">
+            </ul>
+        </div>
     </form>
 </div>
 

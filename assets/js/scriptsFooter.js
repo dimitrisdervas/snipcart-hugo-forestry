@@ -2,7 +2,7 @@ import Swiper from "swiper";
 import Alpine from "alpinejs";
 import Lazysizes from "lazysizes";
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
-
+import fuse from "fuse.js/dist/fuse.basic.min.js";
 
 {{/*  https://github.com/nolimits4web/swiper/blob/master/demos/320-multiple-swipers.html  */}}
         var swiper = new Swiper('.heroslideshow', {
