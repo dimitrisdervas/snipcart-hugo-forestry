@@ -2,8 +2,8 @@
 <h1>{{ .Title }}</h1>
 <div class="p-2 border">
     <h2>Hugo</h2>
-<div class="page-variables text-sm"> Hugo : {{.Hugo.Environment }}</div>
-<div class="page-variables text-sm"> Hugo : {{.Hugo.Version }}</div>
+<div class="page-variables text-sm"> Hugo : {{hugo.Environment }}</div>
+<div class="page-variables text-sm"> Hugo : {{hugo.Version }}</div>
 </div>
 <div class="p-2 border">
     <h2>Site</h2>
@@ -85,7 +85,7 @@
     <div class="page-variables text-sm"> Permalink : {{.Permalink }}</div>
 
     <div class="page-variables text-sm"> Aliases : {{.Aliases }}</div>
-    <div class="page-variables text-sm"> RSSLink : {{.RSSLink }}</div>
+    <div class="page-variables text-sm"> .OutputFormats.Get "RSS"  .RelPermalink  : {{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}</div>
     </div>
 
 <div class="p-2 border">
@@ -99,17 +99,19 @@
 
 <div class="p-2 border">
     <h2>FIle Variables</h2>
+    {{ with .File}}
     <div class="page-variables text-sm">.Dir : {{.Dir }}</div>
-    <div class="page-variables text-sm">.File : {{.File }}</div>
-    <div class="page-variables text-sm">.File.Path :{{ .File.Path }}</div>
-    <div class="page-variables text-sm">.File.LogicalName : {{.File.LogicalName}}</div>
-    <div class="page-variables text-sm">.File.TranslationBaseName : {{.File.TranslationBaseName}}</div>
-    <div class="page-variables text-sm">.File.ContentBaseName : {{.File.ContentBaseName}}</div>
-    <div class="page-variables text-sm">.File.BaseFileName : {{.File.BaseFileName}}</div>
-    <div class="page-variables text-sm">.File.Ext : {{.File.Ext}}</div>
-    <div class="page-variables text-sm">.File.Lang : {{.File.Lang}}</div>
-    <div class="page-variables text-sm">.File.Dir : {{.File.Dir}}</div>
-    <div class="page-variables text-sm">.File.UniqueID : {{.File.UniqueID}}</div>
+    <div class="page-variables text-sm">.File : {{ . }}</div>
+    <div class="page-variables text-sm">.File.Path :{{ .Path }}</div>
+    <div class="page-variables text-sm">.File.LogicalName : {{.LogicalName}}</div>
+    <div class="page-variables text-sm">.File.TranslationBaseName : {{.TranslationBaseName}}</div>
+    <div class="page-variables text-sm">.File.ContentBaseName : {{.ContentBaseName}}</div>
+    <div class="page-variables text-sm">.File.BaseFileName : {{.BaseFileName}}</div>
+    <div class="page-variables text-sm">.File.Ext : {{.Ext}}</div>
+    <div class="page-variables text-sm">.File.Lang : {{.Lang}}</div>
+    <div class="page-variables text-sm">.File.Dir : {{.Dir }}</div>
+    <div class="page-variables text-sm">.File.UniqueID : {{.UniqueID}}</div>
+    {{ end }}
     </div>
 
 

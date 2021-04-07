@@ -19,12 +19,10 @@
 <th>Data :</th>
 <th>Date :</th>
 <th>Description :</th>
-<th>Dir :</th>
 <th>Draft :</th>
 <th>ExpiryDate :</th>
 <th>File :</th>
 <th>FuzzyWordCount :</th>
-<th>Hugo :</th>
 <th>IsHome :</th>
 <th>IsNode :</th>
 <th>IsPage :</th>
@@ -44,7 +42,7 @@
 <th>Prev :</th>
 <th>PrevInSection :</th>
 <th>PublishDate :</th>
-<th>RSSLink :</th>
+<th> .OutputFormats.Get "RSS"  .RelPermalink</th>
 <th>RawContent :</th>
 <th>ReadingTime :</th>
 <th>Resources :</th>
@@ -88,12 +86,11 @@
  <td>{{.Data }}</td>
  <td>{{.Date }}</td>
  <td>{{.Description }}</td>
- <td>{{.Dir }}</td>
+
  <td>{{.Draft }}</td>
  <td>{{.ExpiryDate }}</td>
  <td>{{.File }}</td>
  <td>{{.FuzzyWordCount }}</td>
- <td>{{.Hugo }}</td>
  <td>{{.IsHome }}</td>
  <td>{{.IsNode }}</td>
  <td>{{.IsPage }}</td>
@@ -113,7 +110,7 @@
  <td>{{.Prev }}</td>
  <td>{{.PrevInSection }}</td>
  <td>{{.PublishDate }}</td>
- <td>{{.RSSLink }}</td>
+ <td>{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}</td>
  <td>{{.RawContent | truncate 5 }}</td>
  <td>{{.ReadingTime }}</td>
  <td>{{.Resources }}</td>
@@ -152,15 +149,17 @@
 <td>not term</td>
 <td>not term</td>
 {{end }}
-<td>{{.File.Path}}</td>
-<td>{{.File.LogicalName}}</td>
-<td>{{.File.TranslationBaseName}}</td>
-<td>{{.File.ContentBaseName}}</td>
-<td>{{.File.BaseFileName}}</td>
-<td>{{.File.Ext}}</td>
-<td>{{.File.Lang}}</td>
-<td>{{.File.Dir}}</td>
-<td>{{.File.UniqueID}}</td>    
+{{ with .File }}
+<td>{{.Path}}</td>
+<td>{{.LogicalName}}</td>
+<td>{{.TranslationBaseName}}</td>
+<td>{{.ContentBaseName}}</td>
+<td>{{.BaseFileName}}</td>
+<td>{{.Ext}}</td>
+<td>{{.Lang}}</td>
+<td>{{.Dir}}</td>
+<td>{{.UniqueID}}</td>   
+{{ end }} 
 </tr>
 {{ end }}
 </tbody>

@@ -107,8 +107,7 @@ x-cloak
             <div class="squares w-full">
                  <h2 class="bg-gray-100 px-2 w-full py-1">FIle Variables</h2>
                  {{ with .File }}
-                <div class="page-variables text-sm flex w-full justify-between border-b pb-1 hover:bg-gray-100 px-1">.Dir <div class="variable_value"> {{.Dir }}</div></div>
-                <div class="page-variables text-sm flex flex-wrap w-full justify-between border-b pb-1 hover:bg-gray-100 px-1">.File <div class="variable_value w-full"> {{. }}</div></div>
+                <div class="page-variables text-sm flex flex-wrap w-full justify-between border-b pb-1 hover:bg-gray-100 px-1">.File <div class="variable_value w-full"> {{ . }}</div></div>
                 <div class="page-variables text-sm flex flex-wrap w-full justify-between border-b pb-1 hover:bg-gray-100 px-1">.File.Path <div class="variable_value w-full">{{ .Path }}</div></div>
                 <div class="page-variables text-sm flex w-full justify-between border-b pb-1 hover:bg-gray-100 px-1">.File.LogicalName <div class="variable_value"> {{.LogicalName}}</div></div>
                 <div class="page-variables text-sm flex w-full justify-between border-b pb-1 hover:bg-gray-100 px-1">.File.TranslationBaseName <div class="variable_value"> {{.TranslationBaseName}}</div></div>

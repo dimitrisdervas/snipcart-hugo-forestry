@@ -9,7 +9,7 @@
     {{ $.Scratch.Set "default_variant" .Params.variant_sku }}
     {{.Params.variant_sku }}: true,
     title: '{{ replace .Title "'"  ""  }}',
-    url: '{{ .Dir }}',
+    url: '{{ .File.Dir }}',
     id: '{{.Params.variant_sku }}',
     retail: '{{.Params.retail}}',
     price: '{{.Params.variant_price}}',
