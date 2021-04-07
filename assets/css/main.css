@@ -41,6 +41,10 @@ h2 {
 .input__field::focus + .button {
     @apply border-gray-500;
 }
+.turbo-progress-bar {
+    height: 5px;
+    background-color: green;
+  }
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

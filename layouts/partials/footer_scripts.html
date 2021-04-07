@@ -1,5 +1,5 @@
-{{- $scripts := resources.Get "js/scripts.js" | js.Build (dict "minify" true "target" "es2015") | fingerprint -}}
-<script src="{{ $scripts.Permalink }}"></script>
+{{- $scriptsFooter := resources.Get "js/scriptsFooter.js" | js.Build (dict "minify" true "target" "es2015") | fingerprint -}}
+<script src="{{ $scriptsFooter.Permalink }}"></script>
 <script async src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
 
 <div 

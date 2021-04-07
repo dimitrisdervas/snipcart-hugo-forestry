@@ -25,7 +25,12 @@
 
 
 {{/*  {{ partial "victorhugo.html" . }}  */}}
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
+{{/*  {{- $scriptsHead := resources.Get "js/scriptsHead.js" | js.Build (dict "minify" true "target" "es2015") | fingerprint -}}
+<script src="{{ $scriptsHead.Permalink }}"></script>  */}}
+
+{{ if .Site.Home }}
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+{{ end }}
 
 </head>
