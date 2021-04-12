@@ -21,7 +21,7 @@
                 </ul>
         </details>
     {{ else -}}
-            <li class="list-item-debug-hugo">{{ $key }}: {{ $value }}</li>
+            <li class="page-variables text-sm flex w-full justify-between border-b pb-1 hover:bg-gray-100 px-1">{{ $key }}: <div class="variable_value">{{ $value }}</div></li>
     {{- end -}}
 {{- else -}}
     {{- if reflect.IsSlice $value -}}
@@ -33,9 +33,9 @@
         </details>
     {{- else -}}
         {{- if $key }}
-            <li class="list-item-debug-hugo">{{ $key }}: {{ $value }}</li>
+            <li class="page-variables text-sm flex w-full justify-between border-b pb-1 hover:bg-gray-100 px-1">{{ $key }}: <div class="variable_value">{{ $value }}</div></li>
         {{- else }}
-            <li class="list-item-debug-hugo">{{ $value }}</li>
+            <li class="page-variables text-sm flex w-full justify-between border-b pb-1 hover:bg-gray-100 px-1">{{ $value }}</li>
         {{- end -}}
     {{- end -}}
 {{- end -}}

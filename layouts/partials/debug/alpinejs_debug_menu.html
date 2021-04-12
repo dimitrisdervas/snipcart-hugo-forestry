@@ -1,4 +1,4 @@
-{{- if eq hugo.Environment "development" -}}
+{{ if eq hugo.Environment "development" }}
 <div class="flex justify-around flex-wrap border px-2 m-2"
 x-cloak
     x-data="{
@@ -11,13 +11,28 @@ x-cloak
     <div class="fixed z-50 overflow-scroll top-0 right-0 w-96 h-full bg-white p-2 shadow-lg " 
     x-show="frontmatter" 
     @click.away="frontmatter = false">
-        <div class="">
-            
-            </div>
+        <div class="">            
+                    {{ $curCtx := .Params }}
+                    {{ if reflect.IsSlice $curCtx }}
 
-                
+                            <div class="text-xl bold py-2">FrontMatter .Params {{ len $curCtx }}</div>
+                            <ul class="list-debug-hugo">
+                                {{ range $curCtx }}
+                                    {{ partial "helpers/debug-tables/debug-helpers/expand-var" (dict "value" .) }}
+                                {{ end }}
+                            </ul>
+                    {{ else if reflect.IsMap $curCtx }}
+                            <div class="text-xl bold py-2">FrontMatter .Params {{ len $curCtx }}</div>
+                            <ul class="list-debug-hugo">
+                                {{ range $key, $value := $curCtx }}
+                                    {{ partial "helpers/debug-tables/debug-helpers/expand-var" (dict "key" $key "value" $value) }}
+                                {{ end }}
+                            </ul>
+                    {{ else }}
+                        {{ partial "helpers/debug-tables/debug-helpers/expand-var" (dict "value" $curCtx) }}
+                    {{ end }}
             </div>
-    
+        </div>
 
     <div    class="fixed z-50 overflow-scroll top-0 right-0 w-96 h-full bg-white p-2 shadow-lg " 
             x-show="pageVariables" 
