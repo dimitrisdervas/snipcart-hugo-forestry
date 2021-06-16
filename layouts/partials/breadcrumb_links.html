@@ -27,6 +27,7 @@
 {{ end }}
 
 {{/*  CHECK if in collections  */}}
+
 {{ if in .File.Dir "collections/"}}
     {{ range $index , $breadcumblinks := split .RelPermalink "/"  }}
         {{ $loop := len . }}

@@ -130,7 +130,7 @@ x-cloak
                 <div class="page-variables text-sm flex w-full justify-between border-b pb-1 hover:bg-gray-100 px-1">.File.BaseFileName <div class="variable_value"> {{.BaseFileName}}</div></div>
                 <div class="page-variables text-sm flex w-full justify-between border-b pb-1 hover:bg-gray-100 px-1">.File.Ext <div class="variable_value"> {{.Ext}}</div></div>
                 <div class="page-variables text-sm flex w-full justify-between border-b pb-1 hover:bg-gray-100 px-1">.File.Lang <div class="variable_value"> {{.Lang}}</div></div>
-                <div class="page-variables text-sm flex w-full justify-between border-b pb-1 hover:bg-gray-100 px-1">.File.Dir <div class="variable_value"> {{.Dir}}</div></div>
+                <div class="page-variables text-sm flex w-full justify-between border-b pb-1 hover:bg-gray-100 px-1">.File.Dir <div class="variable_value"> {{ with .File }}{{ .Dir }}{{ end }}</div></div>
                 <div class="page-variables text-sm flex w-full justify-between border-b pb-1 hover:bg-gray-100 px-1">.File.UniqueID <div class="variable_value"> {{.UniqueID}}</div></div>
                 {{ end }}
             </div>
