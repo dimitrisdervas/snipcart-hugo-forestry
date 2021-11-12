@@ -1,15 +1,15 @@
-let tailwindConfig = process.env.HUGO_FILE_TAILWIND_CONFIG_JS || './tailwind.config.js';
-const tailwind = require('tailwindcss')(tailwindConfig);
+let tailwindConfig = process.env.HUGO_FILE_TAILWIND_CONFIG_JS || "./tailwind.config.js";
+const tailwind = require("tailwindcss")(tailwindConfig);
 const easyimport = require("postcss-easy-import");
-const autoprefixer = require('autoprefixer');
+const autoprefixer = require("autoprefixer");
 
 module.exports = {
   // eslint-disable-next-line no-process-env
   plugins: [
         easyimport,
         tailwind,
-    ...(process.env.HUGO_ENVIRONMENT === "production" ? [autoprefixer] : []),
-  ],
+    ...(process.env.HUGO_ENVIRONMENT === "production" ? [autoprefixer] : [])
+  ]
 };
 
 // https://github.com/bep/hugo-starter-tailwind-basic/blob/master/postcss.config.js
