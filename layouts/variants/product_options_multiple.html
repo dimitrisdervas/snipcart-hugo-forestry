@@ -34,9 +34,10 @@ multiple template
         option2Value: '{{.Params.option2_value}}',
         stock: '{{ .Params.variant_inventory_qty }}',
         tab: 'content',
+        option1: '{{.Params.option1_value}}',
+        option2: '{{.Params.option2_value}}',
     {{ end }}
-    option1: 'single',
-    option2: 'bottle',
+
     options_json: '',
     ...optionsProducts()
     }"
@@ -71,7 +72,7 @@ multiple template
                 price: '{{.Params.variant_price}}' , 
                 stock: '{{ .Params.variant_inventory_qty }}',
                 retail: '{{.Params.variant_retail}}',
-                sku: '{{.Params.variant_sku}}'
+                id: '{{.Params.variant_sku}}'
             };
             {{ end }}
 

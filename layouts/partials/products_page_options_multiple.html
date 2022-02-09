@@ -92,10 +92,10 @@
     {{ end}}
     {{/*  Snipcart button  */}}
 
-<div x-show="stock === '0'" 
-    class="border-2 border-gray-300 text-gray-300 w-full py-2 uppercase text-md text-center">
-    {{ i18n "outofstock"}}
-</div>
+    <div x-show="stock === '0'" 
+        class="border-2 border-gray-300 text-gray-300 w-full py-2 uppercase text-md text-center">
+        {{ i18n "outofstock"}}
+    </div>
 
     <div class="pt-12" x-show="stock === '0'" >
         
