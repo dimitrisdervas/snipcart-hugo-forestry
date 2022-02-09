@@ -10,7 +10,7 @@
         {{ if gt .Params.options.number 1 }}
             multiple {{ .Render "product_options_multiple"}}
         {{ else }}
-            {{ if eq .Params.options.number 1 }}
+            {{ if ge .Params.options.number 1 }}
             one {{ .Render "product_options_one"}}
             {{ else }} 
             zero {{ .Render "product_options_zero"}}

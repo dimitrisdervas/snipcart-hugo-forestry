@@ -1,18 +1,4 @@
 ---
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
 products: "dark-quinoa-organic-chocolate"
 handle: "dark-quinoa-organic-chocolate"
 title: "Dark Quinoa Organic Chocolate"

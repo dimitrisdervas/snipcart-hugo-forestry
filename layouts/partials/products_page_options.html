@@ -1,6 +1,6 @@
 {{ $numberVariants := .numberVariants }}
 <div class="flex flex-col">
-    {{ if gt $numberVariants 1 }}
+    {{ if ge $numberVariants 1 }}
     <div class="selection mb-4">
 
         {{/*  OPTIONS  */}}

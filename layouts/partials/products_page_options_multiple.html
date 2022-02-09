@@ -25,7 +25,13 @@
                             x-model="option1"
                             @click="{ price = (options_json[option1][option2].price),
                                       retail = (options_json[option1][option2].retail),
-                                        stock =  (options_json[option1][option2].stock)  } "
+                                      stock =  (options_json[option1][option2].stock),
+                                      option1Name =  (options_json[option1][option2].option1Name),
+                                      option1Value =  (options_json[option1][option2].option1Value),
+                                      option2Name =  (options_json[option1][option2].option2Name),
+                                      option2Value =  (options_json[option1][option2].option2Value),
+                                      id =  (options_json[option1][option2].id)
+                                      } "
                             value="{{ . }}"
                             class=" input__field invisible" 
                             name="option1" 
@@ -56,7 +62,13 @@
                     <input  x-model="option2"
                             @click="{ price = (options_json[option1][option2].price),
                                     retail = (options_json[option1][option2].retail),
-                                    stock =  (options_json[option1][option2].stock)}  "
+                                    stock =  (options_json[option1][option2].stock),
+                                    option1Name =  (options_json[option1][option2].option1Name),
+                                    option1Value =  (options_json[option1][option2].option1Value),
+                                    option2Name =  (options_json[option1][option2].option2Name),
+                                    option2Value =  (options_json[option1][option2].option2Value),
+                                    id =  (options_json[option1][option2].id)
+                            }"
                             value="{{ . }}"
                             class="input__field invisible" 
                             name="option2" 
@@ -78,7 +90,69 @@
         </div>
     </div>
     {{ end}}
-    {{ partial "products_snipcart_button.html" . }}
+    {{/*  Snipcart button  */}}
+
+<div x-show="stock === '0'" 
+    class="border-2 border-gray-300 text-gray-300 w-full py-2 uppercase text-md text-center">
+    {{ i18n "outofstock"}}
+</div>
+
+    <div class="pt-12" x-show="stock === '0'" >
+        
+        {{/*  We have to add the sku of the product that we must order and notify  */}}
+
+        <p class="font-robmono text-sm pb-2"> Please fill in the form below if you'd like to be notified when it becomes available. </p>
+        <form
+        method="post"
+        action="/contact#newsletter_form"
+        id="out_of_stock_form"
+        accept-charset="UTF-8"
+        class="flex-inline flex justify-center"
+    >
+        <input
+        class="mr-2 py-1 px-2 text-sm w-4/5 border"
+        id="out_of_stock_input"
+        name="contact[email]"
+        type="email"
+        aria-label="Your email"
+        placeholder="Your email"
+        required=""
+        />
+        <div class="bg-black px-4 py-2 text-white text-lg w-1/5">
+        <button type="submit" value="Subscribe">OK</button>
+        </div>
+        <div class="hidden">
+        <p data-spam-detection-disclaimer="">
+            This site is protected by reCAPTCHA and the Google
+            <a href="https://policies.google.com/privacy" tabindex="-1"
+            >Privacy Policy</a
+            >
+            and
+            <a href="https://policies.google.com/terms" tabindex="-1"
+            >Terms of Service</a
+            >
+            apply.
+        </p>
+        </div>
+    </form>
+    </div>
+
+    <button 
+        x-show="stock != '0' "
+        class="snipcart-add-item border-2 border-black w-full py-2 uppercase text-md"
+        x-bind:data-item-url="url"
+        x-bind:data-item-name="title"
+        x-bind:data-item-id="id"
+        x-bind:data-item-quantity = "quantity"
+        x-bind:data-item-image="image700w"
+        x-bind:data-item-price="price"
+        x-bind:data-item-description="description"
+        x-bind:data-item-custom1-name="option1Name"
+        x-bind:data-item-custom1-options="option1Value"
+        x-bind:data-item-custom2-name="option2Name"
+        x-bind:data-item-custom2-options="option2Value">
+        {{ i18n "addtocart"}}
+    </button>
 </div>
 
 

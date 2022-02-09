@@ -20,7 +20,7 @@ multiple template
     {{ $.Scratch.Set "default_variant" .Params.variant_sku }}
     {{ range first 1 .Pages }}  
         {{.Params.variant_sku }}: true,
-        title: '{{.Title}}',
+        title: '{{ .Params.handle }}',
         url: '{{ .Path }}',
         id: '{{.Params.variant_sku }}',
         retail: '{{.Params.variant_retail}}',
@@ -30,6 +30,8 @@ multiple template
         quantity: '1',
         option1Name: '{{.Params.option1_name}}',
         option1Value: '{{.Params.option1_value}}',
+        option2Name: '{{.Params.option2_name}}',
+        option2Value: '{{.Params.option2_value}}',
         stock: '{{ .Params.variant_inventory_qty }}',
         tab: 'content',
     {{ end }}
@@ -61,10 +63,15 @@ multiple template
             {{ end }}
             
             {{ range .Pages }}   
-            options_obj['{{.Params.option1_value}}']['{{.Params.option2_value}}'] =  { 
+            options_obj['{{.Params.option1_value}}']['{{.Params.option2_value}}'] =  {
+                option1Name: '{{.Params.option1_name}}',
+                option1Value: '{{.Params.option1_value}}',
+                option2Name: '{{.Params.option2_name}}',
+                option2Value: '{{.Params.option2_value}}',
                 price: '{{.Params.variant_price}}' , 
                 stock: '{{ .Params.variant_inventory_qty }}',
-                retail: '{{.Params.variant_retail}}'
+                retail: '{{.Params.variant_retail}}',
+                sku: '{{.Params.variant_sku}}'
             };
             {{ end }}
 
