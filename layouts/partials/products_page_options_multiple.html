@@ -37,7 +37,9 @@
                             name="option1" 
                             id="{{ . | urlize }}" 
                             type="radio" >
-                        <div class=" 
+                        <div 
+                        :class="{ 'border-gray-800' : option1 === '{{ . }}' }"
+                        class=" 
                                 button
                             cursor-pointer mr-4
                             border-2 border-gray-200 
@@ -73,8 +75,10 @@
                             class="input__field invisible" 
                             name="option2" 
                             id="{{ . | urlize }}" type="radio" >                
-                    <div class=" 
-                                button
+                    <div 
+                    :class="{ 'border-gray-800' : option2 === '{{ . }}' }"
+                    class=" 
+                            button
                             cursor-pointer mr-4
                             border-2 border-gray-200 
                             text-gray-800  text-sm uppercase
