@@ -18,18 +18,17 @@
                 {{ if .Params.option1_value }}  
                     <button 
                         class=" mr-4
-                                border-2 border-gray-200 
-                                text-gray-800  text-sm uppercase
+                                border-2  
+                                text-gray-800 text-sm uppercase
                                 flex items-center px-4 py-3 my-2 justify-center
                                 hover:border-gray-800 hover:text-gray-800 
-                                @click:{'border-gray-800'}
-                                @click.away:{'border-gray-200'}
+                                font-robmono
                             "
-                        :class="{ 'border-gray-800' : id === '{{.Params.variant_sku}}' }"
+                        :class="{ 'border-gray-800' : option1Value === '{{.Params.option1_value}}' }"
                         type="button"
                         id="{{.Params.variant_sku}}"
                         x-ref="{{.Params.variant_sku}}"      
-                        x-on:click="
+                        @click="
                             id = '{{.Params.variant_sku}}',
                             url = '{{ .Path  }}'
                             price = '{{.Params.variant_price}}',
